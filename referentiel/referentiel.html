@@ -1,0 +1,1262 @@
+<!DOCTYPE>
+<html>
+<head>
+
+    <!------------------------- FACECLAIM AUTOMATISÉ -------------------------
+                                codes par @poesiescendrees
+                                version avec filtres
+                                https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/LS_PAGE.html
+
+
+            INFORMATIONS GÉNÉRALES - - - -
+            Il est absolument nécessaire de lire les étapes d'installation une à une
+            sur la page principale du libre service du faceclaim afin que tout fonctionne
+            correctement ! De plus, l'installation ne se fera pas en 5 minutes car elle
+            requiert quelques changements dans la structure de votre forum,
+            je vous conseille donc d'attendre une MAJ ou d'installer le FC dès l'ouverture
+            de votre forum !
+
+            Cette version du faceclaim comprend l'usage de filtres,
+            leur fonctionnement est expliqué sur la page principale du LS.
+            Une version sans filter du faceclaim est également disponible.
+
+
+    -------------------------->
+
+    <title>Référentiel</title>
+    <link rel="icon" href="https://2img.net/image.noelshack.com/fichiers/2018/14/5/1522969348-hungcalf-favicon.png">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-type" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:wght@200&family=Oswald&family=Playfair+Display&family=Rozha+One&display=swap" rel="stylesheet">
+    <pal><p></p><p></p><p></p><p></p><p class="pp"></p><p></p><p class="pp"></p><p></p><p></p><p class="pp"></p><p></p><p></p><p></p><p></p></pal>
+
+
+
+
+    <!-------------------- CSS STYLE IMPORT -------------------->
+    <link href="https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/CSS/overall.css" rel="stylesheet">
+
+    <!-------------------- SCRIPT IMPORT -------------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/header.js"></script>
+
+
+    <style>
+        /* ------------------------ MAIN  ------------------------ */
+
+        :root{
+            --m2: #604711; /*barres de défilement -> --couleur_titre*/
+            --l3: #604711; /*sélection -> --couleur_titre*/
+
+            --d1: #518f93; /*couleur titres (pseudos et petites infos) faceclaim à droite -> --coul_lien*/
+            --m1: #FFFAE5; /*barre soulignement titre -> --coul_sousforums1*/
+            --d2: #333333; /*couleur texte principal facelcaim à droite*/
+
+            --l1: rgba(230,212,140,1); /*fond navigation à gauche*/
+            --d3: #FFFAE5; /*couleur titre navigation à gauche -> --coul_sousforums1*/
+            --d4: #FFFAE5; /*couleur texte principal navigation à gauche -> --coul_sousforums1*/
+            --h3: #604711; /*couleur sélection et liens navigation à gauche -> --couleur_titre*/
+
+            --l0: #FFFAE5; /*couleur survol texte liens -> --coul_sousforums1*/
+            --l2: #FFFAE5; /*fond liens -> --coul_sousforums1*/
+            --h2: #604711; /*fond survol liens -> --couleur_titre*/
+
+            --background-body: #FFFEF1 /*couleur de fond 1*/;
+
+
+            --sm: 10px;
+            --mo: 20px;
+            --bg: 35px;
+            --lg: 60px;
+            --gi: 120px;
+
+            --grid-gap-sm: var(--sm);
+            --grid-gap: var(--mo);
+            --grid-gap-lg: var(--lg);
+
+            --lgn-main: var(--m1);
+
+            --color-main: var(--d2);
+            --font-family-main: 'Mulish', 'Verdana', sans-serif;
+            --font-size-main: 14px;
+            --line-height-main: 16px;
+            --text-align-main: justify;
+        }
+
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: var(--background-body);
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: auto;
+            --sq-global: 80px;
+            --mg-ver: 10vh;
+        }
+
+        main {
+            scroll-behavior: smooth;
+        }
+
+        main {
+            flex: 1 1 auto;
+        }
+
+        body > *:not(main):not(header) {
+            position: fixed;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ------------------------ HEADER  ------------------------ */
+
+        header {
+            width: 25vw;
+            height: 100vh;
+            max-width: 350px;
+            --sq-global: 130px;
+            background: var(--l1);
+            padding: var(--mg-ver) var(--grid-gap) 0;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+        }
+
+        header .sq {
+            margin: 0 auto;
+        }
+
+        .name_header::before {
+            content: var(--texte1);
+        }
+
+        footer {
+            padding-top: var(--grid-gap);
+            padding-bottom: var(--grid-gap);
+            opacity: 0.4;
+            text-align: right;
+        }
+
+
+
+
+
+
+        /* ------------------------ FILTERS  ------------------------ */
+
+        #bp_filters > scroll > * {
+            display: block;
+        }
+
+        .group_filters {
+            padding: 0 30px;
+            line-height: 2em;
+        }
+
+        .group_filters label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .input_filters:checked + * {
+            color: var(--h3);
+            border-bottom: 1px solid;
+        }
+
+        #INPUTBOX {
+            background: transparent;
+            padding-bottom: 4px;
+            border-bottom: 1px solid var(--d3);
+            size: 1.1em;
+            color: var(--d3);
+        }
+
+        ::placeholder {
+            color: var(--d3);
+            opacity: 0.5;
+        }
+
+
+
+
+
+
+        /* ------------------------ FACECLAIM  ------------------------ */
+
+        main {
+            padding: var(--mg-ver);
+            overflow: auto;
+        }
+
+        main.flex.fixed > filler {
+            height: 0 !important;
+        }
+
+        #bp_fc {
+            margin: 0 !important;
+            --height-flex: 500px;
+            --grid-gap: 150px;
+        }
+
+        #bp_fc > * > * {
+            --grid-gap: var(--mo);
+        }
+
+        .member_fc {
+            position: relative;
+        }
+
+        .members_fc.tagged_fc {
+            color: var(--h3);
+        }
+
+        .a_name_fc {
+            display: block;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            position: absolute;
+            z-index: -4;
+            top: -100px;
+            left: 0;
+        }
+
+        .member_fc.hidden {
+            display: none !important;
+        }
+
+        .avatar_fc {
+            display: block;
+            margin: auto;
+            --sq: 150px;
+            filter: grayscale(100%);
+        }
+
+        .member_fc:hover .avatar_fc {
+            filter: none;
+        }
+
+        .contact_fc {
+            height: var(--sq-resume) !important;
+            --sq-resume: 35px;
+        }
+
+        .contact_fc a {
+            border: 0;
+        }
+
+        .contact_fc .button1 {
+            --sq: var(--sq-resume);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .resume_fc {
+            height: auto;
+            max-height: 15%;
+        }
+
+
+
+
+
+
+        /* ------------------------ @MEDIA  ------------------------ */
+
+
+        @media only screen and (max-width: 900px) {
+            body {
+                --mg-ver: 5vh;
+            }
+
+            header {
+                width: calc(var(--sq-global) + 2*var(--grid-gap));
+                --sq-global: 100px;
+                --grid-gap: 50px;
+            }
+
+            .name_header::before {
+                content: var(--texte2);
+            }
+
+            #bp_filters, .bp_inputbox {
+             visibility: hidden;
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            header {
+                --sq-global: 80px;
+                --grid-gap: 30px;
+            }
+        }
+
+
+
+
+
+        /* - - - - - FONTS - - - - - */
+
+        :root {
+            color: var(--color-main);
+            font-family: var(--font-family-main);
+            font-size: var(--font-size-main);
+            line-height: var(--line-height-main);
+            text-align: var(--text-align-main);
+        }
+
+        a{
+          color: var(--h3);
+        }
+
+        a, a:visited{
+          text-decoration: none;
+        }
+
+        a:hover, input:hover, label:hover{
+          color: var(--h2);
+          cursor: crosshair;
+        }
+
+        input[type=text]:hover{
+          color: unset;
+        }
+
+        u, a{
+          text-decoration: none;
+          border-bottom: 1px solid;
+        }
+
+        ::selection{
+          background: var(--l3);
+          color: var(--d2);
+        }
+
+        h4 {
+            display: inline-block;
+            padding-bottom: var(--mo);
+            border-bottom: 1px solid;
+
+          color: var(--d3);
+          font-family: var(--font-family-main);
+          font-size: calc(0.8*var(--font-size-main));
+          font-style: normal;
+          font-weight: bold;
+          letter-spacing: 3px;
+          line-height: calc(0.8*var(--line-height-main));
+          text-transform: uppercase;
+        }
+
+        header {
+            color: var(--d4);
+        }
+
+        cv {
+          font-size: var(--font-size-main);
+          font-weight: bold;
+          font-style: normal;
+          letter-spacing: 1px;
+          text-transform: lowercase;
+          color: var(--d1);
+        }
+
+        sms{
+          color: grey;
+          font-family: 'Courier New';
+          font-size: calc(0.8 * var(--font-size-main));
+          font-style: normal;
+          letter-spacing: 1px;
+        }
+
+        qq {
+          color: var(--d4);
+          font-family: 'Arial', 'Verdana', 'Mulish', sans-serif;
+          font-size: calc(0.8 * var(--font-size-main));
+          font-style: normal;
+          font-weight: normal;
+          letter-spacing: 2px;
+          word-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        lgn {
+          display: block;
+          width: 100%;
+          height: 0;
+          margin: var(--sm) 0;
+          border-bottom: 1px solid var(--lgn-main);
+        }
+
+        .button1 {
+            display: inline-block;
+            border: 0;
+            width: var(--sq);
+            height: var(--sq);
+            --sq: 40px;
+            background: var(--l2);
+            margin: 3px;
+            padding: var(--sm);
+            border-radius: 50%;
+            position: relative;
+
+            --highlight: var(--h2);
+            --highlight-color: var(--l0);
+        }
+
+        .button1:after {
+            display: none;
+            background: var(--highlight);
+            padding: 2px var(--sm);
+            content: var(--hover);
+            position: absolute;
+            top: 110%;
+            left: 50%;
+
+            color: var(--highlight-color);
+        }
+
+        .button1:hover:after {
+            display: block;
+        }
+
+        .button1:hover {
+            background: var(--highlight);
+            color: var(--highlight-color);
+        }
+
+        .button1:active {
+            background: var(--l4);
+        }
+
+    </style>
+
+</head>
+
+<body class="flexrow">
+    <header class="flexcolumn no-extend">
+        <div class="no-extend">
+            <!-- IMAGE EN HAUT A GAUCHE -->
+            <img src="https://78.media.tumblr.com/67c2ae996418da892344db3460d831c0/tumblr_ni5f5mqd981qfv89lo6_250.gif" class="round sq display-block">
+        </div>
+
+        <div class="simple nopadding center-align no-extend">
+            <h4 class="name_header center-align" style="
+                --texte1: 'reférentiel';
+                --texte2: 'ref'"></h4><br>
+
+            <!-- LIEN DU FORUM AUTOMATIQUEMENT REMPLACÉ, pas besoin de modifier -->
+            <a href="" class="button1 forum" style="--hover: 'forum';" target="_blank">&#8962;</a>
+
+            <!-- AUTRES LIENS rapides, supprimer ou en rajouter comme vous voulez -->
+            <a href="https://hungcalf.forumactif.com/f13-carte-d-identite-validee" class="button1" style="--hover: 'présentations';" target="_blank">&#8801;</a>
+            <a href="https://hungcalf.forumactif.com/t18908-referentiel-d-hungcalf-explications#413210" class="button1" style="--hover: 'comment ça marche ?';" target="_blank">?</a>
+
+        </div>
+
+        <section class="bp_inputbox simple nopadding no-extend center-align">
+            <input type="inputbox" placeholder="Chercher quelqu'un..." id="INPUTBOX">
+        </section>
+
+        <section id="bp_filters" class="simple nopadding center-align">
+            <scroll>
+                <!--------------- FILTRES :: COMMENTAIRE IMPORTANT --------------->
+                <!--vous devez modifier la valeur du groupName pour les groupes de filtre
+                    et le filterName pour les filtres eux-mêmes, n'incluez ni espace ni caractère spécial !
+                    les filterName ont toujours un point au début -->
+
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="genre">
+                    <!--nom affiché :-->
+                    <qq>genre</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".f">
+                        <i>femmes</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".h">
+                        <i>hommes</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".nb">
+                        <i>personnes non-binaires</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="nature_du_sang">
+                    <!--nom affiché :-->
+                    <qq>nature du sang</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sp">
+                        <i>sang-pur</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sm">
+                        <i>sang-mêlé</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".nm">
+                        <i>né(e)-moldu(e)</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="orientation_sexuelle">
+                    <!--nom affiché :-->
+                    <qq>orientation sexuelle</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".heterosexualite">
+                        <i>hétérosexualité</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".homosexualite">
+                        <i>homosexualité</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".bi_pan_omni">
+                        <i>bisexualité, pansexualité, omnisexualité</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sans_etiquette">
+                        <i>sans étiquette</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".asexualite">
+                        <i>asexualité</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".demisexualite">
+                        <i>demisexualité</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="situation">
+                    <!--nom affiché :-->
+                    <qq>situation</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".celibataire">
+                        <i>célibataire</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".en_couple">
+                        <i>en couple</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".marie">
+                        <i>marié(e)</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".fiance">
+                        <i>fiancé(e)</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".relation_libre">
+                        <i>dans une relation libre</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".veuf">
+                        <i>veuf(ve)</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".separe">
+                        <i>séparé(e)</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".divorce">
+                        <i>divorcé(e)</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".complique">
+                        <i>c'est compliqué</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="ancienne_ecole">
+                    <!--nom affiché :-->
+                    <qq>ancienne école</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".beauxbatons">
+                        <i>Beauxbâtons</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".castelobruxo">
+                        <i>Castelobruxo</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".durmstrang">
+                        <i>Durmstrang</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".ilvermorny">
+                        <i>Ilvermorny</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".mahoutokoro">
+                        <i>Mahoutokoro</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".poudlard">
+                        <i>Poudlard</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".uagadou">
+                        <i>Uagadou</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".autre_ecole">
+                        <i>autres</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="maison">
+                    <!--nom affiché :-->
+                    <qq>maison</qq>
+    
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".ethelred">
+                        <i>Ethelred</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".grymm">
+                        <i>Grymm</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".lufkin">
+                        <i>Lufkin</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".pokeby">
+                        <i>Pokeby</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".summerbee">
+                        <i>Summerbee</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".wright">
+                        <i>Wright</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="filiere">
+                    <!--nom affiché :-->
+                    <qq>filière</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".architecture">
+                        <i>architecture enchantée</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".arts">
+                        <i>arts</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".botanique_magizoologie">
+                        <i>botanique et magizoologie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".forces_publiques">
+                        <i>forces publiques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".journalisme">
+                        <i>journalisme</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".justice_magique">
+                        <i>justice magique</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".lettres_civilisation">
+                        <i>lettres et civilisations magiques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".medicomagie">
+                        <i>médicomagie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".mode_textile">
+                        <i>mode et textile magique</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sciences_occultes">
+                        <i>sciences occultes</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sport">
+                        <i>sport</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="annee_etudes">
+                    <!--nom affiché :-->
+                    <qq>année d'études</qq>
+    
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".1a">
+                        <i>1ère année</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".2a">
+                        <i>2ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".3a">
+                        <i>3ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".4a">
+                        <i>4ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".5a">
+                        <i>5ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".6a">
+                        <i>6ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".7a">
+                        <i>7ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".8a">
+                        <i>8ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".9a">
+                        <i>9ème année</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".10a">
+                        <i>10ème année</i>
+                    </label>
+                </div>
+
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="cours_options">
+                    <!--nom affiché :-->
+                    <qq>cours/options</qq>
+
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".arithmancie">
+                        <i>arithmancie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".arts_plastiques">
+                        <i>arts plastiques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".arts_sceniques">
+                        <i>arts scéniques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".astronomie">
+                        <i>astronomie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".botanique">
+                        <i>botanique</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".defense_forces_mal">
+                        <i>défense contre les forces du mal</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".divination">
+                        <i>divination</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".draganologie">
+                        <i>draganologie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".droit_magique">
+                        <i>droit magique</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".etude_moldus">
+                        <i>étude des Moldus</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".etude_runes">
+                        <i>étude des runes</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".histoire">
+                        <i>histoire de la magie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".litterature">
+                        <i>littérature Magique</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".medias">
+                        <i>médias moldus et sorciers</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".medicomagie_appliquee">
+                        <i>médicomagie appliquée</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".metamorphose">
+                        <i>métamorphose</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".potions">
+                        <i>potions</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sciences_politiques">
+                        <i>sciences politiques et magiques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".soins_creatures_magiques">
+                        <i>soins aux créatures magiques</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sortileges">
+                        <i>sortilèges et enchantements</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".stylisme">
+                        <i>stylisme sorcier</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".vol">
+                        <i>vol</i>
+                    </label>
+                </div>
+
+                <!--------------- DÉBUT GROUPE FILTRE --------------->
+                <!-- modifier la valeur du groupName pour que chaque groupe ait un nom différent,
+                     ne mettre ni espace ni caractère spécial-->
+                <div class="group_filters simple" groupName="lieu_travail">
+                    <!--nom affiché :-->
+                    <qq>lieu de travail</qq>
+    
+                    <!--FILTRE qui déselectionne tous les autres : ne pas modifier !! -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName="*">
+                        <i>tout</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".personnel_hungcalf">
+                        <i>professeurs et personnel de Hungcalf</i>
+                    </label>
+    
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".ministere">
+                        <i>ministère de la magie</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".sante">
+                        <i>établissements de santé</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".commerces_inverness">
+                        <i>commerces d&#8217;Inverness</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".bars_resto_inverness">
+                        <i>bars/restaurants d&#8217;Inverness</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".commerces_londres">
+                        <i>commerces de Londres</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".bars_resto_londres">
+                        <i>bars/restaurants de Londres</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".autres_lieux">
+                        <i>autres</i>
+                    </label>
+                </div>
+
+            </scroll>
+        </section>
+
+
+
+        <!-- CREDIT, merci de ne pas l'enlever ou d'éventuellement le déplacer dans votre PA / vos crédits généraux, merci ! -->
+        <footer class="no-extend">
+            codes @poesiescendrees
+        </footer>
+    </header>
+
+    <main>
+        <a name="top"></a>
+
+
+        <!-------------------- TEMPLATE DE MEMBRE, ne surtout pas supprimer ni modifier !!! -------------------->
+        <div id="bp_fc" class="simple nopadding flex fixed">
+            <div class="member_fc flexcolumn simple nopadding none">
+                <div class="no-extend">
+                    <a name="" class="a_name_fc"></a>
+                    <img src="https://images2.imgbox.com/73/e2/Et98fkVN_o.png" class="avatar_fc sq round">
+                </div>
+
+                <cv class="no-extend center-align"><span class="name_fc">prénom nom</span></cv>
+
+                <lgn class="no-extend"></lgn>
+
+                <div class="contact_fc no-extend">
+                    <table><tr><td>
+                        <a href="" class="profile_fc"><button class="button1" style="--hover: 'profil';">&#9812;</button></a>
+                        <a href="" class="mps_fc"><button class="button1" style="--hover: 'mps';">&#9743;</button></a>
+                    </td></tr></table>
+                </div>
+
+                <scroll class="resume_fc no-extend">
+                </scroll>
+
+                <scroll class="infos_fc"></scroll>
+            </div>
+
+            <filler style="height: 0 !important;"></filler>
+            <filler style="height: 0 !important;"></filler>
+            <filler style="height: 0 !important;"></filler>
+        </div>
+
+
+            <!-------------------- FIN TEMPLATE DE MEMBRE -------------------->
+        <a name="bottom"></a>
+    </main>
+
+
+
+    <!-------------------- SCRIPT IMPORT -------------------->
+    <script>
+        /*---------- INFORMATIONS A REMPLIR : EXPLICATIONS JUSTE APRES ----------*/
+
+        var INFOSLIST = {
+            'URL' : 'https://hungcalf.forumactif.com/',
+            'pseudo' : 'h1.page-title',
+            'avatar' : '#avatar_membre img',
+            'separateurAffiche': ' ',
+
+            'grandeDescription' : 'résumé',
+            'utiles' : ["» âge", "» genre", "» nature du sang", "» particularité", "» situation", "» cursus", "» année d'études", "» profession"],
+            'contact' : [],
+
+
+
+            'champUtile' : '.faceclaim_hidden',
+            'filtres' : 'filtres',
+            'supprime' : ['supprimé', 'oui'],
+            'separateurEfface': ' : ',
+        }
+
+        // MODIFIER : 'URL', 'pseudo', 'avatar', 'grandeDescription', 'utiles', 'contact'
+        // MODIFIER EVENTUELLEMENT : 'separateurAffiche'
+        // NE PAS MODIFIER : 'champUtile', 'filtres', 'supprime'
+        // lire les commentaires ci-dessous et la page principale du LS pour savoir comment modifier exactement
+        // https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/LS_PAGE.html
+
+        /*
+            EXPLICATIONS DES INFORMATIONS A REMPLIR :
+                Vous devrez remplir la partie à droite de chaque ligne
+                (donc laisser les infos à gauche intactes : 'URL', 'pseudo', 'utile' etc.)
+                afin que le code puisse aller rechercher les informations
+                adéquates dans votre forum.
+
+                Ouvrez une page de profil (n'importe lequel fera l'affaire)
+                ou le template directement, toutes les informations à aller récupérer
+                s'y trouvent.
+
+                Les informations à retrouver sont placées dans des balises précises
+                (par exemple celle de votre pseudo), aussi n'hésitez pas à aller
+                modifier les templates pour que cela soit plus facile en rajoutant
+                simplement une class à l'élément recherché, cela n'influencera
+                normalement pas l'apparence ni le fonctionnement du template.
+                (par exemple, si vous affichez "Profil de Lola" et que vous
+                voulez aller sélectionner "Lola", vous pouvez aller modifier le
+                template en mettant "profil de <span class=".pseudo">Lola</span>")
+
+                PRÉCISION IMPORTANTE : quand je parle de "sélecteur CSS", il s'agit
+                de ce qui est utilisé dans les CSS & balises <style> pour rechercher
+                un élément, typiquement sa class, son id, son type de balise, etc.
+                (ex : "#avatar_user", ".membre", "div.membre img", etc)
+
+                pour vous y retrouver vous pouvez aller clique droit sur l'élément du
+                profil à inspecter, cliquer sur 'inspecter', et chercher le nom du sélecteur CSS :
+                https://images2.imgbox.com/50/14/b7Phajkz_o.png
+
+                La liste détaillée des informations à retrouver sont
+                données dans la page générale du libre service en bas de page.
+
+        */
+    </script>
+    <!-- <script src="./pagesWithIsotope.js"></script> -->
+    <script src="https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/pagesWithIsotope.js"></script>
+    <script src="https://poesiescendrees.github.io/PAGES/AUTO_FACECLAIM/isotope.js"></script>
+
+</body>
+</html>
