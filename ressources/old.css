@@ -674,7 +674,7 @@ hr {
   margin: 0 0 4 0;
   display: block;
   background-color: var(--coul_navital);
-  border-bottom: 1px solid ##DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
 }
 
 .titre03>.mentiontag,
@@ -1420,7 +1420,7 @@ td.avatar-mini img {
   width: 210px;
   position: relative;
   left: -8px;
-  background-color: #fffffff !important;
+  background-color: #ffffff !important;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -1858,7 +1858,7 @@ textarea#text_editor_textarea {
 }
 
 textarea .inputbox {
-  max: width:300px !important;
+  max-width:300px !important;
 }
 
 #av_quickreply {
