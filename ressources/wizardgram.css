@@ -1,0 +1,262 @@
+/* WIZARDGRAM */
+
+/* barre du haut */
+.wzdgfd {
+  width: 400px;
+  background: #fafafa;
+}
+
+.wzdgtop {
+  background-color: '#fff';
+  width: 400px;
+  height: 45px;
+  border-bottom: silver 1px solid;
+}
+
+.wzdgsearch {
+  background: #fafafa;
+  border: 1px solid silver;
+  width: 170px;
+  margin: 8px;
+  height: 24px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.wzdgsico {
+  background: url('https://i.imgur.com/cRvvDnR.png');
+  background-position: 28% 55%;
+  width: 25px;
+  height: 22px;
+}
+
+.wzdgstxt {
+  width: 145px;
+  font-family: 'Montserrat';
+  color: silver;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wzdgdot {
+  background: url('https://i.imgur.com/Hpr2M3o.png');
+  background-position: 97% 50%;
+  width: 25px;
+  height: 40px;
+}
+
+/* profil utilisateur 1er post */
+.wzdgprofile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+.wzdgpseudo {
+  font-family: 'Montserrat';
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 5px;
+  vertical-align: bottom;
+}
+
+.wzdgmodpr {
+  font-family: 'Montserrat';
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  background: #f2f2f2;
+  border: 1px solid silver;
+  height: 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  width: 250px;
+  text-align: center;
+}
+
+.wzdgprtxt {
+  width: 300px;
+  text-align: left;
+  font-family: 'Montserrat';
+  margin-top: 8px;
+}
+
+/* abonnements et abonnés */
+
+.wzdgnumbz {
+  width: 384px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  padding: 8px;
+  border-bottom: silver 1px solid;
+  border-top: silver 1px solid;
+}
+
+/* tableau de photos postées */
+
+.wzdgntab {
+  text-align: center;
+  font-family: 'Montserrat' !important;
+  font-size: 13px;
+  color: #333;
+}
+
+.wzdgpics {
+  background-size: cover !important;
+  width: 120px;
+  height: 120px;
+}
+
+wlnk {
+  font-weight: bold;
+  color: #1560BD;
+}
+
+/* post d'une nouvelle photo */
+
+.wzdgtabpost {
+  margin: 10px;
+  padding-bottom: 10px !important;
+  width: 380px;
+  background: #fff;
+  border: 1px silver solid;
+}
+
+.wzdgpostpr {
+  font-family: 'Montserrat';
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.wzdgpost {
+  border-top: 1px solid silver;
+  padding: 10px !important;
+  width: 380px;
+}
+
+.wzdgimgpost {
+  background-size: cover !important;
+  width: 360px;
+  height: 360px;
+}
+
+.wzdgact {
+  width: 360px;
+  height: 34px;
+}
+
+.wzdgcom {
+  font-family: 'Montserrat';
+  color: black;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* post de commentaire */
+.wzdgcomtxt {
+  font-family: 'Montserrat';
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* post de suivi */
+.wzdgfollow {
+  position: relative;
+  width: 400px;
+  height: 310px;
+  background: #fafafa;
+  padding-bottom: 6px;
+}
+
+.wzdgfolline {
+  line-height: 11px;
+  position: relative;
+  top: 6px;
+  text-align: left;
+}
+
+.wzdgfoltab {
+  border: none;
+  border-collapse: collapse;
+}
+
+.wzdgfolbloc {
+  position: relative;
+  width: 230px;
+  height: 270px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 0px solid #aaaaaa;
+}
+
+.wzdgfolhead {
+  width: 230px;
+  background-size: cover !important;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.wzdgfolimg {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 80px;
+  left: 12px;
+}
+
+.wzdgfolgear {
+  position: absolute;
+  top: 120px;
+  right: 104px;
+}
+
+.wzdgfolico {
+  position: absolute;
+  top: 114px;
+  right: 4px;
+}
+
+.wzdgfolprev {
+  position: absolute;
+  top: 164px;
+  left: 4px;
+}
+
+.wzdgfolname {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.wzdgfolcheck {
+  position: relative;
+  top: 6px;
+}
+
+.wzdgfoltxt {
+  margin-bottom: 6px;
+  line-height: 11px;
+  font-size: 10px;
+}

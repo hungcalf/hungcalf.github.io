@@ -1,7 +1,6 @@
-/***** DEBUT DE LA PARTIE A C/C DANS LA FICHE PARTENAIRE *****/
+/* DEBUT DE LA PARTIE A C/C DANS LA FICHE PARTENAIRE */
 
 /* pour rappeler des trucs... */
-
 :root {
   --police_sst: 'dancing script', cusrive, bold;
   --police_titre: 'playfair display';
@@ -65,7 +64,7 @@ cc {
   background: linear-gradient(90deg, rgba(214, 197, 178, 1) 0%, rgba(69, 28, 14, 1) 100%);
 }
 
-/***** FIN DU CODE A C/C DANS LA FICHE PARTENAIRE *****/
+/* FIN DU CODE A C/C DANS LA FICHE PARTENAIRE */
 
 /* LIENS ET BOUTONS */
 a {
@@ -263,13 +262,11 @@ body .uwy.userway_p5 .uai {
 
 /* INDEX */
 
-/* flèches haut / bas */
+/* flèches haut/bas */
 .hautbas {
   position: fixed;
   bottom: 10px;
-  /* distance par rapport au bas de la page */
   right: 50px;
-  /* distance par rapport à la droite de la page */
   z-index: 999;
   display: flex;
 }
@@ -352,8 +349,6 @@ th {
   padding: 0px !important;
   border: none;
   background: transparent;
-  cellpadding: 0px !important;
-  cellspacing: 0px !important;
 }
 
 .forabg,
@@ -371,8 +366,6 @@ th {
   margin-top: 18px;
   background-color: var(--couleur_clrgba) !important;
   border-collapse: collapse;
-  cellpadding: 0px !important;
-  cellspacing: 0px !important;
 }
 
 ul.forums {
@@ -407,7 +400,6 @@ li.row2:hover {
   position: relative;
   left: -36px;
   width: 900px;
-  ;
 }
 
 #cp-main table.table1 {
@@ -430,7 +422,6 @@ li.row2:hover {
   left: 149px;
   transform: rotate(90deg);
   filter: hue-rotate(70deg);
-  /* modifie la teinte de l'image */
 }
 
 .online:before {
@@ -480,7 +471,7 @@ hr {
 }
 
 
-/***LISTE DES SUJETS***/
+/* LISTE DES SUJETS */
 .topicslist_row {
   background: var(--couleur_claire);
   border-radius: 3px;
@@ -507,8 +498,6 @@ hr {
   background: transparent;
 }
 
-.topicslist-infos {}
-
 .topictitle {
   font-size: 10px;
   font-family: 'times new roman' !important;
@@ -518,15 +507,9 @@ hr {
   margin-right: 5px;
 }
 
-.topic-type {}
-
-.topic-author {}
-
 .topiclist-infos img {
   margin-right: 3px;
 }
-
-.topicslist_icon {}
 
 .topicslist-stats {
   text-align: right;
@@ -558,7 +541,7 @@ hr {
   margin-bottom: 24px;
 }
 
-/************************* Début CODES FICHES  ************************/
+/* Début CODES FICHES */
 
 .backfichehistoire {
   padding: 10px;
@@ -611,10 +594,7 @@ hr {
   font-weight: lightrer;
   letter-spacing: 0px;
   text-transform: lowercase;
-  -htm-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  -webkit-transition: .5s;
+  transition: .5s;
   text-shadow: 2px 2px 2px whitee;
   text-align: center;
 }
@@ -657,7 +637,6 @@ hr {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  font-weight: boold;
   margin: 0px 0px -5px 0px;
   border-top: 1px var(--coul_bbclair) solid;
 }
@@ -669,8 +648,6 @@ hr {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  font-weight: boold;
-  /*margin-left:10px;*/
   margin: 0 0 4 0;
   display: block;
   background-color: var(--coul_navital);
@@ -694,7 +671,6 @@ hr {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  font-weight: boold;
   margin-left: 10px;
   margin: 0 0 5 0;
   display: block;
@@ -724,34 +700,8 @@ hr {
 }
 
 /* Police bottin des avatars */
-fille {
-  color: #BF678C !important;
-  font-weight: bold;
-}
-
-garcon {
-  color: #6B8BAC !important;
-  font-weight: bold;
-}
-
 bottin {
   text-transform: lowercase;
-}
-
-pris {
-  color: #BF6764 !important;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: lowercase;
-  font-size: 10px;
-}
-
-libre {
-  color: #85A43E !important;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  font-size: 10px;
 }
 
 .réservé {
@@ -788,7 +738,6 @@ libre {
   font-size: 11px;
   font-weight: bold;
   overflow: hidden;
-  /*préparation de la transition*/
   transition: all 0.7s;
   opacity: 0.7;
   padding-top: 7px;
@@ -915,7 +864,6 @@ blockquote:before {
 /* partie sous le header */
 .guide {
   font-family: var(--police_sst);
-  /*color:var(--couleur_titre)!important;*/
   font-size: 2.3rem;
   margin-top: 0px;
 }
@@ -964,17 +912,6 @@ blockquote:before {
 .mdm img:hover {
   filter: grayscale(100%);
 }
-
-/* si besoin de jouer sur la colorimétrie des gifs :
-// filter:brightness --> luminosité 
-// filter:contrast --> contraste
-// filter:saturate --> saturation des couleurs
-// filter:grayscale --> teinte de gris
-// filter:sepia --> teinte sepia
-  
-.mdm img:nth-child(1) === 1er gif
-.mdm img:nth-child(2) === 2e gif
-*/
 
 .mdm img:nth-child(2) {
   filter: brightness(1.8);
@@ -1048,8 +985,6 @@ blockquote:before {
 .bloc_img_pv img {
   width: 45px;
   height: 45px;
-  /*filter:grayscale(100%)*/
-  ;
   object-fit: cover;
 }
 
@@ -1150,7 +1085,6 @@ html>body table.table1 {
 /* page des brouillons */
 table.table1 tbody td {
   padding: 3px;
-  /* on réduit la marge pour que les cases ne se repoussent pas */
 }
 
 /* dans les sujets */
@@ -1231,31 +1165,6 @@ td.gen.row1 img {
 
 .ion-trash-a:before {
   content: "\f252" !important;
-}
-
-/* cheese */
-.poster-profile img {
-  border: 0px;
-  margin: 0px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  background-color: transparent;
-  max-width: 200px;
-}
-
-.zone_libre img {
-  max-width: 206px !important;
-}
-
-.zone_libre {
-  max-height: 505px !important;
-  overflow: auto;
-  border-bottom: 0px;
-}
-
-element.style {
-  color: maroon !important;
 }
 
 /* IMAGES DIVERSES */
@@ -2087,7 +1996,7 @@ textarea .inputbox {
   font-family: calibri !important;
 }
 
-/*********** QEEL ***********/
+/* QEEL */
 .bloc_qeell {
   display: inline-block;
   margin: 10px;
@@ -2135,10 +2044,6 @@ div#avatar_dernier_membre {
   width: 100px !important;
   height: 100px !important;
   overflow: hidden;
-  /*-moz-box-shadow:0px 0px 25px #d4d4d4;
-    -webkit-box-shadow:0px 0px 25px #d4d4d4;
-    -o-box-shadow:0px 0px 25px #d4d4d4;
-    box-shadow:0px 0px 25px #d4d4d4;*/
   background: silver;
   border-radius: 100px;
 }
@@ -2174,7 +2079,6 @@ span#dernier_membre {
   text-align: center;
 }
 
-/* On fait en sorte que l'infobulle ne soit pas coupée */
 .statistics {
   overflow: visible;
 }
@@ -2301,108 +2205,7 @@ span#dernier_membre {
   font-size: 10px;
   line-height: 10px;
 }
-
-/*********** FIN DU QEEL ************/
-
-/* CHATBOX */
-.panel:last-child {
-  width: 828px;
-  /* pour rétablir la largeur de la CB */
-}
-
-#chatbox_popup {
-  float: center;
-}
-
-#frame_chatbox {
-  margin-top: 0px !important;
-  border-radius: 5px !important;
-  -moz-border-radius: 5px !important;
-  -webkit-border-radius: 5px !important;
-  -o-border-radius: 5px !important;
-  margin-bottom: 0px !important;
-  border-collapse: collapse;
-  cellpadding: 0px !important;
-  cellspacing: 0px !important;
-}
-
-body.chatbox {
-  /* background-image: url(https://i.servimg.com/u/f59/20/23/37/54/bgleav14.jpg);*/
-  background-color: var(--couleur_clrgba) !important;
-  border-radius: 2px !important;
-  -moz-border-radius: 2px !important;
-  -webkit-border-radius: 2px !important;
-  -o-border-radius: 2px !important;
-}
-
-#chatbox_header {
-  background: transparent !important;
-}
-
-#chatbox_header .catBottom {
-  background: transparent !important;
-  border: none !important;
-}
-
-#chatbox_header td {
-  text-align: left;
-}
-
-#chatbox_header td.chatbox-options {
-  text-align: right;
-}
-
-div#chatbox_messenger {
-  max-width: 900px !important;
-}
-
-#chatbox_messenger_form {
-  height: 50px !important;
-}
-
-td .chatfootertable {
-  max-width: 800px;
-}
-
-.chatbox-options li a {
-  color: var(--couleur_titre);
-}
-
-.chatbox-title .chat-title {
-  visibility: hidden;
-}
-
-.chatbox-title {
-  font-weight: bold;
-}
-
-.chatbox-title a {
-  color: var(--couleur_titre) !important;
-}
-
-.chatbox-members {
-  background-color: #f1f3e8;
-}
-
-.cbnoname {
-  visibility: hidden;
-}
-
-#chatbox {
-  bottom: 50px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  font-size: 1.3em;
-}
-
-#chatbox>p {
-  font-size: 1.25em;
-}
-
-.online-users li,
-.away-users li {
-  font-size: 13px;
-}
+/* FIN DU QEEL */
 
 /* PIED DE PAGE */
 div#page-footer {
@@ -2423,29 +2226,21 @@ div#page-footer {
   color: var(--coul_texte);
 }
 
-/*************************** Début de la TOOLBAR ***************************/
+/* Début de la TOOLBAR */
 div#fa_toolbar {
   transition: 300ms all ease;
   opacity: 0.9;
   background-color: var(--couleur_clrgba) !important;
-  /* Couleur de fond */
   border-radius: 0 0 20px 20px !important;
-  /* Arrondis les bords de la toolbar */
-  box-shadow: 0 0 8px #XXXXXX !important;
-  /* Affiche une ombre */
   margin: auto;
-  /* Centre la toolbar */
   width: 100% !important;
-  /* Modifie la longueur de la toolbar */
   font-size: 10px !important;
   z-index: 900 !important;
-  /* positionne la toolbar derrière la navbar */
 }
 
 div#fa_toolbar div,
 div#fa_toolbar span {
   margin: 0 5px;
-  /* Repositionne correctement le contenu de la toolbar */
 }
 
 #fa_menu #fa_welcome,
@@ -2453,35 +2248,14 @@ div#fa_toolbar span {
   color: var(--couleur_titre) !important;
 }
 
-/* couleur 'connexion' et 's'enregistrer' */
-
-/* les trucs moches à cacher */
-div#fa_search {
-  display: none !important;
-}
-
-/* supprimer la barre de recherche */
-span#fa_share {
-  display: none !important;
-}
-
-/* supprimer les liens réseaux sociaux */
-#fa_left {
-  display: none !important;
-}
-
-/* supprimer le lien FA */
-
-#fa_hide {
-  display: none !important;
-}
-
-/* supprimer la flèche pour cacher la barre */
+div#fa_search,
+span#fa_share,
+#fa_left,
+#fa_hide,
 a#fa_hide {
   display: none !important;
 }
 
-/* mettre la toolbar à droite (right) ou à gauche (left) */
 #fa_right {
   float: left !important;
   z-index: 900 !important;
@@ -2489,7 +2263,6 @@ a#fa_hide {
   left: 0px;
 }
 
-/* pour coder l'avatar encerclé à gauche de la toolbar */
 .fa_avatar {
   float: left;
   position: relative;
@@ -2506,13 +2279,11 @@ a#fa_hide {
 .fa_avatar img {
   width: 45px;
 }
-/* on règle la taille de l'image de l'avatar */
 
 #fa_share_text,
 #fa_service,
 #fa_welcome,
 #fa_notifications {
-  /* taille police de la toolbar */
   font-size: 10px !important;
   font-family: var(--police_txt);
   text-transform: uppercase;
@@ -2520,10 +2291,8 @@ a#fa_hide {
   letter-spacing: 1px;
   color: #333333 !important;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #XXXXXX;
 }
 
-/* les blocs bienvenue et notifications en haut */
 a#fa_welcome,
 a#fa_notifications,
 a#fa_welcome:visited,
@@ -2532,7 +2301,6 @@ a#fa_notifications:visited {
   color: var(--couleur_titre) !important;
 }
 
-/* les liens */
 a#fa_welcome:hover,
 a#fa_notifications:hover,
 a#fa_welcome:active,
@@ -2541,21 +2309,13 @@ a#fa_notifications:active {
   color: var(--coul_hover) !important;
 }
 
-/* les liens survolés ou actifs */
-
-/* les menus */
-
-/* on confirme la couleur de fond */
-
 #fa_toolbar #fa_right #notif_list {
   background: var(--couleur_clrgba) !important;
-  /* Couleur de fond */
   border: none !important;
   color: #333333 !important;
   padding-right: 10px;
 }
 
-/* le menu "perso" */
 #fa_menulist {
   background-color: var(--couleur_clrgba) !important;
   font-size: 11px !important;
@@ -2588,17 +2348,14 @@ a#fa_notifications:active {
 
 ul#fa_menulist {
   background: var(--couleur_clrgba) !important;
-  /* Couleur de fond */
   border: 0;
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
   -moz-border-radius: 0px 0px 3px 3px;
   -o-border-radius: 0px 0px 3px 3px;
-  /* pour arrondir en bas */
   color: #333333 !important;
   font-size: 11px !important;
   font-variant: small-caps;
-  /* on choisit la police */
   position: absolute;
   left: 95px !important;
   top: 40px;
@@ -2650,7 +2407,6 @@ ul#fa_menulist {
   opacity: 1;
 }
 
-/* les liens du menu "perso" */
 #fa_menulist:link {
   color: var(--couleur_titre) !important;
 }
@@ -2675,7 +2431,6 @@ ul#fa_menulist {
   color: var(--coul_hover) !important;
 }
 
-/* le menu "notif" */
 #fa_toolbar #fa_right #notif_list li.unread {
   background: rgba(255, 255, 255, 0.2) !important;
   font-size: 10px !important;
@@ -2700,7 +2455,6 @@ ul#fa_menulist {
 
 ul#notif_list {
   background: var(--couleur_clrgba) !important;
-  /* Couleur de fond */
   border: 0;
   top: 40px !important;
   left: 95px !important;
@@ -2709,14 +2463,11 @@ ul#notif_list {
   -webkit-border-radius: 0px 0px 3px 3px;
   -moz-border-radius: 0px 0px 3px 3px;
   -o-border-radius: 0px 0px 3px 3px;
-  /* pour arrondir en bas */
   position: absolute;
 }
 
-/* la dernière ligne de notif */
 li.see_all {
   background: transparent !important;
-  /* Couleur de fond */
   font-size: 10px !important;
   color: #333333 !important;
   margin-right: 10px;
@@ -2724,7 +2475,6 @@ li.see_all {
   font-variant: small-caps;
 }
 
-/* les liens et le texte des notifs */
 #fa_toolbar #fa_right #notif_list li .contentText {
   color: #333333 !important;
 }
@@ -2761,7 +2511,6 @@ li.see_all a:hover {
   color: var(--coul_hover) !important;
 }
 
-/* décaler le popup de notification en live */
 #fa_toolbar #live_notif {
   width: 330px;
   position: absolute;
@@ -2769,7 +2518,6 @@ li.see_all a:hover {
   left: 75px;
 }
 
-/* "transition" au passage de la souris sur les liens */
 #navSIT a {
   transition: all .65s linear;
   -webkit-transition: all .65s linear;
@@ -2779,7 +2527,7 @@ li.see_all a:hover {
 
 /* fin TOOLBAR */
 
-/*********************** Début BARRE DE NAVIGUATION MENU *******************/
+/* Début BARRE DE NAVIGUATION MENU */
 .mainmenu {
   font-size: 10px !important;
   font-weight: bold;
@@ -2788,13 +2536,11 @@ li.see_all a:hover {
   line-height: -20px;
   letter-spacing: 1px;
   color: #333333 !important;
-  text-shadow: 2px 2px 2px #XXXX;
   z-index: 999 !important;
 }
 
 .mainmenu:hover {
   color: var(--coul_hover) !important;
-  text-shadow: 2px 2px 2px #XXXX;
 }
 
 /* nouveaux messages */
@@ -2805,22 +2551,15 @@ li.see_all a:hover {
 /* NAVBAR EN HAUT */
 #nav_barr {
   position: fixed;
-  /*--- position de la barre ---*/
   top: -17px !important;
-  /* pour garder la barre au bon niveau en hauteur */
   right: 0px;
   height: 20px !important;
-  /*--- pour régler la hauteur de la barre */
   background: transparent !important;
   border: 0px var(--coul_hover) solid !important;
-  /*--- On ajoute une bordure (ou pas) ---*/
   padding-top: 0px !important;
-  /* pour laisser de la marge en haut entre le cadre et les liens de la navbar */
   padding-bottom: 6px !important;
-  /* pour laisser de la marge en bas entre le cadre et les liens de la navbar */
   margin-right: 0px !important;
   z-index: 999 !important;
-  /* pour qu'elle reste "au-dessus" du reste du forum */
 }
 
 #nav_barr table {
@@ -2859,8 +2598,8 @@ a.mainmenu:active {
   top: 27px !important;
 }
 
-/* Supprimer images de la barre de naviguation */
-a.mainmenu img {
+a.mainmenu img,
+.mainmenu img {
   display: none;
 }
 
@@ -2869,815 +2608,7 @@ a.mainmenu {
   padding-right: 1px;
 }
 
-.mainmenu img {
-  /* pour effacer la place des images à côté des liens accueil faq rechercher etc. */
-  display: none;
-}
-
-/* CHINEUR */
-.titre-article {
-  font-family: 'Anton', sans-serif;
-  text-align: center;
-  font-size: 16px;
-  color: black;
-}
-
-.legende-gif {
-  font-family: 'Slabo 27px', serif;
-  text-align: center;
-  font-size: 10px;
-  color: black;
-}
-
-.text-article {
-  font-family: 'Slabo 27px', serif;
-  line-height: 14px;
-  text-align: justify;
-  font-size: 13px;
-  color: black;
-  padding-right: 5px
-}
-
-.chineur-bloc {
-  background-image: url(https://tinyurl.com/y59pur3e);
-  border: 1px solid #DCDCDC;
-  border-radius: 3px;
-  line-height: 13px;
-  text-align: center;
-  font-size: 1.4rem;
-  font-family: 'Slabo 27px', serif;
-  padding-top: 3.5rem;
-}
-
-.chineur-bloc a {
-  display: inline;
-  max-width: auto;
-  overflow: auto;
-  text-overflow: initial;
-  white-space: break-spaces;
-}
-
-.chineur-titre {
-  font-family: 'Abril Fatface', cursive !important;
-  color: var(--couleur_titre) !important;
-  font-size: 50px !important;
-  text-transform: uppercase !important;
-  border: none !important;
-  margin: 0 !important;
-}
-
-.chineur-chapeau {
-  border-top: 1px solid var(--coul_texte) !important;
-  border-bottom: 1px solid var(--coul_texte) !important;
-  margin: 1rem;
-  font-size: 1.2rem;
-  font-family: bitter;
-}
-
-.chineur-bloc>section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1rem 0;
-}
-
-.chineur-img-entete {
-  width: 430px;
-  height: 180px;
-  object-fit: cover;
-  margin-top: 1rem;
-}
-
-.chineur-img-entete_legend {
-  font-size: 1rem;
-}
-
-.chineur-soustitre {
-  font-family: Anton, sans-serif !important;
-  font-size: 16px !important;
-  text-transform: uppercase;
-  text-align: center;
-  border: none !important;
-  margin-top: 1rem !important;
-  width: 100%;
-}
-
-.chineur-article-xl {
-  width: 520px;
-  height: 220px;
-  text-align: justify;
-  overflow: auto;
-}
-
-.chineur-separation {
-  width: 445px;
-  margin-bottom: 1rem;
-}
-
-.chineur-article-md {
-  width: 240px;
-  height: 220px;
-  order: 2;
-}
-
-.chineur-article-sm {
-  height: 170px;
-  width: 240px;
-  overflow: auto;
-  text-align: justify;
-}
-
-.chineur-img-article-right {
-  width: 240px;
-  height: 220px;
-  order: 3;
-}
-
-.chineur-img-article-left {
-  width: 240px;
-  height: 220px;
-  order: 1;
-}
-
-.chineur-end {
-  flex-direction: column;
-}
-
-.chineur-more {
-  text-align: center;
-}
-
-.chineur-copyright {
-  text-align: right;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  border-top: 1px solid var(--coul_texte) !important;
-  border-bottom: 1px solid var(--coul_texte) !important;
-  margin: 1rem;
-}
-
-.chineur-react {
-  text-align: left;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  padding: 1rem;
-}
-
-/* WIZARDGRAM */
-
-/* barre du haut */
-.wzdgfd {
-  width: 400px;
-  background: #fafafa;
-  !important;
-}
-
-.wzdgtop {
-  background-color: '#fff';
-  width: 400px;
-  height: 45px;
-  border-bottom: silver 1px solid;
-}
-
-.wzdgsearch {
-  background: #fafafa;
-  border: 1px solid silver;
-  width: 170px;
-  margin: 8px;
-  height: 24px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.wzdgsico {
-  background: url('https://i.imgur.com/cRvvDnR.png');
-  background-position: 28% 55%;
-  width: 25px;
-  height: 22px;
-}
-
-.wzdgstxt {
-  width: 145px;
-  font-family: 'Montserrat';
-  color: silver;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-}
-
-.wzdgdot {
-  background: url('https://i.imgur.com/Hpr2M3o.png');
-  background-position: 97% 50%;
-  width: 25px;
-  height: 40px;
-}
-
-/* profil utilisateur 1er post */
-.wzdgprofile {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  float: left;
-  margin-top: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 0px;
-}
-
-.wzdgpseudo {
-  font-family: 'Montserrat';
-  color: black;
-  font-weight: bold;
-  font-size: 17px;
-  text-align: left;
-  padding-left: 5px;
-  vertical-align: bottom;
-}
-
-.wzdgmodpr {
-  font-family: 'Montserrat';
-  color: black;
-  font-weight: bold;
-  font-size: 13px;
-  background: #f2f2f2;
-  border: 1px solid silver;
-  height: 20px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  width: 250px;
-  text-align: center;
-}
-
-.wzdgprtxt {
-  width: 300px;
-  text-align: left;
-  font-family: 'Montserrat';
-  margin-top: 8px;
-}
-
-/* abonnements et abonnés */
-
-.wzdgnumbz {
-  width: 384px;
-  margin-top: 6px;
-  margin-bottom: 3px;
-  padding: 8px;
-  border-bottom: silver 1px solid;
-  border-top: silver 1px solid;
-}
-
-/* tableau de photos postées */
-
-.wzdgntab {
-  text-align: center;
-  font-family: 'Montserrat' !important;
-  font-size: 13px;
-  color: #333;
-}
-
-.wzdgpics {
-  background-size: cover !important;
-  width: 120px;
-  height: 120px;
-}
-
-wlnk {
-  font-weight: bold;
-  color: #1560BD;
-}
-
-/* post d'une nouvelle photo */
-
-.wzdgtabpost {
-  margin: 10px;
-  padding-bottom: 10px !important;
-  width: 380px;
-  background: #fff;
-  border: 1px silver solid;
-}
-
-.wzdgpostpr {
-  font-family: 'Montserrat';
-  color: black;
-  font-size: 13px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-.wzdgpost {
-  border-top: 1px solid silver;
-  padding: 10px !important;
-  width: 380px;
-}
-
-.wzdgimgpost {
-  background-size: cover !important;
-  width: 360px;
-  height: 360px;
-}
-
-.wzdgact {
-  width: 360px;
-  height: 34px;
-}
-
-.wzdgcom {
-  font-family: 'Montserrat';
-  color: black;
-  font-size: 11px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-/* post de commentaire */
-.wzdgcomtxt {
-  font-family: 'Montserrat';
-  color: black;
-  font-size: 13px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-/* post de suivi */
-.wzdgfollow {
-  position: relative;
-  width: 400px;
-  height: 310px;
-  background: #fafafa;
-  padding-bottom: 6px;
-}
-
-.wzdgfolline {
-  line-height: 11px;
-  position: relative;
-  top: 6px;
-  text-align: left;
-}
-
-.wzdgfoltab {
-  border: none;
-  border-collapse: collapse;
-}
-
-.wzdgfolbloc {
-  position: relative;
-  width: 230px;
-  height: 270px;
-  background: #ffffff;
-  border-radius: 10px;
-  border: 0px solid #aaaaaa;
-}
-
-.wzdgfolhead {
-  width: 230px;
-  background-size: cover !important;
-  height: 110px;
-  border-radius: 10px 10px 0px 0px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.wzdgfolimg {
-  border: 5px solid #ffffff;
-  border-radius: 5px;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 80px;
-  left: 12px;
-}
-
-.wzdgfolgear {
-  position: absolute;
-  top: 120px;
-  right: 104px;
-}
-
-.wzdgfolico {
-  position: absolute;
-  top: 114px;
-  right: 4px;
-}
-
-.wzdgfolprev {
-  position: absolute;
-  top: 164px;
-  left: 4px;
-}
-
-.wzdgfolname {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-}
-
-.wzdgfolcheck {
-  position: relative;
-  top: 6px;
-}
-
-.wzdgfoltxt {
-  margin-bottom: 6px;
-  line-height: 11px;
-  font-size: 10px;
-}
-
-/*switcheroo*/
-:root {
-  --color-delete: var(--coul_hover);
-  --color-tooltip: var(--coul_texte);
-  --color-squircle: var(--coul_texte);
-  --color-accent: var(--couleur_titre);
-  --color-button: var(--coul_navital);
-  --color-pill: #ffffff;
-  --gap-size: 16px;
-  --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
-  --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
-}
-
-.switcheroo {
-  color: var(--coul_texte);
-  font-size: 16px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: transparent;
-}
-
-.switcheroo[position="top"] {
-  position: fixed;
-  left: 0;
-  z-index: 100;
-  top: 70px;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.switcheroo__squircles {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  padding: var(--gap-size);
-  gap: var(--gap-size);
-}
-
-.switcheroo[direction="horizontal"] .switcheroo__squircles {
-  flex-direction: row;
-}
-
-.switcheroo[direction="vertical"] .switcheroo__squircles {
-  flex-direction: column;
-  padding-left: 45px;
-}
-
-/* squircle */
-
-.switcheroo[theme="discord"] .switcheroo__squircle {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--couleur_clrgba);
-  opacity: .8;
-}
-
-.switcheroo[theme="discord"] .switcheroo__squircle {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: border-radius 128ms var(--ease);
-}
-
-.switcheroo[theme="discord"] .switcheroo__squircle:hover {
-  border-radius: 36%;
-}
-
-.switcheroo[theme="discord"] .switcheroo__squircle.active {
-  border-radius: 36%;
-  cursor: default;
-}
-
-.switcheroo[theme="discord"][direction="vertical"] .switcheroo__squircle:hover:before {
-  opacity: 1;
-  transform: translate(-100%, -50%) scale(0.5);
-}
-
-.switcheroo[theme="discord"][direction="horizontal"] .switcheroo__squircle:hover:before {
-  opacity: 1;
-  transform: translate(-50%, -100%) scale(0.5);
-}
-
-.switcheroo[theme="discord"][direction="vertical"] .switcheroo__squircle.active:before {
-  opacity: 1;
-  transform: translate(-85%, -50%) scale(0.2);
-  border-radius: 50%;
-}
-
-.switcheroo[theme="discord"][direction="horizontal"] .switcheroo__squircle.active:before {
-  opacity: 1;
-  transform: translate(-50%, -85%) scale(0.2);
-  border-radius: 50%;
-}
-
-/* tooltip */
-.switcheroo__popper {
-  background-color: var(--color-tooltip);
-  padding: 0.68rem 1rem;
-  position: absolute;
-  width: -webkit-max-content;
-  width: max-content;
-  border-radius: 4px;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
-  pointer-events: none;
-  color: #fff;
-}
-
-.switcheroo[direction="vertical"] .switcheroo__popper {
-  left: 155%;
-  top: 50%;
-  transform-origin: left;
-  transform: translateY(-50%) scale(0.98);
-}
-
-.switcheroo[direction="horizontal"] .switcheroo__popper {
-  top: 155%;
-  left: 50%;
-  transform-origin: top;
-  transform: translateX(-50%) scale(0.98);
-}
-
-.switcheroo__popper:before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-tooltip);
-  z-index: -1;
-}
-
-.switcheroo[direction="vertical"] .switcheroo__popper:before {
-  left: -2px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-.switcheroo[direction="horizontal"] .switcheroo__popper:before {
-  left: 50%;
-  top: -2px;
-  transform: translateX(-50%) rotate(-45deg);
-}
-
-.switcheroo[direction="vertical"] .switcheroo__squircle:hover .switcheroo__popper {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
-}
-
-.switcheroo[direction="horizontal"] .switcheroo__squircle:hover .switcheroo__popper {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
-}
-
-.switcheroo__squircle:hover:before {
-  opacity: 1;
-  transform: translate(-100%, -50%) scale(0.5);
-}
-
-/* avatar */
-.switcheroo[theme="discord"] .switcheroo__avatar {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  overflow: hidden;
-}
-
-.switcheroo[theme="discord"] .switcheroo__avatar img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* divider */
-.switcheroo[theme="discord"][direction="vertical"] .switcheroo__divider {
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-pill);
-  border-radius: 1px;
-  opacity: 0.06;
-  transform: scale(0.8);
-}
-
-.switcheroo[theme="discord"][direction="horizontal"] .switcheroo__divider {
-  width: 2px;
-  background-color: var(--color-pill);
-  border-radius: 1px;
-  opacity: 0.06;
-  transform: scale(0.8);
-}
-
-/* delete button */
-.switcheroo[theme="discord"] .switcheroo__delete {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 16px;
-  line-height: 14px;
-  height: 16px;
-  top: -2px;
-  right: -2px;
-  border-radius: 50%;
-  background-color: var(--color-delete);
-  transform: scale(0);
-  opacity: 1;
-  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.switcheroo[theme="discord"] .switcheroo__squircle:hover .switcheroo__delete {
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* logo */
-.switcheroo[theme="discord"] .switcheroo__logo {}
-
-.switcheroo[theme="discord"] .switcheroo__logo img {
-  width: 32px;
-}
-
-.switcheroo[theme="discord"] .switcheroo__logo:hover {
-  background-color: var(--color-accent);
-}
-
-/* buttons */
-.switcheroo[theme="discord"] .switcheroo__squircle--button {
-  transition: border-radius 128ms var(--ease);
-  color: rgb(var(--text-color));
-}
-
-.switcheroo[theme="discord"] .switcheroo__squircle--button:hover {
-  color: #fff;
-  background-color: var(--coul_lien);
-}
-
-/* modal */
-.switcheroo__form {
-  padding: 48px;
-}
-
-.switcheroo__form-row {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  margin-bottom: 16px;
-}
-
-.switcheroo__form-label {
-  margin-bottom: 8px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--coul_texte);
-}
-
-.switcheroo__form-input {
-  padding: 6px;
-  font-size: 16px;
-  border-radius: 4px;
-  width: 100%;
-  cursor: text;
-  color: var(--coul_texte);
-  border-bottom: 2px solid var(--coul_lien) !important;
-  background-color: #fff !important;
-}
-
-.switcheroo__form-button {
-  border-radius: 8px;
-  padding: 8px;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  align-self: flex-end;
-  background-color: var(--couleur_titre);
-  color: #FFF;
-  transition: all .5s;
-}
-
-.switcheroo__form-button:hover {
-  background-color: var(--coul_teinteclr);
-}
-
-.monomer-overlay {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.2s opacity ease;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.monomer-modal {
-  position: fixed;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  width: 94%;
-  padding: 24px 20px;
-  transition: 0.2s opacity ease;
-  transform: translate(-50%, -50%);
-  border-radius: 2px;
-  background-color: var(--couleur_claire);
-  color: var(--coul_texte);
-}
-
-.monomer-modal.monomer-open.monomer-anchored {
-  top: 20px;
-  transform: translate(-50%, 0);
-}
-
-.monomer-modal.monomer-open {
-  opacity: 1;
-}
-
-.monomer-overlay.monomer-open {
-  opacity: 1;
-}
-
-.monomer-close {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  padding: 5px;
-  cursor: pointer;
-  color: #fff;
-  border: 0;
-  outline: none;
-  background: var(--color-delete);
-  border-radius: 50%;
-  padding: 0;
-}
-
-.monomer-close:hover {
-  opacity: 0.8;
-}
-
-@media all and (max-width: 1024px) {
-  .switcheroo {
-    left: 0;
-  }
-
-  #modernbb {
-    padding-left: 48px !important;
-  }
-
-  .topSite__vote {
-    display: none;
-  }
-}
-
 /*pour le référentiel automatique*/
 .faceclaim_hidden {
   display: none !important;
-}
-
-hdl,
-aoc,
-jqb {
-  font-family: Georgia;
-  font-weight: bold;
-}
-
-hdl {
-  color: hotpink;
-}
-
-jqb {
-  color: thistle;
-}
-
-.maxw {
-  max-width: 300px;
 }

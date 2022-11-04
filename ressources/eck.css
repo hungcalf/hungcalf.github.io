@@ -1,0 +1,18 @@
+hdl,
+aoc,
+jqb {
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+hdl {
+  color: hotpink;
+}
+
+jqb {
+  color: thistle;
+}
+
+.maxw {
+  max-width: 300px;
+}
