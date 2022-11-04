@@ -16,3 +16,192 @@ jqb {
 .maxw {
   max-width: 300px;
 }
+
+/* FICHES ET ANNONCES */
+.cookie_bloc {
+    position: relative;
+    border-left: 10px solid #f6f6f6;
+    border-right: 10px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    color: gray;
+    padding: 6px;
+    margin: 6px;
+    font-family: calibri;
+  }
+  
+  .cookie_titre {
+    position: relative;
+    z-index: 500;
+    font-family: var(--police_sst);
+    font-size: 28px;
+    line-height: 12px;
+    margin: 6px;
+    border-bottom: 3px dotted maroon;
+    color: maroon;
+    font-weight: bold;
+  }
+  
+  .cookie_avprez {
+    width: 190px;
+    height: 304px;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 3px;
+  }
+  
+  .cookie_idcard {
+    width: 190px;
+    height: 304px;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4) url('http://eck.graph.free.fr/webd/SW/') bottom center no-repeat;
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    text-align: justify;
+    line-height: 12px;
+    font-family: calibri !important;
+  }
+  
+  .cookie_giftop {
+    width: 400px;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 3px;
+  }
+  
+  .cookie_blocprez {
+    width: 400px;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    text-align: justify;
+    line-height: 12px;
+  }
+  
+  .cookie_bloclnk {
+    width: 400px;
+    height: 120px;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    text-align: justify;
+    line-height: 12px;
+    font-family: calibri !important;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    overflow: hidden;
+  }
+  
+  .cookie_bloclnk:hover {
+    height: 260px;
+    overflow: auto;
+  }
+  
+  .cookie_giflnk1 {
+    float: right;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 3px;
+    height: 100px;
+    width: 170px;
+  }
+  
+  .cookie_giflnk2 {
+    float: left;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 3px;
+    height: 100px;
+    width: 170px;
+  }
+  
+  .cookie_namelnk {
+    margin: 6px;
+    font-family: 'Arizonia', cursive;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cookie_diary {
+    width: 400px;
+    max-height: 350px;
+    overflow: auto;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    text-align: justify;
+    font-family: calibri !important;
+    line-height: 12px;
+  }
+  
+  .cookie_imgsgn {
+    float: center;
+    border: 3px solid #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 3px;
+    height: 100px;
+    width: 170px;
+  }
+  
+  .feat {
+    position: relative;
+    top: -7px;
+    font-size: 10px;
+  }
+  
+  .cookie_pvphoto {
+    position: relative;
+    margin: 3px;
+    width: 112px;
+    height: 132px;
+    float: center;
+  }
+  
+  .cookie_pvimg {
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-bottom: 23px solid #fff;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .cookie_pvlien {
+    position: absolute;
+    top: 108px;
+    left: 6px;
+    font-family: 'Arizonia', cursive;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .cookie_pvdesc {
+    position: relative;
+    margin: 3px;
+    height: 132px;
+  }
+  
+  .cookie_pvdb {
+    height: 120px;
+    background: rgba(155, 155, 155, 0.1);
+    padding: 4px;
+    overflow: auto;
+    font-size: 11px;
+    font-family: calibri !important;
+  }
