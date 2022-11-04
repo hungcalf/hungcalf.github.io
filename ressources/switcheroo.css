@@ -221,8 +221,6 @@
 }
 
 /* logo */
-.switcheroo[theme="discord"] .switcheroo__logo {}
-
 .switcheroo[theme="discord"] .switcheroo__logo img {
   width: 32px;
 }

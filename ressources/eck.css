@@ -205,3 +205,14 @@ jqb {
     font-size: 11px;
     font-family: calibri !important;
   }
+
+  
+.basdebloc {
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
+  border-top: 2px dotted #fff !important;
+  height: 29px;
+  background: url('https://i.servimg.com/u/f66/11/73/87/11/fond_f18.png') bottom no-repeat !important;
+}

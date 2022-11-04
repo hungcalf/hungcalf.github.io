@@ -2,23 +2,14 @@
 
 /* pour rappeler des trucs... */
 :root {
-  --police_sst: 'dancing script', cusrive, bold;
-  --police_titre: 'playfair display';
-  --police_cate: var(--police_sst);
+  --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --police_texte: var(--police_txt);
-  --coul_texte: #333;
-  --coul_lien: #518f93;
-  --coul_navital: var(--coul_lien);
-  --couleur_titre: #604711;
-  --coul_bbclair: #518f93;
-  --coul_hover: #518f93;
-  --coul_teinteclr: #FDF0C2;
-  --couleur_claire: #518f93;
-  --couleur_clrgba: rgba(230, 212, 140, 1);
-  --coul_desc_cat: #FFF8D8;
-  --coul_sousforums1: #FFFAE5;
-  --coul_sousforums2: #FCF6DF;
+  --color_text: #333;
+  --color_title: #604711;
+  --color_link: #518f93;
+  --color_background1: #e6d48c;
+  --color_background3: #FDF0C2;
+  --color_background4: #FFF8D8;
   --img_header: url('https://2img.net/r/ihimizer/img923/1415/3VnrMX.jpg');
   --fond_pa: url('https://2img.net/r/ihimizer/img924/5459/147I1f.png');
   --fond_blocava: url('https://2img.net/r/ihimizer/img924/5459/147I1f.png');
@@ -39,28 +30,28 @@
 em,
 i {
   font-family: Georgia !important;
-  color: var(--coul_navital) !important;
+  color: var(--color_link) !important;
   font-size: 11px;
 }
 
 /* Deco souligné */
 u {
   text-decoration: none;
-  border-bottom: 1px solid var(--coul_hover);
+  border-bottom: 1px solid var(--color_link);
 }
 
 /* Police divers */
 aa {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
   font-weight: bold;
 }
 
 bb {
-  color: var(--coul_bbclair) !important;
+  color: var(--color_link) !important;
 }
 
 cc {
-  color: var(--couleur_claire);
+  color: var(--color_link);
   background: linear-gradient(90deg, rgba(214, 197, 178, 1) 0%, rgba(69, 28, 14, 1) 100%);
 }
 
@@ -74,13 +65,12 @@ a {
   -moz-transition: 1s !important;
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
-  color: var(--coul_teinteclr);
+  color: var(--color_background3);
 }
 
 a:hover,
 a:active {
-  font-weight: bold !important;
-  color: var(--coul_bbclair) !important;
+  color: var(--color_link) !important;
   text-decoration: none !important;
 }
 
@@ -94,7 +84,7 @@ a.forumtitle:visited {
   -moz-transition: 1s !important;
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
-  color: var(--coul_lien);
+  color: var(--color_title);
   font-family: var(--police_sst) !important;
   font-size: 2.1rem;
   line-height: 24px;
@@ -103,24 +93,24 @@ a.forumtitle:visited {
 
 .footerbar-system a,
 .copyright a {
-  color: var(--coul_lien);
+  color: var(--color_link);
 }
 
 a.forumtitle:hover,
 a.forumtitle:active {
   font-weight: bold !important;
-  color: var(--couleur_claire) !important;
+  color: var(--color_link) !important;
   text-decoration: none !important;
 }
 
 .footerbar-system a:hover,
 .copyright a:hover {
-  color: var(--couleur_claire);
+  color: var(--color_link);
 }
 
 .mentiontag:link,
 .mentiontag:visited {
-  color: var(--coul_lien);
+  color: var(--color_link);
   background: transparent !important;
 }
 
@@ -134,20 +124,20 @@ a.forumtitle:active {
 .button1,
 .button2,
 input[type="submit"] {
-  background-color: var(--coul_lien);
+  background-color: var(--color_link);
 }
 
 .button,
 .button1,
 .button2 {
-  background: var(--couleur_claire);
+  background: var(--color_link);
 }
 
 .button:hover,
 .button1:hover,
 .button2:hover,
 input[type="submit"]:hover {
-  background: var(--couleur_titre);
+  background: var(--color_title);
 }
 
 .button1:active,
@@ -162,14 +152,14 @@ input[type="submit"]:hover {
 input[type="submit"]:active,
 input[type="submit"]:link,
 input[type="submit"]:visited {
-  color: var(--couleur_titre);
+  color: var(--color_title);
 }
 
 .button1:hover,
 .button2:hover,
 .button:hover,
 input[type="submit"]:hover {
-  color: var(--couleur_claire) !important;
+  color: var(--color_link) !important;
 }
 
 .button+.button-round,
@@ -209,13 +199,13 @@ input[type="submit"]+.button2 {
 .pagination span a:active,
 .pagination span a:link,
 .pagination span a:visited {
-  background-color: var(--coul_lien);
+  background-color: var(--color_link);
 }
 
 .row .pagination span a:active,
 .row .pagination span a:link,
 .row .pagination span a:visited {
-  background-color: var(--coul_lien);
+  background-color: var(--color_link);
 }
 
 .mark>input {
@@ -226,7 +216,7 @@ input[type="submit"]+.button2 {
 .button-round:hover,
 .button-round:link,
 .button-round:visited {
-  color: var(--coul_lien);
+  color: var(--color_link);
 }
 
 /* couleur accessibilité */
@@ -322,9 +312,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--coul_lien);
+  background-color: var(--color_link);
   border: 1px;
-  color: var(--coul_lien);
+  color: var(--color_link);
   border-radius: 1px 1px 1px 1px;
 }
 
@@ -364,12 +354,12 @@ th {
   -webkit-border-radius: 3px !important;
   -o-border-radius: 3px !important;
   margin-top: 18px;
-  background-color: var(--couleur_clrgba) !important;
+  background-color: var(--color_background1) !important;
   border-collapse: collapse;
 }
 
 ul.forums {
-  background: var(--couleur_clrgba);
+  background: var(--color_background1);
 }
 
 li.row,
@@ -407,7 +397,7 @@ li.row2:hover {
 }
 
 #cp-main table.table1 thead th {
-  color: var(--coul_texte);
+  color: var(--color_text);
 }
 
 .linklist li {
@@ -438,11 +428,11 @@ hr {
 }
 
 .ligne1 {
-  border-bottom: 11px solid var(--coul_bbclair);
+  border-bottom: 11px solid var(--color_link);
 }
 
 .ligne2 {
-  border-bottom: 1px solid var(--couleur_claire);
+  border-bottom: 1px solid var(--color_link);
 }
 
 .ligne3 {
@@ -451,8 +441,8 @@ hr {
 
 /* post header */
 .post-head {
-  background-color: var(--coul_teinteclr);
-  border-color: var(--couleur_titre);
+  background-color: var(--color_background3);
+  border-color: var(--color_title);
   border-bottom: 10px;
   font-family: var(--police_sst) !important;
   font-size: 10px !important;
@@ -466,14 +456,14 @@ hr {
   background-color: transparent;
   padding-left: 18px !important;
   margin: 0px !important;
-  font-family: var(--police_titre) !important;
+  font-family: var(--police_sst) !important;
   font-size: 20px !important;
 }
 
 
 /* LISTE DES SUJETS */
 .topicslist_row {
-  background: var(--couleur_claire);
+  background: var(--color_link);
   border-radius: 3px;
   padding: 3px;
   margin-bottom: 10px;
@@ -489,7 +479,7 @@ hr {
 }
 
 .topicslist_row:hover {
-  background: var(--couleur_claire);
+  background: var(--color_link);
 }
 
 .topicslist-img {
@@ -520,18 +510,18 @@ hr {
   object-position: center;
   width: auto !important;
   height: 50px;
-  background: var(--couleur_claire);
+  background: var(--color_link);
 }
 
 .topicslist-description {
   grid-column: 1 / span 5;
-  border-top: 1px solid var(--couleur_claire);
+  border-top: 1px solid var(--color_link);
   margin: 10px -10px 0;
   padding: 5px 10px 0;
 }
 
 .post {
-  border-color: var(--couleur_clrgba);
+  border-color: var(--color_background1);
 }
 
 /* marge de la ligne de liens du bas */
@@ -572,7 +562,7 @@ hr {
 
 .backficheint {
   border-radius: 3px;
-  border: 1px var(--coul_bbclair) solid;
+  border: 1px var(--color_link) solid;
   padding: 12px;
   background-color: #FFFFFF;
   line-height: 13px;
@@ -582,13 +572,13 @@ hr {
 }
 
 .titre01 {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
   margin-left: 10px;
   margin-top: -3px;
   display: block;
   position: relative;
   height: 10px;
-  font-family: var(--police_titre);
+  font-family: var(--police_sst);
   font-style: italic;
   font-size: 19px;
   font-weight: lightrer;
@@ -600,8 +590,8 @@ hr {
 }
 
 .titre01bis {
-  color: var(--coul_hover) !important;
-  font-family: var(--police_cate);
+  color: var(--color_link) !important;
+  font-family: var(--police_sst);
   font-style: italic;
   font-size: 25px;
   font-weight: lightrer;
@@ -616,7 +606,7 @@ hr {
 
 .titre02 {
   color: #a1a1a1 !important;
-  font-family: var(--police_texte);
+  font-family: var(--police_txt);
   text-align: center;
   text-transform: uppercase;
   font-size: 8px;
@@ -631,32 +621,32 @@ hr {
 }
 
 .soustitre {
-  color: var(--couleur_titre) !important;
-  font-family: var(--police_texte);
+  color: var(--color_title) !important;
+  font-family: var(--police_txt);
   text-align: center;
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
   margin: 0px 0px -5px 0px;
-  border-top: 1px var(--coul_bbclair) solid;
+  border-top: 1px var(--color_link) solid;
 }
 
 .titre03 {
   text-align: center;
   color: #FFFFFF !important;
-  font-family: var(--police_texte);
+  font-family: var(--police_txt);
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
   margin: 0 0 4 0;
   display: block;
-  background-color: var(--coul_navital);
+  background-color: var(--color_link);
   border-bottom: 1px solid #DCDCDC;
 }
 
 .titre03>.mentiontag,
 .titre03>.mentiontag:visited {
-  color: var(--couleur_titre);
+  color: var(--color_title);
 }
 
 .titre03>.mentiontag:hover,
@@ -680,14 +670,14 @@ hr {
 }
 
 .identitycard {
-  font-family: var(--police_titre);
+  font-family: var(--police_sst);
   font-size: 12px;
   line-height: 15px;
 }
 
 .citation {
   color: #A4A4A4 !important;
-  font-family: var(--police_texte);
+  font-family: var(--police_txt);
   font-size: 10px;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -734,7 +724,7 @@ bottin {
   line-height: 1.5em;
   text-align: center;
   color: #FFFFFF;
-  background: var(--coul_hover);
+  background: var(--color_link);
   font-size: 11px;
   font-weight: bold;
   overflow: hidden;
@@ -760,7 +750,7 @@ bottin {
 .credit {
   font-size: 10px;
   line-height: 10px;
-  font-family: var(--police_texte);
+  font-family: var(--police_txt);
   text-transform: lowercase;
   text-align: center;
 }
@@ -888,11 +878,11 @@ blockquote:before {
 }
 
 .paqeel {
-  background: var(--couleur_clrgba) var(--fond_pa) top center no-repeat;
+  background: var(--color_background1) var(--fond_pa) top center no-repeat;
   padding: 6px 0 5px !important;
   margin-top: 4px;
   border-radius: 5px;
-  border: 1px solid var(--couleur_clrgba);
+  border: 1px solid var(--color_background1);
 }
 
 .mdm {
@@ -1115,7 +1105,7 @@ td.gen.row1 img {
 }
 
 .name_poster {
-  font-family: var(--police_cate) !important;
+  font-family: var(--police_sst) !important;
   font-size: 28px;
   position: center;
   z-index: 10;
@@ -1149,7 +1139,7 @@ td.gen.row1 img {
 .profile-icons a:hover {
   background: transparent;
   box-shadow: none;
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 .ion-edit:before {
@@ -1200,19 +1190,19 @@ div .field_uneditable img {
 
 /* barre de liens du profil */
 span.gen a.mainmenu:link {
-  color: var(--coul_navital) !important;
+  color: var(--color_link) !important;
 }
 
 span.gen a.mainmenu:visited {
-  color: var(--coul_navital) !important;
+  color: var(--color_link) !important;
 }
 
 span.gen a.mainmenu:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 span.gen a.mainmenu:active {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 /* derniers posts */
@@ -1224,11 +1214,11 @@ span.gen a.mainmenu:active {
 }
 
 .lastpost-avatar img {
-  border: 1px solid var(--couleur_clrgba);
-  -moz-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  -webkit-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  -o-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  box-shadow: 0px 0px 10px var(--couleur_clrgba);
+  border: 1px solid var(--color_background1);
+  -moz-box-shadow: 0px 0px 25px var(--color_background1);
+  -webkit-box-shadow: 0px 0px 25px var(--color_background1);
+  -o-box-shadow: 0px 0px 25px var(--color_background1);
+  box-shadow: 0px 0px 10px var(--color_background1);
   transition: 1s;
   -moz-transition: 1s;
   -webkit-transition: 1s;
@@ -1256,11 +1246,11 @@ span.gen a.mainmenu:active {
 .lastpost-avatar2 img {
   width: 37px;
   height: 58px;
-  border: 1px solid var(--couleur_clrgba);
-  -moz-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  -webkit-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  -o-box-shadow: 0px 0px 25px var(--couleur_clrgba);
-  box-shadow: 0px 0px 25px var(--couleur_clrgba);
+  border: 1px solid var(--color_background1);
+  -moz-box-shadow: 0px 0px 25px var(--color_background1);
+  -webkit-box-shadow: 0px 0px 25px var(--color_background1);
+  -o-box-shadow: 0px 0px 25px var(--color_background1);
+  box-shadow: 0px 0px 25px var(--color_background1);
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1285,7 +1275,7 @@ span.gen a.mainmenu:active {
 
 .postprofile-avatar img {
   margin-top: 24px;
-  border: 3px solid var(--coul_desc_cat);
+  border: 3px solid var(--color_background4);
   border-radius: 0px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 30%), 0 0 1px rgb(0 0 0 / 30%);
   height: 320px;
@@ -1320,7 +1310,7 @@ td.avatar-mini img {
   overflow-y: auto;
   max-height: 400px;
   overflow-x: hidden;
-  border: 3px solid var(--coul_desc_cat);
+  border: 3px solid var(--color_background4);
   box-shadow: 0 1px 1px rgb(0 0 0 / 30%), 0 0 1px rgb(0 0 0 / 30%);
   height: 220px;
   width: 210px;
@@ -1345,14 +1335,14 @@ td.avatar-mini img {
 h1,
 h2,
 .maintitle {
-  color: var(--couleur_titre);
+  color: var(--color_title);
   text-transform: lowercase;
-  font-family: var(--police_titre) !important;
+  font-family: var(--police_sst) !important;
   font-size: 25px !important;
 }
 
 h2.topic-title {
-  color: var(--couleur_titre);
+  color: var(--color_title);
   text-transform: lowercase;
   font-style: italic;
   font-family: var(--police_sst) !important;
@@ -1360,36 +1350,36 @@ h2.topic-title {
 }
 
 .post h2.topic-title a {
-  color: var(--coul_navital);
+  color: var(--color_link);
 }
 
 .secondarytitle h2,
 .cattitle,
 .maintitle h1 {
-  color: var(--couleur_titre) !important;
-  font-family: var(--police_titre) !important;
+  color: var(--color_title) !important;
+  font-family: var(--police_sst) !important;
   font-size: 18px;
 }
 
 .panel h2,
 .content h2 {
-  color: var(--coul_texte);
+  color: var(--color_text);
 }
 
 table.table1 thead th {
-  color: var(--coul_texte);
+  color: var(--color_text);
 }
 
 .topictitle {
   font-size: 14px;
-  font-family: var(--police_cate);
+  font-family: var(--police_sst);
 }
 
 .span.title,
 div.title,
 .title,
 .nav a {
-  font-family: var(--police_cate) !important;
+  font-family: var(--police_sst) !important;
   font-size: 12px !important;
 }
 
@@ -1469,13 +1459,13 @@ li.header dl.icon dt {
 
 li.header dt,
 .table-title h2 {
-  color: var(--couleur_titre);
+  color: var(--color_title);
   text-align: center;
   width: 828px;
 }
 
 li.header dd {
-  color: var(--coul_lien);
+  color: var(--color_link);
 }
 
 ul.pmlist dt {
@@ -1483,16 +1473,6 @@ ul.pmlist dt {
 }
 
 /* bas des blocs de sujets et catégories */
-.basdebloc {
-  border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -o-border-radius: 0px 0px 5px 5px;
-  border-top: 2px dotted #fff !important;
-  height: 29px;
-  background: url('https://i.servimg.com/u/f66/11/73/87/11/fond_f18.png') bottom no-repeat !important;
-}
-
 .catBottom {
   text-align: center;
   border-radius: 0px 0px 5px 5px;
@@ -1516,8 +1496,8 @@ ul.pmlist dt {
   float: left;
   padding: 5px;
   margin: 5px;
-  height: 135px;
-  background-color: var(--coul_teinteclr) !important;
+  height: 140px;
+  background-color: var(--color_background3) !important;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1531,7 +1511,7 @@ ul.pmlist dt {
 }
 
 .titre_hier {
-  font-family: var(--police_cate) !important;
+  font-family: var(--police_sst) !important;
   font-size: 18px !important;
   text-align: center;
   line-height: 20px;
@@ -1542,8 +1522,8 @@ ul.pmlist dt {
   height: 30px;
   width: 200px;
   text-align: center;
-  background-color: var(--coul_teinteclr) !important;
-  font-family: var(--police_cate);
+  background-color: var(--color_background3) !important;
+  font-family: var(--police_sst);
 }
 
 div.recap_sujet span {
@@ -1553,7 +1533,7 @@ div.recap_sujet span {
 .recap_sujet {
   position: relative;
   width: 210px;
-  height: 135px;
+  height: 140px;
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.8rem;
@@ -1562,7 +1542,7 @@ div.recap_sujet span {
   padding-right: 5px;
   padding-bottom: 5px;
   margin: 5px;
-  background-color: var(--coul_teinteclr) !important;
+  background-color: var(--color_background3) !important;
   transition: 1s;
   -moz-transition: 1s;
   -webkit-transition: 1s;
@@ -1571,7 +1551,7 @@ div.recap_sujet span {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
-  float: right
+  float: right;
 }
 
 .img_sujet {
@@ -1584,7 +1564,7 @@ div.recap_sujet span {
   -moz-transition: 1s;
   -webkit-transition: 1s;
   -o-transition: 1s;
-  border: 1px solid var(--couleur_clrgba);
+  border: 1px solid var(--color_background1);
   border-radius: 5px;
 }
 
@@ -1602,15 +1582,15 @@ div.recap_sujet span {
   height: 112px;
   font-size: 0;
   overflow: auto;
-  background-color: var(--coul_desc_cat);
+  background-color: var(--color_background3);
   border-radius: 3px;
-  border: 1px var(--coul_teinteclr) solid;
+  border: 1px var(--color_background3) solid;
 }
 
 .sousForums a {
   display: block;
-  background: var(--coul_sousforums1);
-  color: var(--couleur_titre) !important;
+  background: var(--color_background4);
+  color: var(--color_title) !important;
   font-size: 11px;
   text-align: center;
   margin-bottom: 5px;
@@ -1619,8 +1599,7 @@ div.recap_sujet span {
 }
 
 .sousForums a:hover {
-  background-color: var(--coul_souforums2);
-  color: var(--couleur_titre) !important;
+  text-decoration: underline overline!important;
 }
 
 .desc_cat {
@@ -1628,9 +1607,9 @@ div.recap_sujet span {
   height: 112px;
   width: 403px;
   overflow: auto;
-  background-color: var(--coul_desc_cat);
+  background-color: var(--color_background4);
   border-radius: 3px;
-  border: 1px var(--coul_teinteclr) solid;
+  border: 1px var(--color_background3) solid;
   line-height: 13px;
   padding: 4px;
   text-align: justify;
@@ -1655,7 +1634,7 @@ div.recap_sujet span {
 
 /* SUJETS */
 ul.topiclist.bg_none {
-  background: var(--coul_desc_cat);
+  background: var(--color_background4);
 }
 
 ul.topics dd.dterm {
@@ -1685,7 +1664,7 @@ ul.topics dd.dterm {
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
-  background: var(--couleur_claire) !important;
+  background: var(--color_link) !important;
   transition: 1s;
   -moz-transition: 1s;
   -webkit-transition: 1s;
@@ -1733,8 +1712,8 @@ ul.topics dd.dterm {
 
 /* titre dans la FAQ */
 dl.faq dt {
-  font-family: var(--police_titre);
-  color: var(--couleur_titre);
+  font-family: var(--police_sst);
+  color: var(--color_title);
 }
 
 /* TEXT AREA + AVATAR */
@@ -1792,7 +1771,7 @@ textarea .inputbox {
 }
 
 #sce_smilies_body {
-  background-color: var(--couleur_clrgba);
+  background-color: var(--color_background1);
 }
 
 #message-box #textarea_content {
@@ -1801,7 +1780,7 @@ textarea .inputbox {
 
 #quick_reply #textarea_content {
   width: 100% !important;
-  background: var(--couleur_clrgba);
+  background: var(--color_background1);
 }
 
 /* QEEL */
@@ -1816,8 +1795,8 @@ textarea .inputbox {
 }
 
 .div_online {
-  background-color: var(--coul_desc_cat);
-  border: solid 1px var(--couleur_clrgba);
+  background-color: var(--color_background4);
+  border: solid 1px var(--color_background1);
   border-radius: 3px;
   display: inline-block;
   line-height: 12px;
@@ -1836,7 +1815,7 @@ textarea .inputbox {
 }
 
 .gr_welc {
-  font-family: var(--police_cate);
+  font-family: var(--police_sst);
   font-size: 16px;
   font-weight: bold;
   margin: 6px;
@@ -1861,14 +1840,14 @@ div#avatar_dernier_membre {
   height: 100px !important;
   overflow: hidden;
   opacity: 0.7;
-  -moz-box-shadow: 0 0 25px var(--coul_desc_cat);
+  -moz-box-shadow: 0 0 25px var(--color_background4);
   -moz-transition: 1s;
-  -o-box-shadow: 0 0 25px var(--coul_desc_cat);
+  -o-box-shadow: 0 0 25px var(--color_background4);
   -o-transition: 1s;
-  -webkit-box-shadow: 0 0 25px var(--coul_desc_cat);
+  -webkit-box-shadow: 0 0 25px var(--color_background4);
   -webkit-transition: 1s;
-  border: 5px solid var(--coul_desc_cat);
-  box-shadow: 0 0 25px var(--coul_desc_cat);
+  border: 5px solid var(--color_background4);
+  box-shadow: 0 0 25px var(--color_background4);
   object-fit: cover;
   transition: 1s;
   border-radius: 100px;
@@ -1899,7 +1878,7 @@ span#dernier_membre {
 
 .bloc_grcopy {
   background-color: transparent;
-  border: solid 1px var(--couleur_clrgba);
+  border: solid 1px var(--color_background1);
   border-radius: 3px;
   display: inline-block;
   font-size: 1.2rem;
@@ -1959,7 +1938,7 @@ span#dernier_membre {
   border: 1px solid silver;
   padding: 3px;
   font-size: 9px;
-  font-family: var(--police_texte);
+  font-family: var(--police_txt);
   line-height: 9px;
   text-align: center;
   display: none;
@@ -1991,8 +1970,8 @@ span#dernier_membre {
 }
 
 .bloc_qeelr {
-  background-color: var(--coul_desc_cat);
-  border: solid 1px var(--couleur_clrgba);
+  background-color: var(--color_background4);
+  border: solid 1px var(--color_background1);
   border-radius: 3px;
   display: inline-block;
   font-size: 1.2rem;
@@ -2030,14 +2009,14 @@ div#page-footer {
 }
 
 .footerbar-system {
-  color: var(--coul_texte);
+  color: var(--color_text);
 }
 
 /* Début de la TOOLBAR */
 div#fa_toolbar {
   transition: 300ms all ease;
   opacity: 0.9;
-  background-color: var(--couleur_clrgba) !important;
+  background-color: var(--color_background1) !important;
   border-radius: 0 0 20px 20px !important;
   margin: auto;
   width: 100% !important;
@@ -2052,7 +2031,7 @@ div#fa_toolbar span {
 
 #fa_menu #fa_welcome,
 #fa_right a.rightHeaderLink {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 div#fa_search,
@@ -2080,7 +2059,7 @@ a#fa_hide {
   border-radius: 100px;
   overflow: hidden;
   border: 7px solid;
-  border-color: var(--couleur_clrgba);
+  border-color: var(--color_background1);
 }
 
 .fa_avatar img {
@@ -2105,7 +2084,7 @@ a#fa_notifications,
 a#fa_welcome:visited,
 a#fa_notifications:visited {
   background: transparent !important;
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 a#fa_welcome:hover,
@@ -2113,25 +2092,25 @@ a#fa_notifications:hover,
 a#fa_welcome:active,
 a#fa_notifications:active {
   background: transparent !important;
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 #fa_toolbar #fa_right #notif_list {
-  background: var(--couleur_clrgba) !important;
+  background: var(--color_background1) !important;
   border: none !important;
   color: #333333 !important;
   padding-right: 10px;
 }
 
 #fa_menulist {
-  background-color: var(--couleur_clrgba) !important;
+  background-color: var(--color_background1) !important;
   font-size: 11px !important;
   font-variant: small-caps;
   min-width: 340px;
 }
 
 #fa_menu ul {
-  background-color: var(--couleur_clrgba) !important;
+  background-color: var(--color_background1) !important;
   font-size: 10px !important;
 }
 
@@ -2154,7 +2133,7 @@ a#fa_notifications:active {
 }
 
 ul#fa_menulist {
-  background: var(--couleur_clrgba) !important;
+  background: var(--color_background1) !important;
   border: 0;
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
@@ -2215,27 +2194,27 @@ ul#fa_menulist {
 }
 
 #fa_menulist:link {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 #fa_menulist:visited {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 #fa_menulist:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 #fa_menulist a:link {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 #fa_menulist a:visited {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 #fa_menulist a:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 #fa_toolbar #fa_right #notif_list li.unread {
@@ -2244,24 +2223,24 @@ ul#fa_menulist {
 }
 
 #fa_toolbar #fa_right #notif_list {
-  background: var(--couleur_clrgba) !important;
+  background: var(--color_background1) !important;
   font-size: 10px !important;
 }
 
 #fa_toolbar #fa_right #notif_list li .contentText a {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
   font-size: 10px !important;
   font-variant: small-caps;
 }
 
 #fa_toolbar #fa_right #notif_list li.see_all a {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
   font-size: 10px !important;
   font-variant: small-caps;
 }
 
 ul#notif_list {
-  background: var(--couleur_clrgba) !important;
+  background: var(--color_background1) !important;
   border: 0;
   top: 40px !important;
   left: 95px !important;
@@ -2287,35 +2266,35 @@ li.see_all {
 }
 
 #fa_toolbar #fa_right #notif_list li .contentText a {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 #fa_toolbar #fa_right #notif_list li .contentText a:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 li.see_all:link {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 li.see_all:visited {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 li.see_all:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 li.see_all a:link {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 li.see_all a:visited {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 li.see_all a:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 #fa_toolbar #live_notif {
@@ -2347,12 +2326,12 @@ li.see_all a:hover {
 }
 
 .mainmenu:hover {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
 }
 
 /* nouveaux messages */
 .navbar .new-message {
-  background-color: var(--couleur_titre);
+  background-color: var(--color_title);
 }
 
 /* NAVBAR EN HAUT */
@@ -2362,7 +2341,7 @@ li.see_all a:hover {
   right: 0px;
   height: 20px !important;
   background: transparent !important;
-  border: 0px var(--coul_hover) solid !important;
+  border: 0px var(--color_link) solid !important;
   padding-top: 0px !important;
   padding-bottom: 6px !important;
   margin-right: 0px !important;
@@ -2382,12 +2361,12 @@ div#search_menu {
 
 a.mainmenu:link,
 a.mainmenu:visited {
-  color: var(--couleur_titre) !important;
+  color: var(--color_title) !important;
 }
 
 a.mainmenu:hover,
 a.mainmenu:active {
-  color: var(--coul_hover) !important;
+  color: var(--color_link) !important;
   box-shadow: none;
   background: transparent;
 }
@@ -2397,7 +2376,7 @@ a.mainmenu:active {
 }
 
 .overview {
-  background: var(--couleur_clrgba);
+  background: var(--color_background1);
   top: 27px !important;
 }
 
