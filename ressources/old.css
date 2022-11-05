@@ -5,25 +5,24 @@
   --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   --color_text: #333;
-  --color_title: #604711;
-  --color_link: #518f93;
-  --color_background1: #e6d48c;
-  --color_background3: #FDF0C2;
-  --color_background4: #FFF8D8;
-  --img_header: url('https://2img.net/r/ihimizer/img923/1415/3VnrMX.jpg');
-  --fond_pa: url('https://2img.net/r/ihimizer/img924/5459/147I1f.png');
-  --fond_blocava: url('https://2img.net/r/ihimizer/img924/5459/147I1f.png');
-  --fond_codquot: url('https://2img.net/r/hpimg15/pics/805066fondquotecodespoiler.jpg');
-  --chap_intrigue1: url('https://i.servimg.com/u/f66/11/73/87/11/defias10.jpg');
-  --chap_intrigue2: url('https://i.servimg.com/u/f66/11/73/87/11/tourno10.jpg');
+  --color_title: #604637;
+  --color_link: #6f7d6b;
+  --color_background1: #c9cdb6;
+  --color_background3: #aeb596;
+  --color_background4: #E4E7DA;
+  --img_header:url('https://images2.imgbox.com/cc/c0/JJI4d9bX_o.png');
+  --fond_pa: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg'); 
+  --fond_blocava: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
+  --fond_codquot: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
+  --chap_intrigue: url('https://2img.net/r/ihimizer/img922/7879/NNbSYw.png');
   --img_top_sites: url('https://2img.net/r/ihimizer/img924/3955/sTfIKT.gif');
-  --deco_pa: url('https://2img.net/r/ihimizer/img923/144/QCVNcc.png');
-  --deco_profil: url('https://i.servimg.com/u/f66/11/73/87/11/deco-p12.png');
-  --fleche_haut: url('https://i.servimg.com/u/f66/11/73/87/11/hautba10.png');
-  --fleche_haut_hover: url('https://i.servimg.com/u/f66/11/73/87/11/hautho10.png');
-  --fleche_bas: url('https://i.servimg.com/u/f66/11/73/87/11/basbas10.png');
-  --fleche_bas_hover: url('https://i.servimg.com/u/f66/11/73/87/11/bashov10.png');
-  --background: url('https://i.servimg.com/u/f66/11/73/87/11/backgr10.jpg');
+  --deco_pa: url('https://images2.imgbox.com/21/9e/4eQ4ZMKN_o.png');
+  --deco_profil: url('https://images2.imgbox.com/b1/75/8UV6Db9L_o.png');
+  --fleche_haut: url('https://images2.imgbox.com/28/0f/A6creBdd_o.png');
+  --fleche_haut_hover: url('https://images2.imgbox.com/f7/43/sO0x3jVJ_o.png');
+  --fleche_bas: url('https://images2.imgbox.com/dc/6d/1ipsBJh0_o.png');
+  --fleche_bas_hover: url('https://images2.imgbox.com/28/d7/lSswA6Vi_o.png');
+  --background: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
 }
 
 /* Deco italique */
@@ -1594,6 +1593,7 @@ div.recap_sujet span {
   font-size: 11px;
   text-align: center;
   margin-bottom: 5px;
+  padding-top: 3px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
