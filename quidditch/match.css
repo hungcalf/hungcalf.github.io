@@ -1,0 +1,18 @@
+.code {
+    max-width: 600px;
+    overflow: auto;
+    border: 1px solid #000000;
+    padding: 0 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #aaaaaa;
+}
+
+.code::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #aaaaaa;
+}
+
+.code::-webkit-scrollbar-thumb {
+    background: #000000;
+}
