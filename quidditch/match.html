@@ -11,15 +11,76 @@
 
 <body>
     <main>
-        <form>
-            <label for="matchnumber">Match n° : </label>
-            <input type="text" name="matchnumber" id="matchnumber">
-        </form>
-        <div class="code">
-            <pre><code>&lt;div class="backfiche"&gt;&lt;div class="titre01bis"&gt;le tournoi de &lt;bb&gt;Quidditch&lt;/bb&gt;&lt;div class="soustitre"&gt;que le meilleur gagne !&lt;/div&gt;&lt;/div&gt;&lt;div class="backficheint"&gt;&lt;div class="titre03"&gt;Xème match de la saison&lt;/div&gt;
-[center]&lt;aa&gt;Samedi JJ mois AAAA&lt;/aa&gt; ★ Les [b][color=#000000]équipeA[/color][/b] affrontent les [b][color=#000000]équipeB[/color][/b] !
+        <label for="matchnumber">Match n° : </label>
+        <input type="text" name="matchnumber" id="matchnumber">
+        <br>
+        <label for="date">Date : </label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="teamA">Équipe A : </label>
+        <select name="teamA" id="teamA">
+            <option value="">-- Équipe A --</option>
+            <option value="ethelred">Ethelred</option>
+            <option value="grymm">Grymm</option>
+            <option value="lufkin">Lufkin</option>
+            <option value="pokeby">Pokeby</option>
+            <option value="summerbee">Summerbee</option>
+            <option value="wright">Wright</option>
+        </select>
+        <br>
+        <label for="teamB">Équipe B : </label>
+        <select name="teamB" id="teamB">
+            <option value="">-- Équipe B --</option>
+            <option value="ethelred">Ethelred</option>
+            <option value="grymm">Grymm</option>
+            <option value="lufkin">Lufkin</option>
+            <option value="pokeby">Pokeby</option>
+            <option value="summerbee">Summerbee</option>
+            <option value="wright">Wright</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Météo</legend>
+            <input type="radio" name="weather" id="clearweather">
+            <label for="clearweather">Beau temps</label>
+            <input type="radio" name="weather" id="fewcloud">
+            <label for="fewcloud">Brumeux</label>
+            <input type="radio" name="weather" id="clouds">
+            <label for="clouds">Assez nuageux</label>
+            <input type="radio" name="weather" id="scatteredshowers">
+            <label for="scatteredshowers">Quelques averses</label>
+            <input type="radio" name="weather" id="showers">
+            <label for="showers">Averses</label>
+            <input type="radio" name="weather" id="manyclouds">
+            <label for="manyclouds">Ciel couvert</label>
+            <input type="radio" name="weather" id="rain">
+            <label for="rain">Pluie</label>
+            <input type="radio" name="weather" id="steadyrain">
+            <label for="steadyrain">Pluie soutenue</label>
+            <input type="radio" name="weather" id="snowrain">
+            <label for="snowrain">Pluie et neige mélangées</label>
+            <input type="radio" name="weather" id="scatteredsnow">
+            <label for="scatteredsnow">Quelques flocons</label>
+            <input type="radio" name="weather" id="snow">
+            <label for="snow">Neige</label>
+            <input type="radio" name="weather" id="steadysnow">
+            <label for="steadysnow">Neige soutenue</label>
+            <input type="radio" name="weather" id="scatteredstorm">
+            <label for="scatteredstorm">Quelques orages</label>
+            <input type="radio" name="weather" id="storm">
+            <label for="storm">Orages</label>
+            <input type="radio" name="weather" id="hail">
+            <label for="hail">Grêle</label>
+            <input type="radio" name="weather" id="freezingrain">
+            <label for="freezingrain">Pluie verglaçante</label>
+        </fieldset>
+        <br>
+        <button id="postcreation">Créer le post de résultat</button>
+        <div id="code" class="code">
+            <pre><code>&lt;div class="backfiche"&gt;&lt;div class="titre01bis"&gt;le tournoi de &lt;bb&gt;Quidditch&lt;/bb&gt;&lt;div class="soustitre"&gt;que le meilleur gagne !&lt;/div&gt;&lt;/div&gt;&lt;div class="backficheint"&gt;&lt;div class="titre03"&gt;<span id="code__matchnumber">Xème</span> match de la saison&lt;/div&gt;
+[center]&lt;aa&gt;Samedi <span id="code__date">JJ mois AAAA</span>&lt;/aa&gt; ★ Les [b]<span class="code__teamA">[color=#000000]équipeA[/color]</span>[/b] affrontent les [b]<span class="code__teamB">[color=#000000]équipeB[/color]</span>[/b] !
 
-&lt;img src="https://2img.net/h/icongal.com/gallery/image/152974/tvguide_clouds_status_weather.png" width="50"&gt;
+&lt;img src="https://hungcalf.github.io/quidditch/weather_img/clear_weather.png" width="50"&gt;
 
 Après-midi temps, 0°C
 
@@ -56,6 +117,7 @@ Simulation du match disponible [url=https://1drv.ms/t/s!Am9SAcsLXOjEg0OhY8gByY-K
 &lt;/div&gt;&lt;/div&gt;</code></pre>
         </div>
     </main>
+    <script src="match.js"></script>
 </body>
 
 </html>
