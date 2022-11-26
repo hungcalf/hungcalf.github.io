@@ -1,6 +1,7 @@
 
 let matchNumber = document.getElementById("matchnumber");
 let matchDate = document.getElementById("matchdate");
+let weather = document.querySelectorAll("input[name='weather']");
 let teamA = document.getElementById("teamA");
 let teamB = document.getElementById("teamB");
 let playersTeamA = document.querySelectorAll(".playersteamA");
@@ -8,16 +9,21 @@ let playersTeamB = document.querySelectorAll(".playersteamB");
 
 function Tournament() {
     this.teams = [];
+    this.weathers = [];
 
     this.addTeam = function(team) {
         this.teams.push(team);
     };
 
+    this.addWeather = function(weather) {
+        this.weathers.push(weather);
+    }
+
     this.selectmatchteams = function (match) {
         this.teams.forEach((team, index) => {
             if (this.teams[index].name == teamA.value) {
                 playersTeamA.forEach((player) => {
-                    if (player.value != ""){
+                    if (player.value != "") {
                         team.addPlayer(player.value);
                     };
                 });
@@ -27,11 +33,23 @@ function Tournament() {
         this.teams.forEach((team, index) => {
             if (this.teams[index].name == teamB.value) {
                 playersTeamB.forEach((player) => {
-                    if (player.value != ""){
+                    if (player.value != "") {
                         team.addPlayer(player.value);
                     };
                 });
                 match.addTeam(team);
+            };
+        });
+    };
+
+    this.selectmatchweather = function (match) {
+        weather.forEach((weatheroption) => {
+            if (weatheroption.checked == true) {
+                this.weathers.forEach((weather) => {
+                    if (weather.name == weatheroption.value) {
+                        match.matchWeather = weather;
+                    };
+                });
             };
         });
     };
@@ -47,6 +65,7 @@ function Match() {
         month: "long",
         year: "numeric"
     });
+    this.matchWeather = {};
 
     this.addTeam = function(team) {
         this.teams.push(team);
@@ -66,8 +85,15 @@ function Team(name, colorcode) {
     }
 }
 
+function Weather(name, description, img) {
+    this.name= name;
+    this.description = description;
+    this.img = "weather_img/"+img;
+}
+
 let tournament = new Tournament();
 
+/* création des équipes */
 let ethelred = new Team("Ethelred", "#999C9C");
 tournament.addTeam(ethelred);
 
@@ -86,19 +112,66 @@ tournament.addTeam(summerbee);
 let wright = new Team("Wright", "#D46565");
 tournament.addTeam(wright);
 
+/* création de la météo */
+let clearweather = new Weather("clearweather", "Beau temps", "clear_weather.png");
+tournament.addWeather(clearweather);
+
+let fewclouds = new Weather("fewclouds", "Brumeux", "few_clouds.png");
+tournament.addWeather(fewclouds);
+
+let clouds = new Weather("clouds", "Assez nuageux", "clouds.png");
+tournament.addWeather(clouds);
+
+let manyclouds = new Weather("manyclouds", "Ciel couvert", "many_clouds.png");
+tournament.addWeather(manyclouds);
+
+let scatteredshowers = new Weather("scatteredshowers", "Quelques averses", "scattered_showers.png");
+tournament.addWeather(scatteredshowers);
+
+let showers = new Weather("showers", "Averses", "showers.png");
+tournament.addWeather(showers);
+
+let rain = new Weather("rain", "Pluie", "rain.png");
+tournament.addWeather(rain);
+
+let steadyrain = new Weather("steadyrain", "Pluie soutenue", "steady_rain.png");
+tournament.addWeather(steadyrain);
+
+let snowrain = new Weather("snowrain", "Averses de neige et pluie mélangées", "snow_rain.png");
+tournament.addWeather(snowrain);
+
+let scatteredsnow = new Weather("scatteredsnow", "Quelques flocons", "scattered_snow.png");
+tournament.addWeather(scatteredsnow);
+
+let snow = new Weather("snow", "Neige", "snow.png");
+tournament.addWeather(snow);
+
+let steadysnow = new Weather("steadysnow", "Neige soutenue", "steady_snow.png");
+tournament.addWeather(steadysnow);
+
+let scatteredstorm = new Weather("scatteredstorm", "Quelques orages", "scattered_storm.png");
+tournament.addWeather(scatteredstorm);
+
+let storm = new Weather("storm", "Orages", "storm.png");
+tournament.addWeather(storm);
+
+let hail = new Weather("hail", "Grêle", "hail.png");
+tournament.addWeather(hail);
+
+let freezingrain = new Weather("freezingrain", "Pluie verglaçante", "freezing_rain.png");
+tournament.addWeather(freezingrain);
+
+/* génération du code pour le post */
 function createcode() {
     let match = new Match();
     tournament.selectmatchteams(match);
+    tournament.selectmatchweather(match);
 };
 
 function test() {
     let match = new Match();
-    console.log(match.matchNumber);
-    tournament.selectmatchteams(match);
-    console.log(match.teams);
-    playersTeamA.forEach((player) => {
-        console.log(player.value);
-    });
+    tournament.selectmatchweather(match);
+    console.log(match.matchWeather);
 };
 
 let postcreationButton = document.getElementById("postcreation");

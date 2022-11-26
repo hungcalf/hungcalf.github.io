@@ -18,6 +18,42 @@
         <input type="date" name="matchdate" id="matchdate">
         <br>
         <fieldset>
+            <legend>Météo</legend>
+            <input type="radio" name="weather" id="clearweather" value="clearweather">
+            <label for="clearweather">Beau temps</label>
+            <input type="radio" name="weather" id="fewclouds" value="fewclouds">
+            <label for="fewclouds">Brumeux</label>
+            <input type="radio" name="weather" id="clouds" value="clouds">
+            <label for="clouds">Assez nuageux</label>
+            <input type="radio" name="weather" id="manyclouds" id="manyclouds">
+            <label for="manyclouds">Ciel couvert</label>
+            <input type="radio" name="weather" id="scatteredshowers" value="scatteredshowers">
+            <label for="scatteredshowers">Quelques averses</label>
+            <input type="radio" name="weather" id="showers" value="showers">
+            <label for="showers">Averses</label>
+            <input type="radio" name="weather" id="rain" value="rain">
+            <label for="rain">Pluie</label>
+            <input type="radio" name="weather" id="steadyrain" value="steadyrain">
+            <label for="steadyrain">Pluie soutenue</label>
+            <input type="radio" name="weather" id="snowrain" value="snowrain">
+            <label for="snowrain">Pluie et neige mélangées</label>
+            <input type="radio" name="weather" id="scatteredsnow" value="scatteredsnow">
+            <label for="scatteredsnow">Quelques flocons</label>
+            <input type="radio" name="weather" id="snow" value="snow">
+            <label for="snow">Neige</label>
+            <input type="radio" name="weather" id="steadysnow" value="steadysnow">
+            <label for="steadysnow">Neige soutenue</label>
+            <input type="radio" name="weather" id="scatteredstorm" value="scatteredstorm">
+            <label for="scatteredstorm">Quelques orages</label>
+            <input type="radio" name="weather" id="storm" value="storm">
+            <label for="storm">Orages</label>
+            <input type="radio" name="weather" id="hail" value="hail">
+            <label for="hail">Grêle</label>
+            <input type="radio" name="weather" id="freezingrain" value="freezingrain">
+            <label for="freezingrain">Pluie verglaçante</label>
+        </fieldset>
+        <br>
+        <fieldset>
             <legend>
                 <label for="teamA">Équipe A : </label>
                 <select name="teamA" id="teamA">
@@ -30,20 +66,22 @@
                     <option value="Wright">Wright</option>
                 </select>
             </legend>
-            <label for="chasersA">Poursuiveurs : </label>
-            <input type="text" name="chasersA" id="chaser1A" class="playersteamA">
-            <input type="text" name="chasersA" id="chaser2A" class="playersteamA">
-            <input type="text" name="chasersA" id="chaser3A" class="playersteamA">
-            <br>
-            <label for="beatersA">Batteurs : </label>
-            <input type="text" name="beatersA" id="beater1A" class="playersteamA">
-            <input type="text" name="beatersA" id="beater2A" class="playersteamA">
-            <br>
-            <label for="keeperA">Gardien : </label>
-            <input type="text" name="keeperA" id="keeperA" class="playersteamA">
-            <br>
-            <label for="seakerA">Attrappeur : </label>
-            <input type="text" name="seakerA" id="seakerA" class="playersteamA">
+            <div class="players">
+                <label for="chasersA">Poursuiveurs : </label>
+                <input type="text" name="chasersA" id="chaser1A" class="playersteamA">
+                <input type="text" name="chasersA" id="chaser2A" class="playersteamA">
+                <input type="text" name="chasersA" id="chaser3A" class="playersteamA">
+                <br>
+                <label for="beatersA">Batteurs : </label>
+                <input type="text" name="beatersA" id="beater1A" class="playersteamA">
+                <input type="text" name="beatersA" id="beater2A" class="playersteamA">
+                <br>
+                <label for="keeperA">Gardien : </label>
+                <input type="text" name="keeperA" id="keeperA" class="playersteamA">
+                <br>
+                <label for="seakerA">Attrappeur : </label>
+                <input type="text" name="seakerA" id="seakerA" class="playersteamA">
+            </div>
         </fieldset>
         <fieldset>
             <legend>
@@ -58,57 +96,22 @@
                     <option value="Wright">Wright</option>
                 </select>
             </legend>
-            <label for="chasersB">Poursuiveurs : </label>
-            <input type="text" name="chasersB" id="chaser1B" class="playersteamB">
-            <input type="text" name="chasersB" id="chaser2B" class="playersteamB">
-            <input type="text" name="chasersB" id="chaser3B" class="playersteamB">
-            <br>
-            <label for="beatersB">Batteurs : </label>
-            <input type="text" name="beatersB" id="beater1B" class="playersteamB">
-            <input type="text" name="beatersB" id="beater2B" class="playersteamB">
-            <br>
-            <label for="keeperB">Gardien : </label>
-            <input type="text" name="keeperB" id="keeperB" class="playersteamB">
-            <br>
-            <label for="seakerB">Attrappeur : </label>
-            <input type="text" name="seakerB" id="seakerB" class="playersteamB">
-        </fieldset>
-        
-        <br>
-        <fieldset>
-            <legend>Météo</legend>
-            <input type="radio" name="weather" id="clearweather">
-            <label for="clearweather">Beau temps</label>
-            <input type="radio" name="weather" id="fewcloud">
-            <label for="fewcloud">Brumeux</label>
-            <input type="radio" name="weather" id="clouds">
-            <label for="clouds">Assez nuageux</label>
-            <input type="radio" name="weather" id="scatteredshowers">
-            <label for="scatteredshowers">Quelques averses</label>
-            <input type="radio" name="weather" id="showers">
-            <label for="showers">Averses</label>
-            <input type="radio" name="weather" id="manyclouds">
-            <label for="manyclouds">Ciel couvert</label>
-            <input type="radio" name="weather" id="rain">
-            <label for="rain">Pluie</label>
-            <input type="radio" name="weather" id="steadyrain">
-            <label for="steadyrain">Pluie soutenue</label>
-            <input type="radio" name="weather" id="snowrain">
-            <label for="snowrain">Pluie et neige mélangées</label>
-            <input type="radio" name="weather" id="scatteredsnow">
-            <label for="scatteredsnow">Quelques flocons</label>
-            <input type="radio" name="weather" id="snow">
-            <label for="snow">Neige</label>
-            <input type="radio" name="weather" id="steadysnow">
-            <label for="steadysnow">Neige soutenue</label>
-            <input type="radio" name="weather" id="scatteredstorm">
-            <label for="scatteredstorm">Quelques orages</label>
-            <input type="radio" name="weather" id="storm">
-            <label for="storm">Orages</label>
-            <input type="radio" name="weather" id="hail">
-            <label for="hail">Grêle</label>
-            <input type="radio" name="weather" id="freezingrain">
-            <label for="freezingrain">Pluie verglaçante</label>
+            <div class="players">
+                <label for="chasersB">Poursuiveurs : </label>
+                <input type="text" name="chasersB" id="chaser1B" class="playersteamB">
+                <input type="text" name="chasersB" id="chaser2B" class="playersteamB">
+                <input type="text" name="chasersB" id="chaser3B" class="playersteamB">
+                <br>
+                <label for="beatersB">Batteurs : </label>
+                <input type="text" name="beatersB" id="beater1B" class="playersteamB">
+                <input type="text" name="beatersB" id="beater2B" class="playersteamB">
+                <br>
+                <label for="keeperB">Gardien : </label>
+                <input type="text" name="keeperB" id="keeperB" class="playersteamB">
+                <br>
+                <label for="seakerB">Attrappeur : </label>
+                <input type="text" name="seakerB" id="seakerB" class="playersteamB">
+            </div>
         </fieldset>
         <br>
         <button id="postcreation">Créer le post de résultat</button>
@@ -118,7 +121,7 @@
 
 &lt;img src="https://hungcalf.github.io/quidditch/weather_img/<span id="code__weatherimg">clear_weather.png</span>" width="50"&gt;
 
-Après-midi <span id="code__weather">temps</span>, <span id="code__temperature">0</span>°C
+<span id="code__weather">Temps</span>, <span id="code__temperature">0</span>°C
 
 
 [u]Nombres de buts marqués :[/u]
