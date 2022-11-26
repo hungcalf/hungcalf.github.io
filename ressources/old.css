@@ -14,10 +14,10 @@
   --fond_pa: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg'); 
   --fond_blocava: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
   --fond_codquot: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
-  --chap_intrigue: url('https://2img.net/r/ihimizer/img922/7879/NNbSYw.png');
-  --img_top_sites: url('https://2img.net/r/ihimizer/img924/3955/sTfIKT.gif');
-  --deco_pa: url('https://images2.imgbox.com/21/9e/4eQ4ZMKN_o.png');
-  --deco_profil: url('https://images2.imgbox.com/b1/75/8UV6Db9L_o.png');
+  --chap_intrigue: url('https://images2.imgbox.com/d8/02/E4MtMmCN_o.png');
+  --img_top_sites: url('https://images2.imgbox.com/5b/c3/70p0Lg7L_o.png');
+  --deco_pa: url('https://images2.imgbox.com/8c/79/YzAObWwI_o.png');
+  --deco_profil: url('https://images2.imgbox.com/92/cc/FPitl6l1_o.png');
   --fleche_haut: url('https://images2.imgbox.com/28/0f/A6creBdd_o.png');
   --fleche_haut_hover: url('https://images2.imgbox.com/f7/43/sO0x3jVJ_o.png');
   --fleche_bas: url('https://images2.imgbox.com/dc/6d/1ipsBJh0_o.png');
@@ -903,31 +903,23 @@ blockquote:before {
   filter: brightness(1.8);
 }
 
-.intrigue1 {
+.intrigue {
   width: 250px;
   height: 38px;
   margin: 0px;
   position: relative;
-  content: var(--chap_intrigue1);
-}
-
-.intrigue2 {
-  width: 250px;
-  height: 38px;
-  margin: 0px;
-  position: relative;
-  content: var(--chap_intrigue2);
+  content: var(--chap_intrigue);
 }
 
 .staff {
   width: 260px !important;
   margin-top: 2px !important;
-  height: 117px !important;
+  height: 135px !important;
 }
 
 .staff .sousForums {
   width: 250px !important;
-  height: 90px !important;
+  height: 108px !important;
   overflow: hidden;
   overflow-y: auto;
 }
