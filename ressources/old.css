@@ -1545,6 +1545,11 @@ div.recap_sujet span {
   float: right;
 }
 
+.last_post {
+  background-color: var(--color_background4);
+  border-radius: 3px;
+}
+
 .img_sujet {
   position: absolute;
   bottom: 5px;
