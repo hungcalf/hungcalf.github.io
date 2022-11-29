@@ -1,3 +1,41 @@
+#weatherscreen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.weather{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 125px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.weather>input {
+    margin-top: -10px;
+}
+
+.weather>label {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80;
+}
+
+label>img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+label>span {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 .code {
     max-width: 600px;
     overflow: auto;

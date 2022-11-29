@@ -1,6 +1,7 @@
-
 let matchNumber = document.getElementById("matchnumber");
 let matchDate = document.getElementById("matchdate");
+let temperature = document.getElementById("temerature");
+let weatherScreen = document.getElementById("weatherscreen")
 let weather = document.querySelectorAll("input[name='weather']");
 let teamA = document.getElementById("teamA");
 let teamB = document.getElementById("teamB");
@@ -17,6 +18,12 @@ function Tournament() {
 
     this.addWeather = function(weather) {
         this.weathers.push(weather);
+    }
+
+    this.displayWeathers = function() {
+        this.weathers.forEach((weather) => {
+            weather.displayWeather();
+        })
     }
 
     this.selectmatchteams = function (match) {
@@ -65,6 +72,7 @@ function Match() {
         month: "long",
         year: "numeric"
     });
+    this.temperature = temperature.value;
     this.matchWeather = {};
 
     this.addTeam = function(team) {
@@ -89,6 +97,31 @@ function Weather(name, description, img) {
     this.name= name;
     this.description = description;
     this.img = "weather_img/"+img;
+
+    this.displayWeather = function () {
+        let optionWeather = document.createElement("span");
+        optionWeather.classList.add("weather");
+
+        let inputWeather = document.createElement("input");
+        inputWeather.type = "radio";
+        inputWeather.name = "weather";
+        inputWeather.id = this.name;
+        inputWeather.value = this.name;
+        optionWeather.append(inputWeather);
+
+        let labelWeather = document.createElement("label");
+        labelWeather.for = this.name;
+        let imageWeather = document.createElement("img");
+        imageWeather.src = this.img;
+        imageWeather.alt = this.name;
+        labelWeather.append(imageWeather);
+        let descriptionWeather = document.createElement("span");
+        descriptionWeather.textContent = this.description;
+        labelWeather.append(descriptionWeather);
+        optionWeather.append(labelWeather);
+
+        weatherScreen.append(optionWeather);
+    }
 }
 
 let tournament = new Tournament();
@@ -160,6 +193,8 @@ tournament.addWeather(hail);
 
 let freezingrain = new Weather("freezingrain", "Pluie verglaçante", "freezing_rain.png");
 tournament.addWeather(freezingrain);
+
+tournament.displayWeathers();
 
 /* génération du code pour le post */
 function createcode() {

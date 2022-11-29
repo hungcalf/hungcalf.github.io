@@ -12,45 +12,18 @@
 <body>
     <main>
         <label for="matchnumber">Match n° : </label>
-        <input type="text" name="matchnumber" id="matchnumber">
+        <input type="number" name="matchnumber" id="matchnumber">
         <br>
         <label for="matchdate">Date : </label>
         <input type="date" name="matchdate" id="matchdate">
         <br>
         <fieldset>
             <legend>Météo</legend>
-            <input type="radio" name="weather" id="clearweather" value="clearweather">
-            <label for="clearweather">Beau temps</label>
-            <input type="radio" name="weather" id="fewclouds" value="fewclouds">
-            <label for="fewclouds">Brumeux</label>
-            <input type="radio" name="weather" id="clouds" value="clouds">
-            <label for="clouds">Assez nuageux</label>
-            <input type="radio" name="weather" id="manyclouds" id="manyclouds">
-            <label for="manyclouds">Ciel couvert</label>
-            <input type="radio" name="weather" id="scatteredshowers" value="scatteredshowers">
-            <label for="scatteredshowers">Quelques averses</label>
-            <input type="radio" name="weather" id="showers" value="showers">
-            <label for="showers">Averses</label>
-            <input type="radio" name="weather" id="rain" value="rain">
-            <label for="rain">Pluie</label>
-            <input type="radio" name="weather" id="steadyrain" value="steadyrain">
-            <label for="steadyrain">Pluie soutenue</label>
-            <input type="radio" name="weather" id="snowrain" value="snowrain">
-            <label for="snowrain">Pluie et neige mélangées</label>
-            <input type="radio" name="weather" id="scatteredsnow" value="scatteredsnow">
-            <label for="scatteredsnow">Quelques flocons</label>
-            <input type="radio" name="weather" id="snow" value="snow">
-            <label for="snow">Neige</label>
-            <input type="radio" name="weather" id="steadysnow" value="steadysnow">
-            <label for="steadysnow">Neige soutenue</label>
-            <input type="radio" name="weather" id="scatteredstorm" value="scatteredstorm">
-            <label for="scatteredstorm">Quelques orages</label>
-            <input type="radio" name="weather" id="storm" value="storm">
-            <label for="storm">Orages</label>
-            <input type="radio" name="weather" id="hail" value="hail">
-            <label for="hail">Grêle</label>
-            <input type="radio" name="weather" id="freezingrain" value="freezingrain">
-            <label for="freezingrain">Pluie verglaçante</label>
+            <label for="temperatue">Température : </label>
+            <input type="number" name="temperature" id="temperature">
+            <span id="temperatureunity">°C</span>
+            <br>
+            <span id="weatherscreen"></span>
         </fieldset>
         <br>
         <fieldset>
