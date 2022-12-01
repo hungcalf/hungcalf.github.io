@@ -25,21 +25,14 @@
             <br>
             <span id="weatherscreen"></span>
         </fieldset>
-        <br>
         <fieldset>
             <legend>
                 <label for="teamA">Équipe A : </label>
                 <select name="teamA" id="teamA">
                     <option value="">-- Équipe A --</option>
-                    <option value="Ethelred">Ethelred</option>
-                    <option value="Grymm">Grymm</option>
-                    <option value="Lufkin">Lufkin</option>
-                    <option value="Pokeby">Pokeby</option>
-                    <option value="Summerbee">Summerbee</option>
-                    <option value="Wright">Wright</option>
                 </select>
             </legend>
-            <div class="players">
+            <div class="players" id ="A">
                 <label for="chasersA">Poursuiveurs : </label>
                 <input type="text" name="chasersA" id="chaser1A" class="playersteamA">
                 <input type="text" name="chasersA" id="chaser2A" class="playersteamA">
@@ -61,15 +54,9 @@
                 <label for="teamB">Équipe B : </label>
                 <select name="teamB" id="teamB">
                     <option value="">-- Équipe B --</option>
-                    <option value="Ethelred">Ethelred</option>
-                    <option value="Grymm">Grymm</option>
-                    <option value="Lufkin">Lufkin</option>
-                    <option value="Pokeby">Pokeby</option>
-                    <option value="Summerbee">Summerbee</option>
-                    <option value="Wright">Wright</option>
                 </select>
             </legend>
-            <div class="players">
+            <div class="players" id="B">
                 <label for="chasersB">Poursuiveurs : </label>
                 <input type="text" name="chasersB" id="chaser1B" class="playersteamB">
                 <input type="text" name="chasersB" id="chaser2B" class="playersteamB">
@@ -86,7 +73,6 @@
                 <input type="text" name="seakerB" id="seakerB" class="playersteamB">
             </div>
         </fieldset>
-        <br>
         <button id="postcreation">Créer le post de résultat</button>
         <div id="code" class="code">
             <pre><code>&lt;div class="backfiche"&gt;&lt;div class="titre01bis"&gt;le tournoi de &lt;bb&gt;Quidditch&lt;/bb&gt;&lt;div class="soustitre"&gt;que le meilleur gagne !&lt;/div&gt;&lt;/div&gt;&lt;div class="backficheint"&gt;&lt;div class="titre03"&gt;<span id="code__matchnumber">Xème</span> match de la saison&lt;/div&gt;

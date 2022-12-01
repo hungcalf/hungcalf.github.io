@@ -18,13 +18,20 @@ function Tournament() {
 
     this.addWeather = function(weather) {
         this.weathers.push(weather);
-    }
+    };
 
     this.displayWeathers = function() {
         this.weathers.forEach((weather) => {
             weather.displayWeather();
-        })
-    }
+        });
+    };
+
+    this.displayTeams = function() {
+        this.teams.forEach((team) => {
+            team.displayTeam(teamA);
+            team.displayTeam(teamB);
+        });
+    };
 
     this.selectmatchteams = function (match) {
         this.teams.forEach((team, index) => {
@@ -90,7 +97,14 @@ function Team(name, colorcode) {
 
     this.addPlayer = function(name) {
         this.players.push(name);
-    }
+    };
+
+    this.displayTeam = function(team) {
+        let optionTeam = document.createElement("option");
+        optionTeam.value = this.name;
+        optionTeam.textContent = this.name;
+        team.append(optionTeam);
+    };
 }
 
 function Weather(name, description, img) {
@@ -195,6 +209,7 @@ let freezingrain = new Weather("freezingrain", "Pluie verglaçante", "freezing_r
 tournament.addWeather(freezingrain);
 
 tournament.displayWeathers();
+tournament.displayTeams();
 
 /* génération du code pour le post */
 function createcode() {

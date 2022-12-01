@@ -218,6 +218,10 @@ input[type="submit"]+.button2 {
   color: var(--color_link);
 }
 
+a[href="/images"] {
+  display: none;
+}
+
 /* couleur accessibilité */
 .uai .userway_dark {
   background-color: #e3b049 !important;
