@@ -54,3 +54,7 @@ label>span {
 .code::-webkit-scrollbar-thumb {
     background: #000000;
 }
+
+#code__matchdate {
+    text-transform: capitalize;
+}

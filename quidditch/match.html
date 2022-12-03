@@ -48,6 +48,10 @@
                 <label for="seakerA">Attrappeur : </label>
                 <input type="text" name="seakerA" id="seakerA" class="playersteamA">
             </div>
+            <label for="teamAscore">Score selon la simulation : </label>
+            <input type="number" name="teamAscore" id="teamAscore">
+            <input type="radio" name="isgoldensnitchseeker" id="teamAisgoldensnitchseeker" value="teamAisgoldensnitchseeker">
+            <label for="teamAisgoldensnitchseeker">Attrapeur du Vif d'Or</label>
         </fieldset>
         <fieldset>
             <legend>
@@ -72,13 +76,17 @@
                 <label for="seakerB">Attrappeur : </label>
                 <input type="text" name="seakerB" id="seakerB" class="playersteamB">
             </div>
+            <label for="teamBscore">Score selon la simulation : </label>
+            <input type="number" name="teamBscore" id="teamBscore">
+            <input type="radio" name="isgoldensnitchseeker" id="teamBisgoldensnitchseeker" value="teamBisgoldensnitchseeker">
+            <label for="teamBisgoldensnitchseeker">Attrapeur du Vif d'Or</label>
         </fieldset>
         <button id="postcreation">Créer le post de résultat</button>
         <div id="code" class="code">
             <pre><code>&lt;div class="backfiche"&gt;&lt;div class="titre01bis"&gt;le tournoi de &lt;bb&gt;Quidditch&lt;/bb&gt;&lt;div class="soustitre"&gt;que le meilleur gagne !&lt;/div&gt;&lt;/div&gt;&lt;div class="backficheint"&gt;&lt;div class="titre03"&gt;<span id="code__matchnumber">Xème</span> match de la saison&lt;/div&gt;
-[center]&lt;aa&gt;<span id="code__matchdate"></span>Samedi JJ mois AAAA</span>&lt;/aa&gt; ★ Les [b]<span class="code__teamA">[color=#000000]équipeA[/color]</span>[/b] affrontent les [b]<span class="code__teamB">[color=#000000]équipeB[/color]</span>[/b] !
+[center]&lt;aa&gt;<span id="code__matchdate">Samedi JJ mois AAAA</span>&lt;/aa&gt; ★ Les [b]<span class="code__teamA">[color=#000000]équipeA[/color]</span>[/b] affrontent les [b]<span class="code__teamB">[color=#000000]équipeB[/color]</span>[/b] !
 
-&lt;img src="https://hungcalf.github.io/quidditch/weather_img/<span id="code__weatherimg">clear_weather.png</span>" width="50"&gt;
+&lt;img src="https://hungcalf.github.io/quidditch/<span id="code__weatherimg">weather_img/clear_weather.png</span>" width="50"&gt;
 
 <span id="code__weather">Temps</span>, <span id="code__temperature">0</span>°C
 
@@ -93,7 +101,7 @@
 <span class="code__teamA">[color=#000000]équipeA[/color]</span> 0 - 0 <span class="code__teamB">[color=#000000]équipeB[/color]</span>
 
 [b][u]Vainqueur :[/u][/b]
-<span class="code__winner">[color=#000000]vainqueur[/color]</span>
+<span id="code__winner">[color=#000000]vainqueur[/color]</span>
 [/center]
 
 &lt;aa&gt;[u]Informations HJ[/u]&lt;/aa&gt;
@@ -109,7 +117,7 @@ Simulation du match disponible [url=https://1drv.ms/t/s!Am9SAcsLXOjEg0OhY8gByY-K
 <span class="code__teamB">[color=#000000]équipeB[/color]</span> : + 0 points (@"prénom nom", @"prénom nom", @"prénom nom" et @"prénom nom")
 
 [u]Qui attrape le Vif d'Or ?[/u]
-[color=#000000]vif d'or[/color] (+150 points)
+<span class="code__goldensnitch">[color=#000000]vif d'or[/color]</span> (+150 points)
 
 [spoiler="Classement provisoire"]&lt;img src="https://2img.net/r/ihimizer/img922/1517/IuAGrW.png" width="100%"&gt;[/spoiler]
 &lt;/div&gt;&lt;/div&gt;</code></pre>

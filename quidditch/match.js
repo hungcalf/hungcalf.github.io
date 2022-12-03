@@ -1,12 +1,23 @@
 let matchNumber = document.getElementById("matchnumber");
 let matchDate = document.getElementById("matchdate");
-let temperature = document.getElementById("temerature");
+let temperature = document.getElementById("temperature");
 let weatherScreen = document.getElementById("weatherscreen")
-let weather = document.querySelectorAll("input[name='weather']");
 let teamA = document.getElementById("teamA");
+let teamAScore = document.getElementById("teamAscore");
 let teamB = document.getElementById("teamB");
+let teamBScore = document.getElementById("teamBscore");
 let playersTeamA = document.querySelectorAll(".playersteamA");
 let playersTeamB = document.querySelectorAll(".playersteamB");
+
+let codeMatchNumber = document.getElementById("code__matchnumber");
+let codeMatchDate = document.getElementById("code__matchdate");
+let codeTeamA = document.querySelectorAll(".code__teamA");
+let codeTeamB = document.querySelectorAll(".code__teamB");
+let codeWeatherImg = document.getElementById("code__weatherimg");
+let codeWeather = document.getElementById("code__weather");
+let codeTemperature = document.getElementById("code__temperature");
+let codeGoldenSnitch = document.querySelectorAll(".code__goldensnitch");
+let codeWinner = document.getElementById("code__winner");
 
 function Tournament() {
     this.teams = [];
@@ -57,6 +68,7 @@ function Tournament() {
     };
 
     this.selectmatchweather = function (match) {
+        let weather = document.querySelectorAll("input[name='weather']");
         weather.forEach((weatheroption) => {
             if (weatheroption.checked == true) {
                 this.weathers.forEach((weather) => {
@@ -84,6 +96,33 @@ function Match() {
 
     this.addTeam = function(team) {
         this.teams.push(team);
+    };
+
+    this.getScores = function() {
+        this.teams[0].score = parseInt(teamAScore.value);
+        this.teams[1].score = parseInt(teamBScore.value);
+    };
+
+    this.getGoldenSnitchSeeker = function() {
+        if (document.getElementById("teamAisgoldensnitchseeker").checked == true) {
+            this.teams[0].goldenSnitchSeeker = true;
+        } else {
+            this.teams[1].goldenSnitchSeeker = true;
+        };
+    };
+
+    this.getWinner = function() {
+        if (
+            this.teams[0].score > this.teams[1].score
+            || (
+                this.teams[0].score == this.teams[1].score
+                && this.teams[0].goldenSnitchSeeker == true
+            )
+        ) {
+            this.teams[0].winner = true;
+        } else {
+            this.teams[1].winner = true;
+        };
     };
 }
 
@@ -216,6 +255,42 @@ function createcode() {
     let match = new Match();
     tournament.selectmatchteams(match);
     tournament.selectmatchweather(match);
+    match.getScores();
+    match.getGoldenSnitchSeeker();
+    match.getWinner();
+
+    if (match.matchNumber == "1") {
+        codeMatchNumber.textContent = match.matchNumber + "er";
+    } else {
+        codeMatchNumber.textContent = match.matchNumber + "ème";
+    }
+    
+    codeMatchDate.textContent = match.matchDate;
+
+    codeTeamA.forEach((span) => {
+        span.textContent = "[color=" + match.teams[0].colorcode + "]" + match.teams[0].name + "[/color]";
+    });
+    codeTeamB.forEach((span) => {
+        span.textContent = "[color=" + match.teams[1].colorcode + "]" + match.teams[1].name + "[/color]";
+    });
+
+    codeWeatherImg.textContent = match.matchWeather.img;
+    codeWeather.textContent = match.matchWeather.description;
+    codeTemperature.textContent = match.temperature;
+
+    codeGoldenSnitch.forEach((span) => {
+        if (match.teams[0].goldenSnitchSeeker == true) {
+            span.textContent = "[color=" + match.teams[0].colorcode + "]" + match.teams[0].name + "[/color]";
+        } else {
+            span.textContent = "[color=" + match.teams[1].colorcode + "]" + match.teams[1].name + "[/color]";
+        };
+    });
+    
+    if (match.teams[0].winner == true) {
+        codeWinner.textContent = "[color=" + match.teams[0].colorcode + "]" + match.teams[0].name + "[/color]";
+    } else {
+        codeWinner.textContent = "[color=" + match.teams[1].colorcode + "]" + match.teams[1].name + "[/color]";
+    };
 };
 
 function test() {
@@ -225,4 +300,4 @@ function test() {
 };
 
 let postcreationButton = document.getElementById("postcreation");
-postcreationButton.addEventListener("click", test);
+postcreationButton.addEventListener("click", createcode);

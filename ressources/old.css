@@ -2312,6 +2312,14 @@ li.see_all a:hover {
   -o-transition: all .65s linear;
 }
 
+/* modif marges */
+#fa_welcome{
+  padding:0!important;
+}
+#fa_notifications {
+  margin-left: 3px!important;
+}
+
 /* fin TOOLBAR */
 
 /* Début BARRE DE NAVIGUATION MENU */
