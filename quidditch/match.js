@@ -32,6 +32,8 @@ let codePlayersGoalsTeamB = document.getElementById("code__playersgoalsteamB");
 let codePlayersTeamA = document.getElementById("code__playersteamA");
 let codePlayersTeamB = document.getElementById("code__playersteamB");
 let codeClassement = document.getElementById("code__classement");
+let form = document.getElementById("form");
+let result = document.getElementById("result");
 
 function Tournament() {
     this.teams = [];
@@ -348,14 +350,18 @@ function createcode() {
     codePlayersTeamB.textContent = match.teams[1].playersList;
 
     codeClassement.textContent = classement.value;
-    
+
+    form.classList.replace("visible", "hide");
+    result.classList.replace("hide", "visible");
 };
 
-function test() {
-    let match = new Match();
-    tournament.selectmatchweather(match);
-    console.log(match.matchWeather);
+function returnToForm() {
+    form.classList.replace("hide", "visible");
+    result.classList.replace("visible", "hide");
 };
 
 let postcreationButton = document.getElementById("postcreation");
 postcreationButton.addEventListener("click", createcode);
+
+let returnButton = document.getElementById("return");
+returnButton.addEventListener("click", returnToForm);

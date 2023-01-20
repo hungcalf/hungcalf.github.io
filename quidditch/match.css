@@ -1,3 +1,24 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCE8ED;
+}
+
+.hide {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 #weatherscreen {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +42,38 @@
     justify-content: space-evenly;
     flex-direction: column;
     width: 80;
+    margin-top: 10px;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"],
+input[type="url"], select {
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="url"] {
+    width: 60%;
+}
+
+input[type="number"] {
+    width: 15%;
+}
+
+input[type="date"] {
+    width: 18.7%;
+}
+
+input[type="text"] {
+    width: 25%;
+}
+
+.width100 {
+    width: 100px;
+    display: inline-block;
 }
 
 label>img {
@@ -33,28 +86,60 @@ label>span {
     margin-left: auto;
     margin-right: auto;
     font-size: 0.8rem;
+    line-height: 1rem;
     text-align: center;
+    height: 2rem;
+    min-width: 100px;
 }
 
-.code {
-    max-width: 600px;
+#code {
     overflow: auto;
-    border: 1px solid #000000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(36,65,80,0.7);
     padding: 0 10px;
+    background-color: #BAD0DB;
     scrollbar-width: thin;
-    scrollbar-color: #000000 #aaaaaa;
+    scrollbar-color: rgba(36,65,80) #aaaaaa;
 }
 
-.code::-webkit-scrollbar {
+#code::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background: #aaaaaa;
 }
 
-.code::-webkit-scrollbar-thumb {
-    background: #000000;
+#code::-webkit-scrollbar-thumb {
+    background: rgba(36,65,80);
 }
 
 #code__matchdate {
     text-transform: capitalize;
+}
+
+#form, #result {
+    max-width: 700px;
+    margin: auto;
+}
+
+fieldset {
+    margin: 20px 0px;
+    background-color: #BAD0DB;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(36,65,80,0.7);
+}
+
+button {
+    border: none;
+    background-color: rgba(36,65,80);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    max-width: 700px;
 }
