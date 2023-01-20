@@ -8,6 +8,7 @@ let teamB = document.getElementById("teamB");
 let teamBScore = document.getElementById("teamBscore");
 let playersTeamA = document.querySelectorAll(".playersteamA");
 let playersTeamB = document.querySelectorAll(".playersteamB");
+let classement = document.getElementById("classement");
 
 let codeMatchNumber = document.getElementById("code__matchnumber");
 let codeMatchDate = document.getElementById("code__matchdate");
@@ -18,6 +19,19 @@ let codeWeather = document.getElementById("code__weather");
 let codeTemperature = document.getElementById("code__temperature");
 let codeGoldenSnitch = document.querySelectorAll(".code__goldensnitch");
 let codeWinner = document.getElementById("code__winner");
+let codeGoalsTeamA = document.getElementById("code__goalsteamA");
+let codeGoalsTeamB = document.getElementById("code__goalsteamB");
+let codeScoreTeamA = document.getElementById("code__scoreteamA");
+let codeScoreTeamB = document.getElementById("code__scoreteamB");
+let codeSimulationGoalsTeamA = document.getElementById("code__simulationgoalsteamA");
+let codeSimulationGoalsTeamB = document.getElementById("code__simulationgoalsteamB");
+let codeSimulationScoreGoalsTeamA = document.getElementById("code__simulationscoregoalsteamA");
+let codeSimulationScoreGoalsTeamB = document.getElementById("code__simulationscoregoalsteamB");
+let codePlayersGoalsTeamA = document.getElementById("code__playersgoalsteamA");
+let codePlayersGoalsTeamB = document.getElementById("code__playersgoalsteamB");
+let codePlayersTeamA = document.getElementById("code__playersteamA");
+let codePlayersTeamB = document.getElementById("code__playersteamB");
+let codeClassement = document.getElementById("code__classement");
 
 function Tournament() {
     this.teams = [];
@@ -52,6 +66,7 @@ function Tournament() {
                         team.addPlayer(player.value);
                     };
                 });
+                this.teams[index].getPlayersList();
                 match.addTeam(team);
             };
         });
@@ -62,6 +77,7 @@ function Tournament() {
                         team.addPlayer(player.value);
                     };
                 });
+                this.teams[index].getPlayersList();
                 match.addTeam(team);
             };
         });
@@ -98,17 +114,30 @@ function Match() {
         this.teams.push(team);
     };
 
-    this.getScores = function() {
-        this.teams[0].score = parseInt(teamAScore.value);
-        this.teams[1].score = parseInt(teamBScore.value);
-    };
-
     this.getGoldenSnitchSeeker = function() {
         if (document.getElementById("teamAisgoldensnitchseeker").checked == true) {
             this.teams[0].goldenSnitchSeeker = true;
         } else {
             this.teams[1].goldenSnitchSeeker = true;
         };
+    };
+
+    this.getScores = function() {
+        if (this.teams[0].goldenSnitchSeeker == true) {
+            this.teams[0].simulationGoals = (parseInt(teamAScore.value) - 150)/10;
+            this.teams[0].goals = this.teams[0].simulationGoals + this.teams[0].players.length;
+            this.teams[0].score = (this.teams[0].goals*10) + 150;
+            this.teams[1].simulationGoals = parseInt(teamBScore.value)/10;
+            this.teams[1].goals = this.teams[1].simulationGoals + this.teams[1].players.length;
+            this.teams[1].score = this.teams[1].goals*10;
+        } else {
+            this.teams[0].simulationGoals = parseInt(teamAScore.value)/10;
+            this.teams[0].goals = this.teams[0].simulationGoals + this.teams[0].players.length;
+            this.teams[0].score = this.teams[0].goals*10;
+            this.teams[1].simulationGoals = (parseInt(teamBScore.value) - 150)/10;
+            this.teams[1].goals = this.teams[1].simulationGoals + this.teams[1].players.length;
+            this.teams[1].score = (this.teams[1].goals*10) + 150;
+        }
     };
 
     this.getWinner = function() {
@@ -130,12 +159,25 @@ function Team(name, colorcode) {
     this.name = name;
     this.colorcode = colorcode;
     this.players = [];
-    this.score = 0;
+    this.playersList = "";
     this.goldenSnitchSeeker = false;
+    this.score = 0;
+    this.simulationGoals = 0;
+    this.goals = 0;
     this.winner = false;
 
     this.addPlayer = function(name) {
         this.players.push(name);
+    };
+
+    this.getPlayersList = function() {
+        if (this.players.length != 0) {
+            this.playersList = "(";
+            this.players.forEach((player) => {
+                this.playersList = this.playersList + "@\"" + player + "\", ";
+            });
+            this.playersList = this.playersList.slice(0,-2) + ")";
+        };
     };
 
     this.displayTeam = function(team) {
@@ -255,8 +297,8 @@ function createcode() {
     let match = new Match();
     tournament.selectmatchteams(match);
     tournament.selectmatchweather(match);
-    match.getScores();
     match.getGoldenSnitchSeeker();
+    match.getScores();
     match.getWinner();
 
     if (match.matchNumber == "1") {
@@ -291,6 +333,22 @@ function createcode() {
     } else {
         codeWinner.textContent = "[color=" + match.teams[1].colorcode + "]" + match.teams[1].name + "[/color]";
     };
+
+    codeGoalsTeamA.textContent = match.teams[0].goals*10;
+    codeGoalsTeamB.textContent = match.teams[1].goals*10;
+    codeScoreTeamA.textContent = match.teams[0].score;
+    codeScoreTeamB.textContent = match.teams[1].score;
+    codeSimulationGoalsTeamA.textContent = match.teams[0].simulationGoals;
+    codeSimulationGoalsTeamB.textContent = match.teams[1].simulationGoals;
+    codeSimulationScoreGoalsTeamA.textContent = match.teams[0].simulationGoals*10;
+    codeSimulationScoreGoalsTeamB.textContent = match.teams[1].simulationGoals*10;
+    codePlayersGoalsTeamA.textContent = match.teams[0].players.length*10;
+    codePlayersGoalsTeamB.textContent = match.teams[1].players.length*10;
+    codePlayersTeamA.textContent = match.teams[0].playersList;
+    codePlayersTeamB.textContent = match.teams[1].playersList;
+
+    codeClassement.textContent = classement.value;
+    
 };
 
 function test() {
