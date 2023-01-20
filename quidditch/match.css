@@ -92,6 +92,12 @@ label>span {
     min-width: 100px;
 }
 
+label[for="classement"],
+label[for="download"] {
+    width: 24%;
+    display: inline-block;
+}
+
 #code {
     overflow: auto;
     border: none;
