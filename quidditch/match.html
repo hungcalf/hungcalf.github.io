@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau match</title>
+    <link rel="stylesheet" href="match.css">
+</head>
+
+<body>
+    <main>
+        <div id="form" class="visible">
+            <label for="matchnumber">Match n° : </label>
+            <input type="number" name="matchnumber" id="matchnumber">
+            <br>
+            <label for="matchdate">Date : </label>
+            <input type="date" name="matchdate" id="matchdate">
+            <br>
+            <fieldset>
+                <legend>Météo</legend>
+                <label for="temperatue">Température : </label>
+                <input type="number" name="temperature" id="temperature">
+                <span id="temperatureunity">°C</span>
+                <br>
+                <span id="weatherscreen"></span>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="teamA">Équipe A : </label>
+                    <select name="teamA" id="teamA">
+                        <option value="">-- Équipe A --</option>
+                    </select>
+                    <input type="radio" name="isgoldensnitchseeker" id="teamAisgoldensnitchseeker" value="teamAisgoldensnitchseeker">
+                    <label for="teamAisgoldensnitchseeker">Attrapeur du Vif d'Or</label>
+                </legend>
+                <div class="players" id ="A">
+                    <label for="chasersA" class="width100">Poursuiveurs : </label>
+                    <input type="text" name="chasersA" id="chaser1A" class="playersteamA">
+                    <input type="text" name="chasersA" id="chaser2A" class="playersteamA">
+                    <input type="text" name="chasersA" id="chaser3A" class="playersteamA">
+                    <br>
+                    <label for="beatersA" class="width100">Batteurs : </label>
+                    <input type="text" name="beatersA" id="beater1A" class="playersteamA">
+                    <input type="text" name="beatersA" id="beater2A" class="playersteamA">
+                    <br>
+                    <label for="keeperA" class="width100">Gardien : </label>
+                    <input type="text" name="keeperA" id="keeperA" class="playersteamA">
+                    <br>
+                    <label for="seakerA" class="width100">Attrappeur : </label>
+                    <input type="text" name="seakerA" id="seakerA" class="playersteamA">
+                </div>
+                <label for="teamAscore">Score selon la simulation : </label>
+                <input type="number" name="teamAscore" id="teamAscore">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="teamB">Équipe B : </label>
+                    <select name="teamB" id="teamB">
+                        <option value="">-- Équipe B --</option>
+                    </select>
+                    <input type="radio" name="isgoldensnitchseeker" id="teamBisgoldensnitchseeker" value="teamBisgoldensnitchseeker">
+                    <label for="teamBisgoldensnitchseeker">Attrapeur du Vif d'Or</label>
+                </legend>
+                <div class="players" id="B">
+                    <label for="chasersB" class="width100">Poursuiveurs : </label>
+                    <input type="text" name="chasersB" id="chaser1B" class="playersteamB">
+                    <input type="text" name="chasersB" id="chaser2B" class="playersteamB">
+                    <input type="text" name="chasersB" id="chaser3B" class="playersteamB">
+                    <br>
+                    <label for="beatersB" class="width100">Batteurs : </label>
+                    <input type="text" name="beatersB" id="beater1B" class="playersteamB">
+                    <input type="text" name="beatersB" id="beater2B" class="playersteamB">
+                    <br>
+                    <label for="keeperB" class="width100">Gardien : </label>
+                    <input type="text" name="keeperB" id="keeperB" class="playersteamB">
+                    <br>
+                    <label for="seakerB" class="width100">Attrappeur : </label>
+                    <input type="text" name="seakerB" id="seakerB" class="playersteamB">
+                </div>
+                <label for="teamBscore">Score selon la simulation : </label>
+                <input type="number" name="teamBscore" id="teamBscore">
+            </fieldset>
+            <label for="classement">Classement provisoire :</label>
+            <input type="url" name="classement" id="classement" placeholder="lien du screen">
+            <br>
+            <label for="download">Fichier de la simulation :</label>
+            <input type="url" name="download" id="download" placeholder="lien vers le fichier">
+            <br>
+            <div class="button">
+                <button id="postcreation">Créer le post de résultat</button>
+            </div>
+        </div>
+        <div id="result" class="hide">
+            <div id="code">
+                <pre><code>&lt;div class="backfiche"&gt;&lt;div class="titre01bis"&gt;le tournoi de &lt;bb&gt;Quidditch&lt;/bb&gt;&lt;div class="soustitre"&gt;que le meilleur gagne !&lt;/div&gt;&lt;/div&gt;&lt;div class="backficheint"&gt;&lt;div class="titre03"&gt;<span id="code__matchnumber">Xème</span> match de la saison&lt;/div&gt;
+[center]&lt;aa&gt;<span id="code__matchdate">Samedi JJ mois AAAA</span>&lt;/aa&gt; ★ Les [b]<span class="code__teamA">[color=#000000]équipeA[/color]</span>[/b] affrontent les [b]<span class="code__teamB">[color=#000000]équipeB[/color]</span>[/b] !
+
+&lt;img src="https://hungcalf.github.io/quidditch/<span id="code__weatherimg">weather_img/clear_weather.png</span>" width="50"&gt;
+
+<span id="code__weather">Temps</span>, <span id="code__temperature">0</span>°C
+
+
+[u]Nombres de buts marqués :[/u]
+<span class="code__teamA">[color=#000000]équipeA[/color]</span> <span id="code__goalsteamA">0</span> - <span id="code__goalsteamB">0</span> <span class="code__teamB">[color=#000000]équipeB[/color]</span>
+
+[u]Attrapeur du Vif d'Or :[/u]
+<span class="code__goldensnitch">[color=#000000]vif d'or[/color]</span>
+
+[u]Total des points :[/u]
+<span class="code__teamA">[color=#000000]équipeA[/color]</span> <span id="code__scoreteamA">0</span> - <span id="code__scoreteamB">0</span> <span class="code__teamB">[color=#000000]équipeB[/color]</span>
+
+[b][u]Vainqueur :[/u][/b]
+<span id="code__winner">[color=#000000]vainqueur[/color]</span>
+[/center]
+
+&lt;aa&gt;[u]Informations HJ[/u]&lt;/aa&gt;
+
+Simulation du match disponible [url=<span id="code__simulationdownload">https://1drv.ms/t/s!Am9SAcsLXOjEg0OhY8gByY-KthK-?e=cnajZA</span>]ICI[/url]
+
+[u]Combien de buts par équipe ?[/u] (selon la simulation)
+<span class="code__teamA">[color=#000000]équipeA[/color]</span> : <span id="code__simulationgoalsteamA">0</span> = <span id="code__simulationscoregoalsteamA">0</span> points
+<span class="code__teamB">[color=#000000]équipeB[/color]</span> : <span id="code__simulationgoalsteamB">0</span> = <span id="code__simulationscoregoalsteamB">0</span> points
+
+[u]Joueurs : [/u]
+<span class="code__teamA">[color=#000000]équipeA[/color]</span> : + <span id="code__playersgoalsteamA">0</span> points <span id="code__playersteamA">(@"prénom nom")</span>
+<span class="code__teamB">[color=#000000]équipeB[/color]</span> : + <span id="code__playersgoalsteamB">0</span> points <span id="code__playersteamB">(@"prénom nom")</span>
+
+[u]Qui attrape le Vif d'Or ?[/u]
+<span class="code__goldensnitch">[color=#000000]vif d'or[/color]</span> (+150 points)
+
+[spoiler="Classement provisoire"]&lt;img src="<span id="code__classement">classement</span>" width="100%"&gt;[/spoiler]
+&lt;/div&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <br>
+            <div class="button">
+                <button id="return">Retour au formulaire</button>
+            </div>
+        </div> 
+    </main>
+    <script src="match.js"></script>
+</body>
+
+</html>

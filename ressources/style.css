@@ -5,31 +5,32 @@
   --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   --color_text: #333;
-  --color_title: #604637;
-  --color_link: #6f7d6b;
-  --color_background1: #c9cdb6;
-  --color_background3: #aeb596;
-  --color_background4: #E4E7DA;
-  --img_header:url('https://images2.imgbox.com/cc/c0/JJI4d9bX_o.png');
-  --fond_pa: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg'); 
-  --fond_blocava: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
-  --fond_codquot: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
-  --chap_intrigue: url('https://2img.net/r/ihimizer/img922/7879/NNbSYw.png');
-  --img_top_sites: url('https://2img.net/r/ihimizer/img924/3955/sTfIKT.gif');
-  --deco_pa: url('https://images2.imgbox.com/21/9e/4eQ4ZMKN_o.png');
-  --deco_profil: url('https://images2.imgbox.com/b1/75/8UV6Db9L_o.png');
-  --fleche_haut: url('https://images2.imgbox.com/28/0f/A6creBdd_o.png');
-  --fleche_haut_hover: url('https://images2.imgbox.com/f7/43/sO0x3jVJ_o.png');
-  --fleche_bas: url('https://images2.imgbox.com/dc/6d/1ipsBJh0_o.png');
-  --fleche_bas_hover: url('https://images2.imgbox.com/28/d7/lSswA6Vi_o.png');
-  --background: url('https://images2.imgbox.com/1d/6f/t1Gv5LyB_o.jpg');
+  --color_title: #226d82;
+  --color_link: #A5596D;
+  --color_background1: #8F828E;
+  --color_background2: #3B2339;
+  --color_background3: #C7C0C7;
+  --color_background4: #E3E0E3;
+  --color_background5: #F9F8F9;
+  --img_header:url('https://2img.net/r/ihimizer/img923/3082/tcWq8k.jpg');
+  --fond_pa: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg'); 
+  --fond_blocava: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg');
+  --fond_codquot: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg');
+  --chap_intrigue: url('https://2img.net/r/ihimizer/img923/1575/AgbTZa.jpg');
+  --img_top_sites: url('https://2img.net/r/ihimizer/img923/3116/eTRJAa.png');
+  --deco_pa: url('https://2img.net/r/ihimizer/img924/2348/1kHSUL.png');
+  --deco_profil: url('https://2img.net/r/ihimizer/img924/2554/ztw150.png');
+  --fleche_haut: url('https://2img.net/r/ihimizer/img923/7282/wPVLaL.png');
+  --fleche_haut_hover: url('https://2img.net/r/ihimizer/img922/3121/vClkNu.png');
+  --fleche_bas: url('https://2img.net/r/ihimizer/img923/7758/2Na6sO.png');
+  --fleche_bas_hover: url('https://2img.net/r/ihimizer/img924/7733/8Gih4b.png');
+  --background: url('https://2img.net/r/ihimizer/img924/4852/svkrHJ.jpg');
 }
 
 /* Deco italique */
 em,
 i {
   font-family: Georgia !important;
-  color: var(--color_link) !important;
   font-size: 11px;
 }
 
@@ -83,7 +84,7 @@ a.forumtitle:visited {
   -moz-transition: 1s !important;
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
-  color: var(--color_title);
+  color: var(--color_link);
   font-family: var(--police_sst) !important;
   font-size: 2.1rem;
   line-height: 24px;
@@ -116,6 +117,18 @@ a.forumtitle:active {
 .mentiontag:active,
 .mentiontag:hover {
   background: transparent !important;
+}
+
+#tabs ul a span {
+    color: var(--color_link);
+}
+
+li.rightside {
+    color: var(--color_link)!important;
+}
+
+i[data-tooltip='Cacher'] {
+  color: var(--color_background2) !important;
 }
 
 /* boutons */
@@ -151,14 +164,14 @@ input[type="submit"]:hover {
 input[type="submit"]:active,
 input[type="submit"]:link,
 input[type="submit"]:visited {
-  color: var(--color_title);
+  color: var(--color_background5);
 }
 
 .button1:hover,
 .button2:hover,
 .button:hover,
 input[type="submit"]:hover {
-  color: var(--color_link) !important;
+  color: var(--color_background5) !important;
 }
 
 .button+.button-round,
@@ -218,13 +231,19 @@ input[type="submit"]+.button2 {
   color: var(--color_link);
 }
 
-/* couleur accessibilité */
-.uai .userway_dark {
-  background-color: #e3b049 !important;
+a[href="/images"] {
+  display: none;
 }
 
-body .uwy.userway_p5 .uai {
-  left: 50px !important;
+/* input et select sur fond foncé 
+à désactiver si fond clair */
+
+input.tiny, select {
+  color:var(--color_background3)!important;
+}
+
+label, #main-content {
+  color:var(--color_background1);
 }
 
 /* liens forum top */
@@ -381,7 +400,7 @@ li.row2:hover {
 .headerbar {
   background: transparent;
   padding-top: 0px !important;
-  height: 705px;
+  height: auto;
 }
 
 .headerbar img {
@@ -401,6 +420,11 @@ li.row2:hover {
 
 .linklist li {
   width: 828px;
+}
+
+.copyright-body,
+.linklist {
+    border-color: var(--color_background2);
 }
 
 /* SUJETS */
@@ -858,6 +882,11 @@ blockquote:before {
 }
 
 /* bandeau d'annonce */
+#fa_ticker {
+  background-color: var(--color_background3);
+  border-radius: 5px;
+}
+
 #fa_ticker_block {
   background-color: transparent !;
   color: #c2c2c2;
@@ -867,6 +896,7 @@ blockquote:before {
   background-color: transparent;
 }
 
+/* bloc pa */
 .bloc_pa .guide {
   font-variant: initial !important;
 }
@@ -893,41 +923,31 @@ blockquote:before {
   width: 120px;
   height: 60px;
   object-fit: cover;
-}
-
-.mdm img:hover {
   filter: grayscale(100%);
 }
 
-.mdm img:nth-child(2) {
-  filter: brightness(1.8);
+.mdm img:hover {
+  filter: none;
 }
 
-.intrigue1 {
-  width: 250px;
+.intrigue {
+  width: 260px;
   height: 38px;
-  margin: 0px;
+  margin: 0 0 0 -5px;
+  border-radius: 5px;
   position: relative;
-  content: var(--chap_intrigue1);
-}
-
-.intrigue2 {
-  width: 250px;
-  height: 38px;
-  margin: 0px;
-  position: relative;
-  content: var(--chap_intrigue2);
+  content: var(--chap_intrigue);
 }
 
 .staff {
   width: 260px !important;
   margin-top: 2px !important;
-  height: 117px !important;
+  height: 135px !important;
 }
 
 .staff .sousForums {
   width: 250px !important;
-  height: 90px !important;
+  height: 108px !important;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -972,10 +992,11 @@ blockquote:before {
   width: 45px;
   height: 45px;
   object-fit: cover;
+  filter: grayscale(100%);
 }
 
 .bloc_img_pv img:hover {
-  filter: grayscale(100%);
+  filter: none;
 }
 
 .bloc_comm_pv {
@@ -1458,13 +1479,13 @@ li.header dl.icon dt {
 
 li.header dt,
 .table-title h2 {
-  color: var(--color_title);
+  color: var(--color_background2);
   text-align: center;
   width: 828px;
 }
 
 li.header dd {
-  color: var(--color_link);
+  color: var(--color_background2);
 }
 
 ul.pmlist dt {
@@ -1551,6 +1572,11 @@ div.recap_sujet span {
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
   float: right;
+}
+
+.last_post {
+  background-color: var(--color_background4);
+  border-radius: 3px;
 }
 
 .img_sujet {
@@ -1792,6 +1818,7 @@ textarea .inputbox {
   height: 300px;
   width: 240px;
   font-size: 1.2rem;
+  color:var(--color_text);
 }
 
 .div_online {
@@ -1890,6 +1917,7 @@ span#dernier_membre {
   position: relative;
   height: 230px;
   width: 288px;
+  color:var(--color_text);
 }
 
 .div_gr_icon {
@@ -1984,6 +2012,7 @@ span#dernier_membre {
   height: 230px;
   width: 240px;
   overflow: auto;
+  color:var(--color_text);
 }
 
 .bottom_copy {
@@ -2031,7 +2060,7 @@ div#fa_toolbar span {
 
 #fa_menu #fa_welcome,
 #fa_right a.rightHeaderLink {
-  color: var(--color_title) !important;
+  color: var(--color_background2) !important;
 }
 
 div#fa_search,
@@ -2052,7 +2081,7 @@ a#fa_hide {
 .fa_avatar {
   float: left;
   position: relative;
-  left: -22px;
+  left: -15px;
   z-index: 998;
   width: 60px;
   height: 60px;
@@ -2311,6 +2340,15 @@ li.see_all a:hover {
   -o-transition: all .65s linear;
 }
 
+/* modif marges */
+
+#fa_welcome{
+  padding:0!important;
+}
+#fa_notifications {
+  margin-left: 3px!important;
+}
+
 /* fin TOOLBAR */
 
 /* Début BARRE DE NAVIGUATION MENU */
@@ -2359,9 +2397,27 @@ div#search_menu {
   width: 320px !important;
 }
 
+#search_menu a:link {
+  color: var(--color_background5);
+  background-color: var(--color_link);
+}
+
+#search_menu a:hover {
+  color: var(--color_background5)!important;
+  background-color: var(--color_title);
+}
+
+#search_menu label {
+  color: var(--color_text);
+}
+
+#search_menu input::placeholder {
+  color: var(--color_background5);
+}
+
 a.mainmenu:link,
 a.mainmenu:visited {
-  color: var(--color_title) !important;
+  color: var(--color_background2) !important;
 }
 
 a.mainmenu:hover,
