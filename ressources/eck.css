@@ -1,6 +1,7 @@
 hdl,
 aoc,
-jqb {
+jqb,
+lmn {
   font-family: Georgia;
   font-weight: bold;
 }
@@ -13,8 +14,41 @@ jqb {
   color: thistle;
 }
 
+lmn {
+  color: crimson;
+}
+
+aoc {
+  color: lightslategrey;
+}
+
 .maxw {
   max-width: 300px;
+}
+
+/* Phones */
+
+.blackthorn {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.bloc-tel {
+  position:relative;
+  width:100%;
+  height:fit-content;
+  border:1px solid blue;
+}
+
+.bloc-tel__img, .bloc-tel__info {
+  position:absolute;
+  border:1px solid yellow;
+}
+
+
+details {
+  display:flex;
+  border:1px solid red;
 }
 
 /* FICHES ET ANNONCES */
