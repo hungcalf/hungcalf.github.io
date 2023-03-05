@@ -316,8 +316,8 @@ html {
 body {
   font-family: var(--police_txt);
   background-color: transparent;
-  margin-top: 42px !important;
-  margin-bottom: 0px !important;
+  margin-top: 42px;
+  margin-bottom: 0px;
 }
 
 ::-webkit-scrollbar {

@@ -8,6 +8,10 @@
     scrollbar-color: var(--color_link) var(--color_background4);
 }
 
+body {
+    margin: 0;
+}
+
 .swiper {
     padding-top: 110px;
     width: 100%;
