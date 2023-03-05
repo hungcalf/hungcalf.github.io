@@ -604,7 +604,6 @@ hr {
   font-family: var(--police_sst);
   font-style: italic;
   font-size: 19px;
-  font-weight: lightrer;
   letter-spacing: 0px;
   text-transform: lowercase;
   transition: .5s;
@@ -617,7 +616,6 @@ hr {
   font-family: var(--police_sst);
   font-style: italic;
   font-size: 25px;
-  font-weight: lightrer;
   letter-spacing: 0px;
   text-transform: lowercase;
   text-align: center;
@@ -650,7 +648,7 @@ hr {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  margin: 0px 0px -5px 0px;
+  margin: 5px 0px -10px 0px;
   border-top: 1px var(--color_link) solid;
 }
 
@@ -678,18 +676,11 @@ hr {
 }
 
 .titre04 {
-  text-align: center;
-  color: #453A34 !important;
-  font-family: 'Bungee', cursive;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
-  margin-left: 10px;
-  margin: 0 0 5 0;
-  display: block;
-  background-color: #B9BCA7;
-  border-bottom: 1px solid #959887;
-  border-top: 1px solid #959887;
+  border-bottom: 1px solid var(--color_link);
+  margin-bottom: 3px;
 }
 
 .identitycard {
