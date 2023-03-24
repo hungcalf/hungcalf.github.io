@@ -28,27 +28,121 @@ aoc {
 
 /* Phones */
 
-.blackthorn {
+.blackthorn{
   display:flex;
   flex-wrap: wrap;
+  width:450px;
+  padding:0;
 }
-
-.bloc-tel {
+.bloc-tel{
   position:relative;
-  width:100%;
-  height:fit-content;
-  border:1px solid blue;
+  width:400px;
+  height:450px;
+  overflow:hidden;
+  z-index:1;
 }
-
-.bloc-tel__img, .bloc-tel__info {
+.bloc-tel__img{
   position:absolute;
-  border:1px solid yellow;
+}
+.bloc-tel__info > *{
+  position:absolute;
+  z-index:2;
+  color:#fff;
+  left:185px;
+  width:185px;
+  text-align:center;
+}
+.time-now{
+  top:95px;
+  font-size: 3rem;
+  font-weight: 100;}
+.date-now{
+  top:120px;
+}
+.mess-now{
+  top:150px;
+  color:#333;
+  background:rgba(255,255,255,0.7);
+  padding:10px 5px;
+  border-radius:6px;
+}
+.ava-now{
+  position:relative;
+  float:left;
+  margin-right:5px;
+  border-radius:40px;
+  height:40px;
+  width:40px;
+  background:hotpink;}
+.ava-img{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:3;
+  object-fit:cover;
+  background:transparent;
+}
+.text-alt{
+  position:absolute;
+  top:0;
+  left:0;
+  color:#fff;
+  font-size:2rem;
+  font-weight:lighter;
+  height:40px;
+  width:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+details{
+  display:flex;
+  justify-content:center;
+  box-sizing: border-box;
+}
+summary{
+  width:400px;
+  text-align:center;
+  color:hotpink;
+  font-size:2rem;
+  font-family:var(--police_sst);
+  margin-top:2rem;transition: all 0.2s;
+}
+summary:hover{
+  color:pink;
+}
+details span{
+  border:1px solid pink;
+  border-radius:1rem;
+  padding:2rem;
+  margin-top:1rem;
+  width:400px;}
+
+
+.ava-now .ice{
+  background:purple;
+}
+summary .ice{
+  color:purple;
+}
+summary .ice:hover{
+  color:thistle;
+}
+details .ice span{
+  border:1px solid thistle;
 }
 
-
-details {
-  display:flex;
-  border:1px solid red;
+.ava-now .lmn{
+  background:crimson;
+}
+summary .lmn{
+  color:crimson;
+}
+summary .lmn:hover{
+  color:gold;
+}
+details .lmn span{
+  border:1px solid gold;
 }
 
 /* FICHES ET ANNONCES */
