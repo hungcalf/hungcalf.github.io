@@ -72,8 +72,7 @@ aoc {
   margin-right:5px;
   border-radius:40px;
   height:40px;
-  width:40px;
-  background:hotpink;}
+  width:40px;}
 .ava-img{
   position:absolute;
   top:0;
@@ -118,6 +117,18 @@ details span{
   margin-top:1rem;
   width:400px;}
 
+.ava-now .fire{
+  background:hotpink;
+}
+summary .fire{
+  color:hotpink;
+}
+summary .fire:hover{
+  color:pink;
+}
+details .fire span{
+  border:1px solid pink;
+}
 
 .ava-now .ice{
   background:purple;
