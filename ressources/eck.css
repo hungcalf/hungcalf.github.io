@@ -102,16 +102,11 @@ details{
 summary{
   width:400px;
   text-align:center;
-  color:hotpink;
   font-size:2rem;
   font-family:var(--police_sst);
   margin-top:2rem;transition: all 0.2s;
 }
-summary:hover{
-  color:pink;
-}
 details span{
-  border:1px solid pink;
   border-radius:1rem;
   padding:2rem;
   margin-top:1rem;
