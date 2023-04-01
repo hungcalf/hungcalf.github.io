@@ -5,26 +5,28 @@
   --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
   --color_text: #333;
-  --color_title: #226d82;
-  --color_link: #A5596D;
-  --color_background1: #8F828E;
-  --color_background2: #3B2339;
-  --color_background3: #C7C0C7;
-  --color_background4: #E3E0E3;
-  --color_background5: #F9F8F9;
-  --img_header:url('https://2img.net/r/ihimizer/img923/3082/tcWq8k.jpg');
-  --fond_pa: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg'); 
-  --fond_blocava: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg');
-  --fond_codquot: url('https://2img.net/r/ihimizer/img923/3123/5CufJ0.jpg');
-  --chap_intrigue: url('https://2img.net/r/ihimizer/img923/1575/AgbTZa.jpg');
-  --img_top_sites: url('https://2img.net/r/ihimizer/img923/3116/eTRJAa.png');
-  --deco_pa: url('https://2img.net/r/ihimizer/img924/2348/1kHSUL.png');
-  --deco_profil: url('https://2img.net/r/ihimizer/img924/2554/ztw150.png');
-  --fleche_haut: url('https://2img.net/r/ihimizer/img923/7282/wPVLaL.png');
-  --fleche_haut_hover: url('https://2img.net/r/ihimizer/img922/3121/vClkNu.png');
-  --fleche_bas: url('https://2img.net/r/ihimizer/img923/7758/2Na6sO.png');
-  --fleche_bas_hover: url('https://2img.net/r/ihimizer/img924/7733/8Gih4b.png');
-  --background: url('https://2img.net/r/ihimizer/img924/4852/svkrHJ.jpg');
+  --color_title: #C78AA5;
+  --color_link: #A45F7D;
+  --color_background1: #BFCA94;
+  --color_background2: #6D9151;
+  --color_background3: #D4DBB7;
+  --color_background4: #DFE4C9;
+  --color_background5: #F4F6ED;
+  --img_header:url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_header.png');
+  --fond_pa: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpa.jpg'); 
+  --fond_blocava: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondprofil.jpg');
+  --fond_codquot: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpa.jpg');
+  --chap_intrigue: url('https://2img.net/r/ihimizer/img922/3933/fc2tTr.jpg');
+  --img_top_sites: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_topsite.png');
+  --deco_pa: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_decopa.png');
+  --deco_profil: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_decoprofil.png');
+  --fleche_haut: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechehaut_off.png');
+  --fleche_haut_hover: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechehaut_on.png');
+  --fleche_bas: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechebas_off.png');
+  --fleche_bas_hover: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechebas_on.png');
+  --background: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpage.jpg');
+  /* pour remplacer après le poisson
+  --chap_intrigue: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_intrigue.jpg'); */
 }
 
 /* Deco italique */
@@ -309,7 +311,8 @@ label, #main-content {
 /* début mise en page affichage catégories et forums */
 html {
   background-image: var(--background);
-  background-size: 100% 100%;
+  background-size: auto 100vh;
+  background-position:center;
   height: auto;
 }
 
@@ -929,7 +932,7 @@ blockquote:before {
   width: 120px;
   height: 60px;
   object-fit: cover;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 .mdm img:hover {
@@ -998,7 +1001,7 @@ blockquote:before {
   width: 45px;
   height: 45px;
   object-fit: cover;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 .bloc_img_pv img:hover {
