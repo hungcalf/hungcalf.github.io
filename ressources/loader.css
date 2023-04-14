@@ -1,0 +1,118 @@
+
+.loader-container {
+    position: fixed;
+    top: calc((100vh - 120px)/2);
+    left: calc((100vw - 360px)/2);
+    width: 360px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    animation: backload 3s ease forwards;
+  }
+  .lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(45deg);
+    transform-origin: 2.5rem 2.5rem;
+  }
+  .lds-heart div {
+    top: 2rem;
+    left: 2rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background:var(--color_background1);
+  }
+  .lds-heart div:before {
+    left: -1.5rem;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -1.5rem;
+    border-radius: 50% 50% 0 0;
+  }
+  .lds-heart:nth-child(2) div,
+  .lds-heart:nth-child(2) div:after,
+  .lds-heart:nth-child(2) div:before {
+    background: var(--color_background2);
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+  }
+  .lds-heart:nth-child(3) div,
+  .lds-heart:nth-child(3) div:after,
+  .lds-heart:nth-child(3) div:before {
+    background: var(--color_title);
+  }
+  .lds-heart:nth-child(4) div,
+  .lds-heart:nth-child(4) div:after,
+  .lds-heart:nth-child(4) div:before {
+    background: var(--color_background1);
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+
+.loader-container__title {
+    width:100%;
+    text-align:center;
+    font-family:var(--police_sst);
+    color:var(--color_title);
+    font-size: 1.5rem;
+}
+/*
+  @keyframes backload {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    80% {
+      opacity: 0.98;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+*/
+@keyframes lds-heart {
+    0% {
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+    }
+    5% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    39% {
+      -webkit-transform: scale(0.85);
+      transform: scale(0.85);
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    60% {
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+    }
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
