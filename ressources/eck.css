@@ -166,7 +166,6 @@ details .lmn span {
 
 .mb_entete__circle {
   background: silver;
-  background-size: cover;
   width: 50px;
   height: 50px;
   border-radius: 100px;
@@ -204,31 +203,24 @@ details .lmn span {
 
 .mb_area_grid_1 {
   grid-area: one;
-  background: #ddd;
 }
 .mb_area_grid_2 {
   grid-area: two;
-  background: #ddd;
 }
 .mb_area_grid_3 {
   grid-area: three;
-  background: #ddd;
 }
 .mb_area_grid_4 {
   grid-area: four;
-  background: #ddd;
 }
 .mb_area_grid_5 {
   grid-area: five;
-  background: #ddd;
 }
 .mb_area_grid_6 {
   grid-area: six;
-  background: #ddd;
 }
 .mb_area_grid_7 {
   grid-area: seven;
-  background: #ddd;
 }
 
 /* A REVOIR -- FICHES ET ANNONCES */
