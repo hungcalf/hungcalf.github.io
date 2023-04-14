@@ -170,7 +170,7 @@ details .lmn span {
   height: 50px;
   border-radius: 100px;
   padding:2px;
-  border: 2px dotted var(--color_title);
+  border: 2px solid var(--color_link);
 }
 
 .mb_title {
