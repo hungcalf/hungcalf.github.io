@@ -4,14 +4,14 @@
 :root {
   --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
---color_text: #333;
---color_title: #ba4e06;
---color_link: #e36c35;
---color_background1: #ffe4b2;
---color_background2: #ff8f00;
---color_background3: #FFEECF;
---color_background4: #FFF8EC;
---color_background5: #fff;
+  --color_text: #333;
+  --color_title: #ba4e06;
+  --color_link: #e36c35;
+  --color_background1: #ffe4b2;
+  --color_background2: #ff8f00;
+  --color_background3: #FFEECF;
+  --color_background4: #FFF8EC;
+  --color_background5: #fff;
   --img_header:url('https://hungcalf.github.io/ressources/next_design/header_03c.png');
   --fond_pa: url('https://hungcalf.github.io/ressources/next_design/background.png'); 
   --fond_blocava: url('https://hungcalf.github.io/ressources/next_design/blocava.png');
