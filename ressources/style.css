@@ -12,21 +12,19 @@
   --color_background3: #FFEECF;
   --color_background4: #FFF8EC;
   --color_background5: #fff;
-  --img_header:url('https://hungcalf.github.io/ressources/next_design/header_03c.png');
-  --fond_pa: url('https://hungcalf.github.io/ressources/next_design/background.png'); 
-  --fond_blocava: url('https://hungcalf.github.io/ressources/next_design/blocava.png');
-  --fond_codquot: url('https://hungcalf.github.io/ressources/next_design/background.png');
-  --chap_intrigue: url('https://hungcalf.github.io/ressources/next_design/intrigue.png');
-  --img_top_sites: url('https://hungcalf.github.io/ressources/next_design/sunflowers.png');
-  --deco_pa: url('https://hungcalf.github.io/ressources/next_design/decopa.png');
-  --deco_profil: url('https://hungcalf.github.io/ressources/next_design/decoprofil.png');
-  --fleche_haut: url('https://hungcalf.github.io/ressources/next_design/arrow_top_off.png');
-  --fleche_haut_hover: url('https://hungcalf.github.io/ressources/next_design/arrow_top_on.png');
-  --fleche_bas: url('https://hungcalf.github.io/ressources/next_design/arrow_bottom_off.png');
-  --fleche_bas_hover: url('https://hungcalf.github.io/ressources/next_design/arrow_bottom_on.png');
-  --background: url('https://hungcalf.github.io/ressources/next_design/background.png');
-  /* pour remplacer après le poisson
-  --chap_intrigue: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_intrigue.jpg'); */
+  --img_header:url('https://hungcalf.github.io/ressources/current_design/header_03c.png');
+  --fond_pa: url('https://hungcalf.github.io/ressources/current_design/background.png'); 
+  --fond_blocava: url('https://hungcalf.github.io/ressources/current_design/blocava.png');
+  --fond_codquot: url('https://hungcalf.github.io/ressources/current_design/background.png');
+  --chap_intrigue: url('https://hungcalf.github.io/ressources/current_design/intrigue.png');
+  --img_top_sites: url('https://hungcalf.github.io/ressources/current_design/sunflowers.png');
+  --deco_pa: url('https://hungcalf.github.io/ressources/current_design/decopa.png');
+  --deco_profil: url('https://hungcalf.github.io/ressources/current_design/decoprofil.png');
+  --fleche_haut: url('https://hungcalf.github.io/ressources/current_design/arrow_top_off.png');
+  --fleche_haut_hover: url('https://hungcalf.github.io/ressources/current_design/arrow_top_on.png');
+  --fleche_bas: url('https://hungcalf.github.io/ressources/current_design/arrow_bottom_off.png');
+  --fleche_bas_hover: url('https://hungcalf.github.io/ressources/current_design/arrow_bottom_on.png');
+  --background: url('https://hungcalf.github.io/ressources/current_design/background.png');
 }
 
 /* Deco italique */
