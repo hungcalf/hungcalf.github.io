@@ -4,27 +4,27 @@
 :root {
   --police_sst: 'dancing script', cursive, bold;
   --police_txt: 'Calibri', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  --color_text: #333;
-  --color_title: #C78AA5;
-  --color_link: #A45F7D;
-  --color_background1: #BFCA94;
-  --color_background2: #6D9151;
-  --color_background3: #D4DBB7;
-  --color_background4: #DFE4C9;
-  --color_background5: #F4F6ED;
-  --img_header:url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_header.png');
-  --fond_pa: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpa.jpg'); 
-  --fond_blocava: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondprofil.jpg');
-  --fond_codquot: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpa.jpg');
-  --chap_intrigue: url('https://2img.net/r/ihimizer/img922/3933/fc2tTr.jpg');
-  --img_top_sites: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_topsite.png');
-  --deco_pa: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_decopa.png');
-  --deco_profil: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_decoprofil.png');
-  --fleche_haut: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechehaut_off.png');
-  --fleche_haut_hover: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechehaut_on.png');
-  --fleche_bas: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechebas_off.png');
-  --fleche_bas_hover: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_flechebas_on.png');
-  --background: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_fondpage.jpg');
+--color_text: #333;
+--color_title: #ba4e06;
+--color_link: #e36c35;
+--color_background1: #ffe4b2;
+--color_background2: #ff8f00;
+--color_background3: #FFEECF;
+--color_background4: #FFF8EC;
+--color_background5: #fff;
+  --img_header:url('https://hungcalf.github.io/ressources/next_design/header_03c.png');
+  --fond_pa: url('https://hungcalf.github.io/ressources/next_design/background.png'); 
+  --fond_blocava: url('https://hungcalf.github.io/ressources/next_design/blocava.png');
+  --fond_codquot: url('https://hungcalf.github.io/ressources/next_design/background.png');
+  --chap_intrigue: url('https://hungcalf.github.io/ressources/next_design/intrigue.png');
+  --img_top_sites: url('https://hungcalf.github.io/ressources/next_design/sunflowers.png');
+  --deco_pa: url('https://hungcalf.github.io/ressources/next_design/decopa.png');
+  --deco_profil: url('https://hungcalf.github.io/ressources/next_design/decoprofil.png');
+  --fleche_haut: url('https://hungcalf.github.io/ressources/next_design/arrow_top_off.png');
+  --fleche_haut_hover: url('https://hungcalf.github.io/ressources/next_design/arrow_top_on.png');
+  --fleche_bas: url('https://hungcalf.github.io/ressources/next_design/arrow_bottom_off.png');
+  --fleche_bas_hover: url('https://hungcalf.github.io/ressources/next_design/arrow_bottom_on.png');
+  --background: url('https://hungcalf.github.io/ressources/next_design/background.png');
   /* pour remplacer après le poisson
   --chap_intrigue: url('https://ewanouchka.github.io/hungcalf-img-store/design_202304/202304_intrigue.jpg'); */
 }
@@ -72,7 +72,7 @@ a {
 
 a:hover,
 a:active {
-  color: var(--color_link) !important;
+  color: var(--color_title) !important;
   text-decoration: none !important;
 }
 
@@ -108,6 +108,10 @@ a.forumtitle:active {
 .footerbar-system a:hover,
 .copyright a:hover {
   color: var(--color_link);
+}
+
+.mentiontag {
+  padding:0;
 }
 
 .mentiontag:link,
@@ -191,6 +195,10 @@ input[type="submit"]+.button2 {
   margin-top: 0px;
 }
 
+.button-round{ 
+    margin: 6px!important;
+}
+
 .topic-actions.bottom .topic-actions-buttons>a,
 .topic-actions.bottom .topic-actions-buttons>span {
   vertical-align: middle;
@@ -241,11 +249,11 @@ a[href="/images"] {
 à désactiver si fond clair */
 
 input.tiny, select {
-  color:var(--color_background3)!important;
+  color:var(--color_background5)!important;
 }
 
 label, #main-content {
-  color:var(--color_background1);
+  color:var(--color_background2);
 }
 
 /* liens forum top */
@@ -329,7 +337,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #F1F3E8;
+  background-color: #ffffffcc;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -476,6 +484,7 @@ hr {
 
 .post-head .topic-date {
   font-size: 1.5rem;
+    color: var(--color_background2);
 }
 
 .page-title {
@@ -802,6 +811,10 @@ div.postbody {
   line-height: inherit;
 }
 
+.row1, .row2, .row3 {
+  background-color:var(--color_background4);
+}
+
 /* pour supprimer la ligne d'édité le */
 .edited-message {
   display: none;
@@ -906,63 +919,82 @@ blockquote:before {
 }
 
 /* bloc pa */
-.bloc_pa .guide {
-  font-variant: initial !important;
-}
 
 .panel {
   padding: 18px 0 0 18px !important;
   font-size: 1.2rem;
 }
 
-.paqeel {
-  background: var(--color_background1) var(--fond_pa) top center no-repeat;
-  padding: 6px 0 5px !important;
-  margin-top: 4px;
-  border-radius: 5px;
-  border: 1px solid var(--color_background1);
+.bloc_pa .guide {
+  font-variant: initial !important;
 }
 
+.paqeel {
+  background: var(--color_background1) var(--fond_pa) left center no-repeat;
+  padding: 6px 0 5px !important;
+  border-radius: 5px;
+  border: 1px solid var(--color_background5);
+}
+
+.bloc_pa {
+  margin-top: 0px; 
+  width: 790px; 
+  display:flex;
+  justify-content: space-between;
+}
+
+.bloc_pa_left {
+  width: 260px; 
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: space-between;
+}
+
+.bloc_pa_left *,
+.bloc_pa_center *, 
+.bloc_pa_right * {
+  width: 100%!important;
+  height: auto!important;
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+/*
 .mdm {
   width: 260px !important;
-  height: 100px !important;
+  height: 150px !important;
 }
 
 .mdm img {
   width: 120px;
   height: 60px;
   object-fit: cover;
-  /*filter: grayscale(100%);*/
+  filter: grayscale(100%);
 }
 
 .mdm img:hover {
   filter: none;
+}*/
+
+.meteo {
+  margin:0 auto 5px auto!important;
 }
 
-.intrigue {
-  width: 260px;
-  height: 38px;
-  margin: 0 0 0 -5px;
-  border-radius: 5px;
-  position: relative;
-  content: var(--chap_intrigue);
+.meteo h3 {
+  font-size: 2rem;
+  display: block;
 }
 
 .staff {
-  width: 260px !important;
-  margin-top: 2px !important;
-  height: 135px !important;
+  margin: 5px auto 0 auto !important;
 }
 
 .staff .sousForums {
-  width: 250px !important;
-  height: 108px !important;
+  width:100%;
   overflow: hidden;
   overflow-y: auto;
 }
 
 .saison {
-  width: 230px !important;
   text-align: justify !important;
   font-size: 13px;
   word-break: keep-all;
@@ -978,8 +1010,8 @@ blockquote:before {
   padding: 5px;
   position: relative;
   transition: 1s;
-  max-height: 145px;
-  overflow: auto !important;
+  max-height: 200px;
+  overflow: auto !important; 
 }
 
 .saison img {
@@ -987,20 +1019,85 @@ blockquote:before {
   height: 12px !important;
 }
 
-.scena {
-  width: 260px !important;
+.bloc_pa_center {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+  flex: 1;
+  align-content: space-between;
+}
+
+.maj{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.maj h3 {
+  font-size:2rem;
+}
+
+.maj p {
+  padding: 1rem;
+  text-align: justify;
+  margin:0;
+}
+
+.bloc_intrigue {
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+.intrigue {
+  border-radius: 5px;
+  content: var(--chap_intrigue);
+}
+
+.topsites {
+  position: relative;
+  text-align: center;
+  float: right;
+}
+
+.topsites_titre {
+  font-size: 2rem!important;
+  display:block;
+  color: var(--color_background2);
+}
+
+.topsites img {
+  width: 24px!important;
+  height: 24px!important;
+  content: var(--img_top_sites);
+}
+
+.bloc_pa_right {
+  width: 260px; 
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.scena { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:0 auto 20px auto!important;
 }
 
 .bloc_img_pv {
-  position: relative;
-  float: left;
-  margin: 2px;
+  width:auto!important;
+  position:relative;
+  margin: auto 5px;
 }
 
 .bloc_img_pv img {
-  width: 45px;
-  height: 45px;
+  width: 65px!important;
+  height: 65px!important;
   object-fit: cover;
+  margin: 0.5rem auto;
   /*filter: grayscale(100%);*/
 }
 
@@ -1010,10 +1107,9 @@ blockquote:before {
 
 .bloc_comm_pv {
   position: absolute;
-  top: 30px;
-  left: -17px;
+  top: 20px;
   z-index: 12;
-  width: 80px;
+  width: 100%!important;
   background-color: #fff;
   border: 1px solid #CCBE8E;
   padding: 3px;
@@ -1030,28 +1126,26 @@ blockquote:before {
   display: block;
 }
 
-.topsites {
-  position: relative;
-  margin: 5px;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 260px;
-  float: right;
+.titre_part a {
+  font-size: 2rem;
+  color: var(--color_background2);
 }
 
-.topsites img {
-  width: 18px;
-  height: 18px;
-  content: var(--img_top_sites);
+.detail_part {
+  position: absolute; 
+  bottom:-10px;
+  right:-10px;
+  opacity: 0.3; 
+  z-index:1;
+}
+
+.liste_part {
+  height: 6rem!important;
+  padding: 5px; 
+  z-index: 12;
 }
 
 .detdsgn {
-  position: relative;
-  z-index: 1;
-  width: 260px;
   content: var(--deco_pa);
 }
 
@@ -1319,7 +1413,7 @@ td.avatar-mini img {
 
 .postprofile-info {
   margin-top: 20px;
-  background: var(--fond_blocava) top center;
+  background: var(--fond_blocava) bottom right;
 }
 
 .postprofile-info img {
@@ -1472,6 +1566,10 @@ h1.cattitle {
   top: 0px;
 }
 
+.btn-collapse i {
+    color: var(--color_background2);
+}
+
 ul.topiclist dd.dterm,
 ul.topiclist dt {
   padding: 10px;
@@ -1488,7 +1586,7 @@ li.header dl.icon dt {
 
 li.header dt,
 .table-title h2 {
-  color: var(--color_background2);
+  color: var(--color_title);
   text-align: center;
   width: 828px;
 }
@@ -1920,13 +2018,13 @@ span#dernier_membre {
   font-size: 1.2rem;
   line-height: 20px;
   margin: 10px;
-  padding: 4px;
+  padding: 0 0 4px 0!important;
   text-align: justify;
   vertical-align: top;
   position: relative;
-  height: 230px;
   width: 288px;
-  color:var(--color_text);
+  height: 230px;
+  color: var(--color_text);
 }
 
 .div_gr_icon {
@@ -1993,17 +2091,16 @@ span#dernier_membre {
 }
 
 .bloc_copy {
-  position: relative;
-  top: 5px;
-  width: 278px;
-  height: 70px;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 2px;
-  border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
+  position: relative;top: 5px;
+    width: 278px;
+    background: rgba(255,255,255,0.7);
+    padding: 2px;
+    margin: 0 auto 6px auto;
+    border-radius: 3px;
+    border: solid 1px #e6e6e6;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
 }
 
 .bloc_qeelr {
@@ -2054,7 +2151,7 @@ div#page-footer {
 div#fa_toolbar {
   transition: 300ms all ease;
   opacity: 0.9;
-  background-color: var(--color_background1) !important;
+  background-color: var(--color_background3) !important;
   border-radius: 0 0 20px 20px !important;
   margin: auto;
   width: 100% !important;
@@ -2097,7 +2194,7 @@ a#fa_hide {
   border-radius: 100px;
   overflow: hidden;
   border: 7px solid;
-  border-color: var(--color_background1);
+  border-color: var(--color_background3);
 }
 
 .fa_avatar img {
@@ -2134,21 +2231,21 @@ a#fa_notifications:active {
 }
 
 #fa_toolbar #fa_right #notif_list {
-  background: var(--color_background1) !important;
+  background: var(--color_background3) !important;
   border: none !important;
   color: #333333 !important;
   padding-right: 10px;
 }
 
 #fa_menulist {
-  background-color: var(--color_background1) !important;
+  background-color: var(--color_background3) !important;
   font-size: 11px !important;
   font-variant: small-caps;
   min-width: 340px;
 }
 
 #fa_menu ul {
-  background-color: var(--color_background1) !important;
+  background-color: var(--color_background3) !important;
   font-size: 10px !important;
 }
 
@@ -2171,7 +2268,7 @@ a#fa_notifications:active {
 }
 
 ul#fa_menulist {
-  background: var(--color_background1) !important;
+  background: var(--color_background3) !important;
   border: 0;
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
@@ -2199,7 +2296,7 @@ ul#fa_menulist {
 #fa_usermenu table .first {
   color: #333333 !important;
   font-size: 10px !important;
-  margin-left: 20px;
+  margin-left: -20px;
 }
 
 #fa_usermenu table .bold {
@@ -2261,7 +2358,7 @@ ul#fa_menulist {
 }
 
 #fa_toolbar #fa_right #notif_list {
-  background: var(--color_background1) !important;
+  background: var(--color_background3) !important;
   font-size: 10px !important;
 }
 
@@ -2278,7 +2375,7 @@ ul#fa_menulist {
 }
 
 ul#notif_list {
-  background: var(--color_background1) !important;
+  background: var(--color_background3) !important;
   border: 0;
   top: 40px !important;
   left: 95px !important;
