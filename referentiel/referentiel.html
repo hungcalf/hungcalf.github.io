@@ -44,23 +44,23 @@
         /* ------------------------ MAIN  ------------------------ */
 
         :root{
-            --m2: #A45F7D; /*barres de défilement -> --color_link*/
-            --l3: #A45F7D; /*sélection -> --color_link*/
+            --m2: #e36c35; /*barres de défilement -> --color_link*/
+            --l3: #e36c35; /*sélection -> --color_link*/
 
-            --d1: #A45F7D; /*couleur titres (pseudos et petites infos) faceclaim à droite -> --color_link*/
-            --m1: #D4DBB7; /*barre soulignement titre -> --color_background3*/
+            --d1: #e36c35; /*couleur titres (pseudos et petites infos) faceclaim à droite -> --color_link*/
+            --m1: #FFF6E7; /*barre soulignement titre -> --color_background3*/
             --d2: #333333; /*couleur texte principal faceclaim à droite*/
 
-            --l1: #6D9151; /*fond navigation à gauche -> --color_background2*/
-            --d3: #D4DBB7; /*couleur titre navigation à gauche -> --color_background3*/
-            --d4: #D4DBB7; /*couleur texte principal navigation à gauche -> --color_background3*/
-            --h3: #A45F7D; /*couleur sélection et liens navigation à gauche -> --color_link*/
+            --l1: #ECBB80; /*fond navigation à gauche -> --color_background2*/
+            --d3: #FFF6E7; /*couleur titre navigation à gauche -> --color_background3*/
+            --d4: #FFF6E7; /*couleur texte principal navigation à gauche -> --color_background3*/
+            --h3: #e36c35; /*couleur sélection et liens navigation à gauche -> --color_link*/
 
-            --l0: #D4DBB7; /*couleur survol texte liens -> --color_background3*/
-            --l2: #D4DBB7; /*fond liens -> --color_background3*/
-            --h2: #A45F7D; /*fond survol liens -> --color_link*/
+            --l0: #FFF6E7; /*couleur survol texte liens -> --color_background3*/
+            --l2: #FFEECF; /*fond liens -> --color_background3*/
+            --h2: #e36c35; /*fond survol liens -> --color_link*/
 
-            --background-body: #F4F6ED /*couleur de fond 1*/;
+            --background-body: #FFF8EC /*couleur de fond -> --color_background4*/;
 
 
             --sm: 10px;
@@ -1327,8 +1327,20 @@
 
                     <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
                     <label>
+                        <input type="checkbox" class="input_filters" filterName=".leroy">
+                        <i>famille Leroy-Bonnamy</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
                         <input type="checkbox" class="input_filters" filterName=".muller">
                         <i>famille Muller</i>
+                    </label>
+
+                    <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
+                    <label>
+                        <input type="checkbox" class="input_filters" filterName=".shooters">
+                        <i>Inverness' Shooters</i>
                     </label>
 
                     <!--FILTRE : modifier le nom et le filterName (sans espace ni caractère spécial, avec un . au début) -->
