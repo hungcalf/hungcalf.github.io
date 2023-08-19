@@ -9,7 +9,8 @@ font-family:var(--police_sst);
 border-radius:5px;
 padding:10px;
 box-shadow:inset 0px 0px 10px sienna;
-font-size:2rem;}
+font-size:2rem;
+line-height:initial;}
 
 .parchemin__date{
     text-align:right;
