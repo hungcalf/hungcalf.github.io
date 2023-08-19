@@ -1,0 +1,29 @@
+/** CSS HIBOUX, PARCHEMINS ET PATRONUS **/
+
+.parchemin{
+background:url('https://i.servimg.com/u/f57/18/41/76/42/paper_10.jpg') top center;
+width:450px;
+margin:auto;
+color:darkslategray;
+font-family:var(--police_sst);
+border-radius:5px;
+padding:10px;
+box-shadow:inset 0px 0px 10px sienna;
+font-size:1.2rem;}
+
+.parchemin__date{
+    text-align:right;
+}
+
+.parchemin__texte{
+    text-align:justify;
+}
+
+.parchemin__sign{
+    text-align:center;
+}
+
+.parchemin__ps{
+    text-align:justify;
+    font-size:1rem;
+}
