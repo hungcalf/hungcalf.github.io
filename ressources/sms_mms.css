@@ -2,7 +2,7 @@
 
 .sms {
     margin:0 auto;
-    width:500px;
+    min-height:70px;
     font-family:helvetica,arial,sans-serif;
     font-size:12px;
     color:#333;
@@ -19,7 +19,7 @@
 }
 
 .sms__bloc {
-    margin:15px 105px 15px 85px;
+    margin:15px 85px;
     padding-left:19px;
     background:url(https://i.imgur.com/ari7avD.png)top left no-repeat;
 }
