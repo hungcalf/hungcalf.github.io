@@ -1,44 +1,53 @@
 @font-face {
 	font-family: 'Bolina';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Bolina.otf’) format(‘opentype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Bolina.otf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Bolina.otf’) format(‘opentype’);
 }
 @font-face {
 	font-family: 'Infinite Stroke';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke.otf’) format(‘opentype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke.otf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke.otf’) format(‘opentype’);
 }
 @font-face {
 	font-family: 'Infinite Stroke';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder.otf’) format(‘opentype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder.otf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder.otf’) format(‘opentype’);
   	font-weight:800;
 }
 @font-face {
 	font-family: 'Infinite Stroke';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Cond.otf’) format(‘opentype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Cond.otf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Cond.otf’) format(‘opentype’);
   	letter-spacing:-1px;
 }
 @font-face {
 	font-family: 'Infinite Stroke';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder_Cond.otf’) format(‘opentype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder_Cond.otf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder_Cond.otf’) format(‘opentype’);
   	letter-spacing:-1px;
   	font-weight:800;
 }
 @font-face {
 	font-family: 'Champagne Limousines';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines.ttf’) format(‘truetype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines.ttf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines.ttf’) format(‘truetype’);
 }
 @font-face {
 	font-family: 'Champagne Limousines';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold.ttf’) format(‘truetype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold.ttf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold.ttf’) format(‘truetype’);
   	font-weight:800;
 }
 @font-face {
 	font-family: 'Champagne Limousines';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Italic.ttf’) format(‘truetype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Italic.ttf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Italic.ttf’) format(‘truetype’);
   	font-style: italic;
 }
 @font-face {
 	font-family: 'Champagne Limousines';
-	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold_Italic.ttf’) format(‘truetype’);
+	src: url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold_Italic.ttf’),
+    url(‘https://hungcalf.github.io/ressources/fonts/Champagne_Limousines_Bold_Italic.ttf’) format(‘truetype’);
   	font-weight:800;
   	font-style: italic;
 }
