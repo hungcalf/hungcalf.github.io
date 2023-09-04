@@ -311,7 +311,7 @@
   transition: 0.2s opacity ease;
   transform: translate(-50%, -50%);
   border-radius: 2px;
-  background-color: var(--color_link);
+  background-color: var(--color_background4);
   color: var(--color_text);
 }
 
