@@ -1,10 +1,10 @@
 /*switcheroo*/
 :root {
-  --color-delete: var(--coul_hover);
-  --color-tooltip: var(--coul_texte);
-  --color-squircle: var(--coul_texte);
-  --color-accent: var(--couleur_titre);
-  --color-button: var(--coul_navital);
+  --color-delete: var(--color_link);
+  --color-tooltip: var(--color_background2);
+  --color-squircle: var(--color_background4);
+  --color-accent: var(--color_title);
+  --color-button: var(--color_title);
   --color-pill: #ffffff;
   --gap-size: 16px;
   --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -12,7 +12,7 @@
 }
 
 .switcheroo {
-  color: var(--coul_texte);
+  color: var(--color_title);
   font-size: 16px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--couleur_clrgba);
+  background-color: var(--color_title);
   opacity: .8;
 }
 
@@ -237,7 +237,7 @@
 
 .switcheroo[theme="discord"] .switcheroo__squircle--button:hover {
   color: #fff;
-  background-color: var(--coul_lien);
+  background-color: var(--color_link);
 }
 
 /* modal */
@@ -256,7 +256,7 @@
   margin-bottom: 8px;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--coul_texte);
+  color: var(--color_text);
 }
 
 .switcheroo__form-input {
@@ -264,9 +264,9 @@
   font-size: 16px;
   border-radius: 4px;
   width: 100%;
-  cursor: text;
-  color: var(--coul_texte);
-  border-bottom: 2px solid var(--coul_lien) !important;
+  cursor: text;  
+  color: var(--color_text);
+  border-bottom: 2px solid var(--color_link) !important;
   background-color: #fff !important;
 }
 
@@ -279,13 +279,13 @@
   text-transform: uppercase;
   font-size: 14px;
   align-self: flex-end;
-  background-color: var(--couleur_titre);
+  background-color: var(--color_title);
   color: #FFF;
   transition: all .5s;
 }
 
 .switcheroo__form-button:hover {
-  background-color: var(--coul_teinteclr);
+  background-color: var(--color_link);
 }
 
 .monomer-overlay {
@@ -311,8 +311,8 @@
   transition: 0.2s opacity ease;
   transform: translate(-50%, -50%);
   border-radius: 2px;
-  background-color: var(--couleur_claire);
-  color: var(--coul_texte);
+  background-color: var(--color_link);
+  color: var(--color_text);
 }
 
 .monomer-modal.monomer-open.monomer-anchored {
