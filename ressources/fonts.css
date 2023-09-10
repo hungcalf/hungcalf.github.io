@@ -1,8 +1,12 @@
 @font-face {
+	font-family: 'Romania';
+	src: url('https://hungcalf.github.io/ressources/fonts/Romania.otf'),
+    url('https://hungcalf.github.io/ressources/fonts/Bolina.otf') format('opentype');
+}
+@font-face {
 	font-family: 'Bolina';
 	src: url('https://hungcalf.github.io/ressources/fonts/Bolina.otf'),
     url('https://hungcalf.github.io/ressources/fonts/Bolina.otf') format('opentype');
-    letter-spacing: 1px;font-stretch: ultra-expanded;
 }
 @font-face {
 	font-family: 'Infinite Stroke';
