@@ -1,29 +1,7 @@
 @font-face {
-	font-family: 'Romania';
-	src: url('https://hungcalf.github.io/ressources/fonts/Romania.otf'),
-    url('https://hungcalf.github.io/ressources/fonts/Bolina.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Bolina';
-	src: url('https://hungcalf.github.io/ressources/fonts/Bolina.otf'),
-    url('https://hungcalf.github.io/ressources/fonts/Bolina.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Infinite Stroke';
-	src: url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke.otf'),
-    url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Infinite Stroke';
-	src: url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder.otf'),
-    url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Bolder.otf') format('opentype');
-  	font-weight:800;
-}
-@font-face {
-	font-family: 'Infinite Stroke';
-	src: url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Cond.otf'),
-    url('https://hungcalf.github.io/ressources/fonts/Infinite_Stroke_Cond.otf') format('opentype');
-  	letter-spacing:-1px;
+	font-family: 'Madnesa';
+	src: url('https://hungcalf.github.io/ressources/fonts/Madnesa.ttf'),
+    url('https://hungcalf.github.io/ressources/fonts/Madnesa.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Infinite Stroke';
