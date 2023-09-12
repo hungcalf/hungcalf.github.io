@@ -5,11 +5,12 @@ background:url('https://i.servimg.com/u/f57/18/41/76/42/paper_10.jpg') top cente
 width:450px;
 margin:auto;
 color:darkslategray;
-font-family:var(--police_sst);
+font-family:var(--police_serif);
 border-radius:5px;
 padding:10px;
 box-shadow:inset 0px 0px 10px sienna;
-font-size:2rem;
+font-size:1rem;
+font-style: italic;
 line-height:initial;}
 
 .parchemin__date{
@@ -28,5 +29,4 @@ line-height:initial;}
 
 .parchemin__ps{
     text-align:justify;
-    font-size:1.4rem;
 }
