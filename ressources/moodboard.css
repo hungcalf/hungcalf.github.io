@@ -1,14 +1,15 @@
-.titre_moodboard {
+.titrel1_moodboard {
   font-family: var(--police_sst);
-  font-size: 25px;
+  font-size: 2rem;
   color: var(--color_background2);
   text-align: center;
 }
-.sous-titre_moodboard {
+.titrel2_moodboard {
   font-family: var(--police_sst);
-  font-size: 35px;
+  font-size: 3rem;
   color: var(--color_title);
   text-align: center;
+  line-height:normal;
 }
 .bloc_moodboard {
   margin: 0 auto;
