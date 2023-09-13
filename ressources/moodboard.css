@@ -57,6 +57,9 @@
   width: 100%;
   text-align: center;
 }
+.link_moodboard a{
+  color:var(--color_background4);
+}
 .grid_one img,
 .grid_two img,
 .grid_three img,
