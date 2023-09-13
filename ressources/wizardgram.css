@@ -7,7 +7,7 @@
 }
 
 .wzdgtop {
-  background-color: '#fff';
+  background-color: "#fff";
   width: 400px;
   height: 45px;
   border-bottom: silver 1px solid;
@@ -25,7 +25,7 @@
 }
 
 .wzdgsico {
-  background: url('https://i.imgur.com/cRvvDnR.png');
+  background: url("https://i.imgur.com/cRvvDnR.png");
   background-position: 28% 55%;
   width: 25px;
   height: 22px;
@@ -33,7 +33,7 @@
 
 .wzdgstxt {
   width: 145px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: silver;
   font-weight: bold;
   font-size: 14px;
@@ -41,7 +41,7 @@
 }
 
 .wzdgdot {
-  background: url('https://i.imgur.com/Hpr2M3o.png');
+  background: url("https://i.imgur.com/Hpr2M3o.png");
   background-position: 97% 50%;
   width: 25px;
   height: 40px;
@@ -62,7 +62,7 @@
 }
 
 .wzdgpseudo {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-weight: bold;
   font-size: 17px;
@@ -72,7 +72,7 @@
 }
 
 .wzdgmodpr {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-weight: bold;
   font-size: 13px;
@@ -89,9 +89,9 @@
 .wzdgprtxt {
   width: 300px;
   text-align: left;
-  font-family: 'Montserrat';
-  font-size:14px;
-  color:#333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #333;
   margin-top: 8px;
 }
 
@@ -110,7 +110,7 @@
 
 .wzdgntab {
   text-align: center;
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-size: 13px;
   color: #333;
 }
@@ -121,9 +121,9 @@
   height: 120px;
 }
 
-wlnk a{
+wlnk a {
   font-weight: bold;
-  color: #1560BD!important;
+  color: #1560bd !important;
 }
 
 /* post d'une nouvelle photo */
@@ -137,7 +137,7 @@ wlnk a{
 }
 
 .wzdgpostpr {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-size: 13px;
   text-align: left;
@@ -162,7 +162,7 @@ wlnk a{
 }
 
 .wzdgcom {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-size: 13px;
   text-align: left;
@@ -171,7 +171,7 @@ wlnk a{
 
 /* post de commentaire */
 .wzdgcomtxt {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: black;
   font-size: 13px;
   text-align: left;
@@ -185,12 +185,12 @@ wlnk a{
   height: auto;
   background: #fafafa;
   padding-bottom: 6px;
-  font-family:'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   line-height: 16px;
 }
-.wzdgfollow a{
-  display:inline!important;
+.wzdgfollow a {
+  display: inline !important;
 }
 
 .wzdgfolline {
@@ -209,7 +209,7 @@ wlnk a{
   width: 230px;
   height: 270px;
   background: #ffffff;
-  color:#333;
+  color: #333;
   border-radius: 10px;
   border: 0px solid #aaaaaa;
 }
