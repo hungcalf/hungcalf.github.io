@@ -1,0 +1,69 @@
+.titre_moodboard {
+  font-family: var(--police_sst);
+  font-size: 25px;
+  color: var(--color_background2);
+  text-align: center;
+}
+.sous-titre_moodboard {
+  font-family: var(--police_sst);
+  font-size: 35px;
+  color: var(--color_title);
+  text-align: center;
+}
+.bloc_moodboard {
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.grid_moodboard {
+  height: 370px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 22.5%);
+  grid-template-areas: "one three six six" 
+  "one four four seven" "two five five seven" 
+  "two five five seven";
+  grid-gap: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.grid_one {
+  grid-area: one;
+}
+.grid_two {
+  grid-area: two;
+}
+.grid_three {
+  grid-area: three;
+}
+.grid_four {
+  grid-area: four;
+}
+.grid_five {
+  grid-area: five;
+}
+.grid_six {
+  grid-area: six;
+}
+.grid_seven {
+  grid-area: seven;
+}
+.link_moodboard {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.grid_one img,
+.grid_two img,
+.grid_three img,
+.grid_four img,
+.grid_five img,
+.grid_six img,
+.grid_seven img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
