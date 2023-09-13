@@ -232,7 +232,7 @@
 /* buttons */
 .switcheroo[theme="discord"] .switcheroo__squircle--button {
   transition: border-radius 128ms var(--ease);
-  color: var(--color_background2);
+  color: var(--color_background1);
 }
 
 .switcheroo[theme="discord"] .switcheroo__squircle--button:hover {
