@@ -7,14 +7,12 @@
   }
   
   .legende-gif {
-    font-family: 'Slabo 27px', serif;
     text-align: center;
     font-size: 10px;
     color: black;
   }
   
   .text-article {
-    font-family: 'Slabo 27px', serif;
     line-height: 14px;
     text-align: justify;
     font-size: 13px;
@@ -28,14 +26,13 @@
     border-radius: 3px;
     line-height: 13px;
     text-align: center;
-    font-size: 1.4rem;
-    font-family: 'Slabo 27px', serif;
+    font-size: 1rem;
     padding-top: 3.5rem;
   }
   
   .chineur-bloc a {
     display: inline;
-    color:var(--color_bbackground3);
+    color:var(--color_bbackground3)!important;
     max-width: auto;
     overflow: auto;
     text-overflow: initial;
@@ -55,7 +52,7 @@
     border-top: 1px solid var(--color_text) !important;
     border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: bitter;
   }
   
@@ -84,6 +81,7 @@
     text-align: center;
     border: none !important;
     margin-top: 1rem !important;
+    color: var(--color_background1)!important;
     width: 100%;
   }
   
