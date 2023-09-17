@@ -35,6 +35,7 @@
   
   .chineur-bloc a {
     display: inline;
+    color:var(--color_bbackground3);
     max-width: auto;
     overflow: auto;
     text-overflow: initial;
@@ -43,7 +44,7 @@
   
   .chineur-titre {
     font-family: 'Abril Fatface', cursive !important;
-    color: var(--couleur_titre) !important;
+    color: var(--color_title) !important;
     font-size: 50px !important;
     text-transform: uppercase !important;
     border: none !important;
@@ -51,8 +52,8 @@
   }
   
   .chineur-chapeau {
-    border-top: 1px solid var(--coul_texte) !important;
-    border-bottom: 1px solid var(--coul_texte) !important;
+    border-top: 1px solid var(--color_text) !important;
+    border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
     font-size: 1.2rem;
     font-family: bitter;
@@ -135,14 +136,14 @@
     text-align: right;
     font-size: 0.9rem;
     text-transform: uppercase;
-    border-top: 1px solid var(--coul_texte) !important;
-    border-bottom: 1px solid var(--coul_texte) !important;
+    border-top: 1px solid var(--color_text) !important;
+    border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
   }
   
   .chineur-react {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     padding: 1rem;
   }
