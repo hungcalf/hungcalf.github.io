@@ -1,0 +1,19 @@
+:root{
+    --m2: var(--color_background4); /*barres de défilement -> --color_link*/
+    --l3: var(--color_background4); /*sélection -> --color_link*/
+
+    --d1: var(--color_background4); /*couleur titres (pseudos et petites infos) faceclaim à droite -> --color_link*/
+    --m1: var(--color_background5); /*barre soulignement titre -> --color_background3*/
+    --d2: #333333; /*couleur texte principal faceclaim à droite*/
+
+    --l1: var(--color_background1); /*fond navigation à gauche -> --color_background2*/
+    --d3: var(--color_background5); /*couleur titre navigation à gauche -> --color_background3*/
+    --d4: var(--color_background5); /*couleur texte principal navigation à gauche -> --color_background3*/
+    --h3: var(--color_background4); /*couleur sélection et liens navigation à gauche -> --color_link*/
+
+    --l0: var(--color_background5); /*couleur survol texte liens -> --color_background3*/
+    --l2: var(--color_link); /*fond liens -> --color_background3*/
+    --h2: var(--color_background4); /*fond survol liens -> --color_link*/
+
+    --background-body: var(--color_background2) /*couleur de fond -> --color_background4*/;
+}
