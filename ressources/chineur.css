@@ -33,7 +33,7 @@
   
   .chineur-bloc a {
     display: inline;
-    color:var(--color_bbackground3)!important;
+    color:var(--color_bbackground4)!important;
     max-width: auto;
     overflow: auto;
     text-overflow: initial;
