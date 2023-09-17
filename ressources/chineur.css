@@ -54,8 +54,9 @@
     border-top: 1px solid var(--color_text) !important;
     border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
-    font-size: 1.1rem;
-    font-family: bitter;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: var(--police_serif);
   }
   
   .chineur-bloc>section {
