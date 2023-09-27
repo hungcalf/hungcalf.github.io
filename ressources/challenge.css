@@ -1,0 +1,108 @@
+.challenge_scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 140px 1fr 50px;
+  grid-template-areas: "flamme_ethelred flamme_lufkin flamme_pokeby flamme_wright flamme_summerbee flamme_grymm" "colonnes colonnes colonnes colonnes colonnes colonnes" "score_ethelred score_lufkin score_pokeby score_wright score_summerbee score_grymm";
+  grid-gap: 0 16px;
+  padding: 0 6px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: linear-gradient(0deg, transparent 0%, #fff 50%, #fff 100%);
+  width: 480px;
+  margin: auto;
+}
+
+.flammes img {
+  width: auto;
+  height: 110%;
+  object-fit: cover;
+}
+.flamme_ethelred {
+  grid-area: flamme_ethelred;
+}
+.flamme_lufkin {
+  grid-area: flamme_lufkin;
+}
+.flamme_pokeby {
+  grid-area: flamme_pokeby;
+}
+.flamme_wright {
+  grid-area: flamme_wright;
+}
+.flamme_summerbee {
+  grid-area: flamme_summerbee;
+}
+.flamme_grymm {
+  grid-area: flamme_grymm;
+}
+
+.flamme_ethelred img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_ethelred.gif);
+  margin-left: 1px;
+}
+.flamme_lufkin img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_lufkin.gif);
+  margin-left: 2px;
+}
+.flamme_pokeby img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_pokeby.gif);
+  margin-left: 3px;
+}
+.flamme_wright img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_wright.gif);
+  margin-left: 4px;
+}
+.flamme_summerbee img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_summerbee.gif);
+  margin-left: 2px;
+}
+.flamme_grymm img {
+  content: url(https://hungcalf.github.io/ressources/moodboards/flamme_grymm.gif);
+}
+
+
+.colonnes {
+    grid-area: colonnes;
+    width: 100%;
+  }
+.colonnes img {
+  object-fit: cover;
+  object-position: 52% 50%;
+  height: 144px;
+  content: url(https://hungcalf.github.io/ressources/moodboards/colonnesx6.png);
+}
+
+.score {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin: 12px 0;
+}
+.ethelred {
+  color: silver;
+  margin-left: 1px;
+}
+.lufkin {
+  color: cornflowerblue;
+  margin-left: 4px;
+}
+.pokeby {
+  color: thistle;
+  margin-left: 8px;
+}
+.wright {
+  color: indianred;
+  margin-left: 11px;
+}
+.summerbee {
+  color: goldenrod;
+  margin-left: 8px;
+}
+.grymm {
+  color: seagreen;
+}
+
+.first {
+  margin-top: -37px;
+  height: 140% !important;
+}
