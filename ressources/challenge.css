@@ -106,3 +106,8 @@
   margin-top: -37px;
   height: 140% !important;
 }
+.top_score {
+    font-size: 40px;
+    letter-spacing: -3px;
+    margin-left: 6px;
+}
