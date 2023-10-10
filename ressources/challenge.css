@@ -133,8 +133,23 @@
     padding:1rem 0.5rem;
     border:1px solid silver!important;
   }
+  .name.ethelred {
+    color:silver;
+  }
+  .name.lufkin {
+    color:cornflowerblue;
+  }
   .name.pokeby {
     color:thistle;
+  }
+  .name.wright {
+    color:indianred;
+  }
+  .name.summerbee {
+    color:goldenrod;
+  }
+  .name.grymm {
+    color:seagreen;
   }
   .bbord {
     border-bottom:var(--color_background4) 2px solid!important;
