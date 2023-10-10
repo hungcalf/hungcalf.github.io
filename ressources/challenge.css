@@ -133,6 +133,9 @@
     padding:1rem 0.5rem;
     border:1px solid silver!important;
   }
+  .name.pokeby {
+    color:thistle;
+  }
   .bbord {
     border-bottom:var(--color_background4) 2px solid!important;
   }
