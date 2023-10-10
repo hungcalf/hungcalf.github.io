@@ -123,9 +123,14 @@
     margin:auto;
     font-family:var(--police_txt);
   }
-  .tournoi_duels h2, 
+  .tournoi_duels h2  {
+    font-family:var(--police_sst);
+    margin:1rem 0 0 0;
+  }
   .tournoi_duels h3  {
     font-family:var(--police_sst);
+    font-size:3.5rem;
+    margin:0;
   }
     .tournoi_duels td {
     min-width:1rem;
