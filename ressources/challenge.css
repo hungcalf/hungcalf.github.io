@@ -120,29 +120,35 @@
     border-radius: 15px;
     background: #fff;
     border-spacing: 0;
+    margin:auto;
   }
   .tournoi_duels td {
-    padding:1rem!important;
-    min-width:10px;
+    min-width:1rem;
     text-align: center;
   }
-  .tournoi_duels td.name {
+  .name {
+    border-radius: 1rem;
     background:#f0f0f0;
+    margin:0.5rem;
+    padding:1rem 0.5rem;
     border:1px solid silver!important;
   }
   .bbord {
-    border-bottom:var(--color_background4) 1px solid!important;
+    border-bottom:var(--color_background4) 2px solid!important;
+  }
+  .tbord {
+    border-top:var(--color_background4) 2px solid!important;
   }
   .rbord {
-    border-right:var(--color_background4) 1px solid!important;
+    border-right:var(--color_background4) 2px solid!important;
   }
   .brbord {
-    border-bottom:var(--color_background4) 1px solid!important;
-    border-right:var(--color_background4) 1px solid!important;
+    border-bottom:var(--color_background4) 2px solid!important;
+    border-right:var(--color_background4) 2px solid!important;
   }
   .empty {
     border:none;
   }
   .winner {
-    border-color:green!important;
+background:#97d197!important;
   }
