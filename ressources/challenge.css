@@ -1,3 +1,5 @@
+/* les colonnes avec les flammes */ 
+
 .challenge_scores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -111,3 +113,36 @@
     letter-spacing: -3px;
     margin-left: 6px;
 }
+
+/* tournoi de duels */
+
+.tournoi_duels {
+    border-radius: 15px;
+    background: #fff;
+    border-spacing: 0;
+  }
+  .tournoi_duels td {
+    padding:1rem!important;
+    min-width:10px;
+    text-align: center;
+  }
+  .tournoi_duels td.name {
+    background:#f0f0f0;
+    border:1px solid silver!important;
+  }
+  .bbord {
+    border-bottom:var(--color_background4) 1px solid!important;
+  }
+  .rbord {
+    border-right:var(--color_background4) 1px solid!important;
+  }
+  .brbord {
+    border-bottom:var(--color_background4) 1px solid!important;
+    border-right:var(--color_background4) 1px solid!important;
+  }
+  .empty {
+    border:none;
+  }
+  .winner {
+    border-color:green!important;
+  }
