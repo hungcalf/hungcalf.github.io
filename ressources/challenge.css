@@ -121,8 +121,13 @@
     background: #fff;
     border-spacing: 0;
     margin:auto;
+    font-family:var(--police_txt);
   }
-  .tournoi_duels td {
+  .tournoi_duels h2, 
+  .tournoi_duels h3  {
+    font-family:var(--police_sst);
+  }
+    .tournoi_duels td {
     min-width:1rem;
     text-align: center;
   }
@@ -168,5 +173,5 @@
     border:none;
   }
   .winner {
-    background:#48f248!important;
+    background:#b0e5b0!important;
   }
