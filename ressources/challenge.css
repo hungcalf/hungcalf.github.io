@@ -140,29 +140,29 @@
     min-width:1rem;
     text-align: center;
   }
-  .tournoi_duels.name {
+  div.name {
     border-radius: 1rem;
     background:#f0f0f0;
     margin:0.5rem;
     padding:1rem 0.5rem;
     border:1px solid silver!important;
   }
-  .tournoi_duels.name.ethelred {
+  div.name.ethelred {
     color:gray;
   }
-  .tournoi_duels.name.lufkin {
+  div.name.lufkin {
     color:cornflowerblue;
   }
-  .tournoi_duels.name.pokeby {
+  div.name.pokeby {
     color:rgb(106, 61, 114);
   }
-  .tournoi_duels.name.wright {
+  div.name.wright {
     color:indianred;
   }
-  .tournoi_duels.name.summerbee {
+  div.name.summerbee {
     color:goldenrod;
   }
-  .tournoi_duels.name.grymm {
+  div.name.grymm {
     color:seagreen;
   }
   .bbord {
