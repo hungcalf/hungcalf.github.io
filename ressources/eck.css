@@ -119,13 +119,13 @@ details span {
 .ava-now, .ava-now .fire {
   background: hotpink;
 }
-summary, summary .fire {
+summary .fire {
   color: hotpink;
 }
-summary, summary .fire:hover {
+summary .fire:hover {
   color: pink;
 }
-details, details .fire span {
+details .fire span {
   border: 1px solid pink;
 }
 
