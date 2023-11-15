@@ -1,4 +1,8 @@
 @font-face {
+	font-family: 'Agraham';
+	src: url('https://hungcalf.github.io/ressources/fonts/Agraham.otf'),
+    url('https://hungcalf.github.io/ressources/fonts/Agraham.otf') format('opentype');
+}@font-face {
 	font-family: 'Madnesa';
 	src: url('https://hungcalf.github.io/ressources/fonts/Madnesa.ttf'),
     url('https://hungcalf.github.io/ressources/fonts/Madnesa.ttf') format('truetype');
