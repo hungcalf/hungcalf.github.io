@@ -6,10 +6,10 @@
 }
 .titrel2_moodboard {
   font-family: var(--police_titre);
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--color_title);
   text-align: center;
-  line-height:normal;
+  line-height:2.5rem;
 }
 .bloc_moodboard {
   margin: 0 auto;
