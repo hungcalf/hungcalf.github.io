@@ -53,7 +53,7 @@
 .separation_ligne {
   width: 80%;
   border-bottom: 1px solid var(--color_link);
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .liens_recherches {
