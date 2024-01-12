@@ -83,9 +83,6 @@
   padding: 0;
   width: calc(100% - 106px);
 }
-.bloc_lien p.pas_dimage {
-  width:100%;
-}
 .liens_succincts {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +104,6 @@
   padding: 0;
   width: calc(100% - 106px);
 }
-.lien_succinct p.pas_dimage {
-    width:100%;
-  }
+p.pas_dimage {
+  width:100%;
+}
