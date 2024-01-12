@@ -1,0 +1,41 @@
+/* FICHE DE LIENS */
+
+.citation .citlien {
+    margin-top:6px;
+}
+
+.presentation_perso {
+    display:flex;flex-wrap:wrap;margin:2rem 0;justify-content:space-around;
+}
+
+.liste_mots_cles {
+    display: flex; flex-direction:column; height:340px; width: 48%; justify-content:space-around; font-size:14px; font-variant:small-caps; 
+}
+
+.mot_cle {
+    background:#fff;padding:0.5rem 1rem;text-align:center;
+}
+
+.avatar_perso {
+    border:10px solid var(--color_fan);
+}
+
+.avatar_perso img {
+    width:200px;
+    height:320px;
+    object-fit:cover;
+}
+
+.trois_icons {
+    width:100%;display:flex;justify-content:space-around;margin:2rem 0;
+}
+
+.trois_icons img {
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+.liens_recherches {
+    width:100%;
+}
