@@ -107,3 +107,6 @@
   padding: 0;
   width: calc(100% - 106px);
 }
+.lien_succinct p .pas_dimage {
+    width:100%;
+  }
