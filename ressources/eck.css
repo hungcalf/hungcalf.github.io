@@ -116,7 +116,8 @@ details span {
   width: 400px;
 }
 
-.ava-now, .ava-now .fire {
+.ava-now,
+.ava-now .fire {
   background: hotpink;
 }
 summary .fire {
@@ -221,6 +222,66 @@ details .lmn span {
 }
 .mb_area_grid_7 {
   grid-area: seven;
+}
+
+/* RP Apsara */
+
+.bloc-apsa {
+  width: 100%;
+}
+.header-apsa {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.header-apsa_img {
+  object-fit: cover;
+  height: 100px;
+  width: 150px;
+  margin: 5px;
+}
+.gauche {
+  border-radius: 35px 0px 0px 0px;
+}
+.droite {
+  border-radius: 0px 35px 0px 0px;
+}
+.milieu {
+  margin: 5px 0;
+  background: thistle;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.titre-apsa {
+  font-family: var(--police_titre);
+  font-size: 1.25rem;
+  color: #6a3d72;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color_background1);
+  width: 100%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.rp-apsa {
+  width: calc(95% - 10px);
+  border-right: 8px solid #6a3d72;
+  border-left: 8px solid #6a3d72;
+  background: var(--color_background5);
+  margin: 10px auto 5px;
+  padding: 5px;
+}
+.credits-eck {
+  margin: 5px auto 0;
+  border-top: 2px solid #6a3d72;
+  color: thistle;
+  text-align: center;
+  width: calc(95% - 10px);
 }
 
 /* A REVOIR -- FICHES ET ANNONCES */
