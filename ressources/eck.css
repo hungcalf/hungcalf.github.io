@@ -287,6 +287,112 @@ details .lmn span {
   width: calc(95% - 10px);
 }
 
+/* RP Jerem */
+
+.jeremiah {
+  width: 470px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jer_boximg {
+  width: 190px;
+}
+.jer_entete {
+  width: 260px;
+  padding: 0 10px;
+}
+.jer_pic1 {
+  border-radius: 0px 35px 0px 35px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.jer_pic2 {
+  border-radius: 35px 0px 35px 0px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.jer_titre {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  color: var(--color_title);
+}
+.sam_titre {
+  font-family: var(--police_titre);
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  color: var(--color_title);
+}
+.jer_perso {
+  font-family: "Rokkitt", serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.sam_perso {
+  font-family: var(--police_sst);
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.jer_chapeau {
+  color: var(--color_link);
+  text-align: justify;
+  font-size: 8px;
+  font-family: "Rokkitt", serif;
+  text-transform: uppercase;
+}
+.jer_chapeau {
+  color: var(--color_link);
+  text-align: justify;
+  font-size: 8px;
+  font-family: var(--police_sst);
+  text-transform: uppercase;
+}
+.jer_rp {
+  width: 100%;
+  padding: 12px;
+  text-align: justify;
+  border-top: 1px solid silver;
+  border-right: 1px solid silver;
+  border-left: 4px solid silver;
+  border-bottom: 4px solid silver;
+  border-radius: 35px 5px 35px 5px;
+  background: #ffffff;
+}
+.jer_lettrine {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  color: var(--color_title);
+}
+.sam_lettrine {
+  font-family: var(--police_titre);
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  color: var(--color_title);
+}
+
 /* A REVOIR -- FICHES ET ANNONCES */
 .cookie_bloc {
   position: relative;
