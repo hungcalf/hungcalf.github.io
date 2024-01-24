@@ -342,7 +342,7 @@ details .lmn span {
 }
 .header-lewis .milieu {
   margin: 5px 0;
-  background: rgb(195, 172, 18);
+  background: #d0d0d0;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -353,7 +353,7 @@ details .lmn span {
 .titre-lewis {
   font-family: var(--police_titre);
   font-size: 1.25rem;
-  color:crimson;
+  color:#841717;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #841717;
   width: 100%;
@@ -361,7 +361,7 @@ details .lmn span {
   line-height: 1.75rem;
 }
 .partenaire-lewis {
-  filter: invert(0.15) brightness(0.85);
+  filter: sepia(1) brightness(0.62) saturate(3);
 }
 .rp-lewis {
   width: calc(95% - 10px);
