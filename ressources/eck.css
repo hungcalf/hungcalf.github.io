@@ -283,7 +283,7 @@ details .lmn span {
 .droite {
   border-radius: 0px 35px 0px 0px;
 }
-.milieu {
+.header-apsa .milieu {
   margin: 5px 0;
   background: thistle;
   display: flex;
@@ -340,7 +340,7 @@ details .lmn span {
   width: 150px;
   margin: 5px;
 }
-.milieu {
+.header-lewis .milieu {
   margin: 5px 0;
   background: rgb(231, 214, 105);
   display: flex;
