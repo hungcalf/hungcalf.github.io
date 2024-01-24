@@ -1,3 +1,5 @@
+/* Mes variables */
+
 hdl,
 aoc,
 jqb,
@@ -22,11 +24,15 @@ aoc {
   color: lightslategrey;
 }
 
+sam {
+  color: cornflowerblue;
+}
+
 .maxw {
   max-width: 300px;
 }
 
-/* Phones */
+/* Visuels téléphones */
 
 .blackthorn {
   display: flex;
@@ -156,6 +162,35 @@ details .lmn span {
   border: 1px solid gold;
 }
 
+/* Téléphone pour Manon */
+
+.chaton_bloc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.chaton_icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+.chaton_triangle {
+  color: var(--color_background4);
+  background: transparent;
+  position: relative;
+  top: 3px;
+  right: -2px;
+}
+.chaton_txt {
+  border: 1px solid var(--color_background4);
+  border-radius: 10px;
+  padding: 5px;
+  background: var(--color_background5);
+  min-height: 120px;
+  width: 250px;
+}
+
 /* Moodboards */
 
 .mb_entete {
@@ -283,6 +318,63 @@ details .lmn span {
   margin: 5px auto 0;
   border-top: 2px solid #6a3d72;
   color: thistle;
+  text-align: center;
+  width: calc(95% - 10px);
+}
+
+/* RP Lewis */
+
+.bloc-lewis {
+  width: 100%;
+}
+.header-lewis {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.header-lewis_img {
+  object-fit: cover;
+  height: 100px;
+  width: 150px;
+  margin: 5px;
+}
+.milieu {
+  margin: 5px 0;
+  background: rgb(231, 214, 105);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.titre-lewis {
+  font-family: var(--police_titre);
+  font-size: 1.25rem;
+  color:crimson;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color_background1);
+  width: 100%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.partenaire-lewis {
+  filter: invert(0.15) brightness(0.85);
+}
+.rp-lewis {
+  width: calc(95% - 10px);
+  border-right: 8px solid crimson;
+  border-left: 8px solid crimson;
+  background: var(--color_background5);
+  margin: 10px auto 5px;
+  padding: 5px;
+}
+.credits-eck_lewis {
+  margin: 5px auto 0;
+  border-top: 2px solid crimson;
+  color: rgb(231, 214, 105);
   text-align: center;
   width: calc(95% - 10px);
 }
