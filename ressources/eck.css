@@ -355,7 +355,7 @@ details .lmn span {
   font-size: 1.25rem;
   color:crimson;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color_background1);
+  border-bottom: 1px solid crimson;
   width: 100%;
   text-align: center;
   line-height: 1.75rem;
