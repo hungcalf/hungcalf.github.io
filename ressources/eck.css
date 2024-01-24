@@ -421,14 +421,6 @@ details .lmn span {
   margin-top: 15px;
   color: var(--color_title);
 }
-.sam_titre {
-  font-family: var(--police_titre);
-  font-size: 24px;
-  text-shadow: 1px 1px 0.5px SlateGray;
-  letter-spacing: -1px;
-  margin-top: 15px;
-  color: var(--color_title);
-}
 .jer_perso {
   font-family: "Rokkitt", serif;
   font-size: 15px;
@@ -438,27 +430,11 @@ details .lmn span {
   margin: 10px 0px 0px;
   color: var(--color_background3);
 }
-.sam_perso {
-  font-family: var(--police_sst);
-  font-size: 15px;
-  text-transform: uppercase;
-  text-shadow: 0px;
-  letter-spacing: 2px;
-  margin: 10px 0px 0px;
-  color: var(--color_background3);
-}
 .jer_chapeau {
   color: var(--color_link);
   text-align: justify;
   font-size: 8px;
   font-family: "Rokkitt", serif;
-  text-transform: uppercase;
-}
-.jer_chapeau {
-  color: var(--color_link);
-  text-align: justify;
-  font-size: 8px;
-  font-family: var(--police_sst);
   text-transform: uppercase;
 }
 .jer_rp {
@@ -478,11 +454,83 @@ details .lmn span {
   text-shadow: 1px 1px 0.5px SlateGray;
   color: var(--color_title);
 }
-.sam_lettrine {
+
+/* RP Sam */
+
+.samina {
+  width: 470px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.sam_boximg {
+  width: 190px;
+}
+.sam_entete {
+  width: 260px;
+  padding: 0 10px;
+}
+.sam_pic1 {
+  border-radius: 0px 35px 0px 35px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_pic2 {
+  border-radius: 35px 0px 35px 0px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_titre {
   font-family: var(--police_titre);
   font-size: 24px;
   text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
   color: var(--color_title);
+}
+.sam_perso {
+  font-family: var(--police_sst);
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.sam_chapeau {
+  color: var(--color_title);
+text-align: justify;
+font-size: 0.75rem;
+font-family: var(--police_sst);
+text-transform: uppercase;
+line-height: 1.1rem;
+}
+.sam_rp {
+  width: 100%;
+  padding: 12px;
+  text-align: justify;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-left: 4px solid silver;
+  border-right: 4px solid silver;
+  border-radius: 35px 5px 35px 5px;
+  background: #ffffff;
+}
+.sam_lettrine {
+  font-family: var(--police_titre);
+    font-size: 2.25rem;
+    line-height: 2.75rem!important;
+    color: var(--color_title);
+    float: left;
 }
 
 /* A REVOIR -- FICHES ET ANNONCES */
