@@ -353,7 +353,7 @@ details .lmn span {
 .titre-lewis {
   font-family: var(--police_titre);
   font-size: 1.25rem;
-  color:#841717;
+  color: #841717;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #841717;
   width: 100%;
@@ -508,11 +508,11 @@ details .lmn span {
 }
 .sam_chapeau {
   color: var(--color_title);
-text-align: justify;
-font-size: 0.75rem;
-font-family: var(--police_sst);
-text-transform: uppercase;
-line-height: 1.1rem;
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: var(--police_sst);
+  text-transform: uppercase;
+  line-height: 1.1rem;
 }
 .sam_rp {
   width: 100%;
@@ -527,10 +527,35 @@ line-height: 1.1rem;
 }
 .sam_lettrine {
   font-family: var(--police_titre);
-    font-size: 2.25rem;
-    line-height: 2.75rem!important;
-    color: var(--color_title);
-    float: left;
+  font-size: 2.25rem;
+  line-height: 2.75rem !important;
+  color: var(--color_title);
+  float: left;
+}
+
+
+
+/* Pour TdA */
+
+andy {
+  color: var(--color_ordinary);
+  font-weight: bold;
+  font-family: "Georgia";
+  font-size: 1.25rem;
+}
+.andy_sgnbloc {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  line-height: 1.2rem;
+}
+.andy_sgnimg {
+  border: 1px solid var(--color_primary);
+  padding: 0.25rem;
+  min-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
 /* A REVOIR -- FICHES ET ANNONCES */
