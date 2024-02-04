@@ -559,7 +559,7 @@ andy {
 }
 
 :root { 
-  --andy_gradient: linear-gradient(90deg, var(--color_ordinary) 0, #f0f0f0 100%);
+  --andy_gradient: linear-gradient(90deg, var(--color_ordinary), #f0f0f0) 1;
 }
 .cookie_bloc {
   border: .25rem solid;
