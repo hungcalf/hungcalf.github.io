@@ -567,6 +567,7 @@ andy {
   background: rgba(255, 255, 255, 0.05);
   padding:1rem;
   width:90%;
+  margin:auto;
 }
 
 .cookie_titre {
@@ -594,12 +595,12 @@ andy {
   justify-content:space-around;
 }
 .cookie_duo img {
-  width:49%;
+  width:45%;
   height:150px;
   object-fit:cover;
   padding:2px;
   border: 1px solid #f0f0f0;
-  background: rgba(255, 255, 255, 0.1);
+  background:#000;
   
 }
 
