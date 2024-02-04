@@ -578,6 +578,21 @@ andy {
   margin: 3px auto;
 }
 
+.cookie_duo {
+  display:flex;
+  margin:0.5rem 0;
+  justify-content:space-between;
+}
+.cookie_duo img {
+  width:49%;
+  height:150px;
+  object-fit:cover;
+  padding:2px;
+  border: 1px solid #f0f0f0;
+  background: rgba(255, 255, 255, 0.4);
+  
+}
+
 .cookie_titre {
   font-family: Georgia;
   font-size: 28px;
