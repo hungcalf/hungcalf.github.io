@@ -583,7 +583,7 @@ andy {
   width: 400px;
   height: 200px;
   object-fit: cover;
-  padding:2px;
+  padding: 5px;
   border: 1px solid ;
   background: rgba(255, 255, 255, 0.4);
   margin: 3px auto;
