@@ -559,12 +559,12 @@ andy {
 }
 
 :root { 
-  --andy_gradient: linear-gradient(90deg, var(--color_ordinary), #f0f0f0) 1;
+  --andy_gradient:linear-gradient(45deg, var(--color_ordinary), var(--color_ordinary) 33%, #f0f0f0) 1;
 }
 .cookie_bloc {
   border: .25rem solid;
   border-image: var(--andy_gradient);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.075);
   padding:1rem;
   width:90%;
   margin:auto;
