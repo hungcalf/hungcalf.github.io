@@ -560,27 +560,32 @@ andy {
 
 /* A REVOIR -- FICHES ET ANNONCES */
 .cookie_bloc {
-  position: relative;
-  border-left: 10px solid #f6f6f6;
-  border-right: 10px solid #f6f6f6;
+  border-top: 1px solid var(--color_ordinary);
+  border-bottom: 1px solid var(--color_ordinary);
+  border-left: .5rem solid #f0f0f0;
+  border-right: .5rem solid #f0f0f0;
+  background: rgba(255, 255, 255, 0.1);
+  
+}
+
+.cookie_giftop {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  padding:2px;
+  border: 1px solid #f0f0f0;
   background: rgba(255, 255, 255, 0.4);
-  color: gray;
-  padding: 6px;
-  margin: 6px;
-  font-family: calibri;
+  margin: 3px auto;
 }
 
 .cookie_titre {
-  position: relative;
-  z-index: 500;
-  font-family: var(--police_sst);
+  font-family: Georgia;
   font-size: 28px;
-  line-height: 12px;
-  margin: 6px;
-  border-bottom: 3px dotted maroon;
-  color: maroon;
+    color: var(--color_ordinary);
   font-weight: bold;
 }
+
+
 
 .cookie_avprez {
   width: 190px;
@@ -602,14 +607,6 @@ andy {
   text-align: justify;
   line-height: 12px;
   font-family: calibri !important;
-}
-
-.cookie_giftop {
-  width: 400px;
-  border: 3px solid #f6f6f6;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 5px;
-  margin: 3px;
 }
 
 .cookie_blocprez {
@@ -749,9 +746,6 @@ andy {
 
 .basdebloc {
   border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -o-border-radius: 0px 0px 5px 5px;
   border-top: 2px dotted #fff !important;
   height: 29px;
   background: url("https://i.servimg.com/u/f66/11/73/87/11/fond_f18.png") bottom no-repeat !important;
