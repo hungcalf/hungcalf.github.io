@@ -569,6 +569,15 @@ andy {
   width:90%;
 }
 
+.cookie_titre {
+  font-family: Georgia;
+  font-size: 28px;
+    color: var(--color_ordinary);
+  font-weight: bold;
+  text-align:center;
+  margin: 1rem auto 0;
+}
+
 .cookie_giftop {
   width: 400px;
   height: 200px;
@@ -594,13 +603,6 @@ andy {
   
 }
 
-.cookie_titre {
-  font-family: Georgia;
-  font-size: 28px;
-    color: var(--color_ordinary);
-  font-weight: bold;
-  text-align:center;
-}
 
 
 /* A REVOIR -- FICHES ET ANNONCES */
