@@ -562,12 +562,10 @@ andy {
   --andy_gradient: linear-gradient(90deg, var(--color_ordinary) 0, #f0f0f0 100%);
 }
 .cookie_bloc {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-left: .5rem solid;
-  border-right: .5rem solid;
+  border: .25rem solid;
   border-image: var(--andy_gradient);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding:1rem;
 }
 
 .cookie_giftop {
@@ -582,7 +580,7 @@ andy {
 
 .cookie_duo {
   display:flex;
-  margin:0.5rem 0;
+  margin:0.5rem auto;
   justify-content:space-between;
 }
 .cookie_duo img {
@@ -591,7 +589,7 @@ andy {
   object-fit:cover;
   padding:2px;
   border: 1px solid #f0f0f0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   
 }
 
@@ -600,6 +598,7 @@ andy {
   font-size: 28px;
     color: var(--color_ordinary);
   font-weight: bold;
+  text-align:center;
 }
 
 
