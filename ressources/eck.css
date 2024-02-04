@@ -583,8 +583,8 @@ andy {
   width: 400px;
   height: 200px;
   object-fit: cover;
-  padding: 5px;
-  border: 1px solid ;
+  padding: 0.25rem;
+  border: 1px solid #f0f0f0;
   background: rgba(255, 255, 255, 0.4);
   margin: 3px auto;
 }
@@ -598,7 +598,7 @@ andy {
   width:45%;
   height:150px;
   object-fit:cover;
-  padding:2px;
+  padding: 0.25rem;
   border: 1px solid #f0f0f0;
   background:#000;
   
