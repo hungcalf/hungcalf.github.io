@@ -558,14 +558,16 @@ andy {
   margin-right: 1rem;
 }
 
-/* A REVOIR -- FICHES ET ANNONCES */
+:root { 
+  --andy_gradient: linear-gradient(90deg, var(--color_ordinary) 0, #f0f0f0 100%);
+}
 .cookie_bloc {
-  border-top: 1px solid var(--color_ordinary);
-  border-bottom: 1px solid var(--color_ordinary);
-  border-left: .5rem solid #f0f0f0;
-  border-right: .5rem solid #f0f0f0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: .5rem solid;
+  border-right: .5rem solid;
+  border-image: var(--andy_gradient);
   background: rgba(255, 255, 255, 0.1);
-  
 }
 
 .cookie_giftop {
@@ -573,7 +575,7 @@ andy {
   height: 200px;
   object-fit: cover;
   padding:2px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid ;
   background: rgba(255, 255, 255, 0.4);
   margin: 3px auto;
 }
@@ -601,6 +603,7 @@ andy {
 }
 
 
+/* A REVOIR -- FICHES ET ANNONCES */
 
 .cookie_avprez {
   width: 190px;
