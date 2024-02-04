@@ -566,6 +566,7 @@ andy {
   border-image: var(--andy_gradient);
   background: rgba(255, 255, 255, 0.05);
   padding:1rem;
+  width:90%;
 }
 
 .cookie_giftop {
@@ -581,7 +582,7 @@ andy {
 .cookie_duo {
   display:flex;
   margin:0.5rem auto;
-  justify-content:space-between;
+  justify-content:space-around;
 }
 .cookie_duo img {
   width:49%;
