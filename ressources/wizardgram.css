@@ -26,7 +26,7 @@
   width:250px;
 }
 /* version wizardgram */
-.bloc-wzginsta .icon-name .wzg img {
+.bloc-wzginsta .icon-name .wzg > img {
   content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
 }
 /* version instagram */
