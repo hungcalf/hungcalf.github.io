@@ -170,6 +170,7 @@
   border-radius: 50px;
   object-fit:cover;
   float:left;
+  margin:0 0 0 1rem;
 }
 .bloc-wzginsta .commentaire p {
   font-size: initial;
