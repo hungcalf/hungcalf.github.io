@@ -159,14 +159,23 @@
 }
 */
 
-/* post de commentaire seul 
+/* post de commentaire seul */
 .bloc-wzginsta .commentaire {
+  font-size: var(--font-xl);
+  padding: 0.5rem 0;
 }
 .bloc-wzginsta .commentaire img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit:cover;
+  float:left;
 }
 .bloc-wzginsta .commentaire p {
+  font-size: initial;
+  margin: 0.25rem 0;
 }
-*/
+
 
 /* suivi multiple */
 .bloc-suivi-multiple {
@@ -176,10 +185,10 @@
 }
 
 /* post de suivi (inchangé) */
-
 .wzdgfollow {
   position: relative;
   height: auto;
+  width:40%;
   background: #fafafa;
   padding-bottom: 6px;
   font-family: "Montserrat";
