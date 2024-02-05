@@ -162,7 +162,7 @@
 /* post de commentaire seul */
 .bloc-wzginsta .commentaire {
   font-size: var(--font-xl);
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 .bloc-wzginsta .commentaire > img:first-child {
   width: 50px;
