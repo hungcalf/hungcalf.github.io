@@ -20,6 +20,7 @@
 .bloc-wzginsta .header {
   display:flex;
   border-bottom:var(--border-bottom);
+  align-items: center;
 }
 .bloc-wzginsta .icon-name {
   width:250px;
@@ -41,6 +42,7 @@
   font-weight: bold;
   font-size: var(--font-sm);
   text-align: center;
+  line-height: 30px;
 }
 .bloc-wzginsta .searchbar img {
   width:30px;
