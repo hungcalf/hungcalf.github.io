@@ -58,31 +58,31 @@
 .bloc-wzginsta .profil-accueil {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60px 1fr;
   grid-template-areas:
-      "icon pseudo"
-      "icon bouton"
-      "icon description";
+      "iconprofil pseudo"
+      "iconprofil bouton"
+      "iconprofil description";
   margin: auto;
+  align-items: center;
   font-size: var(--font-xl);
+
 }
 .bloc-wzginsta .profil-accueil img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  float: left;
-  margin: 8px 5px 0;
-  grid-area:"icon";
+  grid-area:iconprofil;
 }
 .bloc-wzginsta .profil-accueil button {
   max-width:250px;
   font-size: var(--font-sm);
   text-align: center;
-  grid-area:"bouton";
+  grid-area:bouton;
 }
 .bloc-wzginsta .profil-accueil p {
   font-size: initial;
-  grid-area:"description";
+  grid-area:description;
 }
 
 .bloc-wzginsta .abonnements {
@@ -97,12 +97,13 @@
 }
 
 .bloc-wzginsta .liste-publications {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
+  grid-gap: 1rem;
+  margin: 1rem;
 }
 .bloc-wzginsta .liste-publications img {
-  max-width:30%;
   width:120px;
   height:120px;
   object-fit: cover;
