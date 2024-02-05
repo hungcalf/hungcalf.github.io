@@ -30,7 +30,7 @@
   content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
 }
 /* version instagram */
-.bloc-wzginsta .icon-name .insta img {
+.bloc-wzginsta .icon-name .insta > img {
   content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
 }
 .bloc-wzginsta .searchbar {
