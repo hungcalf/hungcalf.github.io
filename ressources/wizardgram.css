@@ -109,6 +109,7 @@
   width:120px;
   height:120px;
   object-fit: cover;
+  margin:auto;
 }
 
 /* post d'une nouvelle photo */
