@@ -1,4 +1,249 @@
-/* WIZARDGRAM */
+/* NOUVELLE VERSION WZG */
+.bloc-wzginsta {
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+  font-family: 'Montserrat';
+  font-size:14px;
+  color:#333;
+}
+
+:root {
+  --font-sm: 13px;
+  --font-xl: 17px;
+}
+
+/* barre du haut*/
+.bloc-wzginsta .header {
+  display:flex;
+  border-bottom:silver 1px solid;
+}
+.bloc-wzginsta .icon-name {
+  width:250px;
+}
+/* version wizardgram */
+.bloc-wzginsta .icon-name .wzg img {
+  content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
+}
+/* version instagram */
+.bloc-wzginsta .icon-name .insta img {
+  content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
+}
+.bloc-wzginsta .searchbar {
+  width:190px;
+  margin:1rem;
+  background: #fafafa;
+  border-radius:3px;
+  color: silver;
+  font-weight: bold;
+  font-size: var(--font-sm);
+  text-align: center;
+}
+.bloc-wzginsta .searchbar img {
+  width:30px;
+  height:30px;
+  object-fit: cover;
+  float:left;
+}
+.bloc-wzginsta .troispoints {
+  width: 25px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* page d'accueil */
+.bloc-wzginsta .profil-accueil {
+  margin:auto;
+  font-size: var(--font-xl);
+}
+.bloc-wzginsta .profil-accueil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  float: left;
+  margin: 8px 5px 0;
+}
+.bloc-wzginsta .profil-accueil button {
+  max-width:250px;
+  font-size: var(--font-sm);
+  text-align: center;
+}
+.bloc-wzginsta .profil-accueil p {
+  font-size: initial;
+}
+
+.bloc-wzginsta .abonnements {
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+}
+.bloc-wzginsta .abonnements div {
+  font-size: var(--font-sm);
+  text-align:center;
+  max-width:30%;
+}
+
+.bloc-wzginsta .liste-publications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bloc-wzginsta .liste-publications img {
+  max-width:30%;
+  width:120px;
+  height:120px;
+  object-fit: cover;
+}
+
+/* post d'une nouvelle photo */
+.bloc-wzginsta .profil-post {
+  margin:auto;
+  font-size: var(--font-xl);
+}
+.bloc-wzginsta .profil-post img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  float: left;
+  margin: 8px 5px 0;
+}
+/*
+.bloc-wzginsta .image-post {
+}
+
+.bloc-wzginsta .actions {
+}
+
+.bloc-wzginsta .likes {
+}
+
+.bloc-wzginsta .comm-post {
+}
+.bloc-wzginsta .comm-post .hashtag,
+.bloc-wzginsta a,
+.bloc-wzginsta a:visited {
+}
+.bloc-wzginsta a:hover,
+.bloc-wzginsta a:active {
+}
+
+.bloc-wzginsta .date {
+}
+*/
+
+/* post de commentaire seul 
+.bloc-wzginsta .commentaire {
+}
+.bloc-wzginsta .commentaire img {
+}
+.bloc-wzginsta .commentaire p {
+}
+*/
+
+/* suivi multiple */
+.bloc-suivi-multiple {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* post de suivi (inchangé) */
+
+.wzdgfollow {
+  position: relative;
+  height: auto;
+  background: #fafafa;
+  padding-bottom: 6px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  margin: 5px;
+}
+.wzdgfollow a {
+  display: inline !important;
+}
+
+.wzdgfolline {
+  position: relative;
+  top: 5px;
+  text-align: left;
+}
+
+.wzdgfoltab {
+  border: none;
+  border-collapse: collapse;
+}
+
+.wzdgfolbloc {
+  position: relative;
+  width: 230px;
+  height: 270px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  border: 0px solid #aaaaaa;
+  margin: auto;
+}
+
+.wzdgfolhead {
+  width: 230px;
+  background-size: cover !important;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.wzdgfolimg {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 80px;
+  left: 12px;
+}
+
+.wzdgfolgear {
+  position: absolute;
+  top: 120px;
+  right: 104px;
+}
+
+.wzdgfolico {
+  position: absolute;
+  top: 114px;
+  right: 4px;
+}
+
+.wzdgfolprev {
+  position: absolute;
+  top: 164px;
+  left: 4px;
+  text-align: left;
+}
+
+.wzdgfolname {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.wzdgfolcheck {
+  position: relative;
+  top: 6px;
+}
+
+.wzdgfoltxt {
+  margin-bottom: 6px;
+  line-height: 11px;
+  font-size: 10px;
+}
+
+/* ------------------------------ */
+
+/* ANCIEN CODE WIZARDGRAM */
 
 /* barre du haut */
 .wzdgfd {
@@ -176,95 +421,4 @@ wlnk a {
   font-size: 13px;
   text-align: left;
   padding-left: 5px;
-}
-
-/* post de suivi */
-.wzdgfollow {
-  position: relative;
-  width: 400px;
-  height: auto;
-  background: #fafafa;
-  padding-bottom: 6px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  line-height: 16px;
-}
-.wzdgfollow a {
-  display: inline !important;
-}
-
-.wzdgfolline {
-  position: relative;
-  top: 5px;
-  text-align: left;
-}
-
-.wzdgfoltab {
-  border: none;
-  border-collapse: collapse;
-}
-
-.wzdgfolbloc {
-  position: relative;
-  width: 230px;
-  height: 270px;
-  background: #ffffff;
-  color: #333;
-  border-radius: 10px;
-  border: 0px solid #aaaaaa;
-}
-
-.wzdgfolhead {
-  width: 230px;
-  background-size: cover !important;
-  height: 110px;
-  border-radius: 10px 10px 0px 0px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.wzdgfolimg {
-  border: 5px solid #ffffff;
-  border-radius: 5px;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 80px;
-  left: 12px;
-}
-
-.wzdgfolgear {
-  position: absolute;
-  top: 120px;
-  right: 104px;
-}
-
-.wzdgfolico {
-  position: absolute;
-  top: 114px;
-  right: 4px;
-}
-
-.wzdgfolprev {
-  position: absolute;
-  top: 164px;
-  left: 4px;
-}
-
-.wzdgfolname {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-}
-
-.wzdgfolcheck {
-  position: relative;
-  top: 6px;
-}
-
-.wzdgfoltxt {
-  margin-bottom: 6px;
-  line-height: 11px;
-  font-size: 10px;
 }
