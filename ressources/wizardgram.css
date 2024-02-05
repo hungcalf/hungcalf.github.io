@@ -81,6 +81,8 @@
   font-size: var(--font-sm);
   text-align: center;
   grid-area:bouton;
+  background: #F6F6F6;
+  border-radius: 3px;
 }
 .bloc-wzginsta .profil-accueil p {
   font-size: initial;
