@@ -193,7 +193,8 @@
       flex-wrap:wrap;
       justify-content:center;
       }
-      .name {
+      .deux_epreuve .name {
+        font-size:1.5rem;
       width:fit-content;
       font-family:var(--police_sst);
       }
