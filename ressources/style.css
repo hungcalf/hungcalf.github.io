@@ -2,31 +2,39 @@
 
 /* pour rappeler des trucs... */
 :root {
-  --police_titre: 'Agraham', cursive, bold;
+  --police_titre: 'Bavicka', cursive, bold;
   --police_sst: 'Champagne Limousines', 'Montserrat', sans-serif;
   --police_text: 'Georgia', 'Times New Roman', serif;
     --color_text: #c0c0c0;
     --color_neg: #333;
+  /* test bleu
     --color_title: #698996;
     --color_link: #a7b7be;
-    --color_background1: #421a23;
+    --color_background1: #1C3966;
+    --color_background2: #dddddd;
+    --color_background3: #3E5982;
+    --color_background4: #A2A2A2;
+    --color_background5: #f0f0f0;
+    --color_fan: #6a7c85; */
+  /* test violet */
+    --color_title: #a38e47;
+    --color_link: #b6a486;
+    --color_background1: #4e446d;
     --color_background2: #f0f0f0;
-    --color_background3: #57232e;
-    --color_background4: #9d2a3d;
+    /*--color_background3: #645a7e;
+    --color_background4: #7e639e;*/
     --color_background5: #fff;
-    --color_fan: #c17b80;
-  --img_header:url('https://hungcalf.github.io/ressources/current_design/header01.png');
-  --fond_pa: url('https://images2.imgbox.com/b5/78/ViDLk9Jf_o.png'); 
-  --fond_blocava: url('https://images2.imgbox.com/b5/78/ViDLk9Jf_o.png');
-  --fond_codquot: url('https://hungcalf.github.io/ressources/current_design/background.png');
-  --chap_intrigue: url('https://hungcalf.github.io/ressources/current_design/intrigue.png');
-  --img_top_sites: url('https://images2.imgbox.com/af/48/GcHNb1l5_o.png');
-  --deco_pa: url('https://images2.imgbox.com/b5/78/ViDLk9Jf_o.png');
-  --deco_profil: url('https://images2.imgbox.com/11/73/BIaQ3Efa_o.png');
+    --color_fan: #ce747c;
+  /* test violet + bleu */
+    --color_background3: #6b658b;
+    --color_background4: #8896ba;
+  
+  --fond_pa: url('https://hungcalf.github.io/ressources/next_design/paqeel.png'); 
+  --fond_codquot: url('https://hungcalf.github.io/ressources/next_design/background.png');
+  --img_top_sites: url('https://hungcalf.github.io/ressources/next_design/topsite.png');
+  --deco_profil: url('https://hungcalf.github.io/ressources/next_design/decoprofil.png');
   --fleche_haut: url('https://hungcalf.github.io/ressources/current_design/arrow_top_off.png');
-  --fleche_haut_hover: url('https://hungcalf.github.io/ressources/current_design/arrow_top_on.png');
   --fleche_bas: url('https://hungcalf.github.io/ressources/current_design/arrow_bottom_off.png');
-  --fleche_bas_hover: url('https://hungcalf.github.io/ressources/current_design/arrow_bottom_on.png');
   --background: url('https://hungcalf.github.io/ressources/next_design/background.png');
 }
 
@@ -86,7 +94,6 @@ border-radius: 5px;
 
 html {
 background-image: var(--background);
-background-size: 100vw;
 background-position:center;
 height: auto;
 }
@@ -161,6 +168,9 @@ letter-spacing:1px;
 font-weight: bold !important;
 color: var(--color_link) !important;
 text-decoration: none !important;
+}
+a.topictitle {
+  display: inline;
 }
 
 .mentiontag {
@@ -681,7 +691,6 @@ text-align: center;
 color: var(--color_background1) !important;
 font-family: var(--police_titre);
 font-size: 1.5rem;
-    line-height: 2rem;
 text-transform: lowercase;
 text-align: center;
 margin: 0px 0px 5px 0px;
@@ -712,7 +721,6 @@ font-family: var(--police_text);
 text-align: center;
 text-transform: uppercase;
 font-size: 0.95rem;
-    line-height: 1rem;
 letter-spacing: 2px;
   margin: 10px 0 -5px;
 padding-top:5px;
@@ -728,6 +736,7 @@ border-top: 1px var(--color_background3) solid;
   font-weight:bold;
   letter-spacing: 2px;
   margin: 0 0 4px;
+  padding-top:2px;
   display: block;
   background-color: var(--color_title);
   border-bottom: 1px solid var(--color_background3);
@@ -875,12 +884,12 @@ details {
 }
 summary {
 font-family:var(--police_titre)!important;
-    font-size: 0.8rem!important;
+  font-size:1.25rem!important;
   color:var(--color_fan);
     margin-top: 1rem!important;
 }
 summary::marker {
-font-size:1rem;
+font-size:0.9rem;
  content: '— ';
 }
 summary:hover {
@@ -1555,7 +1564,7 @@ width: 828px;
 }
 
 .titrecaté {
-  font-family: var(--police_titre);
+  font-family: var(--police_sst);
       font-size:1.1em;
 }
 
@@ -2027,6 +2036,7 @@ display: block;
 
 .paqeel {
 background: var(--color_background1) var(--fond_pa) center;
+background-size: cover;
 }
 
 .bloc_grcopy {
@@ -2073,21 +2083,22 @@ margin-top: 10px;
 }
 
 .bloc_comm_gr {
-position: absolute;
-top: 25px;
-left: -15px;
-z-index: 12;
-width: 70px;
-  background-color: var(--color_background3);
-  border-radius: 5px;
-  border: 1px solid var(--color_background4);
-padding: 3px;
-font-size: 1rem;
-font-family: var(--police_text);
-line-height: 9px;
-text-align: center;
-display: none;
-opacity: 0.8;
+    position: absolute;
+    top: 25px;
+    left: -23px;
+    z-index: 12;
+    width: 85px;
+    background-color: var(--color_background1);
+    border-radius: 5px;
+    border: 1px solid var(--color_background2);
+    padding: 3px;
+    font-size: 0.85rem;
+    margin: 0;
+    font-family: var(--police_text);
+    line-height: 9px;
+    text-align: center;
+    display: none;
+    opacity: .8;
 }
 
 .bloc_img_gr:hover>.bloc_comm_gr {
@@ -2109,6 +2120,7 @@ display: block;
 .bloc_copy bb {
   margin: 0rem 0 -0.5rem 0;
   display: block;
+  color: var(--color_background1)!important;
 }
 
 .bloc_qeelr {
@@ -2156,10 +2168,18 @@ max-width: 850px;
 .footerbar-system, .copyright, .footerbar-user {
 color: var(--color_text);
 font-size:1rem;
+display: flex;
+align-items: baseline;
+justify-content: space-evenly;
+}
+
+.footer-home {
+  width: 95px;
 }
 
 .footerbar-system .rightside {
 color: var(--color_background1)!important;
+width:calc(100% - 100px);
 }
 
 .footerbar-system a,
@@ -2679,7 +2699,7 @@ fieldset, p, .block {
 
 /* ajustements affichages mobiles "version web" */
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 480px) {
   body {
     margin-top: 100px!important;
   }
@@ -2905,6 +2925,9 @@ max-width: 95%;
     width:100%;
     text-align:center;
   }
+  .footerbar-system{
+    flex-wrap:wrap;
+  }
   .footerbar-system .rightside {
     margin: 1rem;
     text-align: justify;
@@ -2914,7 +2937,7 @@ max-width: 95%;
     margin: 0;
 }
 .bloc-partenaires{
-  height:215px;
+  height:190px;
 }
 
 ul.topiclist dl {
@@ -2937,11 +2960,9 @@ ul.topiclist dl {
 }
   }
 
-/* ajustements affichages tablettes/petits écrans */
+/* ajustements affichages tablettes/écrans moyens */
 
-@media all and (min-width: 421px) and (max-width: 1023px) {
-  body {
-  }
+@media all and (min-width: 481px) and (max-width: 1023px) {
   #modernbb {
     padding:0;
   }
@@ -3033,43 +3054,49 @@ text-align: right;
 margin: 0;
 }
   
+li.header dl.icon dd.dterm, li.header dl.icon dt {
+  width:90vw;
+}
   ul.topiclist {
     width: calc(100vw - 3.2rem);
   }
   .bloc_cat {
-  width:inherit;
+    width: calc(100% - 2rem - 288px);
   }
-  .recap_cat {    
+  .recap_cat {   
     width: -webkit-fill-available;
-    position: relative;
-    margin: 5px 0 5px 5px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  .recap_cat h3, .recap_cat h2 {
+    width:100%;
+    margin:0;
   }
   .desc_cat {
-    width: calc(100% - 5px);
+    width: 65%;
+    height: calc(100% - 2rem);
   }
   .list_ssfo {
-    width: calc(100vw/2);
-    position: absolute;
-    top: 150px;
-    left:1px;
+    width: 33%;
+    height: calc(100% - 2rem);
 }
   .sousForums {
     width: 100%;
-    height: 140px;
+    height: 100%;
     border-radius: 0.5rem;
 }
   ul.topiclist.forums div.dterm {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
-    justify-content: end;
 }
   span.lastpost-avatar {
-    max-width: 88px;
-    margin: auto 2.5% auto 55%;
+    width: 88px;
 }
   .lastpost {    
-    width: calc(45% - 88px - 3%);
+    width: 200px;
   }
   .recap_sujet {
       width: 100%;
@@ -3082,6 +3109,20 @@ margin: 0;
     padding: 0;
     margin: -.5rem;
     float: right;
+}
+
+ul.topiclist dd.lastpost {
+  display: flex;
+  width: auto;
+  padding: .5rem!important;
+}
+ul.topiclist dd.lastpost > span {
+  order:1;
+}
+ul.topiclist:not(.forums) span.lastpost-avatar {
+  width: auto;
+  order:2!important;
+  margin: 0.25rem!important;
 }
   .blocqeel {
   width:100%;
@@ -3104,6 +3145,76 @@ margin: 0;
 }
 }
 
+/* ajustement petits écrans */
+
+@media all and (min-width: 481px) and (max-width: 720px) {
+  .navbar li {
+  margin: 0;
+  height: 30px;
+}
+  .bloc_cat {
+    width: calc(100% - 170px - 88px - 1rem);
+}
+  .desc_cat {
+    width:65%;
+    margin: 0;
+}
+  .lastpost {
+    width: 170px;
+}
+ul.topiclist dl {
+  display: grid;
+  grid-template-columns: 70px 1fr 38%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "repvue detail lastpost";
+}
+dl.icon {
+  background-position: left 24px top 15%;
+}
+ul.topics dd.dterm {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  line-height: 26px;
+  grid-area: detail;
+  padding:0.5rem;
+}
+.topic-title-container {
+  margin: 2px 0;
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+.topic-author {
+  clear: both;
+}
+ul.topiclist dd.repvue {
+  grid-area: repvue;
+  line-height: inherit;
+  padding: 45px 0 0 0;
+}
+ul.topiclist dd.lastpost {
+  grid-area: lastpost;
+}
+  .blocqeel{
+    flex-wrap: wrap;
+    height:auto;
+  }
+  .bloc_qeell {
+    order:1;
+    width:45%;
+  }
+.bloc_grcopy {
+  order:3;
+  width:100%;
+  height:auto;
+}
+.bloc_qeelr {
+  order:2;
+  width:45%;
+}
+}
+
 @media all and (orientation: landscape) {
 html {
 background-size: 100vw;
@@ -3112,6 +3223,6 @@ background-size: 100vw;
 
 @media all and (orientation: portrait) {
 html {
-background-size: auto 100%;
+background-size: cover;
 }
 }

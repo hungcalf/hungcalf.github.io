@@ -296,8 +296,25 @@
     .avancee {
       margin:0!important;
       height:inherit;
-      background:var(--color_background1);
       text-align:center;
+      }
+      .avancee.ethelred {
+        background:gray;
+      }
+      .avancee.lufkin {
+        background:cornflowerblue;
+      }
+      .avancee.pokeby {
+        background:rgb(106, 61, 114);
+      }
+      .avancee.wright {
+        background:indianred;
+      }
+      .avancee.summerbee {
+        background:goldenrod;
+      }
+      .avancee.grymm {
+        background:seagreen;
       }
   .deux_epreuve h2 {
     font-family: var(--police_sst);
