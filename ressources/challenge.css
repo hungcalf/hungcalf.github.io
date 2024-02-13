@@ -334,3 +334,7 @@
       width:100%;
       text-align:center;
   }
+  .timing {
+    font-size:0.9rem;
+    color:var(--color_neg);
+  }
