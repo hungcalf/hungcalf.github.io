@@ -39,6 +39,7 @@ sam {
   flex-wrap: wrap;
   width: 450px;
   padding: 0;
+  justify-content:center;
 }
 .bloc-tel {
   position: relative;
