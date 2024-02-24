@@ -24,6 +24,8 @@
 }
 .bloc-wzginsta .icon-name {
   width:250px;
+  display: flex;
+  justify-content: center;
 }
 /* version wizardgram */
 .bloc-wzginsta .header .icon-name .wzg {
@@ -294,6 +296,11 @@
   width: 400px;
   height: 45px;
   border-bottom: silver 1px solid;
+}
+
+.wzdgtop table tr td:first-child img {
+content: url(https://hungcalf.github.io/ressources/iconographie/icon_wzg.png);
+height: 44px;
 }
 
 .wzdgsearch {
