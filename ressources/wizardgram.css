@@ -27,11 +27,11 @@
 }
 /* version wizardgram */
 .bloc-wzginsta .header .icon-name .wzg {
-  content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
+  content: url('https://hungcalf.github.io/ressources/iconographie/icon_wzg.png');
 }
 /* version instagram */
 .bloc-wzginsta .header .icon-name .insta {
-  content: url('https://cdn.discordapp.com/attachments/342630382870462464/576144436052885533/1557414742-icone-wizardgram-fond-blanc.png');
+  content: url('https://hungcalf.github.io/ressources/iconographie/ocon_insta.png');
 }
 .bloc-wzginsta .searchbar {
   width:190px;
