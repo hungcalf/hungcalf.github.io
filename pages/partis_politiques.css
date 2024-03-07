@@ -76,7 +76,7 @@ p {
     max-height: 90px;
     overflow: auto;
     padding-right: 2px;
-    font-size:1rem;
+    line-height:1.1rem;
 }
 .details:last-of-type {
     justify-content: space-evenly;
