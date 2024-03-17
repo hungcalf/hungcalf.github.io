@@ -362,7 +362,7 @@
     left:0;
   }
 .switcheroo__squircles {
-  padding: 2rem 0.25rem;
+  padding: 2rem 0.25rem!important;
 }
   
   .topSite__vote {
