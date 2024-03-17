@@ -354,15 +354,17 @@
 }
 
 @media all and (max-width: 1024px) {
-  .switcheroo {
-    left: 0;
+  #switcheroo {
+    left: -2rem;
+    transition:all .2s;
   }
-/*
-  #modernbb {
-    padding-left: 48px !important;
+  #switcheroo:hover {
+    left:0;
   }
-  */
-
+.switcheroo__squircles {
+  padding: 2rem 0.25rem;
+}
+  
   .topSite__vote {
     display: none;
   }
