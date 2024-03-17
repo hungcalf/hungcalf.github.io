@@ -110,7 +110,7 @@ details {
   box-sizing: border-box;
 }
 summary {
-  width: 400px;
+  /*width: 400px;*/
   text-align: center;
   font-size: 2rem;
   font-family: var(--police_sst);
@@ -585,7 +585,13 @@ details .lmn span {
 center p {
   word-spacing:30px;
 }
-
+.pens_james center img, 
+.pens_diane center img, 
+.pens_luan center img {
+  object-fit:cover;
+  height:200px;
+  width:80%;
+}
 
 
 /* Pour TdA */
