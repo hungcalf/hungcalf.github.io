@@ -510,4 +510,9 @@ wlnk a {
 .wzdgcomtxt {
   max-width:200px;
 }
+.bloc-wzginsta .image-post,
+.wzdgimgpost {
+  width: 260px;
+  height: 260px;
+}
 }
