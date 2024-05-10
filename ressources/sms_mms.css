@@ -44,5 +44,12 @@ text-align:center;
 
 
 
+@media all and (max-width: 480px) {
+  
+
+.sms__bloc {
+    margin:15px 50px 15px 30px;
+    }
+        }
 
     
