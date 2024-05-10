@@ -192,7 +192,7 @@
 .wzdgfollow {
   position: relative;
   height: auto;
-  width:40%;
+ /* width:40%;*/
   background: #fafafa;
   padding-bottom: 6px;
   font-family: "Montserrat";
@@ -291,6 +291,7 @@
   
 .bloc-suivi-multiple {
   flex-direction: column;
+  align-items:center;
 }
           }
   
