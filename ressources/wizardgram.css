@@ -146,9 +146,10 @@
 
 .bloc-wzginsta .likes {
 }
-
+*/
 .bloc-wzginsta .comm-post {
-}
+  width:inherit;
+}/*
 .bloc-wzginsta .comm-post .hashtag,
 .bloc-wzginsta a,
 .bloc-wzginsta a:visited {
