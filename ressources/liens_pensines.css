@@ -107,3 +107,21 @@
 p.pas_dimage {
   width:100%;
 }
+
+
+
+/* ajustements affichages mobiles "version mobile" */
+
+@media all and (max-width: 480px) {
+.liste_mots_cles {
+width:inherit;
+}
+
+.trois_icons img {
+  width:60px;
+}
+
+.bloc_lien {
+  flex-direction: column;
+}
+}
