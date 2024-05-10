@@ -126,30 +126,47 @@
 
 /* post d'une nouvelle photo */
 .bloc-wzginsta .profil-post {
-  margin:auto;
   font-size: var(--font-xl);
+  padding: 0.5rem;
+  margin: auto;
+  max-width: 360px;
 }
-.bloc-wzginsta .profil-post img {
-  width: 50px;
-  height: 50px;
-  object-fit:cover;
-  border-radius: 50px;
-  float: left;
-  margin: 8px 5px 0;
+.bloc-wzginsta .profil-post > img:first-child {
+width: 50px;
+height: 50px;
+border-radius: 50px;
+object-fit: cover;
+float: left;
+margin: 0 1rem;
 }
-/*
+.bloc-wzginsta .profil-post p {
+font-size: initial;
+margin: 0.25rem 0;
+}
+
 .bloc-wzginsta .image-post {
+  background-size: cover !important;
+  width: 360px;
+  height: 360px;
+  margin:auto;
 }
 
 .bloc-wzginsta .actions {
+  max-width: 360px;
+  height: 34px;
+  margin:auto;
 }
 
-.bloc-wzginsta .likes {
+.bloc-wzginsta .like-desc {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 10px;
+  margin: 0 auto 10px auto;
+  max-width: 360px;
 }
-*/
-.bloc-wzginsta .comm-post {
-  width:inherit;
-}/*
+/*
 .bloc-wzginsta .comm-post .hashtag,
 .bloc-wzginsta a,
 .bloc-wzginsta a:visited {
@@ -157,15 +174,17 @@
 .bloc-wzginsta a:hover,
 .bloc-wzginsta a:active {
 }
-
-.bloc-wzginsta .date {
-}
 */
+.bloc-wzginsta .date {
+  color:silver;
+}
 
 /* post de commentaire seul */
 .bloc-wzginsta .commentaire {
-  font-size: var(--font-xl);
-  padding: 0.5rem;
+    font-size: var(--font-xl);
+    padding: 0.5rem;
+    margin: auto;
+    max-width: 360px;
 }
 .bloc-wzginsta .commentaire > img:first-child {
   width: 50px;
@@ -285,21 +304,7 @@
 .wzdgfoltxt img {
   max-width:50px;
   max-height:50px;
-}
-
-@media all and (max-width: 480px) {
-  
-  .bloc-wzginsta .liste-publications img {
-    width:80px;
-    height:80px;
-  }
-  
-.bloc-suivi-multiple {
-  flex-direction: column;
-  align-items:center;
-}
-          }
-  
+} 
       
 
 
@@ -473,14 +478,6 @@ wlnk a {
   height: 34px;
 }
 
-.wzdgcom {
-  font-family: "Montserrat";
-  color: black;
-  font-size: 13px;
-  text-align: left;
-  padding-left: 5px;
-}
-
 /* post de commentaire */
 .wzdgcomtxt {
   font-family: "Montserrat";
@@ -488,4 +485,22 @@ wlnk a {
   font-size: 13px;
   text-align: left;
   padding-left: 5px;
+}
+
+
+/* ------- AJUSTEMENT MOBILES -------- */
+
+
+@media all and (max-width: 480px) {
+  
+  .wzdgpics,
+  .bloc-wzginsta .liste-publications img {
+    width:80px;
+    height:80px;
+  }
+  
+.bloc-suivi-multiple {
+  flex-direction: column;
+  align-items:center;
+}
 }
