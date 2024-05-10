@@ -152,9 +152,10 @@ margin: 0.25rem 0;
 }
 
 .bloc-wzginsta .actions {
+  width: 100%;
   max-width: 360px;
   height: 34px;
-  margin:auto;
+  margin: auto;
 }
 
 .bloc-wzginsta .like-desc {
