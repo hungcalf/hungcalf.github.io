@@ -192,7 +192,7 @@
 .wzdgfollow {
   position: relative;
   height: auto;
- /* width:40%;*/
+  max-width:270px;
   background: #fafafa;
   padding-bottom: 6px;
   font-family: "Montserrat";
