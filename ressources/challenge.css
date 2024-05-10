@@ -353,8 +353,9 @@
 @media all and (max-width: 480px) {
   
 .challenge_scores {
-  width: 100%;
+  width: 360px;
   margin: auto;
+  grid-gap: 0 0;
 }
 .colonnes img {
   max-width:100%;
