@@ -130,6 +130,7 @@
   padding: 0.5rem;
   margin: auto;
   max-width: 360px;
+  min-width:200px;
 }
 .bloc-wzginsta .profil-post > img:first-child {
 width: 50px;
