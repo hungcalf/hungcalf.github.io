@@ -71,3 +71,13 @@
   height: 100%;
   width: 100%;
 }
+
+
+@media all and (max-width: 480px) {
+.bloc_moodboard {
+  width: 280px;
+}
+.grid_moodboard {
+  height: 250px;
+}
+}
