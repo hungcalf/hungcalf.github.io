@@ -29,6 +29,7 @@
 
 .avatar_perso {
   border: 10px solid var(--color_fan);
+  margin:auto;
 }
 
 .avatar_perso img {
