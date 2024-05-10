@@ -281,6 +281,21 @@
   font-size: 10px;
 }
 
+@media all and (max-width: 480px) {
+  
+  .bloc-wzginsta .liste-publications img {
+    width:80px;
+    height:80px;
+  }
+  
+.bloc-suivi-multiple {
+  flex-direction: column;
+}
+          }
+  
+      
+
+
 /* ------------------------------ */
 
 /* ANCIEN CODE WIZARDGRAM */
