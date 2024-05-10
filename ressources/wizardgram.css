@@ -128,9 +128,9 @@
 .bloc-wzginsta .profil-post {
   font-size: var(--font-xl);
   padding: 0.5rem;
-  margin: auto;
+  margin: 0.25rem auto;
   max-width: 360px;
-  min-width:200px;
+  min-width:260px;
 }
 .bloc-wzginsta .profil-post > img:first-child {
 width: 50px;
@@ -316,13 +316,13 @@ margin: 0.25rem 0;
 
 /* barre du haut */
 .wzdgfd {
-  width: 400px;
+  max-width: 400px;
   background: #fafafa;
 }
 
 .wzdgtop {
   background-color: "#fff";
-  width: 400px;
+  max-width: 400px;
   height: 45px;
   border-bottom: silver 1px solid;
 }
