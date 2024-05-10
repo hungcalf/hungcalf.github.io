@@ -31,3 +31,12 @@
 .parchemin__ps {
   text-align: justify;
 }
+
+
+
+
+@media all and (max-width: 480px) {
+.parchemin {
+  width: 100%;
+  }
+  }
