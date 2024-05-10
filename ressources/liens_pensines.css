@@ -114,7 +114,7 @@ p.pas_dimage {
 
 @media all and (max-width: 480px) {
 .liste_mots_cles {
-width:inherit;
+width:100%;
 }
 
 .trois_icons img {
@@ -124,5 +124,11 @@ width:inherit;
 
 .bloc_lien {
   flex-direction: column;
+}
+
+.bloc_lien p, 
+.lien_succinct p {
+  margin: 0.5rem 0;
+  width: 100%;
 }
 }
