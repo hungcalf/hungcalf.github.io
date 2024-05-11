@@ -365,13 +365,13 @@ div.name.grymm {
   .colonnes img {
     max-width: 95%;
     height: 145px;
-    object-position: 66% 50%;
+    object-position: 63% 50%;
   }
   .flammes img {
     height: 80%;
   }
   .first {
-    margin-top: -37px;
-    height: 110% !important;
+    margin-top: -42px;
+    height: 115% !important;
   }
 }
