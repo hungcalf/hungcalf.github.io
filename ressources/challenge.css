@@ -1,4 +1,4 @@
-/* les colonnes avec les flammes */ 
+/* les colonnes avec les flammes */
 
 .challenge_scores {
   display: grid;
@@ -62,11 +62,10 @@
   content: url(https://hungcalf.github.io/ressources/moodboards/flamme_grymm.gif);
 }
 
-
 .colonnes {
-    grid-area: colonnes;
-    width: 100%;
-  }
+  grid-area: colonnes;
+  width: 100%;
+}
 .colonnes img {
   object-fit: cover;
   object-position: 52% 50%;
@@ -109,259 +108,269 @@
   height: 140% !important;
 }
 .top_score {
-    font-size: 38px;
-    letter-spacing: -3px;
-    margin-left: 0px;
+  font-size: 38px;
+  letter-spacing: -3px;
+  margin-left: 0px;
 }
 
 /* tournoi de duels */
 
 .tournoi_duels {
-    border-radius: 15px;
-    background: #fff;
-    border-spacing: 0;
-    margin:auto;
-    font-family:var(--police_txt);
-  }
-  .tournoi_duels h2 {
-    font-family: var(--police_sst);
-    margin: 2rem 0 0 0;
-    line-height: 0.75rem;
-    color: var(--color_title);
-    border-bottom: 2px solid var(--color_title)
+  border-radius: 15px;
+  background: #fff;
+  border-spacing: 0;
+  margin: auto;
+  font-family: var(--police_txt);
 }
-  .tournoi_duels h3  {
-    font-family: var(--police_sst);
-    font-size: 3.5rem;
-    margin: 0;
-    color: var(--color_background3);
-  }
-    .tournoi_duels td {
-    min-width:1rem;
-    text-align: center;
-  }
-  div.name {
-    border-radius: 1rem;
-    background:#f0f0f0;
-    margin:0.5rem;
-    padding:1rem 0.5rem;
-    border:1px solid silver!important;
-  }
-  div.name.ethelred {
-    color:gray;
-  }
-  div.name.lufkin {
-    color:cornflowerblue;
-  }
-  div.name.pokeby {
-    color:rgb(106, 61, 114);
-  }
-  div.name.wright {
-    color:indianred;
-  }
-  div.name.summerbee {
-    color:goldenrod;
-  }
-  div.name.grymm {
-    color:seagreen;
-  }
-  .bbord {
-    border-bottom:var(--color_background4) 2px solid!important;
-  }
-  .tbord {
-    border-top:var(--color_background4) 2px solid!important;
-  }
-  .rbord {
-    border-right:var(--color_background4) 2px solid!important;
-  }
-  .brbord {
-    border-bottom:var(--color_background4) 2px solid!important;
-    border-right:var(--color_background4) 2px solid!important;
-  }
-  .empty {
-    border:none;
-  }
-  .winner {
-    background:#b0e5b0!important;
-  }
-
-  /* 2e épreuve Jeu de l'Oie */
-
-
-  .deux_epreuve {
-    display: flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      }
-      .deux_epreuve .name {
-        font-size:1.5rem;
-      width:fit-content;
-      font-family:var(--police_sst);
-      }
-    .cases_totales {
-      width:450px;
-      height:20px;
-      border:1px solid var(--color_background1);
-      background:var(--color_background2);
-      }
-      .c1 {
-      width:calc(15px * 1);      
-      }
-      .c2 {
-      width:calc(15px * 2);      
-      }
-      .c3 {
-      width:calc(15px * 3);      
-      }
-      .c4 {
-      width:calc(15px * 4);      
-      }
-      .c5 {
-      width:calc(15px * 5);      
-      }
-      .c6 {
-      width:calc(15px * 6);      
-      }
-      .c7 {
-      width:calc(15px * 7);      
-      }
-      .c8 {
-      width:120px;      
-      }
-      .c9 {
-      width:calc(15px * 9);      
-      }
-      .c10 {
-      width:calc(15px * 10);      
-      }
-      .c11 {
-      width:calc(15px * 11);      
-      }
-      .c12 {
-      width:calc(15px * 12);      
-      }
-      .c13 {
-      width:calc(15px * 13);      
-      }
-      .c14 {
-      width:calc(15px * 14);      
-      }
-      .c15 {
-      width:calc(15px * 15);      
-      }
-      .c16 {
-      width:calc(15px * 16);      
-      }
-      .c17 {
-      width:calc(15px * 17);      
-      }
-      .c18 {
-      width:calc(15px * 18);      
-      }
-      .c19 {
-      width:calc(15px * 19);      
-      }
-      .c20 {
-      width:calc(15px * 20);      
-      }
-      .c21 {
-      width:calc(15px * 21);      
-      }
-      .c22 {
-      width:calc(15px * 22);      
-      }
-      .c23 {
-      width:calc(15px * 23);      
-      }
-      .c24 {
-      width:calc(15px * 24);      
-      }
-      .c25 {
-      width:calc(15px * 25);      
-      }
-      .c26 {
-      width:calc(15px * 26);      
-      }
-      .c27 {
-      width:calc(15px * 27);      
-      }
-      .c28 {
-      width:calc(15px * 28);      
-      }
-      .c29 {
-      width:calc(15px * 29);      
-      }
-      .c30 {
-      width:calc(15px * 30);      
-      }
-    .avancee {
-      margin:0!important;
-      height:inherit;
-      text-align:center;
-      }
-      .avancee.ethelred {
-        background:gray;
-      }
-      .avancee.lufkin {
-        background:cornflowerblue;
-      }
-      .avancee.pokeby {
-        background:rgb(106, 61, 114);
-      }
-      .avancee.wright {
-        background:indianred;
-      }
-      .avancee.summerbee {
-        background:goldenrod;
-      }
-      .avancee.grymm {
-        background:seagreen;
-      }
-  .deux_epreuve h2 {
-    font-family: var(--police_sst);
-    margin: 2rem 0 0 0;
-    line-height: 0.75rem;
-    color: var(--color_title);
-    border-bottom: 2px solid var(--color_title);
-      width:100%;
-      text-align:center;
+.tournoi_duels h2 {
+  font-family: var(--police_sst);
+  margin: 2rem 0 0 0;
+  line-height: 0.75rem;
+  color: var(--color_title);
+  border-bottom: 2px solid var(--color_title);
 }
-  .deux_epreuve h3  {
-    font-family: var(--police_sst);
-    font-size: 3.5rem;
-    margin: 0;
-    color: var(--color_background3);
-      width:100%;
-      text-align:center;
-  }
-  .timing {
-    font-size:1rem;
-    color:var(--color_neg);
-  }
+.tournoi_duels h3 {
+  font-family: var(--police_sst);
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--color_background3);
+}
+.tournoi_duels td {
+  min-width: 1rem;
+  text-align: center;
+}
+div.name {
+  border-radius: 1rem;
+  background: #f0f0f0;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid silver !important;
+}
+div.name.ethelred {
+  color: gray;
+}
+div.name.lufkin {
+  color: cornflowerblue;
+}
+div.name.pokeby {
+  color: rgb(106, 61, 114);
+}
+div.name.wright {
+  color: indianred;
+}
+div.name.summerbee {
+  color: goldenrod;
+}
+div.name.grymm {
+  color: seagreen;
+}
+.bbord {
+  border-bottom: var(--color_background4) 2px solid !important;
+}
+.tbord {
+  border-top: var(--color_background4) 2px solid !important;
+}
+.rbord {
+  border-right: var(--color_background4) 2px solid !important;
+}
+.brbord {
+  border-bottom: var(--color_background4) 2px solid !important;
+  border-right: var(--color_background4) 2px solid !important;
+}
+.empty {
+  border: none;
+}
+.winner {
+  background: #b0e5b0 !important;
+}
 
-  /* 3e epreuve - gif hadrian */
+/* 2e épreuve Jeu de l'Oie */
 
-  .hadrian_lightbound {
-    width:200px;
-    height:100px;
-    object-fit:cover;
-    float:left;
-    margin: 0.25rem 0.5rem 0 0;
-  }
-  
+.deux_epreuve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.deux_epreuve .name {
+  font-size: 1.5rem;
+  width: fit-content;
+  font-family: var(--police_sst);
+}
+.cases_totales {
+  width: 450px;
+  height: 20px;
+  border: 1px solid var(--color_background1);
+  background: var(--color_background2);
+}
+.c1 {
+  width: calc(15px * 1);
+}
+.c2 {
+  width: calc(15px * 2);
+}
+.c3 {
+  width: calc(15px * 3);
+}
+.c4 {
+  width: calc(15px * 4);
+}
+.c5 {
+  width: calc(15px * 5);
+}
+.c6 {
+  width: calc(15px * 6);
+}
+.c7 {
+  width: calc(15px * 7);
+}
+.c8 {
+  width: 120px;
+}
+.c9 {
+  width: calc(15px * 9);
+}
+.c10 {
+  width: calc(15px * 10);
+}
+.c11 {
+  width: calc(15px * 11);
+}
+.c12 {
+  width: calc(15px * 12);
+}
+.c13 {
+  width: calc(15px * 13);
+}
+.c14 {
+  width: calc(15px * 14);
+}
+.c15 {
+  width: calc(15px * 15);
+}
+.c16 {
+  width: calc(15px * 16);
+}
+.c17 {
+  width: calc(15px * 17);
+}
+.c18 {
+  width: calc(15px * 18);
+}
+.c19 {
+  width: calc(15px * 19);
+}
+.c20 {
+  width: calc(15px * 20);
+}
+.c21 {
+  width: calc(15px * 21);
+}
+.c22 {
+  width: calc(15px * 22);
+}
+.c23 {
+  width: calc(15px * 23);
+}
+.c24 {
+  width: calc(15px * 24);
+}
+.c25 {
+  width: calc(15px * 25);
+}
+.c26 {
+  width: calc(15px * 26);
+}
+.c27 {
+  width: calc(15px * 27);
+}
+.c28 {
+  width: calc(15px * 28);
+}
+.c29 {
+  width: calc(15px * 29);
+}
+.c30 {
+  width: calc(15px * 30);
+}
+.avancee {
+  margin: 0 !important;
+  height: inherit;
+  text-align: center;
+}
+.avancee.ethelred {
+  background: gray;
+}
+.avancee.lufkin {
+  background: cornflowerblue;
+}
+.avancee.pokeby {
+  background: rgb(106, 61, 114);
+}
+.avancee.wright {
+  background: indianred;
+}
+.avancee.summerbee {
+  background: goldenrod;
+}
+.avancee.grymm {
+  background: seagreen;
+}
+.deux_epreuve h2 {
+  font-family: var(--police_sst);
+  margin: 2rem 0 0 0;
+  line-height: 0.75rem;
+  color: var(--color_title);
+  border-bottom: 2px solid var(--color_title);
+  width: 100%;
+  text-align: center;
+}
+.deux_epreuve h3 {
+  font-family: var(--police_sst);
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--color_background3);
+  width: 100%;
+  text-align: center;
+}
+.timing {
+  font-size: 1rem;
+  color: var(--color_neg);
+}
+
+/* 3e epreuve - gif hadrian */
+
+.hadrian_lightbound {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  float: left;
+  margin: 0.25rem 0.5rem 0 0;
+}
 
 @media all and (max-width: 480px) {
-  
-.challenge_scores {
-  width: 360px;
-  margin: auto;
-  grid-gap: 0 0;
+  .challenge_scores {
+    width: 280px;
+    height:auto;
+    margin: auto;
+    grid-gap: 0 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 140px 1fr 50px 140px 1fr 50px;
+    grid-template-areas: "flamme_ethelred flamme_lufkin flamme_pokeby" 
+    "colonnes colonnes colonnes" 
+    "score_ethelred score_lufkin score_pokeby"
+    "flamme_wright flamme_summerbee flamme_grymm" 
+    "colonnes colonnes colonnes" 
+    "score_wright score_summerbee score_grymm";
+  }
+  .colonnes img {
+    max-width: 100%;
+    height: 60px;
+  }
+  .flammes img {
+    height: 80%;
+  }
+  .first {
+    margin-top: -37px;
+    height: 110% !important;
+  }
 }
-.colonnes img {
-  max-width:100%;
-  height:60px;
-}
-.flammes img {
-  height: 80%;
-}
-    }
