@@ -358,8 +358,9 @@ div.name.grymm {
     grid-template-areas: "flamme_ethelred flamme_lufkin flamme_pokeby" "colonnes colonnes colonnes" "score_ethelred score_lufkin score_pokeby" "flamme_wright flamme_summerbee flamme_grymm" "colonnes colonnes colonnes" "score_wright score_summerbee score_grymm";
   }
   .colonnes img {
-    max-width: 200%;
-    height: 110px;
+    max-width: 95%;
+    height: 145px;
+    object-position: 66% 50%;
   }
   .flammes img {
     height: 80%;
