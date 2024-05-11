@@ -519,6 +519,9 @@ wlnk a {
   #wzdgtop td {
     max-width:120px!important;
   }
+  .wzdgpost{
+    padding:10px 0;
+  }
   #wzdgtable td {
     max-width:200px!important;
   }
