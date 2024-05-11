@@ -11,7 +11,7 @@
   text-align: center;
   line-height:2.5rem;
 }
-.bloc_moodboard {
+.bloc_moodboard, .mb_bloc_grid_1 {
   margin: 0 auto;
   width: 400px;
   border-radius: 20px;
@@ -19,7 +19,7 @@
   border: 1px solid #ddd;
   padding: 10px;
 }
-.grid_moodboard {
+.grid_moodboard, .mb_bloc_grid_3 {
   height: 370px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -31,25 +31,25 @@
   overflow: hidden;
   border-radius: 15px;
 }
-.grid_one {
+.grid_one, .mb_area_grid_1 {
   grid-area: one;
 }
-.grid_two {
+.grid_two, .mb_area_grid_2 {
   grid-area: two;
 }
-.grid_three {
+.grid_three, .mb_area_grid_3 {
   grid-area: three;
 }
-.grid_four {
+.grid_four, .mb_area_grid_4 {
   grid-area: four;
 }
-.grid_five {
+.grid_five, .mb_area_grid_5 {
   grid-area: five;
 }
-.grid_six {
+.grid_six, .mb_area_grid_6 {
   grid-area: six;
 }
-.grid_seven {
+.grid_seven, .mb_area_grid_7 {
   grid-area: seven;
 }
 .link_moodboard {
@@ -66,7 +66,14 @@
 .grid_four img,
 .grid_five img,
 .grid_six img,
-.grid_seven img {
+.grid_seven img,
+.mb_area_grid_1 img,
+.mb_area_grid_2 img,
+.mb_area_grid_3 img,
+.mb_area_grid_4 img,
+.mb_area_grid_5 img,
+.mb_area_grid_6 img,
+.mb_area_grid_7 img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -74,10 +81,10 @@
 
 
 @media all and (max-width: 480px) {
-.bloc_moodboard {
+.bloc_moodboard, .mb_bloc_grid_1 {
   width: 280px;
 }
-.grid_moodboard {
+.grid_moodboard, .mb_bloc_grid_3 {
   height: 250px;
 }
 }
