@@ -503,6 +503,9 @@ wlnk a {
   max-width:300px;
   padding: 0;
 }
+.wzdgnumbz td{
+padding: 8px;
+}
 .wzdgtabpost {
   width: 300px;
   margin: 10px 0;
@@ -548,6 +551,6 @@ wlnk a {
 }
 .wzdgprtxt img, 
 .wzdgfolprev img {
-  max-height:30px;
+  max-height:20px;
 }
 }
