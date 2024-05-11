@@ -515,4 +515,8 @@ wlnk a {
   width: 260px;
   height: 260px;
 }
+
+#wzdgtable td {
+  max-width:150px!important;
+}
 }
