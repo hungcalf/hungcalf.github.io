@@ -46,7 +46,6 @@
     font-family: 'Abril Fatface', cursive !important;
     color: var(--color_title) !important;
     font-size: 50px !important;
-    line-height:48px;
     text-transform: uppercase !important;
     border: none !important;
     margin: 0 !important;
@@ -83,7 +82,6 @@
   .chineur-soustitre {
     font-family: Anton, sans-serif !important;
     font-size: 16px !important;
-    line-height: 14px;
     text-transform: uppercase;
     text-align: center;
     border: none !important;
@@ -151,4 +149,14 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     padding: 1rem;
+  }
+
+
+  @media all and (max-width: 480px) {
+  .chineur-titre {
+    line-height: 48px;
+  }
+  .chineur-soustitre {
+    line-height: 14px;
+  }
   }
