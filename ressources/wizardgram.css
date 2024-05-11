@@ -504,7 +504,7 @@ wlnk a {
   padding: 0;
 }
 .wzdgnumbz td{
-padding: 8px;
+padding: 8px!important;
 font-size:12px;
 }
 .wzdgtabpost {
