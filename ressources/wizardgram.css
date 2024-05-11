@@ -502,6 +502,9 @@ wlnk a {
   width: 300px;
   margin: 10px 0;
 } 
+.wzdgntab {
+  width:90px;
+}
   .wzdgpics,
   .bloc-wzginsta .liste-publications img {
     width:80px;
