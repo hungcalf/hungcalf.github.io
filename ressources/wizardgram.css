@@ -498,7 +498,8 @@ wlnk a {
   .wzdgfd {
     max-width:300px;
   }
-.wzdgnumbz {
+  .wzdgnumbz,
+  .wzdgnumbz table{
   max-width:300px;
   padding: 0;
 }
