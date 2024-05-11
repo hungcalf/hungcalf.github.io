@@ -519,4 +519,7 @@ wlnk a {
 #wzdgtable td {
   max-width:150px!important;
 }
+.wzdgtabpost {
+  width: 280px;
+} 
 }
