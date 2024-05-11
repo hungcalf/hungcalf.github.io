@@ -366,18 +366,23 @@ div.name.grymm {
     grid-area: colonnes;
     width: 100%;
   }
+  .colonnes img {   
+    padding: 0 10px;
+    height: 145px;
+    object-position: 66% 50%;
+  }
   .colonnes2 {
     display:unset;
     grid-area: colonnes2;
     width: 100%;
   } 
-  .colonnes img,
-  .colonnes2 img {   
+  .colonnes2 img  {
+    object-fit: cover;
     padding: 0 10px;
     height: 145px;
-    object-position: 63% 50%;
-  }
-
+    object-position: 66% 50%;
+    content: url(https://hungcalf.github.io/ressources/moodboards/colonnesx6.png);
+}
   
 .flamme_ethelred img {
   margin-left: 8px;
