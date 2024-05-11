@@ -507,19 +507,22 @@ wlnk a {
 }
 
 /* ancienne version */
+.wzdgfd {
+  max-width:300px;
+}
 .wzdgcomtxt {
   max-width:200px;
 }
 .bloc-wzginsta .image-post,
 .wzdgimgpost {
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 280px;
 }
 
 #wzdgtable td {
-  max-width:150px!important;
+  max-width:200px!important;
 }
 .wzdgtabpost {
-  width: 280px;
+  width: 300px;
 } 
 }
