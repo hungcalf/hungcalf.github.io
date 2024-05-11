@@ -85,6 +85,7 @@ p {
 }
 .details:last-of-type a {
     display: inline-block;
+    text-align: center;
 }
 .details img {
     width:50px;
@@ -94,4 +95,14 @@ p {
     margin:auto;
     object-fit: cover;
     filter: grayscale(1);
+}
+
+@media all and (max-width: 480px) {
+    .swiper-pagination-bullet {
+      width: 60px;
+      height: 60px;
+    }
+    .swiper {
+        padding-top: 80px;
+    }
 }
