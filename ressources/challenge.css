@@ -391,22 +391,31 @@ div.name.grymm {
   margin-left: -8px;
 }
 .flamme_wright img {
-  margin-left: 4px;
+  margin-left: 6px;
 }
 .flamme_summerbee img {
   margin-left: 2px;
 }
 .flamme_grymm img {
-  margin-left: 2px;
+  margin-left: -8px;
   }
-
   
-  /*
-  .flammes img {
-    height: 80%;
-  }
-  .first {
-    margin-top: -42px;
-    height: 115% !important;
-  }*/
+.ethelred {
+  margin-left: 12px;
+}
+.lufkin {
+  margin-left: 2px;
+}
+.pokeby {
+  margin-left: -9px;
+}
+.wright {
+  margin-left: 12px;
+}
+.summerbee {
+  margin-left: 8px;
+}
+.grymm {
+  margin-left: -9px;
+}
 }
