@@ -81,7 +81,7 @@
 
 
 @media all and (max-width: 480px) {
-.bloc_moodboard, .mb_bloc_grid_1 {
+.bloc_moodboard, .mb_bloc_grid_1, .mb_bloc_grid_2 {
   width: 280px;
 }
 .grid_moodboard, .mb_bloc_grid_3 {
