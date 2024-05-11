@@ -495,7 +495,7 @@ wlnk a {
 
 @media all and (max-width: 480px) {
 
-.wzdgfd {
+.wzdgfd, .wzdgnumbz {
   max-width:300px;
 }
 .wzdgtabpost {
@@ -538,7 +538,8 @@ wlnk a {
   flex-direction: column;
   align-items:center;
 }
+.wzdgprtxt img, 
 .wzdgfolprev img {
-  max-width:30px;
+  max-height:30px;
 }
 }
