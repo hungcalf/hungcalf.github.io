@@ -73,6 +73,10 @@
   content: url(https://hungcalf.github.io/ressources/moodboards/colonnesx6.png);
 }
 
+.colonnes2 {
+  display:none;
+}
+
 .score {
   font-weight: bold;
   font-size: 1.9rem;
@@ -359,10 +363,21 @@ div.name.grymm {
   }
 
   .colonnes {
-    grid-area: colonnes / colonnes2;
+    grid-area: colonnes;
     width: 100%;
   }
   .colonnes img {   
+    padding: 0 10px;
+    height: 145px;
+    object-position: 63% 50%;
+  }
+
+  .colonnes2 {
+    display:unset;
+    grid-area: colonnes2;
+    width: 100%;
+  }
+  .colonnes2 img {   
     padding: 0 10px;
     height: 145px;
     object-position: 63% 50%;
