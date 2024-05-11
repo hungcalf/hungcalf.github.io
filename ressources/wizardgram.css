@@ -528,4 +528,7 @@ wlnk a {
   flex-direction: column;
   align-items:center;
 }
+.wzdgfoltxt img {
+  max-width:50px;
+}
 }
