@@ -359,7 +359,7 @@ div.name.grymm {
   }
 
   .colonnes {
-    grid-area: colonnes colonnes2;
+    grid-area: colonnes / colonnes2;
     width: 100%;
   }
   .colonnes img {
