@@ -363,8 +363,8 @@ div.name.grymm {
     "score_wright score_summerbee score_grymm";
   }
   .colonnes img {
-    max-width: 100%;
-    height: 60px;
+    max-width: 200%;
+    height: 110px;
   }
   .flammes img {
     height: 80%;
