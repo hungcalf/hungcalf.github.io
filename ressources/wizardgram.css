@@ -494,35 +494,38 @@ wlnk a {
 
 
 @media all and (max-width: 480px) {
-  
+
+.wzdgfd {
+  max-width:300px;
+}
+.wzdgtabpost {
+  width: 300px;
+} 
   .wzdgpics,
   .bloc-wzginsta .liste-publications img {
     width:80px;
     height:80px;
   }
+
+  .bloc-wzginsta .image-post,
+  .wzdgimgpost {
+    width: 280px;
+    height: 280px;
+  }
+  .wzdgcomtxt {
+    max-width:200px;
+  }
   
+  #wzdgtable td {
+    max-width:200px!important;
+  }
+  
+  .wzdgact {
+    width:275px;
+  }
+
 .bloc-suivi-multiple {
   flex-direction: column;
   align-items:center;
 }
-
-/* ancienne version */
-.wzdgfd {
-  max-width:300px;
-}
-.wzdgcomtxt {
-  max-width:200px;
-}
-.bloc-wzginsta .image-post,
-.wzdgimgpost {
-  width: 280px;
-  height: 280px;
-}
-
-#wzdgtable td {
-  max-width:200px!important;
-}
-.wzdgtabpost {
-  width: 300px;
-} 
 }
