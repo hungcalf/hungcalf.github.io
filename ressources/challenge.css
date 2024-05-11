@@ -355,7 +355,12 @@ div.name.grymm {
     grid-gap: 0 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px 1fr 50px 140px 1fr 50px;
-    grid-template-areas: "flamme_ethelred flamme_lufkin flamme_pokeby" "colonnes colonnes colonnes" "score_ethelred score_lufkin score_pokeby" "flamme_wright flamme_summerbee flamme_grymm" "colonnes colonnes colonnes" "score_wright score_summerbee score_grymm";
+    grid-template-areas: "flamme_ethelred flamme_lufkin flamme_pokeby" "colonnes colonnes colonnes" "score_ethelred score_lufkin score_pokeby" "flamme_wright flamme_summerbee flamme_grymm" "colonnes2 colonnes2 colonnes2" "score_wright score_summerbee score_grymm";
+  }
+
+  .colonnes {
+    grid-area: colonnes colonnes2;
+    width: 100%;
   }
   .colonnes img {
     max-width: 95%;
