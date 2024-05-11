@@ -362,16 +362,36 @@ div.name.grymm {
     grid-area: colonnes / colonnes2;
     width: 100%;
   }
-  .colonnes img {
-    max-width: 95%;
+  .colonnes img {   
+    padding: 0 10px;
     height: 145px;
     object-position: 63% 50%;
   }
+
+  
+.flamme_ethelred img {
+  margin-left: 8px;
+}
+.flamme_pokeby img {
+  margin-left: -8px;
+}
+.flamme_wright img {
+  margin-left: 4px;
+}
+.flamme_summerbee img {
+  margin-left: 2px;
+}
+.flamme_grymm img {
+  margin-left: 2px;
+  }
+
+  
+  /*
   .flammes img {
     height: 80%;
   }
   .first {
     margin-top: -42px;
     height: 115% !important;
-  }
+  }*/
 }
