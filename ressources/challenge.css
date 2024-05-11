@@ -350,7 +350,7 @@ div.name.grymm {
 @media all and (max-width: 480px) {
   .challenge_scores {
     width: 280px;
-    height:auto;
+    background:#FFFFFF;
     margin: auto;
     grid-gap: 0 0;
     grid-template-columns: 1fr 1fr 1fr;
