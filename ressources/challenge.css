@@ -366,17 +366,12 @@ div.name.grymm {
     grid-area: colonnes;
     width: 100%;
   }
-  .colonnes img {   
-    padding: 0 10px;
-    height: 145px;
-    object-position: 63% 50%;
-  }
-
   .colonnes2 {
     display:unset;
     grid-area: colonnes2;
     width: 100%;
-  }
+  } 
+  .colonnes img,
   .colonnes2 img {   
     padding: 0 10px;
     height: 145px;
