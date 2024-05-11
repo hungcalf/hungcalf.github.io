@@ -495,8 +495,12 @@ wlnk a {
 
 @media all and (max-width: 480px) {
 
-.wzdgfd, .wzdgnumbz {
+  .wzdgfd {
+    max-width:300px;
+  }
+.wzdgnumbz {
   max-width:300px;
+  padding: 0;
 }
 .wzdgtabpost {
   width: 300px;
