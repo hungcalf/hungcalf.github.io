@@ -81,10 +81,13 @@
 
 
 @media all and (max-width: 480px) {
-.bloc_moodboard, .mb_bloc_grid_1, .mb_bloc_grid_2 {
-  width: 280px;
-}
-.grid_moodboard, .mb_bloc_grid_3 {
-  height: 250px;
-}
+  .bloc_moodboard, .mb_bloc_grid_1 {
+    width: 280px;
+  }
+  .mb_bloc_grid_2, .mb_bloc_grid_3 {
+    width:260px;
+  }
+  .grid_moodboard, .mb_bloc_grid_3 {
+    height: 250px;
+  }
 }
