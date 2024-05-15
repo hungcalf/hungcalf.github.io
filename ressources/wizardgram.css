@@ -151,6 +151,9 @@ margin: 0.25rem 0;
   height: 360px;
   margin:auto;
 }
+.image-post {
+  object-fit: cover !important;
+}
 
 .bloc-wzginsta .actions {
   width: 100%;
