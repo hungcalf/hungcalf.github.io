@@ -62,7 +62,7 @@
 /* page d'accueil */
 .bloc-wzginsta .profil-accueil {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2rem 3rem 1fr;
   grid-template-columns: 60px 1fr;
   grid-template-areas:
       "iconprofil pseudo"
@@ -92,6 +92,7 @@
   font-family: inherit;
 }
 .bloc-wzginsta .profil-accueil p {
+  max-width: 250px;
   font-size: initial;
   grid-area:description;
   margin: 0.25rem 0;
