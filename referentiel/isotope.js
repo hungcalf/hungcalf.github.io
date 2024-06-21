@@ -60,6 +60,7 @@ function inputbox() {
     SUBGLOBAL function : return normalized name
 */
 function tagName(name) {
+    console.log(name);
     return name
         .trim()
         .toLowerCase()
