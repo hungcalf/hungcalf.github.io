@@ -86,6 +86,7 @@ function setMembers() {
     membersLength = URLnumber;
     console.log(mbrs);
     console.log("members length : " + membersLength);
+    localStorage.setItem("Liste des membres de Hungcalf", mbrs);
     return mbrs;
 }
 
@@ -187,7 +188,6 @@ function setFaceclaim() {
 
                 //////////////////// CLONE ////////////////////
                 var cloned = setCloned(base.clone(), profile);
-                console.log("ajax call ok");
             }
         });
     }
