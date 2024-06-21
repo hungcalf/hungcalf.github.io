@@ -87,7 +87,8 @@ function setMembers() {
     console.log(mbrs);
     console.log("members length : " + membersLength);
     var mbrsList = JSON.stringify(mbrs);
-    localStorage.setItem("Liste des membres de Hungcalf", mbrsList);
+    console.log(mbrsList);
+    localStorage.setItem("Liste des membres de Hungcalf", mbrs);
     return mbrs;
 }
 
