@@ -12,7 +12,7 @@
     --h3: var(--color_background4); /*couleur sélection et liens navigation à gauche -> --color_link*/
 
     --l0: var(--color_background5); /*couleur survol texte liens -> --color_background3*/
-    --l2: var(--color_link); /*fond liens -> --color_background3*/
+    --l2: var(--color_title); /*fond liens -> --color_background3*/
     --h2: var(--color_background4); /*fond survol liens -> --color_link*/
 
     --background-body: var(--color_background2) /*couleur de fond -> --color_background4*/;
