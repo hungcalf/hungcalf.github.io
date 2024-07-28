@@ -1,18 +1,19 @@
 :root {
-  --police_titre: "Bavicka", cursive, bold;
-  --police_sst: "Champagne Limousines", "Montserrat", sans-serif;
-  --police_text: "Georgia", "Times New Roman", serif;
-  --color_text: #c0c0c0;
-  --color_neg: #333;
-  
-  --color_title: #d4af2b;
-    --color_link: #d7bd62;
-    --color_background1: #415841;
+  --police_titre: 'Bavicka', cursive, bold;
+  --police_sst: 'Champagne Limousines', 'Montserrat', sans-serif;
+  --police_text: 'Georgia', 'Times New Roman', serif;
+    --color_text: #d0d0d0;
+    --color_neg: #333;
+
+    --color_title: #f0df9a;
+    --color_link: #cb825b;
+    --color_background1: #04486c;
     --color_background2: #f0f0f0;
-    --color_background3: #4f724f;
-    --color_background4: #80b383;
+    --color_background3: #09547c;
+    --color_background4: #e39d64;
     --color_background5: #fff;
-    --color_fan: #cdaa84; 
+    --color_fan: #2e95b8;
+--gradient: linear-gradient(90deg, var(--color_background1) 0%, var(--color_background4) 100%); 
 
   --header_mobile: url("https://hungcalf.github.io/ressources/current_design/header.png");
   --fond_pa: url("https://hungcalf.github.io/ressources/current_design/paqeel.png");
