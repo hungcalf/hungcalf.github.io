@@ -608,6 +608,7 @@ center p {
   .fptiames { 
     width: 100%;
     height:auto;
+    background-position: top right;
   }
 
 }
