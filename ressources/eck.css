@@ -589,19 +589,18 @@ center p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: var(--police_titre);
   text-align: center;
 }
-.fptiames .gold1 {
-  color: #cfb246;
+.fptiames .entete {
   width: 100%;
   font-size: 1.7rem;
+  font-family: var(--police_titre);
 }
 .fptiames p {
   width: 100%;
   font-size: 1rem;
 }
-.fptiames .gold2 {
+.fptiames .gold {
   color: #cfb246;
 }
 
