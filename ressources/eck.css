@@ -8,24 +8,48 @@ lmn {
   font-weight: bold;
 }
 
-hdl {
+hdl,
+ddc {
   color: hotpink;
 }
 
 jqb {
-  color: rgb(161, 139, 161);
+  color: #a18ba1;
 }
 
 lmn {
   color: crimson;
 }
 
-aoc {
+aoc,
+bru {
   color: lightslategrey;
 }
 
 sam {
-  color: cornflowerblue;
+  color: teal;
+}
+
+cat {
+  color: #aa1155;
+}
+wywy {
+  color: #a37d55;
+}
+jer {
+  color: darkblue;
+}
+apsa {
+  color: #9999ff;
+}
+cam {
+  color: #cc99ff;
+}
+lew {
+  color: #990000;
+}
+tia {
+  color: #006600;
 }
 
 .maxw {
@@ -39,8 +63,8 @@ sam {
   flex-wrap: wrap;
   width: 450px;
   padding: 0;
-  margin:auto;
-  justify-content:center;
+  margin: auto;
+  justify-content: center;
 }
 .bloc-tel {
   position: relative;
@@ -193,7 +217,7 @@ details .lmn span {
   width: 250px;
 }
 
-/* Moodboards */
+/* Moodboards fêtes hung */
 
 .mb_entete {
   display: flex;
@@ -217,49 +241,6 @@ details .lmn span {
   color: var(--color_link);
   text-align: center;
 }
-/*
-.mb_bloc_grid_1 {
-  margin: 0 auto;
-  width: 400px;
-}
-.mb_bloc_grid_2 {
-  border-radius: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-.mb_bloc_grid_3 {
-  height: 400px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "one three six six" "one four four seven" "two five five seven" "two five five seven";
-  grid-gap: 10px;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.mb_area_grid_1 {
-  grid-area: one;
-}
-.mb_area_grid_2 {
-  grid-area: two;
-}
-.mb_area_grid_3 {
-  grid-area: three;
-}
-.mb_area_grid_4 {
-  grid-area: four;
-}
-.mb_area_grid_5 {
-  grid-area: five;
-}
-.mb_area_grid_6 {
-  grid-area: six;
-}
-.mb_area_grid_7 {
-  grid-area: seven;
-}*/
 
 /* RP Apsara */
 
@@ -538,61 +519,103 @@ details .lmn span {
 /* pensine/liens de James */
 
 .jqb_links {
-  opacity:0.5;
-  transition:0.2s all;
+  opacity: 0.5;
+  transition: 0.2s all;
 }
 .jqb_links:hover {
-  opacity:1;
+  opacity: 1;
 }
 .backficheint.pens_james h3 {
   background: url(https://i.servimg.com/u/f66/11/73/87/11/pngegg10.png) center;
-  margin-top:36px;
+  margin-top: 36px;
   line-height: 33px;
-  text-align:center;
+  text-align: center;
   width: 100%;
   height: 33px;
   background-size: 67px;
   background-position: 0% 17%;
   filter: contrast(0.7);
-  color:var(--color_title);
+  color: var(--color_title);
 }
-  .backficheint.pens_diane h3 {
-    margin-top: 1rem;
-    line-height: 33px;
-    text-align: left;
-    padding-left: 2rem;
-    width: 100%;
-    height: 3rem;
-    background-size: 160px!important;
-    filter: brightness(0.95) grayscale(0.25);
-    color: var(--color_title);
-    background: url(https://i.imgur.com/LGA0ufy.jpg) right;
-    background-repeat: no-repeat;
+.backficheint.pens_diane h3 {
+  margin-top: 1rem;
+  line-height: 33px;
+  text-align: left;
+  padding-left: 2rem;
+  width: 100%;
+  height: 3rem;
+  background-size: 160px !important;
+  filter: brightness(0.95) grayscale(0.25);
+  color: var(--color_title);
+  background: url(https://i.imgur.com/LGA0ufy.jpg) right;
+  background-repeat: no-repeat;
 }
 .charm {
-  width:50px;
-  height:50px;
-  object-fit:cover;
-  border-radius:60px;
-  padding:2px;
-  border:3px solid var(--color_fan);
-  margin-right:5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 60px;
+  padding: 2px;
+  border: 3px solid var(--color_fan);
+  margin-right: 5px;
 }
 .charm-desc {
-  align-self:center;
-  width:calc(100% - 65px);
+  align-self: center;
+  width: calc(100% - 65px);
 }
 center p {
-  word-spacing:30px;
+  word-spacing: 30px;
 }
-.pens_james center img, 
-.pens_diane center img, 
+.pens_james center img,
+.pens_diane center img,
 .pens_luan center img {
-  object-fit:cover;
-  height:200px;
-  width:80%;
+  object-fit: cover;
+  height: 200px;
+  width: 80%;
 }
 
+/* mariage BlackNsar */
+
+.fptiames {
+  width: 420px;
+  height: 300px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background: url("https://ewanouchka.github.io/hungcalf-img-store/mariage_tia_james.png") center no-repeat;
+  background-size: cover;
+  border: 1px solid #cfb246;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--police_titre);
+  text-align: center;
+}
+.fptiames .gold1 {
+  color: #cfb246;
+  width: 100%;
+  font-size: 1.7rem;
+}
+.fptiames p {
+  width: 100%;
+  font-size: 1rem;
+}
+.fptiames .gold2 {
+  color: #cfb246;
+}
+
+@media all and (max-width: 424px) {
+  .fptiames { 
+    width: 100%;
+    height:auto;
+  }
+
+}
+
+
+
+/* -- A REVOIR -- */
 
 /* Pour TdA */
 
@@ -617,24 +640,24 @@ andy {
   margin-right: 1rem;
 }
 
-:root { 
-  --andy_gradient:linear-gradient(45deg, var(--color_ordinary), var(--color_ordinary) 33%, #f0f0f0) 1;
+:root {
+  --andy_gradient: linear-gradient(45deg, var(--color_ordinary), var(--color_ordinary) 33%, #f0f0f0) 1;
 }
 .cookie_bloc {
-  border: .25rem solid;
+  border: 0.25rem solid;
   border-image: var(--andy_gradient);
   background: rgba(255, 255, 255, 0.075);
-  padding:1rem;
-  width:90%;
-  margin:auto;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 .cookie_titre {
   font-family: Georgia;
   font-size: 28px;
-    color: var(--color_ordinary);
+  color: var(--color_ordinary);
   font-weight: bold;
-  text-align:center;
+  text-align: center;
   margin: 1rem auto 0;
 }
 
@@ -649,21 +672,18 @@ andy {
 }
 
 .cookie_duo {
-  display:flex;
-  margin:0.5rem auto;
-  justify-content:space-around;
+  display: flex;
+  margin: 0.5rem auto;
+  justify-content: space-around;
 }
 .cookie_duo img {
-  width:45%;
-  height:150px;
-  object-fit:cover;
+  width: 45%;
+  height: 150px;
+  object-fit: cover;
   padding: 0.25rem;
   border: 1px solid #f0f0f0;
-  background:#000;
-  
+  background: #000;
 }
-
-
 
 /* A REVOIR -- FICHES ET ANNONCES */
 
