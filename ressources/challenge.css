@@ -365,8 +365,7 @@ div.name.grymm {
 }
 .flamme_victoire img {
   width: auto;
-  margin-top: -37px;
-  height: 140% !important;
+  height: 200px!important;
   object-fit: cover;
 }
 .colonne_victoire {
