@@ -361,10 +361,12 @@ div.name.grymm {
   align-items:center;
   width:150px;
   margin:auto;
+  background: linear-gradient(0deg, transparent 0%, #fff 50%, #fff 100%);
 }
 .flamme_victoire img {
   width: auto;
-  height: 110%;
+  margin-top: -37px;
+  height: 140% !important;
   object-fit: cover;
 }
 .colonne_victoire {
@@ -372,12 +374,12 @@ div.name.grymm {
   flex-direction:column;
   justify-content: center;
   align-items:center;
-  width:150px;
+  width:80px;
   margin:auto;
 }
 .colonne_victoire img {
   object-fit: cover;
-  object-position: 52% 50%;
+  object-position: 60% 50%;
   height: 144px;
   content: url(https://hungcalf.github.io/ressources/moodboards/colonnesx6.png);
 }
