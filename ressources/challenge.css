@@ -370,6 +370,7 @@ div.name.grymm {
   height: 200px!important;
   object-fit: cover;
   border-radius:5px 5px 0 0 ;
+  margin:0;
 }
 .colonne_victoire {
   display:flex;
