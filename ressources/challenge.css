@@ -79,7 +79,7 @@
 
 .score {
   font-weight: bold;
-  font-size: 1.9rem;
+  font-size: 22px;
   text-align: center;
   margin: 12px 0;
 }
@@ -112,7 +112,7 @@
   height: 140% !important;
 }
 .top_score {
-  font-size: 38px;
+  font-size: 32px;
   letter-spacing: -3px;
   margin-left: 0px;
 }
