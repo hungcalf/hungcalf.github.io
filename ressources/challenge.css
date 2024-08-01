@@ -351,6 +351,40 @@ div.name.grymm {
   margin: 0.25rem 0.5rem 0 0;
 }
 
+/* victoire finale */
+
+
+.bloc_victoire {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:150px;
+  margin:auto;
+}
+.flamme_victoire img {
+  width: auto;
+  height: 110%;
+  object-fit: cover;
+}
+.colonne_victoire {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:150px;
+  margin:auto;
+}
+.colonne_victoire img {
+  object-fit: cover;
+  object-position: 52% 50%;
+  height: 144px;
+  content: url(https://hungcalf.github.io/ressources/moodboards/colonnesx6.png);
+}
+
+
+/* ajustements mobile */
+
 @media all and (max-width: 480px) {
   .challenge_scores {
     width: 280px;
