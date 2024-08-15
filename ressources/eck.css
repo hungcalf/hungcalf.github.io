@@ -275,6 +275,7 @@ details .lmn span {
   grid-row: 2 / 3;
   z-index: 2;
   margin-top: 0;
+  text-align:center;
 }
 .link_moodboard > img {
   width: auto;
