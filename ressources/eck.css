@@ -296,6 +296,12 @@ details .lmn span {
     display:flex;
     flex-direction: column;
   }
+.japsa > img:first-child {
+  margin:auto;
+}
+.rp_japsa {
+  padding: 1rem;
+}
 }
 
 
