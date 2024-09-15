@@ -62,7 +62,7 @@
 }
 
 .bloc_lien {
-    opacity: 0.5;
+    opacity: 0.85;
   transition: 0.2s all;
   display: flex;
   align-items: center;
