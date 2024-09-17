@@ -1,19 +1,19 @@
 :root{
-    --m2: var(--color_background4); /*barres de défilement -> --color_link*/
-    --l3: var(--color_background4); /*sélection -> --color_link*/
+    --m2: var(--color_background4); /*barres de défilement */
+    --l3: var(--color_background4); /*sélection */
 
-    --d1: var(--color_background4); /*couleur titres (pseudos et petites infos) faceclaim à droite -> --color_link*/
-    --m1: var(--color_background5); /*barre soulignement titre -> --color_background3*/
-    --d2: var(--color_neg); /*couleur texte principal faceclaim à droite --> --color_neg*/
+    --d1: var(--color_background4); /*couleur titres (pseudos et petites infos) faceclaim à droite */
+    --m1: var(--color_background5); /*barre soulignement titre */
+    --d2: var(--color_neg); /*couleur texte principal faceclaim à droite */
 
-    --l1: var(--color_background1); /*fond navigation à gauche -> --color_background2*/
-    --d3: var(--color_background5); /*couleur titre navigation à gauche -> --color_background3*/
-    --d4: var(--color_background5); /*couleur texte principal navigation à gauche -> --color_background3*/
-    --h3: var(--color_background4); /*couleur sélection et liens navigation à gauche -> --color_link*/
+    --l1: var(--color_background1); /*fond navigation à gauche */
+    --d3: var(--color_background5); /*couleur titre navigation à gauche */
+    --d4: var(--color_background5); /*couleur texte principal navigation à gauche */
+    --h3: var(--color_title); /*couleur sélection et liens navigation à gauche */
 
-    --l0: var(--color_background5); /*couleur survol texte liens -> --color_background3*/
-    --l2: var(--color_title); /*fond liens -> --color_background3*/
-    --h2: var(--color_background4); /*fond survol liens -> --color_link*/
+    --l0: var(--color_background5); /*couleur survol texte liens */
+    --l2: var(--color_link); /*fond liens */
+    --h2: var(--color_background4); /*fond survol liens */
 
-    --background-body: var(--color_background2) /*couleur de fond -> --color_background4*/;
+    --background-body: var(--color_background2) /*couleur de fond */;
 }
