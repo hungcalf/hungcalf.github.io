@@ -4,7 +4,7 @@
 
     --d1: var(--color_background4); /*couleur titres (pseudos et petites infos) faceclaim à droite -> --color_link*/
     --m1: var(--color_background5); /*barre soulignement titre -> --color_background3*/
-    --d2: #333333; /*couleur texte principal faceclaim à droite*/
+    --d2: var(--color_neg); /*couleur texte principal faceclaim à droite --> --color_neg*/
 
     --l1: var(--color_background1); /*fond navigation à gauche -> --color_background2*/
     --d3: var(--color_background5); /*couleur titre navigation à gauche -> --color_background3*/
