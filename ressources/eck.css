@@ -304,9 +304,216 @@ details .lmn span {
 }
 }
 
+/* RP Sam */
+
+.samina, .samara {
+  width: 470px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.sam_boximg {
+  width: 190px;
+}
+.sam_entete {
+  width: 260px;
+  padding: 0 10px;
+}
+.sam_pic1 {
+  border-radius: 0px 35px 0px 35px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_pic2 {
+  border-radius: 35px 0px 35px 0px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_titre {
+  font-family: var(--police_titre);
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  color: var(--color_title);
+}
+.sam_perso {
+  font-family: var(--police_sst);
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.sam_chapeau {
+  color: var(--color_title);
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: var(--police_sst);
+  text-transform: uppercase;
+  line-height: 1.1rem;
+}
+.sam_rp {
+  width: 100%;
+  padding: 12px;
+  text-align: justify;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-left: 4px solid silver;
+  border-right: 4px solid silver;
+  border-radius: 35px 5px 35px 5px;
+  background: #ffffff;
+}
+.sam_lettrine {
+  font-family: var(--police_titre);
+  font-size: 2.25rem;
+  line-height: 2.75rem !important;
+  color: var(--color_title);
+  float: left;
+}
+
+/* pensine/liens de James */
+
+.jqb_links {
+  opacity: 0.5;
+  transition: 0.2s all;
+}
+.jqb_links:hover {
+  opacity: 1;
+}
+.backficheint.pens_james h3 {
+  background: url(https://i.servimg.com/u/f66/11/73/87/11/pngegg10.png) center;
+  margin-top: 36px;
+  line-height: 33px;
+  text-align: center;
+  width: 100%;
+  height: 33px;
+  background-size: 67px;
+  background-position: 0% 17%;
+  filter: contrast(0.7);
+  color: var(--color_title);
+}
+.backficheint.pens_diane h3 {
+  margin-top: 1rem;
+  line-height: 33px;
+  text-align: left;
+  padding-left: 2rem;
+  width: 100%;
+  height: 3rem;
+  background-size: 160px !important;
+  filter: brightness(0.95) grayscale(0.25);
+  color: var(--color_title);
+  background: url(https://i.imgur.com/LGA0ufy.jpg) right;
+  background-repeat: no-repeat;
+}
+.charm {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 60px;
+  padding: 2px;
+  border: 3px solid var(--color_fan);
+  margin-right: 5px;
+}
+.charm-desc {
+  align-self: center;
+  width: calc(100% - 65px);
+}
+center p {
+  word-spacing: 30px;
+}
+.pens_james center img,
+.pens_diane center img,
+.pens_luan center img {
+  object-fit: cover;
+  height: 200px;
+  width: 80%;
+}
+
+/* faire-part mariage BlackNsar */
+
+.fptiames {
+  width: 420px;
+  height: 300px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background: url("https://ewanouchka.github.io/hungcalf-img-store/mariage_tia_james.png") center no-repeat;
+  background-size: cover;
+  border: 1px solid #cfb246;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fptiames .entete {
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: var(--police_titre);
+}
+.fptiames p {
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+}
+.fptiames .gold {
+  color: #cfb246;
+}
+
+@media all and (max-width: 424px) {
+  .fptiames {
+    width: 100%;
+    height: auto;
+    background-position: top right;
+  }
+}
+
+/* signature Glad */
+
+.sgnglad {
+  margin:0 auto;
+  box-sizing:border-box;
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content:center;
+  max-width:470px;
+}
+.sgnglad * {
+  box-sizing:border-box;
+}
+.sgnglad img {
+  width:210px;
+  height:140px; 
+  object-fit:cover;
+  border:#fff 5px solid;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.4);
+  margin:0 5px;}
+.sgnglad_texte {
+  width:100%;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 14px;
+  line-height:15px;
+  border:#BDBBBB 1px dotted;
+  padding:5px;
+  background-color:#fff;
+  color:#504E4E;
+  text-align:center;
+  margin-top:-25px;
+}
 
 
-/* RP Apsara ancienne version */
+/* ANCIENNES VERSIONS A NE PAS SUPPR */
+/* RP Apsara */
 
 .bloc-apsa {
   width: 100%;
@@ -500,180 +707,6 @@ details .lmn span {
   font-size: 24px;
   text-shadow: 1px 1px 0.5px SlateGray;
   color: var(--color_title);
-}
-
-/* RP Sam */
-
-.samina {
-  width: 470px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-.sam_boximg {
-  width: 190px;
-}
-.sam_entete {
-  width: 260px;
-  padding: 0 10px;
-}
-.sam_pic1 {
-  border-radius: 0px 35px 0px 35px;
-  background: var(--color_fan);
-  object-fit: cover;
-  height: 80px;
-  width: 90px;
-  margin: 2px;
-  float: left;
-}
-.sam_pic2 {
-  border-radius: 35px 0px 35px 0px;
-  background: var(--color_fan);
-  object-fit: cover;
-  height: 80px;
-  width: 90px;
-  margin: 2px;
-  float: left;
-}
-.sam_titre {
-  font-family: var(--police_titre);
-  font-size: 24px;
-  text-shadow: 1px 1px 0.5px SlateGray;
-  letter-spacing: -1px;
-  margin-top: 15px;
-  color: var(--color_title);
-}
-.sam_perso {
-  font-family: var(--police_sst);
-  font-size: 15px;
-  text-transform: uppercase;
-  text-shadow: 0px;
-  letter-spacing: 2px;
-  margin: 10px 0px 0px;
-  color: var(--color_background3);
-}
-.sam_chapeau {
-  color: var(--color_title);
-  text-align: justify;
-  font-size: 0.75rem;
-  font-family: var(--police_sst);
-  text-transform: uppercase;
-  line-height: 1.1rem;
-}
-.sam_rp {
-  width: 100%;
-  padding: 12px;
-  text-align: justify;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
-  border-left: 4px solid silver;
-  border-right: 4px solid silver;
-  border-radius: 35px 5px 35px 5px;
-  background: #ffffff;
-}
-.sam_lettrine {
-  font-family: var(--police_titre);
-  font-size: 2.25rem;
-  line-height: 2.75rem !important;
-  color: var(--color_title);
-  float: left;
-}
-
-/* pensine/liens de James */
-
-.jqb_links {
-  opacity: 0.5;
-  transition: 0.2s all;
-}
-.jqb_links:hover {
-  opacity: 1;
-}
-.backficheint.pens_james h3 {
-  background: url(https://i.servimg.com/u/f66/11/73/87/11/pngegg10.png) center;
-  margin-top: 36px;
-  line-height: 33px;
-  text-align: center;
-  width: 100%;
-  height: 33px;
-  background-size: 67px;
-  background-position: 0% 17%;
-  filter: contrast(0.7);
-  color: var(--color_title);
-}
-.backficheint.pens_diane h3 {
-  margin-top: 1rem;
-  line-height: 33px;
-  text-align: left;
-  padding-left: 2rem;
-  width: 100%;
-  height: 3rem;
-  background-size: 160px !important;
-  filter: brightness(0.95) grayscale(0.25);
-  color: var(--color_title);
-  background: url(https://i.imgur.com/LGA0ufy.jpg) right;
-  background-repeat: no-repeat;
-}
-.charm {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 60px;
-  padding: 2px;
-  border: 3px solid var(--color_fan);
-  margin-right: 5px;
-}
-.charm-desc {
-  align-self: center;
-  width: calc(100% - 65px);
-}
-center p {
-  word-spacing: 30px;
-}
-.pens_james center img,
-.pens_diane center img,
-.pens_luan center img {
-  object-fit: cover;
-  height: 200px;
-  width: 80%;
-}
-
-/* faire-part mariage BlackNsar */
-
-.fptiames {
-  width: 420px;
-  height: 300px;
-  margin: auto;
-  padding: 2rem 1rem;
-  background: url("https://ewanouchka.github.io/hungcalf-img-store/mariage_tia_james.png") center no-repeat;
-  background-size: cover;
-  border: 1px solid #cfb246;
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.fptiames .entete {
-  width: 100%;
-  font-size: 1.7rem;
-  font-family: var(--police_titre);
-}
-.fptiames p {
-  margin: 0.5rem 0 0 0;
-  width: 100%;
-}
-.fptiames .gold {
-  color: #cfb246;
-}
-
-@media all and (max-width: 424px) {
-  .fptiames {
-    width: 100%;
-    height: auto;
-    background-position: top right;
-  }
 }
 
 /* -- A REVOIR -- */
