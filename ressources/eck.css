@@ -1,9 +1,12 @@
 /* Mes variables */
 
 hdl,
+ddc,
 aoc,
 jqb,
-lmn {
+lmn,
+sam,
+chan {
   font-family: Georgia;
   font-weight: bold;
 }
@@ -28,6 +31,10 @@ bru {
 
 sam {
   color: teal;
+}
+
+chan {
+  color: cornflowerblue;
 }
 
 cat {
