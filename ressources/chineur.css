@@ -7,14 +7,12 @@
   }
   
   .legende-gif {
-    font-family: 'Slabo 27px', serif;
     text-align: center;
     font-size: 10px;
     color: black;
   }
   
   .text-article {
-    font-family: 'Slabo 27px', serif;
     line-height: 14px;
     text-align: justify;
     font-size: 13px;
@@ -23,18 +21,21 @@
   }
   
   .chineur-bloc {
+    background: #f0f0f0;
     background-image: url(https://tinyurl.com/y59pur3e);
     border: 1px solid #DCDCDC;
     border-radius: 3px;
     line-height: 13px;
     text-align: center;
-    font-size: 1.4rem;
-    font-family: 'Slabo 27px', serif;
+    font-size: 1rem;
     padding-top: 3.5rem;
+    color:#333!important;
   }
   
   .chineur-bloc a {
     display: inline;
+    color:var(--color_background4)!important;
+    font-weight:bold;
     max-width: auto;
     overflow: auto;
     text-overflow: initial;
@@ -43,19 +44,21 @@
   
   .chineur-titre {
     font-family: 'Abril Fatface', cursive !important;
-    color: var(--couleur_titre) !important;
+    color: var(--color_title) !important;
     font-size: 50px !important;
     text-transform: uppercase !important;
     border: none !important;
     margin: 0 !important;
+    text-align:center;
   }
   
   .chineur-chapeau {
-    border-top: 1px solid var(--coul_texte) !important;
-    border-bottom: 1px solid var(--coul_texte) !important;
+    border-top: 1px solid var(--color_text) !important;
+    border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
-    font-size: 1.2rem;
-    font-family: bitter;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: var(--police_serif);
   }
   
   .chineur-bloc>section {
@@ -83,6 +86,7 @@
     text-align: center;
     border: none !important;
     margin-top: 1rem !important;
+    color: var(--color_background1)!important;
     width: 100%;
   }
   
@@ -135,14 +139,24 @@
     text-align: right;
     font-size: 0.9rem;
     text-transform: uppercase;
-    border-top: 1px solid var(--coul_texte) !important;
-    border-bottom: 1px solid var(--coul_texte) !important;
+    border-top: 1px solid var(--color_text) !important;
+    border-bottom: 1px solid var(--color_text) !important;
     margin: 1rem;
   }
   
   .chineur-react {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     padding: 1rem;
+  }
+
+
+  @media all and (max-width: 480px) {
+  .chineur-titre {
+    line-height: 48px;
+  }
+  .chineur-soustitre {
+    line-height: 14px;
+  }
   }

@@ -1,0 +1,55 @@
+/** CSS TELEPHONES **/
+
+.sms {
+    margin:0 auto;
+    min-height:70px;
+    font-family:helvetica,arial,sans-serif;
+    font-size:12px;
+    color:#333;
+}
+
+.sms__avatar {
+    float:left;
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:55px;
+    background:#eee;
+    padding-right:5px;
+}
+
+.sms__bloc {
+    margin:15px 85px;
+    padding-left:19px;
+    background:url(https://i.imgur.com/ari7avD.png)top left no-repeat;
+}
+
+.sms__texte {
+    line-height:145%;
+    background:#eee;
+    padding:10px;
+    border-radius:15px;
+    text-align:justify;
+}
+
+.sms__copyright {
+text-align:center;
+}
+
+.sms__copyright a {
+    text-decoration:none;
+    color:#bbb;
+    font-size:10px;
+}
+
+
+
+@media all and (max-width: 480px) {
+  
+
+.sms__bloc {
+    margin:15px 15px 15px 80px;
+    }
+        }
+
+    

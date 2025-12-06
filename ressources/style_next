@@ -1,0 +1,3420 @@
+/* DEBUT DE LA PARTIE A C/C DANS LA FICHE PARTENAIRE */
+
+/* pour rappeler des trucs... */
+:root {
+  --police_titre: "Bavicka", cursive, bold;
+  --police_sst: "Champagne Limousines", "Montserrat", sans-serif;
+  --police_text: "Georgia", "Times New Roman", serif;
+  --color_text: #c0c0c0;
+  --color_neg: #333;
+  --color_title: #a38e47;
+  --color_link: #b6a486;
+  --color_background1: #4e446d;
+  --color_background2: #f0f0f0;
+  --color_background5: #fff;
+  --color_fan: #639baf;
+  --color_background3: #6b658b;
+  --color_background4: #8896ba;
+
+  --header_mobile: url("https://hungcalf.github.io/ressources/current_design/header.png");
+  --fond_pa: url("https://hungcalf.github.io/ressources/current_design/paqeel.png");
+  --fond_codquot: url("https://hungcalf.github.io/ressources/current_design/background.png");
+  --img_top_sites: url("https://hungcalf.github.io/ressources/current_design/topsite.png");
+  --deco_profil: url("https://hungcalf.github.io/ressources/current_design/decoprofil.png");
+  --fleche_haut: url("https://hungcalf.github.io/ressources/current_design/arrow_top_off.png");
+  --fleche_bas: url("https://hungcalf.github.io/ressources/current_design/arrow_bottom_off.png");
+  --background: url("https://hungcalf.github.io/ressources/current_design/background.png");
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color_link);
+}
+
+/* Police divers */
+aa {
+  color: var(--color_title) !important;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+bb {
+  color: var(--color_background4) !important;
+  font-size: inherit;
+}
+/**:is(.backfiche) > bb{
+filter:brightness(165%);
+}*/
+
+cc {
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+  color: var(--color_background2);
+  display: inline-block;
+  padding: 2px 15px 3px;
+  margin: 1px;
+  background: linear-gradient(90deg, var(--color_background1) 0%, var(--color_background4) 100%);
+  transition: all 0.3s;
+  text-transform: lowercase;
+  border-radius: 5px;
+}
+cc:hover {
+  filter: brightness(120%);
+}
+ee {
+  color: var(--color_title) !important;
+  font-size: inherit;
+  display: inline;
+}
+
+/* FIN DU CODE A C/C DANS LA FICHE PARTENAIRE */
+
+* {
+  transition: 0.3s;
+}
+
+html {
+  background-image: var(--background);
+  background-position: center;
+  height: auto;
+}
+
+body {
+  font-family: var(--police_text);
+  font-size: 16px;
+  background-color: transparent;
+  margin-top: 42px !important;
+  margin-bottom: 0px;
+}
+::-webkit-scrollbar {
+  height: 3px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color_text);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color_background4);
+  border: 1px;
+  color: var(--color_link);
+  border-radius: 1px 1px 1px 1px;
+}
+
+#page-body {
+  overflow: hidden auto;
+}
+
+h3,
+.h3 {
+  font-family: var(--police_sst) !important;
+}
+/* LIENS ET BOUTONS */
+a {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none !important;
+  transition: 1s !important;
+  -moz-transition: 1s !important;
+  -webkit-transition: 1s !important;
+  -o-transition: 1s !important;
+  color: var(--color_background3);
+}
+
+a:hover,
+a:active {
+  color: var(--color_title) !important;
+  text-decoration: none !important;
+}
+
+a.forumtitle:link,
+a.forumtitle:visited {
+  font-weight: bold;
+  padding-left: 12px;
+  text-decoration: none !important;
+  transition: 1s !important;
+  -moz-transition: 1s !important;
+  -webkit-transition: 1s !important;
+  -o-transition: 1s !important;
+  color: var(--color_link);
+  font-family: var(--police_sst) !important;
+  font-size: inherit;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+a.forumtitle:hover,
+a.forumtitle:active {
+  letter-spacing: 1px;
+  font-weight: bold !important;
+  color: var(--color_link) !important;
+  text-decoration: none !important;
+}
+a.topictitle {
+  display: inline;
+}
+
+.mentiontag {
+  padding: 0;
+}
+
+.mentiontag:link,
+.mentiontag:visited {
+  color: var(--color_title);
+  background: transparent !important;
+  white-space: break-spaces;
+}
+
+.mentiontag:active,
+.mentiontag:hover {
+  background: transparent !important;
+}
+
+li.rightside {
+  color: var(--color_link) !important;
+}
+
+i[data-tooltip="Cacher"] {
+  color: var(--color_background2) !important;
+}
+
+/* boutons */
+.button,
+.button1,
+.button2,
+input[type="submit"] {
+  font-family: var(--police_sst) !important;
+  background-color: var(--color_link);
+  color: var(--color_background1);
+  font-size: 1.2rem;
+}
+
+.button,
+.button1,
+.button2 {
+  background: var(--color_link);
+}
+
+.button:hover,
+.button1:hover,
+.button2:hover,
+input[type="submit"]:hover {
+  background: var(--color_title);
+}
+
+.button1:active,
+.button1:link,
+.button1:visited,
+.button2:active,
+.button2:link,
+.button2:visited,
+.button:active,
+.button:link,
+.button:visited,
+input[type="submit"]:active,
+input[type="submit"]:link,
+input[type="submit"]:visited {
+  color: var(--color_background1);
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+}
+
+.button1:hover,
+.button2:hover,
+.button:hover,
+input[type="submit"]:hover {
+  color: var(--color_background5) !important;
+}
+
+.button + .button-round,
+.button + .button1,
+.button + .button2,
+.button1 + .button-round,
+.button1 + .button1,
+.button1 + .button2,
+.button2 + .button-round,
+.button2 + .button1,
+.button2 + .button2,
+input[type="submit"] + .button-round,
+input[type="submit"] + .button1,
+input[type="submit"] + .button2 {
+  margin-top: 0px;
+}
+
+.button-round {
+  margin: 6px !important;
+}
+
+.topic-actions.bottom .topic-actions-buttons > a,
+.topic-actions.bottom .topic-actions-buttons > span {
+  color: var(--color_background1);
+  vertical-align: middle;
+  margin: 5px 0 5px 18px;
+}
+
+.vf_jumpbox label,
+.jumpbox label,
+.quickmod label,
+.h3 {
+  color: var(--color_background1);
+}
+
+label:hover,
+label:focus-within,
+label:target,
+label:focus,
+label:active {
+  color: var(--color_fan) !important;
+}
+
+.inner .h3 {
+  color: var(--color_fan);
+}
+
+.pagination span a:active {
+  background-color: tranparent;
+}
+
+.pagination span a.pag-img img {
+  margin-bottom: 9px;
+  filter: invert(1);
+}
+
+.pagination span a.pag-img img:hover {
+  filter: invert(0);
+}
+
+.pagination span a:active,
+.pagination span a:link,
+.pagination span a:visited {
+  background-color: var(--color_link);
+}
+
+.row .pagination span a:active,
+.row .pagination span a:link,
+.row .pagination span a:visited {
+  background-color: var(--color_link);
+}
+
+.mark > input {
+  margin-top: 33%;
+}
+
+.button-round:active,
+.button-round:hover,
+.button-round:link,
+.button-round:visited {
+  background: var(--color_link);
+  color: var(--color_background1);
+}
+.button-round:hover,
+.button-round:active {
+  background: var(--color_title) !important;
+  color: var(--color_background5) !important;
+}
+
+a[href="/images"] {
+  display: none;
+}
+
+select {
+  color: var(--color_background5) !important;
+  background: linear-gradient(90deg, var(--color_background1) 0%, var(--color_background4) 100%);
+}
+
+/* "utilisateurs parcourant le forum" */
+#main-content {
+  color: var(--color_background1);
+}
+
+/* pour l'affichage de l'en-tête adaptative */
+#page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.adapt-header {
+  width: 964px;
+  height: 570px;
+  margin: auto;
+  background: transparent;
+  overflow: hidden;
+}
+
+#wrap {
+  font-size: 1rem;
+  width: 964px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 24px 12px 0;
+}
+
+/* pour raccourcir les url à rallonge */
+.postbody a {
+  display: inline-block;
+  max-width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+/* menu déroulant du bouton mentionner */
+#fa-mention {
+  background: url(https://i.servimg.com/u/f19/18/21/60/73/scemen10.png) no-repeat 3px 50% #fff;
+  padding-left: 22px;
+}
+
+/* INDEX */
+
+/* flèches haut/bas */
+.hautbas {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  z-index: 999;
+  display: flex;
+}
+
+.haut,
+.bas {
+  width: 50px;
+  height: 50px;
+  display: block;
+  transition-duration: 0.2s;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.haut {
+  content: var(--fleche_haut);
+}
+
+.bas {
+  content: var(--fleche_bas);
+}
+
+.haut:hover,
+.bas:hover {
+  filter: brightness(75%);
+  opacity: 1;
+}
+
+/* début mise en page affichage catégories et forums */
+
+table,
+td,
+th {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.onlinetable .row1 {
+  text-align: center;
+}
+
+.bodyline {
+  padding: 0px !important;
+}
+
+.bodylinewidth {
+  margin-top: 0px !important;
+  padding: 0px !important;
+  border: none;
+  background: transparent;
+}
+
+.forabg,
+.forabg.hidden,
+.forumbg,
+.block {
+  padding: 0.5rem;
+  border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  margin-top: 18px;
+  background-color: var(--color_background1) !important;
+  border-collapse: collapse;
+}
+
+ul.forums {
+  background: var(--color_background1);
+}
+
+li.row,
+li.row1,
+li.row2 {
+  transition: 1s;
+}
+
+li.row:hover,
+li.row1:hover,
+li.row2:hover {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 0 1px 0;
+}
+
+#logo {
+  margin-top: 0px;
+}
+
+.headerbar {
+  background: transparent !important;
+  padding-top: 0px !important;
+  height: auto;
+}
+
+.headerbar img {
+  border-width: 0px;
+  position: relative;
+  left: -36px;
+  width: 900px;
+}
+
+#cp-main table.table1 {
+  background-color: transparent;
+}
+
+#cp-main table.table1 thead th {
+  color: var(--color_text);
+}
+
+.linklist li {
+  margin: 0;
+}
+
+/* SUJETS */
+
+.i_icon_online {
+  position: relative;
+  top: -22px;
+  left: 149px;
+  transform: rotate(90deg);
+  filter: hue-rotate(70deg);
+}
+
+.online:before {
+  visibility: hidden;
+}
+
+.topic-title-container > strong {
+  border: none;
+}
+
+.topic-title-container {
+  width: 85%;
+  margin: -0.4rem 0 0.2rem;
+}
+
+/* lignes */
+hr {
+  opacity: 0.3;
+}
+
+.ligne1 {
+  border-bottom: 11px solid var(--color_link);
+}
+
+.ligne2 {
+  border-bottom: 1px solid var(--color_link);
+}
+
+.ligne3 {
+  border-bottom: 1px solid silver;
+}
+
+/* post header */
+.post-head {
+  background-color: var(--color_background3);
+  border-color: var(--color_title);
+  border-bottom: 10px;
+  font-size: 1rem !important;
+}
+
+.post-head .topic-date {
+  font-size: 0.9rem;
+  color: var(--color_background2);
+}
+
+.page-title {
+  background-color: transparent;
+  padding-left: 18px !important;
+  margin: 0px !important;
+  font-size: 1rem !important;
+}
+
+.post-head .profile-icons {
+  max-width: 40%;
+}
+
+/* LISTE DES SUJETS */
+.topicslist_row {
+  background: var(--color_link);
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-column-gap: 3px;
+  grid-template-columns: 10px 375px 20px 10px 152px;
+  grid-template-rows: 30px auto;
+  align-items: center;
+}
+
+.topicslist_row:last-child {
+  margin-bottom: 0;
+}
+
+.topicslist_row:hover {
+  background: var(--color_link);
+}
+
+.topics .lastpost-avatar {
+  padding: 0;
+  margin-top: -0.5rem;
+  float: right;
+}
+.topics .lastpost-avatar img {
+  max-height: 65px !important;
+}
+
+.topicslist-img {
+  width: auto !important;
+  height: 30px;
+  background: transparent;
+}
+
+.topictitle {
+  font-size: 1rem;
+}
+
+.topic_msgicon {
+  margin-right: 5px;
+}
+
+.topiclist-infos img {
+  margin-right: 3px;
+}
+
+.topicslist-stats {
+  text-align: right;
+}
+
+.topicslist-avatar-lastpost img {
+  object-fit: cover;
+  object-position: center;
+  width: auto !important;
+  height: 50px;
+  background: var(--color_link);
+}
+
+.topicslist-description {
+  grid-column: 1 / span 5;
+  border-top: 1px solid var(--color_link);
+  margin: 10px -10px 0;
+  padding: 5px 10px 0;
+}
+
+.post {
+  border-color: var(--color_background1);
+}
+
+/* marge de la ligne de liens du bas */
+.sub-header-info {
+  float: left;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* Début CODES FICHES */
+
+/* Police bottin des avatars + pl et scéna */
+bottin {
+  text-transform: lowercase;
+}
+
+libre {
+  color: seagreen;
+}
+pris {
+  color: crimson;
+}
+pnj {
+  color: var(--color_neg);
+}
+
+/* fiche de prez & co */
+.backfichehistoire {
+  padding: 10px;
+  border-radius: 3px;
+  line-height: 13px;
+  text-align: justify;
+  font-size: 1rem;
+  margin: auto;
+  height: 200px;
+  overflow: auto;
+}
+
+.backfiche {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #dcdcdc;
+  padding: 15px;
+  border-radius: 3px;
+  line-height: 13px;
+  text-align: justify;
+  font-size: 1rem;
+  margin: auto;
+  width: 525px;
+  max-width: 100%;
+}
+
+.backfiche table {
+  margin: auto;
+}
+
+.backficheint {
+  border-radius: 3px;
+  border: 1px var(--color_title) solid;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 13px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 495px !important;
+}
+
+.titre01 {
+  color: var(--color_link) !important;
+  margin-left: 10px;
+  margin-top: -3px;
+  display: block;
+  position: relative;
+  height: 10px;
+  font-family: var(--police_titre);
+  font-style: italic;
+  font-size: 1rem;
+  text-transform: lowercase;
+  transition: 0.5s;
+  text-shadow: 2px 2px 2px whitee;
+  text-align: center;
+}
+
+.titre01bis {
+  color: var(--color_background1) !important;
+  font-family: var(--police_titre);
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+  display: block;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.titre02 {
+  color: #a1a1a1 !important;
+  font-family: var(--police_text);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: boold;
+  margin-left: 10px;
+  margin: 5px 0px 5px 0px;
+  display: block;
+  background-color: #ffffff;
+  border-bottom: 1px dashed #bababa;
+  border-top: 1px dashed #bababa;
+}
+
+.soustitre {
+  color: var(--color_background3) !important;
+  font-family: var(--police_text);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  margin: 10px 0 -5px;
+  padding-top: 5px;
+  border-top: 1px var(--color_background3) solid;
+}
+
+.titre03 {
+  text-align: center;
+  color: var(--color_background1);
+  font-family: var(--police_text);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 4px;
+  padding-top: 2px;
+  display: block;
+  background-color: var(--color_link);
+  border-bottom: 1px solid var(--color_background1);
+}
+
+.titre03 > .mentiontag,
+.titre03 > .mentiontag:visited {
+  color: var(--color_background1);
+}
+
+.titre03 > .mentiontag:hover,
+.titre03 > .mentiontag:active {
+  color: var(--color_background1) !important;
+}
+
+.titre04 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--color_link);
+  margin-bottom: 3px;
+}
+
+.identitycard {
+  font-family: var(--police_titre);
+  font-size: 1rem;
+  line-height: 15px;
+}
+
+.citation {
+  color: #a4a4a4 !important;
+  font-family: var(--police_text);
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 2px;
+  text-transform: lowercase;
+  padding: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* sujet des groupes */
+
+.bloc_groupe {
+  display: flex;
+}
+.blasons {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.prez_groupe {
+  width: calc(100% - 150px);
+  text-align: center;
+  padding-top: 1rem;
+}
+.nom_groupe {
+  font-family: var(--police_titre);
+  font-size: 1.5rem;
+}
+.house {
+  font-family: var(--police_sst);
+  font-size: 2.5rem;
+}
+.description_groupe {
+  text-align: justify;
+  border-top: 1px solid var(--color_background4);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+.devise_groupe {
+  font-family: var(--police_sst);
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+}
+
+/* perso tempo + tableau d'affichage */
+.tempo {
+  min-height: 150px;
+}
+.tab_affichage {
+  float: left;
+  width: 100px;
+  margin: 5px;
+  padding-bottom: -1px;
+  padding-right: 5px;
+  margin-left: -1px;
+}
+
+/* Ajouts à l'univers */
+.ajout_fieldset {
+  border: 1px solid var(--color_link);
+  padding: 0 5px 5px 5px;
+  height: 75px;
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 12px;
+}
+
+.ajout_fieldset a {
+  font-size: 1rem;
+}
+
+.ajout_legend {
+  color: var(--color_title);
+  padding: 0 10px 2px 0;
+  font-size: 1.1em;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: var(--police_sst);
+}
+
+/* img fiche de pv + legende crédit */
+.bloc_img {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  margin: 0 0 0 10px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.8;
+  border-bottom: 1px solid #ccbe8e;
+}
+
+.legende_img {
+  position: absolute;
+  left: 0;
+  bottom: -1.7rem;
+  width: 200px;
+  height: 0;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  background: var(--color_link);
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  transition: all 0.7s;
+  opacity: 0.7;
+  padding-top: 7px;
+}
+
+.bloc_img:hover .legende_img,
+.bloc_img:focus .legende_img {
+  height: 4rem;
+}
+
+.roulette_pres {
+  width: 280px;
+  height: 320px;
+  overflow: auto;
+  text-align: justify;
+  font-size: 1rem;
+  padding-right: 8px;
+}
+
+.credit {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-family: var(--police_text);
+  color: var(--color_background1);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/* illustration de sujet solo */
+
+.illust_solo img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* duo d'images d'illustrations des sujets */
+
+.duo_illust {
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+}
+.duo_illust img {
+  width: 49%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* details / summary */
+
+details {
+  font-size: 1rem;
+  margin: auto;
+  border: none !important;
+  width: 90%;
+}
+summary {
+  font-family: var(--police_titre) !important;
+  font-size: 1.25rem !important;
+  color: var(--color_fan);
+  margin-top: 1rem !important;
+}
+summary::marker {
+  font-size: 0.9rem;
+  content: "— ";
+}
+summary:hover {
+  color: var(--color_title);
+}
+
+/* MESSAGES */
+div.postbody {
+  text-align: justify;
+  margin: 12px 230px 0 25px;
+  background: var(--color_background2);
+  color: var(--color_neg);
+  border-radius: 5px;
+  min-height: 575px;
+  padding: 12px 24px 12px 36px;
+}
+
+.content {
+  color: var(--color_neg);
+}
+
+.content *,
+.signature_div * {
+  max-width: 100%;
+}
+
+.postbody ul.profile-icons img {
+  background: var(--color_background2);
+  border-radius: 5px;
+}
+.postbody ul.profile-icons img:hover,
+.postbody ul.profile-icons img:active {
+  background: var(--color_link);
+}
+
+.postbody .content {
+  font-size: 1rem;
+}
+
+.content p {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.row1,
+.row2,
+.row3 {
+  background-color: var(--color_background1);
+}
+
+/* pour supprimer la ligne d'édité le */
+.edited-message {
+  display: none;
+}
+
+/* pour supprimer les bordures de tableaux */
+#preview .postbody table,
+#preview .postbody td,
+div[class*="post--"] .postbody table,
+div[class*="post--"] .postbody td {
+  border: 0px solid #444 !important;
+}
+
+/* code, quote, spoiler, pseudo-hide */
+
+dl {
+  margin-bottom: 12px !important;
+  margin-top: 12px !important;
+}
+
+dl.codebox {
+  background: var(--color_background2);
+  font-size: 1rem;
+  color: var(--color_neg);
+  margin: auto;
+}
+
+dl.codebox dt {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+dl.codebox:before {
+  font-size: 2rem;
+}
+dl.codebox code {
+  font-family: var(--police_serif);
+  font-size: 1rem;
+  color: var(--color_neg);
+  overflow: hidden auto;
+}
+
+/*-code selection-*/
+.selectCode {
+  float: right;
+  text-transform: lowercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+div.cont_code {
+  clear: right;
+}
+
+.codebox {
+  width: 450px;
+  max-width: 100%;
+}
+
+.spoiler_title {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.spoiler {
+  width: 500px;
+  max-width: 100%;
+}
+
+div.spoiler_content {
+  font-size: 1rem;
+}
+
+blockquote {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+blockquote:before {
+  content: none;
+}
+
+.profile-icons a,
+.profile-icons span {
+  box-shadow: none;
+  border: none;
+}
+
+/* bandeau d'annonce */
+#fa_ticker {
+  background-color: var(--color_background3);
+  border-radius: 5px;
+}
+
+#fa_ticker_block {
+  background-color: transparent !;
+  color: #c2c2c2;
+}
+
+#fa_ticker_block .module {
+  background-color: transparent;
+}
+
+.panel {
+  background: var(--color_background1);
+  padding: 18px 0 0 18px !important;
+  font-size: 1rem;
+}
+
+/* PROFIL */
+
+/* awards */
+
+#awards_gifts {
+  display: none;
+}
+
+h1.page-title2,
+h1.page-title2 a,
+h1.page-title2 a:visited {
+  font-family: var(--police_sst);
+  font-size: 2rem !important;
+  color: var(--color_background3);
+}
+h1.page-title2 a:hover,
+h1.page-title2 a:active {
+  color: var(--color_background3) !important;
+  filter: brightness(125%);
+}
+
+.annee_awards {
+  color: var(--color_fan);
+}
+
+/* feuille de personnage */
+
+.panel.bg1 p img {
+  height: 150px;
+  max-height: 150px;
+}
+
+.rpg_sheet {
+  width: 100%;
+}
+
+.rpg_hidden {
+  display: none;
+}
+
+/* page de profil */
+
+.column1 .h3,
+.column2 .h3 {
+  color: var(--color_text);
+}
+
+#tabs ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#tabs li a span,
+#tabs li a span:visited {
+  color: var(--color_link);
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 0 0.75rem;
+  margin: 1px 0.5rem;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--color_background1) 0%, var(--color_background4) 100%);
+  transition: all 0.3s;
+  text-transform: lowercase;
+}
+#tabs li a span:hover,
+#tabs li a span:active {
+  color: var(--color_link);
+  filter: brightness(120%);
+}
+
+.field_uneditable {
+  text-align: justify;
+}
+
+.field_uneditable img {
+  border: 10px;
+  margin: 0px;
+  -moz-border-radius: 4x;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background-color: transparent;
+  max-width: 200px;
+}
+
+div.field_uneditable a img {
+  max-height: 21px;
+}
+
+legend {
+  text-indent: 10px;
+}
+
+/* img sujets surveillés */
+.posts img {
+  max-width: 40px;
+}
+
+/* largeur notifications */
+html > body table.table1 {
+  width: 97%;
+}
+
+.right-box {
+  margin-right: 10px;
+}
+
+.left-box {
+  word-break: break-word;
+}
+
+/* page des brouillons */
+
+table.table1 tbody td {
+  padding: 3px;
+  font-size: 1rem;
+}
+
+/* dans les sujets */
+.bloc_id_poster {
+  background: #f5f5f5 var(--fond_blocava) bottom right no-repeat !important;
+  border: 0px solid silver;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 8px;
+}
+
+div.bloc_id_poster a img {
+  max-height: 21px;
+}
+
+img.i_icon_online {
+  height: 58px !important;
+  width: 58px !important;
+}
+
+td.gen.row1 img {
+  max-height: 21px;
+}
+
+.bloc_name_poster {
+  position: relative;
+  top: -10px;
+}
+
+.name_poster {
+  font-family: var(--police_titre) !important;
+  font-size: 1.2rem;
+  position: center;
+  z-index: 10;
+}
+
+.poster_img_avatar {
+  position: relative;
+  z-index: 1;
+}
+
+.poster_img_avatar img {
+  border: 0px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: 320px;
+  width: 200px;
+}
+
+.poster_img_rank {
+  max-height: 20px;
+  position: relative;
+  top: -10px;
+  color: #333333;
+  font-size: 1rem !important;
+  line-height: 0px;
+  z-index: 1;
+}
+
+.profile-icons a:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.ion-edit:before {
+  content: "\f2bf" !important;
+}
+
+.ion-quote:before {
+  content: "\f347" !important;
+  transform: rotate(180deg) !important;
+}
+
+.ion-trash-a:before {
+  content: "\f252" !important;
+}
+
+/* popup profil succinct au survol du tag */
+
+.tooltip-content,
+.tooltip-title,
+.tooltip-subtitle,
+.tooltip-counts {
+  font-family: var(--police_text);
+  font-size: 1rem;
+}
+
+.tooltip-content img {
+  border-radius: 5px;
+  height: 160px;
+  width: 100px;
+}
+
+/* IMAGES DIVERSES */
+
+/* img feuille perso */
+.montrerfeuilleperso {
+  height: 83px;
+  text-align: left;
+  overflow: hidden;
+  width: 195px;
+  padding: 6px;
+}
+
+.montrerfeuilleperso img {
+  position: center !important;
+  width: 175px;
+  height: 75px;
+  margin: 0 10px;
+  content: var(--deco_profil);
+}
+
+.montrerfeuilleperso textarea {
+  background-color: #f9f9f9 !important;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  height: 127px;
+  text-align: justify;
+  width: 185px !important;
+  margin-left: 3px;
+}
+
+/* image dans la page de profil */
+div .field_uneditable img {
+  max-width: 196px !important;
+}
+
+/* barre de liens du profil */
+span.gen a.mainmenu:link {
+  color: var(--color_link) !important;
+}
+
+span.gen a.mainmenu:visited {
+  color: var(--color_link) !important;
+}
+
+span.gen a.mainmenu:hover {
+  color: var(--color_link) !important;
+}
+
+span.gen a.mainmenu:active {
+  color: var(--color_link) !important;
+}
+
+/* derniers posts */
+span.lastpost-avatar {
+  max-width: 88px;
+}
+
+.lastpost-avatar {
+  float: none;
+  padding: 5px 1px;
+}
+
+.lastpost-avatar img {
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+  width: auto;
+  height: 140px;
+  opacity: 0.8;
+}
+
+.lastpost-avatar img:hover {
+  opacity: 1;
+}
+
+.lastpost-avatar:after {
+  content: none;
+  border: none;
+}
+
+.postprofile-avatar img {
+  margin-top: 24px;
+  border: 1px solid var(--color_background3);
+  border-radius: 5px;
+  height: 320px;
+  width: 200px;
+  position: relative;
+  left: -8px;
+}
+
+td.avatar-mini img {
+  object-fit: cover;
+}
+
+.postprofile {
+  width: 220px;
+  padding: 18px 6px;
+  font-size: 1.2rem;
+}
+
+.postprofile-rank {
+  border: none;
+  font-size: 1rem;
+}
+
+.postprofile-info {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  background-size: 115%;
+  font-size: 1rem;
+  overflow-y: auto;
+  max-height: 400px;
+  overflow-x: hidden;
+  border: 1px solid var(--color_background3);
+  border-radius: 5px;
+  height: 220px;
+  width: 210px;
+  position: relative;
+  left: -8px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.postprofile-info img {
+  max-width: 195px;
+}
+
+.postprofile-contact img {
+  height: auto;
+}
+
+div.postprofile dd a {
+  filter: brightness(1.5);
+}
+
+/* bloc de valid de la sign */
+#cp-main .panel.sig {
+  background: transparent;
+}
+
+/* AFFICHAGE DES CATEGORIES ET SUJETS */
+h1,
+h2,
+.maintitle {
+  font-size: 2.5rem !important;
+}
+
+#h1-category {
+  font-family: var(--police_titre);
+  font-weight: lighter;
+}
+
+/* barre de titre et arborescence liens au-dessus des catégories */
+h1.page-title,
+h1.page-title a,
+h1.page-title a:visited {
+  font-family: var(--police_sst);
+  font-size: 2rem !important;
+  color: var(--color_background3);
+}
+h1.page-title a:hover,
+h1.page-title a:active {
+  color: var(--color_background3) !important;
+  filter: brightness(125%);
+}
+/*.sub-header-path {
+      font-size:1.1em;
+}*/
+.sub-header-path a,
+.sub-header-path a:visited {
+  color: var(--color_background3);
+  font-family: var(--police_sst);
+  font-size: 1.1em !important;
+}
+.sub-header-path a:hover,
+.sub-header-path a:active {
+  color: var(--color_background3) !important;
+  filter: brightness(125%);
+}
+.sub-header-info aa,
+.sub-header-path aa {
+  color: var(--color_background4) !important;
+}
+div.sub-header-path a.nav {
+  font-size: 16px !important;
+}
+
+/* bouton partage et plus */
+.topic-actions,
+.topic-actions a,
+.topic-actions a:visited {
+  color: var(--color_title);
+}
+.topic-actions:hover,
+.topic-actions a:hover,
+.topic-actions a:active {
+  color: var(--color_background4) !important;
+}
+
+h2.topic-title {
+  color: var(--color_title);
+  text-transform: lowercase;
+  font-size: 1rem !important;
+}
+
+.hierarchy {
+  border: none;
+  display: inline;
+  font-size: 1.3rem !important;
+  text-transform: lowercase;
+}
+
+.post h2.topic-title a {
+  color: var(--color_link);
+}
+
+.secondarytitle h2,
+.cattitle,
+.maintitle h1 {
+  color: var(--color_title) !important;
+  font-family: var(--police_sst) !important;
+  font-size: 1rem;
+}
+
+.panel h2,
+.content h2 {
+  color: var(--color_text);
+}
+.content h2.h3,
+.panel h2.h3 {
+  font-size: 1.05rem !important;
+  font-weight: 500;
+}
+
+table.table1 thead th {
+  color: var(--color_text);
+  font-size: 1rem;
+}
+
+.span.title,
+div.title,
+.title,
+.nav a {
+  font-family: var(--police_sst) !important;
+  font-size: 1rem !important;
+}
+
+.td.row2,
+td.row1 {
+  font-size: 1rem;
+}
+
+#info_open td.row1,
+#info_close td.row1 {
+  background: transparent !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+ul.topics .row dd.dterm,
+ul.topics .row dt {
+  padding: 0px;
+  padding-right: 62px;
+  position: relative;
+  top: 0;
+  width: 67%;
+}
+
+li.row dd.lastpost {
+  width: 25%;
+}
+
+ul.topics dt {
+  width: 100% !important;
+}
+
+.topic-author {
+  line-height: 16px;
+  margin-top: 8px;
+}
+
+ul.topiclist dd {
+  padding: 0px;
+}
+
+ul.topiclist dl {
+  display: flex;
+}
+.topics .row .lastpost {
+  padding: 0px 18px !important;
+}
+
+ul.topiclist dd.repvue {
+  line-height: 1.35rem;
+  padding-top: 1.35rem;
+  text-align: center;
+  font-size: 1rem;
+  width: 75px;
+}
+
+/* titre catégorie et sujet */
+h1.cattitle {
+  position: relative;
+  top: 20px;
+}
+
+.btn-collapse {
+  top: 0px;
+}
+
+.btn-collapse i {
+  color: var(--color_background2);
+}
+
+ul.topiclist.forums div.dterm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul.topiclist dd.dterm,
+ul.topiclist dt {
+  padding: 10px;
+  width: 60%;
+}
+
+li.header dl.icon dd.dterm,
+li.header dl.icon dt {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+  width: 828px;
+}
+
+dl.icon {
+  background-position: left 24px top 40%;
+}
+
+li.header dt,
+.table-title h2 {
+  font-family: var(--police_titre);
+  font-size: 1.5rem !important;
+  font-weight: lighter !important;
+  text-transform: lowercase;
+  text-align: center;
+  width: 828px;
+}
+
+.titrecaté {
+  font-family: var(--police_titre);
+  font-size: 1.1em;
+}
+
+li.header dd {
+  color: var(--color_background2);
+}
+
+ul.pmlist dt {
+  padding-left: 81px !important;
+}
+div.last_post span.gensmall {
+  font-size: 1rem;
+}
+.titrecaté {
+  text-transform: lowercase;
+}
+
+/* bas des blocs de sujets et catégories */
+.catBottom {
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
+  border-top: 2px dotted #fff !important;
+  height: 29px;
+  background: var(--fond_blocava) bottom no-repeat !important;
+}
+
+.curr_privmsg {
+  opacity: 1;
+}
+
+/* page message privés */
+#privmsgs-menu {
+  float: left;
+  padding: 0 9px;
+  background: var(--color_background1);
+  font-size: 1rem;
+}
+
+#privmsgs-menu a {
+  display: block;
+  line-height: 18px;
+  margin-top: 3px;
+  padding-top: 0;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.right-box a,
+.right-box a:visited {
+  color: var(--color_fan);
+}
+
+.right-box a:active,
+.right-box a:hover {
+  color: var(--color_background4) !important;
+}
+
+.mark {
+  font-family: var(--font_txt) !important;
+  font-size: smaller !important;
+}
+
+li.row:hover,
+li.row1:hover,
+li.row2:hover {
+  background: inherit;
+}
+
+ul.pmlist dt {
+  font-size: 1rem;
+}
+
+/* pour rendre au premier message d'histo son opacité normale */
+
+/* mise en forme sur la page d'accueil */
+.bloc_cat {
+  display: block;
+  margin: 0px;
+}
+
+.recap_cat {
+  width: 598px;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  height: 140px;
+  background-color: var(--color_background3) !important;
+  border-radius: 0.5rem;
+}
+
+.titre_hier {
+  font-family: var(--police_sst) !important;
+  font-size: 1rem !important;
+  text-align: center;
+  line-height: 20px;
+}
+
+.titre_recap_sujet {
+  line-height: 20px;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  background-color: var(--color_background3) !important;
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+}
+
+div.recap_sujet span {
+  padding: 8px 0;
+}
+
+.recap_sujet {
+  position: relative;
+  width: 210px;
+  height: 140px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+  background-color: var(--color_background3) !important;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  border-radius: 0.5rem;
+  float: right;
+}
+
+.img_sujet {
+  position: absolute;
+  /*bottom: 5px;*/
+  bottom: 0;
+  left: 5px;
+  width: 200px;
+  opacity: 0.7;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  /*border: 1px solid var(--color_background1);
+border-radius: 5px;*/
+}
+
+.img_sujet:hover {
+  opacity: 1;
+}
+
+.list_ssfo {
+  width: 590px;
+}
+
+.sousForums {
+  float: left;
+  width: 180px;
+  height: 112px;
+  font-size: 0;
+  overflow: auto;
+  border-radius: 3px;
+  border: 1px var(--color_background4) solid;
+}
+
+.sousForums a {
+  display: block;
+  color: var(--color_link) !important;
+  font-family: var(--police_sst);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sousForums a:nth-child(2n) {
+  color: var(--color_title) !important;
+}
+
+.sousForums a:hover {
+  text-decoration: underline overline !important;
+}
+
+.desc_cat {
+  float: left;
+  height: 112px;
+  width: 403px;
+  overflow: auto;
+  border-radius: 3px;
+  border: 1px var(--color_background4) solid;
+  line-height: 13px;
+  padding: 4px;
+  text-align: justify;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.desc_cat .gen,
+.desc_cat .genmed,
+.desc_cat .gensmall {
+  font-size: 1rem;
+  color: #a6a6a6 !important;
+}
+
+.list_mod {
+  font-size: 1rem !important;
+  text-align: left;
+  position: relative;
+  top: -15px;
+  width: 100%;
+}
+
+/* SUJETS */
+ul.topiclist.bg_none {
+  background: var(--color_background3);
+}
+
+ul.topics dd.dterm {
+  position: relative;
+  top: 22px;
+  left: 70px;
+  line-height: 26px;
+}
+
+.row dd.repvue {
+  line-height: 20px;
+  padding-top: 0px !important;
+  text-align: center;
+  width: 60px;
+}
+
+.liste_sujet {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 400px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: var(--color_link) !important;
+  transition: 1s;
+  box-shadow: 0px 0px 25px #d3c8b6 inset;
+  border-radius: 5px;
+}
+
+.liste_sujet_right {
+  position: relative;
+  height: 70px;
+  width: 230px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: rgba(235, 235, 235, 0.3) !important;
+  transition: 1s;
+  box-shadow: 0px 0px 25px #d3c8b6 inset;
+  border-radius: 5px;
+}
+
+.liste_sujet_right:hover {
+  background: rgba(235, 235, 235, 0.7) !important;
+}
+
+/* titre dans la FAQ */
+dl.faq dt {
+  font-family: var(--police_titre);
+  color: var(--color_title);
+}
+
+/* TEXT AREA + AVATAR */
+.textarea,
+.sceditor-container,
+textarea#text_editor_textarea {
+  max-width: 565px !important;
+  margin-top: 4px !important;
+  font-size: 1rem !important;
+  background: #f7f7f7 !important;
+  color: var(--color_neg);
+  font-family: var(--police_text) !important;
+}
+
+.sceditor-container iframe,
+.sceditor-container textarea {
+  font-size: 1rem !important;
+  font-family: var(--police_text) !important;
+}
+
+#message-box textarea {
+  color: initial;
+}
+
+.sceditor-toolbar {
+  max-width: 565px !important;
+  background: #f7f7f7 !important;
+}
+
+#quick_reply {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background: var(--color_background1);
+}
+
+#textarea_content {
+  width: fit-content !important;
+  margin: 1rem 0 0 0 !important;
+  padding: 0;
+}
+#quick_reply div.sceditor-container {
+  clear: none;
+}
+
+textarea.inputbox {
+  max-width: 300px !important;
+  font-size: 1rem;
+  font-family: var(--police_text);
+}
+.inputbox {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem !important;
+}
+
+#quick_reply > div:nth-child(3) {
+  text-align: center;
+  margin: 20px;
+}
+
+#av_quickreply {
+  margin: auto 10px;
+}
+
+#av_quickreply img {
+  border-radius: 0.5rem;
+  width: 130px;
+}
+
+/* affichage page de post */
+#smiley-box,
+.smile-status-box {
+  width: 220px;
+  margin-right: 18px;
+  margin-top: 5px;
+}
+
+#sce_smilies_body {
+  background-color: var(--color_background1);
+}
+
+#message-box #textarea_content {
+  width: 565px !important;
+}
+
+#quick_reply #textarea_content {
+  background: var(--color_background1);
+}
+
+/* bloc liens avant qeel */
+.linklist {
+  border: none;
+}
+
+/* QEEL */
+.blocqeel {
+  height: 325px;
+  display: flex;
+  justify-content: center;
+}
+
+.bloc_qeell {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  position: relative;
+  height: 290px;
+  width: 240px;
+  font-size: 1rem;
+  color: var(--color_text);
+}
+
+.div_online {
+  background-color: var(--color_background3);
+  border-radius: 0.5rem;
+  display: inline-block;
+  line-height: 1rem;
+  padding: 4px;
+  text-align: justify;
+  vertical-align: top;
+  position: relative;
+  height: 130px;
+  width: 240px;
+  overflow: auto;
+}
+.div_online a {
+  display: inline !important;
+}
+
+.div_welc {
+  height: 160px;
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "avatar name" "avatar bienvenue";
+  align-items: center;
+}
+
+.gr_welc {
+  font-family: var(--police_serif);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 6px 0;
+  line-height: 0.9rem;
+  font-style: italic;
+  grid-area: bienvenue;
+}
+
+div#avatar_dernier_membre {
+  float: left;
+  margin-right: 6px;
+  width: 100px !important;
+  height: 160px !important;
+  overflow: hidden;
+  background: silver;
+  border-radius: 5px;
+  grid-area: avatar;
+}
+
+#avatar_dernier_membre img {
+  width: 100px !important;
+  height: 160px !important;
+  overflow: hidden;
+  opacity: 0.7;
+  border: 5px solid var(--color_background4);
+  box-shadow: 0 0 25px var(--color_background4);
+  object-fit: cover;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+#avatar_dernier_membre img:hover {
+  opacity: 1;
+}
+
+span#dernier_membre {
+  display: block;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 3px;
+  margin: 6px 0;
+  text-align: center;
+  grid-area: name;
+}
+
+.statistics {
+  overflow: visible;
+}
+
+.statistics .wrap:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.paqeel {
+  background: var(--color_background1) var(--fond_pa) center;
+  background-size: cover;
+}
+
+.bloc_grcopy {
+  border-radius: 0.5rem;
+  line-height: 20px;
+  margin: 10px;
+  width: 40%;
+  height: 295px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.guide {
+  font-family: var(--police_titre);
+  font-size: 1.3rem;
+  font-weight: lighter !important;
+  color: var(--color_background2);
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.div_gr_icon {
+  height: 120px;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div_gr_icon img {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+}
+
+.bloc_img_gr {
+  position: relative;
+  width: 40x;
+  margin-right: 9px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.bloc_comm_gr {
+  position: absolute;
+  top: 25px;
+  left: -23px;
+  z-index: 12;
+  width: 85px;
+  background-color: var(--color_background1);
+  border-radius: 5px;
+  border: 1px solid var(--color_background2);
+  padding: 3px;
+  font-size: 0.85rem;
+  margin: 0;
+  font-family: var(--police_text);
+  line-height: 9px;
+  text-align: center;
+  display: none;
+  opacity: 0.8;
+}
+
+.bloc_img_gr:hover > .bloc_comm_gr {
+  display: block;
+}
+
+.bloc_copy {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color_neg);
+  padding: 0.5rem 5px;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: solid 1px var(--color_background2);
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.bloc_copy bb {
+  margin: 0rem 0 -0.5rem 0;
+  display: block;
+  color: var(--color_background1) !important;
+}
+
+.bloc_qeelr {
+  background-color: var(--color_background3);
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 10px;
+  padding: 4px;
+  text-align: justify;
+  vertical-align: top;
+  position: relative;
+  height: 295px;
+  width: 240px;
+  overflow: auto;
+  color: var(--color_text);
+}
+
+.bloc_qeelr a {
+  display: inline !important;
+}
+
+.bottom_copy {
+  width: 952px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 10px;
+}
+/* FIN DU QEEL */
+
+/* PIED DE PAGE */
+
+div#page-footer {
+  background-color: var(--color_background2);
+  border: 1px solid silver;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0px !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--color_background1) !important;
+  font-size: 1rem !important;
+}
+
+#page-footer .wrap {
+  max-width: 850px;
+}
+
+.footerbar-system,
+.copyright,
+.footerbar-user {
+  color: var(--color_text);
+  font-size: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.footer-home {
+  width: 95px;
+}
+
+.footerbar-system .rightside {
+  color: var(--color_background1) !important;
+  width: calc(100% - 100px);
+}
+
+.footerbar-system a,
+.copyright a {
+  color: var(--color_background3);
+}
+.footerbar-system a:hover,
+.copyright a:hover {
+  color: var(--color_background4);
+}
+.footerbar-user .rightside {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+ul.footerbar-user li.rightside a.copyright {
+  font-family: var(--police_titre);
+  font-size: 1.75rem;
+  color: var(--color_background3) !important;
+  filter: brightness(125%);
+  text-align: center;
+  width: 100%;
+  font-weight: lighter;
+}
+
+.bloc-partenaires {
+  width: 100%;
+  height: 100px;
+}
+
+/* Début de la TOOLBAR */
+div#fa_toolbar {
+  transition: 300ms all ease;
+  opacity: 0.95;
+  background-color: var(--color_background3) !important;
+  border-radius: 0 0 20px 20px !important;
+  margin: auto;
+  width: 100% !important;
+  font-size: 1rem !important;
+  z-index: 900 !important;
+}
+
+div#fa_toolbar div,
+div#fa_toolbar span {
+  margin: 0 5px;
+}
+
+#fa_menu #fa_welcome,
+#fa_right a.rightHeaderLink {
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+  color: var(--color_background5) !important;
+}
+
+div#fa_search,
+span#fa_share,
+#fa_left,
+#fa_hide,
+a#fa_hide {
+  display: none !important;
+}
+
+#fa_right {
+  float: left !important;
+  z-index: 900 !important;
+  position: relative;
+  left: 0px;
+  font-size: 1rem;
+}
+
+.fa_avatar {
+  float: left;
+  position: relative;
+  left: -15px;
+  z-index: 998;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 7px solid;
+  border-color: var(--color_background3);
+}
+
+.fa_avatar img {
+  width: 45px;
+}
+
+#fa_share_text,
+#fa_service,
+#fa_welcome,
+#fa_notifications {
+  font-size: 1rem !important;
+  font-family: var(--police_text);
+  text-transform: uppercase;
+  line-height: -20px;
+  letter-spacing: 1px;
+  color: var(--color_text) !important;
+  font-weight: bold;
+}
+
+a#fa_welcome,
+a#fa_notifications,
+a#fa_welcome:visited,
+a#fa_notifications:visited {
+  background: transparent !important;
+  color: var(--color_title) !important;
+}
+
+a#fa_welcome:hover,
+a#fa_notifications:hover,
+a#fa_welcome:active,
+a#fa_notifications:active {
+  background: transparent !important;
+  color: var(--color_link) !important;
+}
+
+#fa_toolbar #fa_right #notif_list {
+  background: var(--color_background3) !important;
+  border: none !important;
+  color: var(--color_text) !important;
+  padding-right: 10px;
+}
+
+#fa_menulist {
+  background-color: var(--color_background3) !important;
+  font-size: 1rem !important;
+  font-variant: small-caps;
+  min-width: 340px;
+}
+
+#fa_menu ul {
+  background-color: var(--color_background3) !important;
+  font-size: 1rem !important;
+}
+
+#fa_menu:hover :visited,
+#fa_toolbar > #fa_right.notification > #fa_notifications {
+  background: transparent !important;
+  font-size: 1rem !important;
+}
+
+#fa_right.welcome #fa_menu #fa_welcome {
+  background: transparent !important;
+  font-size: 1rem !important;
+}
+
+#fa_menulist a {
+  font-size: 1rem !important;
+  font-variant: small-caps;
+  color: var(--color_title) !important;
+}
+
+ul#fa_menulist {
+  background: var(--color_background3) !important;
+  border: 0;
+  border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  -o-border-radius: 0px 0px 3px 3px;
+  color: var(--color_text) !important;
+  font-size: 1rem !important;
+  font-variant: small-caps;
+  position: absolute;
+  left: 95px !important;
+  top: 40px;
+}
+
+#fa_usermenu {
+  font-size: 1rem !important;
+  color: var(--color_background2);
+}
+
+#fa_usermenu table {
+  font-size: 1rem !important;
+  margin-left: 8px;
+}
+
+#fa_usermenu table .first {
+  font-size: 1rem !important;
+  color: var(--color_title) !important;
+  margin-left: -20px;
+}
+
+#fa_usermenu table .bold {
+  font-size: 1rem !important;
+}
+
+#fa_ranktitle {
+  font-size: 1rem !important;
+}
+
+#fa_usermenu li {
+  font-size: 1rem !important;
+}
+
+#fa_usermenu img {
+  max-width: 100px !important;
+  max-height: 160px !important;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+#fa_usermenu img:hover {
+  opacity: 1;
+}
+
+#fa_menulist:link {
+  color: var(--color_title) !important;
+}
+
+#fa_menulist:visited {
+  color: var(--color_title) !important;
+}
+
+#fa_menulist:hover {
+  color: var(--color_link) !important;
+}
+
+#fa_menulist a:link {
+  color: var(--color_title) !important;
+}
+
+#fa_menulist a:visited {
+  color: var(--color_title) !important;
+}
+
+#fa_menulist a:hover {
+  color: var(--color_link) !important;
+}
+
+#fa_toolbar #fa_right #notif_list li.unread {
+  background: rgba(255, 255, 255, 0.05) !important;
+  font-size: 1rem !important;
+}
+
+#fa_toolbar #fa_right #notif_list {
+  background: var(--color_background3) !important;
+  font-size: 1rem !important;
+}
+
+#fa_toolbar #fa_right #notif_list li .contentText {
+  color: var(--color_text) !important;
+  line-height: normal;
+}
+
+#fa_toolbar #fa_right #notif_list li .contentText a {
+  color: var(--color_title) !important;
+  font-size: 1rem !important;
+  font-variant: small-caps;
+}
+
+#fa_toolbar #fa_right #notif_list li.see_all a {
+  color: var(--color_title) !important;
+  font-size: 1rem !important;
+  font-variant: small-caps;
+}
+
+ul#notif_list {
+  background: var(--color_background3) !important;
+  border: 0;
+  top: 40px !important;
+  left: 95px !important;
+  margin: 0px !important;
+  border-radius: 0px 0px 3px 3px;
+  position: absolute;
+}
+
+li.see_all {
+  background: transparent !important;
+  font-size: 1rem !important;
+  margin-right: 10px;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+#fa_toolbar #fa_right #notif_list li .contentText a {
+  color: var(--color_title) !important;
+}
+
+#fa_toolbar #fa_right #notif_list li .contentText a:hover {
+  color: var(--color_link) !important;
+}
+
+li.see_all:link {
+  color: var(--color_title) !important;
+}
+
+li.see_all:visited {
+  color: var(--color_title) !important;
+}
+
+li.see_all:hover {
+  color: var(--color_link) !important;
+}
+
+li.see_all a:link {
+  color: var(--color_title) !important;
+}
+
+li.see_all a:visited {
+  color: var(--color_title) !important;
+}
+
+li.see_all a:hover {
+  color: var(--color_link) !important;
+}
+
+#fa_toolbar #live_notif {
+  width: 330px;
+  position: absolute;
+  top: 25px !important;
+  left: 75px;
+}
+
+#navSIT a {
+  transition: all 0.65s linear;
+  -webkit-transition: all 0.65s linear;
+  -moz-transition: all 0.65s linear;
+  -o-transition: all 0.65s linear;
+}
+
+/* modif marges */
+
+#fa_welcome {
+  padding: 0 !important;
+}
+#fa_notifications {
+  margin-left: 3px !important;
+}
+
+/* fin TOOLBAR */
+
+/* Début BARRE DE NAVIGUATION MENU */
+.mainmenu {
+  font-size: 1rem !important;
+  font-weight: bold;
+  font-family: var(--police_text);
+  text-transform: uppercase;
+  line-height: -20px;
+  letter-spacing: 1px;
+  z-index: 999 !important;
+}
+
+.mainmenu:hover {
+  color: var(--color_link) !important;
+}
+
+/* nouveaux messages */
+.navbar .new-message {
+  background-color: var(--color_title);
+}
+
+/* NAVBAR EN HAUT */
+.top_navbar {
+  position: absolute;
+  top: 0px !important;
+  margin: auto;
+  height: 30px !important;
+  width: 100% !important;
+}
+
+#nav_barr {
+  position: fixed;
+  top: -17px !important;
+  right: 0px;
+  height: 20px !important;
+  background: transparent !important;
+  border: 0px var(--color_link) solid !important;
+  padding-top: 0px !important;
+  padding-bottom: 6px !important;
+  margin-right: 0px !important;
+  z-index: 999 !important;
+}
+
+div#search_menu {
+  position: absolute !important;
+  top: 33px !important;
+  left: 70px !important;
+  width: 320px !important;
+}
+
+div#search_menu > * {
+  font-size: 1rem !important;
+}
+
+#search_menu table {
+  width: 320px !important;
+}
+
+#search_menu a:link {
+  color: var(--color_background5);
+  background-color: var(--color_link);
+  padding: 0 0.5rem;
+}
+
+#search_menu a:hover {
+  color: var(--color_background5) !important;
+  background-color: var(--color_title);
+}
+
+#search_menu label {
+  color: var(--color_text);
+}
+
+#search_menu input::placeholder {
+  color: var(--color_background5);
+}
+
+a.mainmenu:link,
+a.mainmenu:visited {
+  color: var(--color_background2) !important;
+}
+
+a.mainmenu:hover,
+a.mainmenu:active {
+  color: var(--color_link) !important;
+  box-shadow: none;
+  background: transparent;
+}
+
+.navbar a {
+  color: inherit;
+  font-family: var(--police_sst);
+  font-size: 1.1em;
+  padding: 0;
+}
+
+.overview {
+  background: var(--color_background1);
+  top: 27px !important;
+}
+
+a.mainmenu img,
+.mainmenu img {
+  display: none;
+}
+
+a.mainmenu {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/* option like "fan" */
+.fa_like_div {
+  font-size: initial;
+}
+.rep-button,
+.rep-button:focus,
+.rep-button:active {
+  color: var(--color_background1);
+  background-color: var(--color_text);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.rep-button.fa_liked {
+  background-color: var(--color_fan);
+  color: var(--color_background1);
+  font-weight: bold;
+}
+.rep-button:hover,
+.rep-button.fa_liked:hover,
+.rep-button.fa_liked:focus {
+  background-color: var(--color_link);
+}
+.rep-button.fa_liked i,
+.fa_darkmode .rep-button.fa_liked i {
+  color: var(--color_background4);
+}
+.rep-nb {
+  font-size: 0.9rem !important;
+}
+
+.fa_like_list,
+.fa_dislike_list,
+.option_voters_list {
+  border-left: 1px solid var(--color_fan);
+  color: inherit;
+  font-size: 0.9rem !important;
+  padding-left: 11px;
+  margin-top: 6px;
+}
+
+/* pour le référentiel automatique */
+.faceclaim_hidden {
+  display: none !important;
+}
+
+/* pour ajuster la taille des polices */
+fieldset,
+p,
+.block {
+  font-size: 1rem !important;
+}
+
+/* ajustements darkmode version mobile de FA */
+
+.fa_darkmode .breadcrumbs .nav {
+  background-color: var(--bg_light);
+  color: var(--color_text);
+}
+.fa_darkmode .btn-rep-topic {
+  background-color: var(--mobi_joinbtn_bgcolor);
+  color: var(--color_text);
+}
+.fa_darkmode .btn,
+.fa_darkmode .btn-floating,
+.fa_darkmode .btn-floating-left {
+  background-color: var(--mobi_forumcat_bgcolor);
+  color: var(--color_text);
+}
+.fa_darkmode #tab-bar i {
+  color: var(--color_background4);
+}
+.fa_darkmode .forum h2 {
+  color: var(--color_text);
+}
+.fa_darkmode .forum-lastpost-wrap i {
+  color: var(--color_fan);
+}
+.fa_darkmode a {
+  color: var(--color_fan);
+}
+
+/* ajustements affichages mobiles "version mobile" */
+
+@media all and (max-width: 480px) {
+  body {
+    margin-top: 0px !important;
+  }
+  #header #mNotificationBtn ~ #mSearchBtn ~ .mobile_title_content {
+    font-size: initial !important;
+    font-weight: bold;
+  }
+
+  .box,
+  .forum-header-content {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .forum-header-content img {
+    content: var(--header_mobile);
+  }
+
+  /* page de connexion */
+
+  label:has(.checkbox):has(#checkbox_autologin) {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    border-radius: 3px;
+    background: var(--color_link);
+    font-family: var(--police_sst);
+    transition: 0.2s all;
+  }
+  label:has(.checkbox):has(#checkbox_autologin):hover,
+  label:has(.checkbox):has(#checkbox_autologin):active {
+    background: var(--color_title);
+  }
+  label:has(.checkbox):has(#checkbox_autologin) > * {
+    color: var(--color_background1) !important;
+    transition: 0.2s all;
+  }
+  label:has(.checkbox):has(#checkbox_autologin) > *:hover,
+  label:has(.checkbox):has(#checkbox_autologin) > *:active {
+    color: var(--color_background5) !important;
+  }
+
+  /* catégories et sujets */
+
+  .forum h2 {
+    font-size: 1rem !important;
+  }
+  .titrecaté {
+    text-transform: none;
+    font-family: var(--police_txt);
+  }
+
+  .forum-lastpost-wrap a {
+    display: block;
+  }
+
+  .index-last-images {
+    display: none;
+  }
+
+  .post-icon img {
+    object-fit: cover;
+  }
+  .post-info > * {
+    color: var(--color_background2);
+  }
+  .post-content {
+    background: var(--color_background2);
+    padding: 1rem;
+  }
+  .post-content a {
+    color: var(--color_link);
+  }
+  .post-section {
+    color: transparent;
+    line-height: 0 !important;
+  }
+  .post-section > * {
+    color: var(--color_background1);
+    line-height: 22px !important;
+  }
+  .post-buttons {
+    background: var(--color_background1);
+  }
+  .navmenu_show i {
+    color: var(--color_background2);
+  }
+
+  .mobile_title .mobile_next_button {
+    margin-top: 0;
+    color: var(--color_background2);
+  }
+  .mobile_title .mobile_next_button:visited {
+    color: var(--color_background2);
+  }
+  .mobile_title .mobile_next_button:hover,
+  .mobile_title .mobile_next_button:active {
+    color: var(--color_background5);
+  }
+
+  .mobile_title .mobile_next_button:after,
+  .mobile_title .mobile_prev_button:after {
+    color: var(--color_background2);
+  }
+
+  /* page de réponse */
+
+  div.sceditor-group {
+    display: flex !important;
+    justify-content: space-around;
+  }
+
+  /* page messages privés */
+
+  #privmsgs-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #privmsgs-menu li {
+    padding: 0;
+    color: var(--color_background4);
+  }
+  #privmsgs-menu a {
+    display: inline-block;
+    color: var(--color_background2);
+  }
+  .forum-section,
+  .preview-section {
+    background-color: var(--color_background2) !important;
+  }
+  .forum-content > input {
+    height: 24px;
+    width: 24px;
+  }
+  .form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .submit-buttons {
+    margin: 16px 5vw;
+    max-width: 90vw;
+  }
+  .submit-buttons .btn {
+    max-width: 90vw;
+  }
+
+  /* notifications et lignes de tableaux */
+
+  .notification-row:nth-child(odd),
+  td.row1 {
+    background-color: var(--color_background2);
+  }
+  .notification-row:nth-child(even),
+  .td.row2 {
+    background-color: var(--color_background5);
+  }
+  .mark-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* page profil */
+
+  .cp-sidebar {
+    background: transparent;
+    box-shadow: none;
+  }
+  .cp-sidebar ul li {
+    padding: 2px 0;
+  }
+  .cp-sidebar ul li.activetab {
+    border-bottom: 0;
+    filter: grayscale(0.85);
+  }
+
+  .cp.cp-profile-edit .box {
+    padding: 0;
+    background: var(--color_background2);
+  }
+
+  /* ajustement fiches */
+
+  .backfiche,
+  .codebox,
+  .spoiler {
+    width: inherit;
+  }
+  .titre01bis {
+    line-height: initial;
+  }
+
+  .backfiche > div:not(.backficheint) > img:nth-of-type(1),
+  .backfiche > div:not(.backficheint) > img:nth-of-type(2),
+  .backfiche > div:not(.backficheint) > img:nth-of-type(3),
+  .backfiche > div:not(.backficheint) > img:nth-of-type(4),
+  .backfiche > div:not(.backficheint) > img:nth-of-type(5) {
+    width:60px!important;
+  }
+
+  /* présentation des groupes */
+
+.bloc_groupe {
+  flex-direction : column;
+  align-items: center;
+}
+.bloc_groupe > *, .prez_groupe {
+  width:100%!important;
+}
+.blasons img{max-width:70px;}
+
+}
+
+/* ajustements affichages tablettes/écrans moyens */
+
+@media all and (min-width: 481px) and (max-width: 1023px) {
+  #modernbb {
+    padding: 0;
+  }
+
+  #page-header,
+  #wrap,
+  .bodylinewidth,
+  .forabg,
+  .adapt-header {
+    width: 100vw;
+  }
+  .adapt-header {
+    height: 1500px;
+    overflow: hidden;
+  }
+  #bloc-header {
+    width: 100%;
+  }
+  .hautbas {
+    right: 10px;
+  }
+  #modernbb #fa_toolbar {
+    visibility: visible;
+    height: 90px;
+    border-radius: 0 !important;
+    position: fixed;
+    display: flex;
+    width: 100% !important;
+    padding: 0px;
+    top: 0px;
+  }
+  #fa_right {
+    position: relative;
+    width: 50%;
+    top: 10px;
+    left: 0px;
+    display: flex !important;
+    font-size: 1rem;
+    float: left !important;
+    z-index: 900 !important;
+  }
+  .fa_avatar {
+    left: 0;
+    top: -10px;
+  }
+  #fa_menu {
+    width: 50%;
+  }
+  #fa_right a.rightHeaderLink,
+  #fa_menu #fa_welcome {
+    margin: 0;
+  }
+  div#fa_toolbar div,
+  div#fa_toolbar span {
+    margin: 0;
+  }
+  ul#fa_menulist,
+  ul#notif_list {
+    top: 80px !important;
+    left: 20px !important;
+  }
+  #fa_right #fa_notifications {
+    line-height: 30px;
+    width: 50%;
+    margin-right: 0;
+    padding: 0px 5px;
+    display: flex !important;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+  }
+  .top-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 30px !important;
+    width: 100% !important;
+  }
+  #nav_barr {
+    position: fixed;
+    width: 50%;
+    top: 4px !important;
+    right: 0px;
+    height: auto !important;
+    line-height: 40px;
+  }
+  .navbar {
+    text-align: right;
+  }
+  .navbar li {
+    margin: 0;
+  }
+
+  li.header dl.icon dd.dterm,
+  li.header dl.icon dt {
+    width: 90vw;
+  }
+  ul.topiclist {
+    width: calc(100vw - 3.2rem);
+  }
+  .bloc_cat {
+    width: calc(100% - 2rem - 288px);
+  }
+  .recap_cat {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  .recap_cat h3,
+  .recap_cat h2 {
+    width: 100%;
+    margin: 0;
+  }
+  .desc_cat {
+    width: 65%;
+    height: calc(100% - 2rem);
+  }
+  .list_ssfo {
+    width: 33%;
+    height: calc(100% - 2rem);
+  }
+  .sousForums {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  ul.topiclist.forums div.dterm {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  span.lastpost-avatar {
+    width: 88px;
+  }
+  .lastpost {
+    width: 200px;
+  }
+  .recap_sujet {
+    width: 100%;
+    margin: 5px 0;
+  }
+  ul.topics dd.dterm {
+    position: relative;
+    top: 6px;
+  }
+  ul.topiclist dd.repvue {
+    padding-top: 8px;
+  }
+  dd.lastpost > span {
+    float: left;
+  }
+  .topics .lastpost-avatar {
+    padding: 0;
+    margin: -0.5rem;
+    float: right;
+  }
+  ul.topiclist dd.lastpost {
+    display: flex;
+    padding: 0.5rem !important;
+    justify-content: space-between;
+  }
+  ul.topiclist dd.lastpost > span {
+    order: 1;
+  }
+  ul.topiclist:not(.forums) span.lastpost-avatar {
+    width: 60px;
+    order: 2 !important;
+    margin: 0.25rem !important;
+  }
+  .blocqeel {
+    width: 100%;
+  }
+  .bloc_qeell,
+  .bloc_qeelr {
+    width: 27%;
+  }
+  .div_online {
+    width: auto;
+  }
+  .guide {
+    line-height: 1rem;
+  }
+  .bloc_img_gr {
+    margin-top: 6px;
+  }
+
+  #rpg-inventaire-sorcier {
+    max-width: 100% !important;
+  }
+}
+
+/* ajustement petits écrans */
+
+@media all and (min-width: 481px) and (max-width: 720px) {
+  /*.adapt-header {
+    height: 1350px;
+    overflow: hidden;
+}*/
+  .navbar li {
+    margin: 0;
+    height: 30px;
+  }
+  .bloc_cat {
+    width: calc(100% - 170px - 88px - 1rem);
+  }
+  .desc_cat {
+    width: 65%;
+    margin: 0;
+  }
+  .lastpost {
+    width: 170px;
+  }
+  ul.topiclist dl {
+    display: grid;
+    grid-template-columns: 70px 1fr 38%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "repvue detail lastpost";
+  }
+  dl.icon {
+    background-position: left 24px top 15%;
+  }
+  ul.topics dd.dterm {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    line-height: 26px;
+    grid-area: detail;
+    padding: 0.5rem;
+  }
+  .topic-title-container {
+    margin: 2px 0;
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  .topic-author {
+    clear: both;
+  }
+  ul.topiclist dd.repvue {
+    grid-area: repvue;
+    line-height: inherit;
+    padding: 45px 0 0 0;
+  }
+  ul.topiclist dd.lastpost {
+    grid-area: lastpost;
+  }
+  .blocqeel {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .bloc_qeell {
+    order: 1;
+    width: 45%;
+  }
+  .bloc_grcopy {
+    order: 3;
+    width: 100%;
+    height: auto;
+  }
+  .bloc_qeelr {
+    order: 2;
+    width: 45%;
+  }
+}
+
+/* ajustement mobile */
+
+.introduction {
+  display: none;
+}
+
+@media all and (max-width: 480px) {
+  .bloc_img {
+    display: none;
+  }
+
+  .introduction {
+    display: block;
+    margin: auto;
+    max-width: 480px;
+  }
+
+  #pa_mobile {
+    display: flex;
+    justify-content: center;
+    max-width: 480px;
+    flex-wrap: wrap;
+  }
+  .bloc-header__tops {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .bloc-header__tops__titre {
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+    display: block;
+  }
+  .bloc-header__tops__titre h3 {
+    font-family: var(--police_titre);
+    font-size: 1.1rem;
+  }
+  .bloc-header__tops__titre a {
+    color: var(--color_background1);
+    font-weight: lighter;
+  }
+  .bloc-header__tops__titre a:hover {
+    color: var(--color_background4);
+  }
+  .bloc-header__tops__titre a span {
+    color: var(--color_fan);
+  }
+  .bloc-header__tops img {
+    width: 35px !important;
+    height: 35px !important;
+    object-fit: cover;
+    content: var(--img_top_sites);
+    border-radius: 2rem;
+    transition: all 0.3s;
+    margin: 0 0.5rem;
+    padding: 2px;
+  }
+  .bloc-header__tops img:hover {
+    transform: rotate(360deg);
+  }
+
+/* illustration de sujet solo */
+
+.illust_solo img {
+  width: 100%!important;
+}
+
+/* duo d'images d'illustrations des sujets */
+
+.duo_illust {
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+}
+.duo_illust img {
+  width: 49%!important;
+  height: 150px;
+  object-fit: cover;
+}
+}
+
+@media all and (orientation: landscape) {
+  html {
+    background-size: 100vw;
+  }
+}
+
+@media all and (orientation: portrait) {
+  html {
+    background-size: cover;
+  }
+}

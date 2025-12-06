@@ -1,0 +1,26 @@
+:root {
+  --police_titre: 'Bavicka', cursive, bold;
+  --police_sst: 'Champagne Limousines', 'Montserrat', sans-serif;
+  --police_text: 'Georgia', 'Times New Roman', serif;
+    --color_text: #d0d0d0;
+    --color_neg: #333;
+
+    --color_title: #8a273e;
+    --color_link: #d29aa3;
+    --color_background1: #8a6853;
+    --color_background2: #f0f0f0;
+    --color_background3: #9d7d68;
+    --color_background4: #c1a893;
+    --color_background5: #fff;
+    --color_fan: #87a3c2;
+--gradient:linear-gradient(90deg, var(--color_title) 0%, var(--color_link) 100%); 
+
+  --header_mobile: url("https://hungcalf.github.io/ressources/current_design/header.png");
+  --fond_pa: url("https://hungcalf.github.io/ressources/current_design/paqeel.png");
+  --fond_codquot: url("https://hungcalf.github.io/ressources/current_design/background.png");
+  --img_top_sites: url("https://hungcalf.github.io/ressources/current_design/topsite.png");
+  --deco_profil: url("https://hungcalf.github.io/ressources/current_design/decoprofil.png");
+  --fleche_haut: url("https://hungcalf.github.io/ressources/current_design/arrow_top_off.png");
+  --fleche_bas: url("https://hungcalf.github.io/ressources/current_design/arrow_bottom_off.png");
+  --background: url("https://hungcalf.github.io/ressources/current_design/background.png");
+}

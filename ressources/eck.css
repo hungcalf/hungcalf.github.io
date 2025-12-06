@@ -1,38 +1,77 @@
+/* Mes variables */
+
 hdl,
+ddc,
 aoc,
 jqb,
-lmn {
+lmn,
+sam,
+chan {
   font-family: Georgia;
   font-weight: bold;
 }
 
-hdl {
+hdl,
+ddc {
   color: hotpink;
 }
 
 jqb {
-  color: thistle;
+  color: #a18ba1;
 }
 
 lmn {
   color: crimson;
 }
 
-aoc {
+aoc,
+bru {
   color: lightslategrey;
+}
+
+sam {
+  color: teal;
+}
+
+chan {
+  color: cornflowerblue;
+}
+
+cat {
+  color: #aa1155;
+}
+wywy {
+  color: #a37d55;
+}
+jer {
+  color: darkblue;
+}
+apsa {
+  color: #9999ff;
+}
+cam {
+  color: #cc99ff;
+}
+lew {
+  color: #990000;
+}
+tia {
+  color: #006600;
 }
 
 .maxw {
   max-width: 300px;
 }
 
-/* Phones */
+/* Visuels téléphones */
 
 .blackthorn {
   display: flex;
   flex-wrap: wrap;
   width: 450px;
   padding: 0;
+  margin: auto;
+  justify-content: center;
 }
 .bloc-tel {
   position: relative;
@@ -102,7 +141,7 @@ details {
   box-sizing: border-box;
 }
 summary {
-  width: 400px;
+  /*width: 400px;*/
   text-align: center;
   font-size: 2rem;
   font-family: var(--police_sst);
@@ -116,6 +155,7 @@ details span {
   width: 400px;
 }
 
+.ava-now,
 .ava-now .fire {
   background: hotpink;
 }
@@ -155,7 +195,36 @@ details .lmn span {
   border: 1px solid gold;
 }
 
-/* Moodboards */
+/* Téléphone pour Manon */
+
+.chaton_bloc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.chaton_icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+.chaton_triangle {
+  color: var(--color_background4);
+  background: transparent;
+  position: relative;
+  top: 3px;
+  right: -2px;
+}
+.chaton_txt {
+  border: 1px solid var(--color_background4);
+  border-radius: 10px;
+  padding: 5px;
+  background: var(--color_background5);
+  min-height: 120px;
+  width: 250px;
+}
+
+/* Moodboards fêtes hung */
 
 .mb_entete {
   display: flex;
@@ -180,72 +249,544 @@ details .lmn span {
   text-align: center;
 }
 
-.mb_bloc_grid_1 {
-  margin: 0 auto;
-  width: 400px;
-}
-.mb_bloc_grid_2 {
-  border-radius: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-.mb_bloc_grid_3 {
-  height: 400px;
+/* RP Japsa (James + Apsa nouvelle version) */
+
+.japsa {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "one three six six" "one four four seven" "two five five seven" "two five five seven";
-  grid-gap: 10px;
-  overflow: hidden;
-  border-radius: 15px;
+  grid-template-rows: 65px 60px 1fr;
+  grid-template-columns: 10px 165px 1fr 10px;
+}
+.japsa > img:first-child {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  z-index: 2;
+  border-right: 4px solid thistle;
+  border-left: 4px solid thistle;
+  padding: 0 5px;
+  width: 175px;
+  height: 90px;
+  object-fit: cover;
+}
+.japsa h4 {
+  grid-column: 3;
+  grid-row: 1 / 2;
+  z-index: 2;
+  text-align: center;
+  font-family: var(--police_titre);
+  color: var(--color_link);
+  font-size: 1.5rem;
+  line-height: initial;
+}
+.japsa h5 {
+  grid-column: 3;
+  grid-row: 2 / 3;
+  z-index: 2;
+  margin-top: 0;
+  text-align:center;
+}
+.link_moodboard > img {
+  width: auto;
+  height: 110px;
+  object-fit: cover;
+}
+.rp_japsa {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 2;
+  z-index: 1;
+  background: #fff;
+  min-height: 300px;
+  padding: 2.5rem 1rem 1rem 1rem;
 }
 
-.mb_area_grid_1 {
-  grid-area: one;
+@media all and (max-width: 424px) {
+  .japsa {
+    display:flex;
+    flex-direction: column;
+  }
+.japsa > img:first-child {
+  margin:auto;
 }
-.mb_area_grid_2 {
-  grid-area: two;
+.rp_japsa {
+  padding: 1rem;
 }
-.mb_area_grid_3 {
-  grid-area: three;
-}
-.mb_area_grid_4 {
-  grid-area: four;
-}
-.mb_area_grid_5 {
-  grid-area: five;
-}
-.mb_area_grid_6 {
-  grid-area: six;
-}
-.mb_area_grid_7 {
-  grid-area: seven;
 }
 
-/* A REVOIR -- FICHES ET ANNONCES */
+/* RP Sam */
+
+.samina, .samara {
+  width: 470px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.sam_boximg {
+  width: 190px;
+}
+.sam_entete {
+  width: 260px;
+  padding: 0 10px;
+}
+.sam_pic1 {
+  border-radius: 0px 35px 0px 35px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_pic2 {
+  border-radius: 35px 0px 35px 0px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.sam_titre {
+  font-family: var(--police_titre);
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  color: var(--color_title);
+}
+.sam_perso {
+  font-family: var(--police_sst);
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.sam_chapeau {
+  color: var(--color_title);
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: var(--police_sst);
+  text-transform: uppercase;
+  line-height: 1.1rem;
+}
+.sam_rp {
+  width: 100%;
+  padding: 12px;
+  text-align: justify;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  border-left: 4px solid silver;
+  border-right: 4px solid silver;
+  border-radius: 35px 5px 35px 5px;
+  background: #ffffff;
+}
+.sam_lettrine {
+  font-family: var(--police_titre);
+  font-size: 2.25rem;
+  line-height: 2.75rem !important;
+  color: var(--color_title);
+  float: left;
+}
+
+/* pensine/liens de James */
+
+.jqb_links {
+  opacity: 0.5;
+  transition: 0.2s all;
+}
+.jqb_links:hover {
+  opacity: 1;
+}
+.backficheint.pens_james h3 {
+  background: url(https://i.servimg.com/u/f66/11/73/87/11/pngegg10.png) center;
+  margin-top: 36px;
+  line-height: 33px;
+  text-align: center;
+  width: 100%;
+  height: 33px;
+  background-size: 67px;
+  background-position: 0% 17%;
+  filter: contrast(0.7);
+  color: var(--color_title);
+}
+.backficheint.pens_diane h3 {
+  margin-top: 1rem;
+  line-height: 33px;
+  text-align: left;
+  padding-left: 2rem;
+  width: 100%;
+  height: 3rem;
+  background-size: 160px !important;
+  filter: brightness(0.95) grayscale(0.25);
+  color: var(--color_title);
+  background: url(https://i.imgur.com/LGA0ufy.jpg) right;
+  background-repeat: no-repeat;
+}
+.charm {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 60px;
+  padding: 2px;
+  border: 3px solid var(--color_fan);
+  margin-right: 5px;
+}
+.charm-desc {
+  align-self: center;
+  width: calc(100% - 65px);
+}
+center p {
+  word-spacing: 30px;
+}
+.pens_james center img,
+.pens_diane center img,
+.pens_luan center img {
+  object-fit: cover;
+  height: 200px;
+  width: 80%;
+}
+
+/* faire-part mariage BlackNsar */
+
+.fptiames {
+  width: 420px;
+  height: 300px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background: url("https://ewanouchka.github.io/hungcalf-img-store/mariage_tia_james.png") center no-repeat;
+  background-size: cover;
+  border: 1px solid #cfb246;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fptiames .entete {
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: var(--police_titre);
+}
+.fptiames p {
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+}
+.fptiames .gold {
+  color: #cfb246;
+}
+
+@media all and (max-width: 424px) {
+  .fptiames {
+    width: 100%;
+    height: auto;
+    background-position: top right;
+  }
+}
+
+/* signature Glad */
+
+.sgnglad {
+  margin:0 auto;
+  box-sizing:border-box;
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content:center;
+  max-width:470px;
+}
+.sgnglad * {
+  box-sizing:border-box;
+}
+.sgnglad img {
+  width:210px;
+  height:140px; 
+  object-fit:cover;
+  border:#fff 5px solid;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.4);
+  margin:0 5px;}
+.sgnglad_texte {
+  width:100%;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 14px;
+  line-height:15px;
+  border:#BDBBBB 1px dotted;
+  padding:5px;
+  background-color:#fff;
+  color:#504E4E;
+  text-align:center;
+  margin-top:-25px;
+}
+
+
+/* ANCIENNES VERSIONS A NE PAS SUPPR */
+/* RP Apsara */
+
+.bloc-apsa {
+  width: 100%;
+}
+.header-apsa {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.header-apsa_img {
+  object-fit: cover;
+  height: 100px;
+  width: 150px;
+  margin: 5px;
+}
+.gauche {
+  border-radius: 35px 0px 0px 0px;
+}
+.droite {
+  border-radius: 0px 35px 0px 0px;
+}
+.header-apsa .milieu {
+  margin: 5px 0;
+  background: thistle;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.titre-apsa {
+  font-family: var(--police_titre);
+  font-size: 1.25rem;
+  color: #6a3d72;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color_background1);
+  width: 100%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.partenaire-apsa {
+  filter: invert(0.15) brightness(0.85);
+}
+.rp-apsa {
+  width: calc(95% - 10px);
+  border-right: 8px solid #6a3d72;
+  border-left: 8px solid #6a3d72;
+  background: var(--color_background5);
+  margin: 10px auto 5px;
+  padding: 5px;
+}
+.credits-eck {
+  margin: 5px auto 0;
+  border-top: 2px solid #6a3d72;
+  color: thistle;
+  text-align: center;
+  width: calc(95% - 10px);
+}
+
+/* RP Lewis */
+
+.bloc-lewis {
+  width: 100%;
+}
+.header-lewis {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.header-lewis_img {
+  object-fit: cover;
+  height: 100px;
+  width: 150px;
+  margin: 5px;
+}
+.header-lewis .milieu {
+  margin: 5px 0;
+  background: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.titre-lewis {
+  font-family: var(--police_titre);
+  font-size: 1.25rem;
+  color: #841717;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #841717;
+  width: 100%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.partenaire-lewis {
+  filter: sepia(1) brightness(0.62) saturate(3);
+}
+.rp-lewis {
+  width: calc(95% - 10px);
+  border-right: 8px solid #841717;
+  border-left: 8px solid #841717;
+  background: var(--color_background5);
+  margin: 10px auto 5px;
+  padding: 5px;
+}
+.credits-eck_lewis {
+  margin: 5px auto 0;
+  border-top: 2px solid #841717;
+  color: silver;
+  text-align: center;
+  width: calc(95% - 10px);
+}
+
+/* RP Jerem */
+
+.jeremiah {
+  width: 470px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.jer_boximg {
+  width: 190px;
+}
+.jer_entete {
+  width: 260px;
+  padding: 0 10px;
+}
+.jer_pic1 {
+  border-radius: 0px 35px 0px 35px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.jer_pic2 {
+  border-radius: 35px 0px 35px 0px;
+  background: var(--color_fan);
+  object-fit: cover;
+  height: 80px;
+  width: 90px;
+  margin: 2px;
+  float: left;
+}
+.jer_titre {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  color: var(--color_title);
+}
+.jer_perso {
+  font-family: "Rokkitt", serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 0px;
+  letter-spacing: 2px;
+  margin: 10px 0px 0px;
+  color: var(--color_background3);
+}
+.jer_chapeau {
+  color: var(--color_link);
+  text-align: justify;
+  font-size: 8px;
+  font-family: "Rokkitt", serif;
+  text-transform: uppercase;
+}
+.jer_rp {
+  width: 100%;
+  padding: 12px;
+  text-align: justify;
+  border-top: 1px solid silver;
+  border-right: 1px solid silver;
+  border-left: 4px solid silver;
+  border-bottom: 4px solid silver;
+  border-radius: 35px 5px 35px 5px;
+  background: #ffffff;
+}
+.jer_lettrine {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  text-shadow: 1px 1px 0.5px SlateGray;
+  color: var(--color_title);
+}
+
+/* -- A REVOIR -- */
+
+/* Pour TdA */
+
+andy {
+  color: var(--color_ordinary);
+  font-weight: bold;
+  font-family: "Georgia";
+  font-size: 1.25rem;
+}
+.andy_sgnbloc {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  line-height: 1.2rem;
+}
+.andy_sgnimg {
+  border: 1px solid var(--color_primary);
+  padding: 0.25rem;
+  min-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+:root {
+  --andy_gradient: linear-gradient(45deg, var(--color_ordinary), var(--color_ordinary) 33%, #f0f0f0) 1;
+}
 .cookie_bloc {
-  position: relative;
-  border-left: 10px solid #f6f6f6;
-  border-right: 10px solid #f6f6f6;
-  background: rgba(255, 255, 255, 0.4);
-  color: gray;
-  padding: 6px;
-  margin: 6px;
-  font-family: calibri;
+  border: 0.25rem solid;
+  border-image: var(--andy_gradient);
+  background: rgba(255, 255, 255, 0.075);
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
 }
 
 .cookie_titre {
-  position: relative;
-  z-index: 500;
-  font-family: var(--police_sst);
+  font-family: Georgia;
   font-size: 28px;
-  line-height: 12px;
-  margin: 6px;
-  border-bottom: 3px dotted maroon;
-  color: maroon;
+  color: var(--color_ordinary);
   font-weight: bold;
+  text-align: center;
+  margin: 1rem auto 0;
 }
+
+.cookie_giftop {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  padding: 0.25rem;
+  border: 1px solid #f0f0f0;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 3px auto;
+}
+
+.cookie_duo {
+  display: flex;
+  margin: 0.5rem auto;
+  justify-content: space-around;
+}
+.cookie_duo img {
+  width: 45%;
+  height: 150px;
+  object-fit: cover;
+  padding: 0.25rem;
+  border: 1px solid #f0f0f0;
+  background: #000;
+}
+
+/* A REVOIR -- FICHES ET ANNONCES */
 
 .cookie_avprez {
   width: 190px;
@@ -267,14 +808,6 @@ details .lmn span {
   text-align: justify;
   line-height: 12px;
   font-family: calibri !important;
-}
-
-.cookie_giftop {
-  width: 400px;
-  border: 3px solid #f6f6f6;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 5px;
-  margin: 3px;
 }
 
 .cookie_blocprez {
@@ -414,9 +947,6 @@ details .lmn span {
 
 .basdebloc {
   border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -o-border-radius: 0px 0px 5px 5px;
   border-top: 2px dotted #fff !important;
   height: 29px;
   background: url("https://i.servimg.com/u/f66/11/73/87/11/fond_f18.png") bottom no-repeat !important;

@@ -1,194 +1,237 @@
-/* WIZARDGRAM */
-
-/* barre du haut */
-.wzdgfd {
-  width: 400px;
-  background: #fafafa;
-}
-
-.wzdgtop {
-  background-color: '#fff';
-  width: 400px;
-  height: 45px;
-  border-bottom: silver 1px solid;
-}
-
-.wzdgsearch {
-  background: #fafafa;
-  border: 1px solid silver;
-  width: 170px;
-  margin: 8px;
-  height: 24px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.wzdgsico {
-  background: url('https://i.imgur.com/cRvvDnR.png');
-  background-position: 28% 55%;
-  width: 25px;
-  height: 22px;
-}
-
-.wzdgstxt {
-  width: 145px;
+/* NOUVELLE VERSION WZG */
+.bloc-wzginsta {
+  display:flex;
+  flex-direction:column;
+  background:#fff;
   font-family: 'Montserrat';
+  font-size:14px;
+  color:#333;
+  max-width:450px;
+  margin: auto;
+}
+
+:root {
+  --font-sm: 13px;
+  --font-xl: 17px;
+  --border-bottom:silver 1px solid;
+}
+
+/* barre du haut*/
+.bloc-wzginsta .header {
+  display:flex;
+  border-bottom:var(--border-bottom);
+  align-items: center;
+}
+.bloc-wzginsta .icon-name {
+  width:250px;
+  display: flex;
+  justify-content: center;
+}
+/* version wizardgram */
+.bloc-wzginsta .header .icon-name .wzg {
+  content: url('https://hungcalf.github.io/ressources/iconographie/icon_wzg.png');
+}
+/* version instagram */
+.bloc-wzginsta .header .icon-name .insta {
+  content: url('https://hungcalf.github.io/ressources/iconographie/icon_insta.png');
+}
+.bloc-wzginsta .searchbar {
+  width:190px;
+  margin:1rem;
+  background: #fafafa;
+  border-radius:3px;
   color: silver;
   font-weight: bold;
-  font-size: 14px;
+  font-size: var(--font-sm);
   text-align: center;
+  line-height: 30px;
 }
-
-.wzdgdot {
-  background: url('https://i.imgur.com/Hpr2M3o.png');
-  background-position: 97% 50%;
+.bloc-wzginsta .searchbar img {
+  width:30px;
+  height:30px;
+  object-fit: cover;
+  float:left;
+}
+.bloc-wzginsta .troispoints {
   width: 25px;
   height: 40px;
+  object-fit: cover;
+  object-position: 80% 50%;
 }
 
-/* profil utilisateur 1er post */
-.wzdgprofile {
+/* page d'accueil */
+.bloc-wzginsta .profil-accueil {
+  display: grid;
+  grid-template-rows: 2rem 3rem 1fr;
+  grid-template-columns: 60px 1fr;
+  grid-template-areas:
+      "iconprofil pseudo"
+      "iconprofil bouton"
+      "iconprofil description";
+  margin: auto;
+  align-items: center;
+  font-size: var(--font-xl);
+  padding: 0.5rem 0;
+}
+.bloc-wzginsta .profil-accueil img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  float: left;
-  margin-top: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 0px;
+  object-fit:cover;
+  grid-area:iconprofil;
 }
-
-.wzdgpseudo {
-  font-family: 'Montserrat';
-  color: black;
-  font-weight: bold;
-  font-size: 17px;
-  text-align: left;
-  padding-left: 5px;
-  vertical-align: bottom;
-}
-
-.wzdgmodpr {
-  font-family: 'Montserrat';
-  color: black;
-  font-weight: bold;
-  font-size: 13px;
-  background: #f2f2f2;
-  border: 1px solid silver;
-  height: 20px;
+.bloc-wzginsta .profil-accueil button {
+  max-width:250px;
+  font-size: var(--font-sm);
+  text-align: center;
+  grid-area:bouton;
+  background: #F6F6F6;
   border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  width: 250px;
-  text-align: center;
+  padding: 0.25rem 1rem;
+  color: #999;
+  font-family: inherit;
+}
+.bloc-wzginsta .profil-accueil p {
+  max-width: 250px;
+  font-size: initial;
+  grid-area:description;
+  margin: 0.25rem 0;
 }
 
-.wzdgprtxt {
-  width: 300px;
-  text-align: left;
-  font-family: 'Montserrat';
-  margin-top: 8px;
+.bloc-wzginsta .abonnements {
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  border-top: var(--border-bottom);
+  padding: 1rem 0 0 0;
+}
+.bloc-wzginsta .abonnements div {
+  font-size: var(--font-sm);
+  text-align:center;
+  max-width:30%;
 }
 
-/* abonnements et abonnés */
-
-.wzdgnumbz {
-  width: 384px;
-  margin-top: 6px;
-  margin-bottom: 3px;
-  padding: 8px;
-  border-bottom: silver 1px solid;
-  border-top: silver 1px solid;
+.bloc-wzginsta .liste-publications {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  grid-gap: 1rem;
+  margin: 1rem;
 }
-
-/* tableau de photos postées */
-
-.wzdgntab {
-  text-align: center;
-  font-family: 'Montserrat' !important;
-  font-size: 13px;
-  color: #333;
-}
-
-.wzdgpics {
-  background-size: cover !important;
-  width: 120px;
-  height: 120px;
-}
-
-wlnk {
-  font-weight: bold;
-  color: #1560BD;
+.bloc-wzginsta .liste-publications img {
+  width:120px;
+  height:120px;
+  object-fit: cover;
+  margin:auto;
 }
 
 /* post d'une nouvelle photo */
-
-.wzdgtabpost {
-  margin: 10px;
-  padding-bottom: 10px !important;
-  width: 380px;
-  background: #fff;
-  border: 1px silver solid;
+.bloc-wzginsta .profil-post {
+  font-size: var(--font-xl);
+  padding: 0.5rem;
+  margin: 0.25rem auto;
+  max-width: 360px;
+  min-width:260px;
+}
+.bloc-wzginsta .profil-post > img:first-child {
+width: 50px;
+height: 50px;
+border-radius: 50px;
+object-fit: cover;
+float: left;
+margin: 0 1rem;
+}
+.bloc-wzginsta .profil-post p {
+font-size: initial;
+margin: 0.25rem 0;
 }
 
-.wzdgpostpr {
-  font-family: 'Montserrat';
-  color: black;
-  font-size: 13px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-.wzdgpost {
-  border-top: 1px solid silver;
-  padding: 10px !important;
-  width: 380px;
-}
-
-.wzdgimgpost {
+.bloc-wzginsta .image-post {
   background-size: cover !important;
   width: 360px;
   height: 360px;
+  margin:auto;
+}
+.image-post {
+  object-fit: cover !important;
 }
 
-.wzdgact {
-  width: 360px;
+.bloc-wzginsta .actions {
+  width: 100%;
+  max-width: 360px;
   height: 34px;
+  margin: auto;
 }
 
-.wzdgcom {
-  font-family: 'Montserrat';
-  color: black;
-  font-size: 11px;
-  text-align: left;
-  padding-left: 5px;
-}
-
-/* post de commentaire */
-.wzdgcomtxt {
-  font-family: 'Montserrat';
+.bloc-wzginsta .like-desc, .wzdgcom {
+  font-family: "Montserrat";
   color: black;
   font-size: 13px;
   text-align: left;
-  padding-left: 5px;
+  padding: 0 10px;
+  margin: 0 auto 10px auto;
+  max-width: 360px;
+}
+/*
+.bloc-wzginsta .comm-post .hashtag,
+.bloc-wzginsta a,
+.bloc-wzginsta a:visited {
+}
+.bloc-wzginsta a:hover,
+.bloc-wzginsta a:active {
+}
+*/
+.bloc-wzginsta .date {
+  color:silver;
 }
 
-/* post de suivi */
+/* post de commentaire seul */
+.bloc-wzginsta .commentaire {
+    font-size: var(--font-xl);
+    padding: 0.5rem;
+    margin: auto;
+    max-width: 360px;
+}
+.bloc-wzginsta .commentaire > img:first-child {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+  float: left;
+  margin: 0 1rem;
+}
+.bloc-wzginsta .commentaire p {
+  font-size: initial;
+  margin: 0.25rem 0;
+}
+
+
+/* suivi multiple */
+.bloc-suivi-multiple {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* post de suivi (inchangé) */
 .wzdgfollow {
   position: relative;
-  width: 400px;
-  height: 310px;
+  height: auto;
+  max-width:270px;
   background: #fafafa;
   padding-bottom: 6px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  margin: 5px;
+}
+.wzdgfollow a {
+  display: inline !important;
 }
 
 .wzdgfolline {
-  line-height: 11px;
   position: relative;
-  top: 6px;
+  top: 5px;
   text-align: left;
 }
 
@@ -202,8 +245,10 @@ wlnk {
   width: 230px;
   height: 270px;
   background: #ffffff;
+  color: #333;
   border-radius: 10px;
   border: 0px solid #aaaaaa;
+  margin: auto;
 }
 
 .wzdgfolhead {
@@ -242,6 +287,7 @@ wlnk {
   position: absolute;
   top: 164px;
   left: 4px;
+  text-align: left;
 }
 
 .wzdgfolname {
@@ -259,4 +305,257 @@ wlnk {
   margin-bottom: 6px;
   line-height: 11px;
   font-size: 10px;
+}
+
+.wzdgfoltxt img {
+  max-width:50px;
+  max-height:50px;
+} 
+      
+
+
+/* ------------------------------ */
+
+/* ANCIEN CODE WIZARDGRAM */
+
+/* barre du haut */
+.wzdgfd {
+  max-width: 400px;
+  background: #fafafa;
+}
+
+.wzdgtop {
+  background-color: "#fff";
+  max-width: 400px;
+  height: 45px;
+  border-bottom: silver 1px solid;
+}
+
+.wzdgtop table tr td:first-child img {
+content: url(https://hungcalf.github.io/ressources/iconographie/icon_wzg.png);
+height: 44px;
+}
+
+.wzdgsearch {
+  background: #fafafa;
+  border: 1px solid silver;
+  width: 170px;
+  margin: 8px;
+  height: 24px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.wzdgsico {
+  background: url("https://i.imgur.com/cRvvDnR.png");
+  background-position: 28% 55%;
+  width: 25px;
+  height: 22px;
+}
+
+.wzdgstxt {
+  width: 145px;
+  font-family: "Montserrat";
+  color: silver;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wzdgdot {
+  background: url("https://i.imgur.com/Hpr2M3o.png");
+  background-position: 97% 50%;
+  width: 25px;
+  height: 40px;
+}
+
+/* profil utilisateur 1er post */
+.wzdgprofile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px!important;
+  margin-bottom: 0px;
+}
+
+.wzdgpseudo {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 5px;
+  vertical-align: bottom;
+}
+
+.wzdgmodpr {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  background: #f2f2f2;
+  border: 1px solid silver;
+  height: 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  width: 250px;
+  text-align: center;
+}
+
+.wzdgprtxt {
+  width: 300px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* abonnements et abonnés */
+
+.wzdgnumbz {
+  width: 384px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  padding: 8px;
+  border-bottom: silver 1px solid;
+  border-top: silver 1px solid;
+}
+
+/* tableau de photos postées */
+
+.wzdgntab {
+  text-align: center;
+  font-family: "Montserrat" !important;
+  font-size: 13px;
+  color: #333;
+}
+
+.wzdgpics {
+  background-size: cover !important;
+  width: 120px;
+  height: 120px;
+}
+
+wlnk, wlnk a {
+  font-weight: bold;
+  color: #1560bd !important;
+}
+
+/* post d'une nouvelle photo */
+
+.wzdgtabpost {
+  margin: 10px;
+  padding-bottom: 10px !important;
+  width: 380px;
+  background: #fff;
+  border: 1px silver solid;
+}
+
+.wzdgpostpr {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px!important;
+}
+
+.wzdgpost {
+  border-top: 1px solid silver;
+  padding: 10px !important;
+  width: 380px;
+}
+
+.wzdgimgpost {
+  background-size: cover !important;
+  width: 360px;
+  height: 360px;
+}
+
+.wzdgact {
+  width: 360px;
+  height: 34px;
+}
+
+/* post de commentaire */
+.wzdgcomtxt {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px!important;
+}
+
+
+/* ------- AJUSTEMENT MOBILES -------- */
+
+
+@media all and (max-width: 480px) {
+
+  .wzdgfd {
+    max-width:300px;
+  }
+  .wzdgnumbz,
+  .wzdgnumbz table{
+  max-width:300px;
+  padding: 0;
+}
+.wzdgnumbz td{
+padding: 5px!important;
+font-size:11px;
+}
+.wzdgtabpost {
+  width: 300px;
+  margin: 10px 0;
+} 
+.wzdgntab {
+  width:90px;
+}
+  .wzdgpics,
+  .bloc-wzginsta .liste-publications img {
+    width:80px;
+    height:80px;
+  }
+
+  .bloc-wzginsta .image-post,
+  .wzdgimgpost {
+    width: 270px;
+    height: 270px;
+  }
+  .wzdgcomtxt {
+    max-width:180px;
+  }
+  
+  #wzdgtop td {
+    max-width:120px!important;
+  }
+  .wzdgsearch{
+    width:auto;
+  }
+  .wzdgpost{
+    padding:10px 0;
+  }
+  #wzdgtable td {
+    max-width:200px!important;
+  }
+  
+  .wzdgact {
+    width:275px;
+  }
+
+.bloc-suivi-multiple {
+  flex-direction: column;
+  align-items:center;
+}
+.wzdgprtxt img, 
+.wzdgfolprev img {
+  max-height:20px;
+}
 }
