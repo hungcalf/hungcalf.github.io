@@ -101,6 +101,7 @@ p {
     .swiper-pagination-bullet {
       width: 60px;
       height: 60px;
+      border: 1px solid var(--color_fan);
     }
     .swiper {
         padding-top: 80px;
