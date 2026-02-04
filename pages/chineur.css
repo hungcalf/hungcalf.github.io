@@ -1,0 +1,108 @@
+:root {
+    --swiper-theme-color: var(--color_link);
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color_link) var(--color_background4);
+}
+
+body {
+    margin: 0;
+    color:var(--color_neg);
+}
+
+.swiper {
+    padding-top: 110px;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    width: 430px;
+}
+
+.swiper-slide:hover .link_description {
+    height: 100px;
+    bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.swiper-pagination {
+    top: 10px;
+    z-index: auto;
+}
+
+.swiper-pagination-bullet {
+    width: 90px;
+    height: 90px;
+    background: none;
+}
+
+.swiper-pagination-bullet-active {
+    background: none;
+}
+
+.parti1 {
+    content: "Rumeurs et ragots";
+}
+
+.parti2 {
+    content: "Quidditch";
+}
+
+.parti3 {
+    content: "Enquête exclusive";
+}
+
+.parti4 {
+    content: "Astrologie";
+}
+
+.titre04 {
+    font-family: var(--police_sst);
+    text-transform: capitalize;
+    margin-top:1rem;
+}
+.details {
+    min-height: 60px;
+    max-height: 90px;
+    overflow: auto;
+    padding-right: 2px;
+    line-height:1rem;
+    font-size:0.9rem
+}
+.details:last-of-type {
+    justify-content: space-evenly;
+    display: flex;
+}
+.details:last-of-type a {
+    display: inline-block;
+    text-align: center;
+}
+.details img {
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    display:block;
+    margin:auto;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+@media all and (max-width: 480px) {
+    .swiper-pagination-bullet {
+      width: 60px;
+      height: 60px;
+    }
+    .swiper {
+        padding-top: 80px;
+    }
+}
