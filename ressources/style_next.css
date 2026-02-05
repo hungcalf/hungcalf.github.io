@@ -7,14 +7,17 @@
   --police_text: "Georgia", "Times New Roman", serif;
   --color_text: #c0c0c0;
   --color_neg: #333;
-  --color_title: #a38e47;
-  --color_link: #b6a486;
-  --color_background1: #4e446d;
-  --color_background2: #f0f0f0;
-  --color_background5: #fff;
-  --color_fan: #639baf;
-  --color_background3: #6b658b;
-  --color_background4: #8896ba;
+  
+  /* palette hiver */   
+    --color_title: #dfccb9;
+    --color_link: #b99a91;
+    --color_background1: #78423b;
+    --color_background2: #f0f0f0;
+    --color_background3: #8f564d;
+    --color_background4: #c4785e;
+    --color_background5: #fff;
+    --color_fan: #d7b46a;
+    --gradient: linear-gradient(-90deg, var(--color_background1) 0%, var(--color_fan) 100%);
 
   --header_mobile: url("https://hungcalf.github.io/ressources/current_design/header.png");
   --fond_pa: url("https://hungcalf.github.io/ressources/current_design/paqeel.png");
