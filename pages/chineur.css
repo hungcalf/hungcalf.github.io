@@ -51,20 +51,20 @@ p {
     background: none;
 }
 
-.parti1 {
-    content: url('');
+.chineur1 {
+    content: url('https://hungcalf.github.io/pages/rumeurs.jpg');
 }
 
-.parti2 {
-    content: url('');
+.chineur2 {
+    content: url('https://hungcalf.github.io/pages/enquete.jpg');
 }
 
-.parti3 {
-    content: url('');
+.chineur3 {
+    content: url('https://hungcalf.github.io/pages/quidditch.jpg');
 }
 
-.parti4 {
-    content: url('');
+.chineur4 {
+    content: url('https://hungcalf.github.io/pages/astro.jpg');
 }
 
 .titre04 {
