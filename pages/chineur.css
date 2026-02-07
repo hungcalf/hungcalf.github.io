@@ -52,19 +52,19 @@ p {
 }
 
 .chineur1 {
-    content: url('https://hungcalf.github.io/pages/rumeurs.jpg');
+    content: url(https://hungcalf.github.io/pages/rumeurs.jpg);
 }
 
 .chineur2 {
-    content: url('https://hungcalf.github.io/pages/quidditch.jpg');
+    content: url(https://hungcalf.github.io/pages/quidditch.jpg);
 }
 
 .chineur3 {
-    content: url('https://hungcalf.github.io/pages/enquete.jpg');
+    content: url(https://hungcalf.github.io/pages/enquete.jpg);
 }
 
 .chineur4 {
-    content: url('https://hungcalf.github.io/pages/astro.jpg');
+    content: url(https://hungcalf.github.io/pages/astro.jpg);
 }
 
 .titre04 {
