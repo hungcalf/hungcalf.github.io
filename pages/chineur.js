@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + ' chineur' + (index+1) + '"></span>';
+            return '<span class="' + className + 'chineur' + (index+1) + '"></span>';
           },
     },
 });
