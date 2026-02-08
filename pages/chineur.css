@@ -45,7 +45,7 @@ p {
     height: 90px;
     background: var(--color_text);
     border: 1px solid var(--color_fan);
-    border-radius: 5px!important;
+    border-radius: 10px!important;
 }
 
 .swiper-pagination-bullet-active {
@@ -97,7 +97,6 @@ p {
     margin:auto;
     object-fit: cover;
     filter: grayscale(1);
-    padding:2px;
 }
 
 @media all and (max-width: 480px) {
