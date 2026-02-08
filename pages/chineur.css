@@ -45,6 +45,7 @@ p {
     height: 90px;
     background: var(--color_text);
     border: 1px solid var(--color_fan);
+    border-radius: 5px;
 }
 
 .swiper-pagination-bullet-active {
