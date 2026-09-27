@@ -8,8 +8,8 @@ let teamB = document.getElementById("teamB");
 let teamBScore = document.getElementById("teamBscore");
 let playersTeamA = document.querySelectorAll(".playersteamA");
 let playersTeamB = document.querySelectorAll(".playersteamB");
-let classement = document.getElementById("classement");
-let download = document.getElementById("download");
+/* let classement = document.getElementById("classement");
+let download = document.getElementById("download"); */
 
 let codeMatchNumber = document.getElementById("code__matchnumber");
 let codeMatchDate = document.getElementById("code__matchdate");
@@ -32,8 +32,8 @@ let codePlayersGoalsTeamA = document.getElementById("code__playersgoalsteamA");
 let codePlayersGoalsTeamB = document.getElementById("code__playersgoalsteamB");
 let codePlayersTeamA = document.getElementById("code__playersteamA");
 let codePlayersTeamB = document.getElementById("code__playersteamB");
-let codeClassement = document.getElementById("code__classement");
-let codeDownload = document.getElementById("code__simulationdownload");
+/* let codeClassement = document.getElementById("code__classement");
+let codeDownload = document.getElementById("code__simulationdownload"); */
 let form = document.getElementById("form");
 let result = document.getElementById("result");
 
@@ -351,8 +351,8 @@ function createcode() {
     codePlayersTeamA.textContent = match.teams[0].playersList;
     codePlayersTeamB.textContent = match.teams[1].playersList;
 
-    codeClassement.textContent = classement.value;
-    codeDownload.textContent = download.value;
+   /* codeClassement.textContent = classement.value;
+    codeDownload.textContent = download.value; */
 
     form.classList.replace("visible", "hide");
     result.classList.replace("hide", "visible");
