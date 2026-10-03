@@ -241,7 +241,7 @@ HTML *{
   /* - - - - - BLOCKS - - - - - */
   
   .simple {
-      margin: var(--grid-gap) auto 0;
+      margin: 0 auto;
       padding: var(--grid-gap);
   }
   
